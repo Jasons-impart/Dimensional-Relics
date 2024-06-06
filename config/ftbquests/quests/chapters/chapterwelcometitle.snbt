@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapterwelcometitle"
+	group: ""
+	icon: "minecraft:axolotl_bucket"
+	id: "69DD5C18580EA402"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "{chapter.welcome.title}"
+}

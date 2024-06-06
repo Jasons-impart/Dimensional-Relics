@@ -1,4 +1,8 @@
 ServerEvents.recipes(e => {
+    remove_recipes_mod(e, [
+        "ftbquests",
+        "itemfilters",
+    ]);
     remove_recipes_output(e, [
         "supplementaries:bomb",
         "create_enchantment_industry:experience_rotor",
@@ -20,15 +24,11 @@ ServerEvents.recipes(e => {
         "refinedstorage:raw_improved_processor",
         "refinedstorage:raw_advanced_processor",
         "refinedstorage:wrench",
-        "supplementaries:bomb_spiky"
-    ])
+        "supplementaries:bomb_spiky",
+    ]);
     remove_recipes_id(e, [
         "create:crafting/materials/rose_quartz",
         "alexsmobs:flint_n_steel_dropbear_claw",
         "neapolitan:banana/banana_bread",
-    ])
-    remove_recipes_mod(e, [
-        "ftbquests",
-        "itemfilters",
-    ])
-})
+    ]);
+});
