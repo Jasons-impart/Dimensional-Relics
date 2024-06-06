@@ -1,5 +1,21 @@
 [
   {
+    "soundEventId": "dsurround:item.sword.equip",
+    "volumeScale": 199
+  },
+  {
+    "soundEventId": "dsurround:item.sword.swing",
+    "volumeScale": 151
+  },
+  {
+    "soundEventId": "dsurround:item.tool.equip",
+    "volumeScale": 201
+  },
+  {
+    "soundEventId": "dsurround:item.tool.swing",
+    "volumeScale": 149
+  },
+  {
     "startup": true,
     "soundEventId": "minecraft:ambient.underwater.exit"
   },
