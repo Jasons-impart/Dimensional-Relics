@@ -10,6 +10,7 @@
   "ae2:pattern_provider": null,
   "ae2:power_storage": null,
   "ae2:server_data": null,
+  "ars_nouveau:mob_jar": null,
   "create:backtank_capacity": null,
   "create:blaze_burner": null,
   "create:contraption_inv": null,
@@ -86,11 +87,15 @@
   "minecraft:total_enchantment_power": null,
   "minecraft:villager_profession": null,
   "minecraft:zombie_villager": null,
+  "mysticalagriculture:crop": null,
+  "mysticalagriculture:inferium_crop": null,
+  "mysticalagriculture:infused_farmland": null,
   "pneumaticcraft:camo": null,
   "pneumaticcraft:entity": null,
   "pneumaticcraft:pneumatic": null,
   "pneumaticcraft:redstone": null,
   "pneumaticcraft:semiblock": null,
   "pneumaticcraft:tube_module": null,
+  "twilightforest:quest_ram_wool": null,
   "waystones:waystone": null
 }

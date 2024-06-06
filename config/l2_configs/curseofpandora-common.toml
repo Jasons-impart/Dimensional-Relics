@@ -1,0 +1,466 @@
+
+[Loot]
+	#Scale up/down luck in calculation of chance to find a pandora charm in chest
+	#Range: 0.0 ~ 10.0
+	lootLuckFactor = 1.0
+	#Maximum number of pandora charms generated in loot chest
+	#Range: 0 ~ 10
+	maxItemGenerated = 2
+
+[AttributeCharms]
+	#Range: 0.0 ~ 100.0
+	charmOfHealth = 2.0
+	#Range: 0.0 ~ 100.0
+	charmOfArmor = 2.0
+	#Range: 0.0 ~ 100.0
+	charmOfArmorToughness = 1.0
+	#Range: 0.0 ~ 10.0
+	charmOfSpeed = 0.05
+	#Range: 0.0 ~ 10.0
+	charmOfDamage = 0.05
+	#Range: 0.0 ~ 10.0
+	charmOfCritical = 0.05
+	#Range: 0.0 ~ 10.0
+	charmOfArchery = 0.05
+	#Range: 0.0 ~ 100.0
+	charmOfHeavyWeapon = 1.0
+	#Range: 0.0 ~ 10.0
+	charmOfHeavyWeaponSlow = 2.0
+	#Range: 0.0 ~ 10.0
+	charmOfAccuracy = 0.2
+	#Range: 0.0 ~ 10.0
+	charmOfAccuracySlow = 0.5
+	#Range: 0.0 ~ 1.0
+	charmOfProtection = 0.04
+	#Range: 0.0 ~ 10.0
+	charmOfMagic = 0.1
+	#Range: 0.0 ~ 10.0
+	charmOfExplosion = 0.1
+	#Range: 0.0 ~ 10.0
+	charmOfLuck = 1.0
+
+[Reality]
+	#Curse of Inertia max attack speed for weapon allowed
+	#Range: 0.0 ~ 20.0
+	curseOfInertiaCap = 3.0
+	#Curse of Inertia attack speed threshold for bonus
+	#Range: 0.0 ~ 20.0
+	curseOfInertiaBase = 0.5
+	#Curse of Inertia attack speed bonus
+	#Range: 0.0 ~ 20.0
+	curseOfInertiaBonus = 0.8
+	#Curse of Proximity max attack range for weapon allowed
+	#Range: 0.0 ~ 20.0
+	curseOfProximityCap = 6.0
+	#Curse of Proximity attack range threshold for bonus
+	#Range: 0.0 ~ 20.0
+	curseOfProximityBase = 2.0
+	#Curse of Proximity attack range bonus
+	#Range: 0.0 ~ 20.0
+	curseOfProximityBonus = 0.5
+	#Curse of Flesh food bar threshold
+	#Range: 0 ~ 20
+	curseOfFleshThreshold = 14
+	#Curse of Flesh required duration in minutes for food bar to be above threshold
+	#Range: 0 ~ 20
+	curseOfFleshDuration = 2
+	#Curse of Flesh max health bonus
+	#Range: 0.0 ~ 100.0
+	curseOfFleshBonus = 1.0
+	#Curse of Metabolism food bar threshold
+	#Range: 0 ~ 20
+	curseOfMetabolismThreshold = 16
+	#Curse of Metabolism buff / debuff per food bar
+	#Range: 0.0 ~ 1.0
+	curseOfMetabolismFactor = 0.05
+	#Curse of Metabolism max food bonus
+	#Range: 0.0 ~ 10.0
+	curseOfMetabolismBonus = 0.2
+	#Curse of Metabolism reality index requirement for bonus
+	#Range: 0 ~ 7
+	curseOfMetabolismIndexReq = 5
+	#Curse of Tension penalty duration in ticks when hit by target
+	#Range: 0 ~ 2000
+	curseOfTensionPenaltyDuration = 60
+	#Curse of Tension penalty threshold as percentage of max health
+	#Range: 0.0 ~ 1.0
+	curseOfTensionPenaltyThreshold = 0.1
+	#Curse of Tension time for token to take effect
+	#Range: 0 ~ 2000
+	curseOfTensionTokenMatureTime = 200
+	#Curse of Tension time for token to be effective
+	#Range: 0 ~ 2000
+	curseOfTensionTokenEffectiveTime = 200
+	#Curse of Tension damage bonus per token
+	#Range: 0.0 ~ 100.0
+	curseOfTensionDamageBonus = 0.2
+	#Curse of Tension max token level
+	#Range: 1 ~ 100
+	curseOfTensionMaxLevel = 5
+	#Curse of Prudence max token level
+	#Range: 1 ~ 100
+	curseOfPrudenceMaxLevel = 20
+	#Curse of Prudence damage factor per token, 0.9 means -10% damage per token
+	#Range: 0.0 ~ 1.0
+	curseOfPrudenceDamageFactor = 0.5
+	#Curse of Prudence token duration in ticks
+	#Range: 1 ~ 200
+	curseOfPrudenceDuration = 40
+	#Curse of Prudence max damage as percentage of target max health
+	#Range: 0.0 ~ 1.0
+	curseOfPrudenceMaxDamage = 0.2
+	#Curse of Spell: factor for spell load calculation.
+	#Lower number means enchantment puts less load on items and player
+	#Range: 0.0 ~ 100.0
+	curseOfSpellLoadFactor = 1.0
+	#Curse of Spell: player will take more damage when having spell overload
+	#Higher number means player takes more damage
+	#Range: 0.0 ~ 100.0
+	curseOfSpellDamageFactor = 1.0
+	#Curse of Spell: player will deal less damage when having spell overload
+	#Higher number means mob takes less damage
+	#Range: 0.0 ~ 100.0
+	curseOfSpellWeakenFactor = 1.0
+
+[Angelic]
+	#Reality Index requirement for Angelic Wing
+	#Range: 0 ~ 7
+	angelicWingRealityIndex = 3
+	#Angelic Wing speed boost in block per tick
+	#Range: 0.0 ~ 0.1
+	angelicWingBoost = 0.03
+	#Angelic Wing max speed in block per tick
+	#Range: 0.0 ~ 50.0
+	angelicWingMaxSpeed = 5.0
+	#Reality Index requirement for Angelic Bless
+	#Range: 0 ~ 7
+	angelicBlessRealityIndex = 4
+	#Angelic Bless total damage reduction
+	#Range: 0.0 ~ 1.0
+	angelicBlessDamageReduction = 0.25
+	#Angelic Bless damage absorption
+	#Range: 0.0 ~ 100.0
+	angelicBlessAbsorption = 1.0
+	#Reality Index requirement for Angelic Descent
+	#Range: 0 ~ 7
+	angelicDescentRealityIndex = 5
+	#Angelic Descent melee damage bonus
+	#Range: 0.0 ~ 10.0
+	angelicDescentMeleeBonus = 0.5
+	#Angelic Descent damage bonus against undead
+	#Range: 0.0 ~ 10.0
+	angelicDescentUndeadBonus = 0.5
+	#Requirement of Reality Index of Angelic Protection
+	#Range: 0 ~ 7
+	angelicProtectionRealityIndex = 6
+	#Angelic Protection cool down in ticks
+	#Range: 0 ~ 1000000
+	angelicProtectionCoolDown = 600
+	#Requirement of Reality Index of Angelic Punishment
+	#Range: 0 ~ 7
+	angelicPunishmentRealityIndex = 7
+	#Angelic Punishment cool down in ticks
+	#Range: 0 ~ 6000
+	angelicPunishmentCoolDown = 20
+	#Angelic Punishment minimum damage in percentage of target current health
+	#Range: 0.0 ~ 1.0
+	angelicPunishmentDamageBase = 0.05
+
+[Hell]
+	#Reality Index requirement for Hellfire Skull
+	#Range: 0 ~ 7
+	hellfireSkullRealityIndex = 3
+	#Minimum soul flame effect duration in ticks for Hellfire Skull to work
+	#Range: 1 ~ 200000
+	hellfireSkullMinimumDuration = 200
+	#Reality Index requirement for Hellfire Reformation
+	#Range: 0 ~ 7
+	hellfireReformationRealityIndex = 4
+	#Reality Index requirement for Eye of Cursed Souls
+	#Range: 0 ~ 7
+	eyeOfCursedSoulRealityIndex = 5
+	#Eye of Cursed Souls damage radius
+	#Range: 0.0 ~ 64.0
+	eyeOfCursedSoulRange = 8.0
+	#Effect trigger cool down in ticks for Eye of Cursed Souls
+	#Range: 0 ~ 1000000
+	eyeOfCursedSoulCoolDown = 200
+	#Reality Index requirement for Cursed Soul Crystal
+	#Range: 0 ~ 7
+	cursedSoulCrystalRealityIndex = 6
+	#Effect trigger cool down in ticks for Cursed Soul Crystal
+	#Range: 0 ~ 1000000
+	cursedSoulCrystalTriggerCoolDown = 200
+	#Max range to search undead mobs for Cursed Soul Crystal
+	#Range: 0.0 ~ 64.0
+	cursedSoulCrystalRange = 8.0
+	#Reality Index requirement for Crown of Demon
+	#Range: 0 ~ 7
+	crownOfDemonRealityIndex = 7
+	#Crown of Demon can command undead mobs with base health lower than:
+	#Range: 1 ~ 1000000
+	crownOfDemonBaseHealthThreshold = 50
+	#Crown of Demon range of detection
+	#Range: 0 ~ 128
+	crownOfDemonRange = 24
+
+[Shadow]
+	#Reality Index requirement for Shadow Core
+	#Range: 0 ~ 7
+	shadowCoreRealityIndex = 3
+	#Shadow effect duration per reality index
+	#Range: 0 ~ 60000
+	shadowCoreDurationPerIndex = 100
+	#Damage reduction for shadow effect
+	#Range: 0.0 ~ 1.0
+	damageReduction = 0.2
+	#Reality Index requirement for Shadow Convergence
+	#Range: 0 ~ 7
+	shadowConvergenceRealityIndex = 4
+	#Shadow Convergence healing factor
+	#Range: 0.0 ~ 100.0
+	shadowConvergenceHealFactor = 0.5
+	#Reality Index requirement for Shadow Consolidation
+	#Range: 0 ~ 7
+	shadowConsolidationRealityIndex = 5
+	#Shadow Consolidation scatter range
+	#Range: 0.0 ~ 64.0
+	shadowConsolidationRange = 8.0
+	#Shadow Consolidation damage factor
+	#Range: 0.0 ~ 100.0
+	shadowConsolidationFactor = 1.0
+	#Shadow Consolidation damage delay
+	#Range: 0 ~ 100
+	shadowConsolidationDelay = 20
+	#Shadow Consolidation trigger cool down
+	#Range: 0 ~ 10000
+	shadowConsolidationCoolDown = 60
+	#Reality Index requirement for Shadow Reformation
+	#Range: 0 ~ 7
+	shadowReformationRealityIndex = 6
+	#Shadow Reformation magic damage bonus
+	#Range: 0.0 ~ 100.0
+	shadowReformationBonus = 0.5
+	#Shadow Reformation damage reduction
+	#Range: 0.0 ~ 1.0
+	shadowReformationReduction = 0.5
+	#Reality Index requirement for Void Reformation
+	#Range: 0 ~ 7
+	voidOverflowRealityIndex = 7
+
+[Elemental]
+	#Reality Index requirement for Wind Thrust
+	#Range: 0 ~ 7
+	windThrustRealityIndex = 4
+	#Speed bonus for Wind Thrust
+	#Range: 0.0 ~ 10.0
+	windThrustSpeed = 0.5
+	#Melee damage bonus for Wind Thrust
+	#Range: 0.0 ~ 10.0
+	windThrustDamage = 1.0
+	#Reality Index requirement for Earth Crush
+	#Range: 0 ~ 7
+	earthCrushRealityIndex = 4
+	#Attack speed threshold for Earth Crush
+	#Range: 0.0 ~ 4.0
+	earthCrushThreshold = 1.0
+	#Explosion damage bonus for Earth Crush
+	#Range: 0.0 ~ 100.0
+	earthCrushBonus = 1.0
+	#Reality Index requirement for Flaming Explosion
+	#Range: 0 ~ 7
+	flamingExplosionRealityIndex = 4
+	#Explosion damage bonus for Flaming Explosion
+	#Range: 0.0 ~ 100.0
+	flamingExplosionBonus = 1.0
+	#Reality Index requirement for Waving Spell
+	#Range: 0 ~ 7
+	wavingSpellRealityIndex = 4
+	#Magic damage bonus for Waving Spell
+	#Range: 0.0 ~ 100.0
+	wavingSpellBonus = 1.0
+	#Reality Index requirement for Curse Redirection
+	#Range: 0 ~ 7
+	curseRedirectionRealityIndex = 4
+	#Magic damage bonus per curse enchantment for Curse Redirection
+	#Range: 0.0 ~ 10.0
+	curseRedirectionBonus = 0.5
+
+[Abyssal]
+	#Depth requirement for Abyssal charms
+	#Range: 0 ~ 64
+	abyssalDepthStep = 12
+	#Depth requirement for Abyssal charms with Abyssal Will
+	#Range: 0 ~ 64
+	abyssalWillDepthStep = 8
+	#Reality Index requirement for Abyssal Treasure
+	#Range: 0 ~ 7
+	abyssalTreasureRealityIndex = 3
+	#Reality Index requirement for Abyssal Watcher
+	#Range: 0 ~ 7
+	abyssalWatcherRealityIndex = 4
+	#Reality Index requirement for Abyssal Shell
+	#Range: 0 ~ 7
+	abyssalShellRealityIndex = 5
+	#Reality Index requirement for Abyssal Crown
+	#Range: 0 ~ 7
+	abyssalCrownRealityIndex = 6
+	#Reality Index requirement for Abyssal Will
+	#Range: 0 ~ 7
+	abyssalWillRealityIndex = 7
+	#Abyssal Watcher regen per depth step
+	#Range: 0.0 ~ 1.0
+	abyssalWatcherRegen = 0.01
+	#Abyssal Shell armor and toughness bonus per depth step
+	#Range: 0.0 ~ 1.0
+	abyssalShellBonus = 0.2
+	#Abyssal Crown magic bypassing chance per depth step
+	#Range: 0.0 ~ 1.0
+	abyssalCrownChance = 0.05
+	#Abyssal Will totem effect cool down in ticks
+	#Range: 1 ~ 100000
+	abyssalWillCoolDown = 600
+	#Abyssal Will protection effect duration in ticks
+	#Range: 1 ~ 100000
+	abyssalWillDuration = 200
+
+[Barbaric]
+	#Magic damage reduction in percentage for all barbaric set
+	#Range: 0.0 ~ 100.0
+	magicDamageDebuff = 1.0
+	#Reality Index requirement for Barbaric Instinct
+	#Range: 0 ~ 7
+	barbaricInstinctRealityIndex = 3
+	#Barbaric Instinct healing percentage
+	#Range: 0.0 ~ 1.0
+	barbaricInstinctHeal = 0.1
+	#Barbaric Instinct healing cool down
+	#Range: 0 ~ 1000
+	barbaricInstinctCoolDown = 40
+	#Reality Index requirement for Barbaric Wrath
+	#Range: 0 ~ 7
+	barbaricWrathRealityIndex = 4
+	#Barbaric Wrath crit damage bonus
+	#Range: 0.0 ~ 10.0
+	barbaricWrathCritBonus = 0.5
+	#Barbaric Wrath armor toughness bonus
+	#Range: 0.0 ~ 1000.0
+	barbaricWrathToughBonus = 10.0
+	#Reality Index requirement for Barbaric Scare
+	#Range: 0 ~ 7
+	barbaricScareRealityIndex = 5
+	#Barbaric Roar attack damage bonus
+	#Range: 0.0 ~ 10.0
+	barbaricRoarAttack = 0.25
+	#Barbaric Roar damage reduction
+	#Range: 0.0 ~ 1.0
+	barbaricRoarReduction = 0.25
+	#Reality Index requirement for Barbaric Blade
+	#Range: 0 ~ 7
+	barbaricBladeRealityIndex = 6
+	#Barbaric Blade attack damage bonus
+	#Range: 0.0 ~ 10.0
+	barbaricBladeAttack = 0.5
+	#Barbaric Blade projectile damage bonus
+	#Range: 0.0 ~ 10.0
+	barbaricBladeProjectile = 0.5
+	#Reality Index requirement for Primal Force
+	#Range: 0 ~ 7
+	primalForceRealityIndex = 7
+	#Primal Force armor bonus for player as percentage of max health
+	#Range: 0.0 ~ 100.0
+	primalForceSelfArmor = 1.0
+	#Primal Force armor bonus for attacker as percentage of max health
+	#Range: 0.0 ~ 100.0
+	primalForceTargetArmor = 1.0
+
+[Mutation]
+	#Reality Index requirement for Infective Mutation
+	#Range: 0 ~ 7
+	infectiveMutationRealityIndex = 3
+	#Reality Index requirement for Parasitic Mutation
+	#Range: 0 ~ 7
+	parasiticMutationRealityIndex = 4
+	#Reality Index requirement for Deforming Mutation
+	#Range: 0 ~ 7
+	deformingMutationRealityIndex = 5
+	#Reality Index requirement for Hostile Mutation
+	#Range: 0 ~ 7
+	hostileMutationRealityIndex = 6
+	#Reality Index requirement for Distorted Mutation
+	#Range: 0 ~ 7
+	distortedMutationRealityIndex = 7
+
+[Evil]
+	#Reality Index requirement for Evil Spirit Ritual
+	#Range: 0 ~ 7
+	infectiveMutationRealityIndex = 3
+	#Evil Spirit Ritual extra exp drop as percentage of max health
+	#Range: 0.0 ~ 100.0
+	evilSpiritRitualExpRate = 0.5
+	#Reality Index requirement for Evil Spirit Evoke
+	#Range: 0 ~ 7
+	parasiticMutationRealityIndex = 4
+	#Evil Spirit Evoke summoned Vex lifetime
+	#Range: 0 ~ 100000
+	evilSpiritEvokeDuration = 400
+	#Evil Spirit Evoke summoning cool down
+	#Range: 0 ~ 10000
+	evilSpiritEvokeCoolDown = 60
+	#Reality Index requirement for Evil Spirit Awakening
+	#Range: 0 ~ 7
+	deformingMutationRealityIndex = 5
+	#Evil Spirit Awakening magic damage bonus
+	#Range: 0.0 ~ 10.0
+	evilSpiritAwakeningMagicBonus = 0.15
+	#Evil Spirit Awakening damage reduction
+	#Range: 0.0 ~ 10.0
+	evilSpiritAwakeningAtkBonus = 0.1
+	#Evil Spirit Awakening bonus duration
+	#Range: 0 ~ 1000000
+	evilSpiritAwakeningDuration = 600
+	#Evil Spirit Awakening bonus max level
+	#Range: 0 ~ 1000
+	evilSpiritAwakeningMaxLevel = 5
+	#Reality Index requirement for Evil Spirit Curse
+	#Range: 0 ~ 7
+	hostileMutationRealityIndex = 6
+	#Evil Spirit Curse health threshold
+	#Range: 0.0 ~ 10.0
+	evilSpiritCurseThreshold = 0.2
+	#Evil Spirit Curse magic damage bonus
+	#Range: 0.0 ~ 10.0
+	evilSpiritCurseBonus = 1.0
+	#Reality Index requirement for Evil Spirit Walk
+	#Range: 0 ~ 7
+	distortedMutationRealityIndex = 7
+	#Evil Spirit Walk magic damage bonus
+	#Range: 0.0 ~ 10.0
+	evilSpiritWalkMagicBonus = 0.5
+	#Evil Spirit Walk attack damage bonus
+	#Range: 0.0 ~ 10.0
+	evilSpiritWalkAtkBonus = 0.5
+	#Evil Spirit Walk cool down
+	#Range: 0 ~ 1000000
+	evilSpiritWalkCoolDown = 600
+
+[Weapon]
+	#Reality Index requirement for Angelic Judgement
+	#Range: 0 ~ 7
+	angelicJudgementRealityIndex = 5
+	#Reality Index requirement for Doom Star
+	#Range: 0 ~ 7
+	doomStarRealityIndex = 5
+	#Reality Index requirement for Cursed Karma
+	#Range: 0 ~ 7
+	cursedKarmaRealityIndex = 5
+	#Cursed Karma explosion radius
+	#Range: 0 ~ 8
+	cursedKarmaExplosionRadius = 3
+	#Cursed Karma effect duration
+	#Range: 0 ~ 1000000
+	cursedKarmaEffectDuration = 300
+	#Reality Index requirement for Abyssal Edge
+	#Range: 0 ~ 7
+	abyssalEdgeRealityIndex = 5
+
