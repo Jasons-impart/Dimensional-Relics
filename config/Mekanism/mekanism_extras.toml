@@ -1,0 +1,191 @@
+
+#Config
+[mekanism_extras]
+
+	#Universal Cables
+	[mekanism_extras."universal cables"]
+		#Internal buffer in Joules of each 'TIER' universal cable
+		absoluteUniversalCable = "65536000"
+		#Internal buffer in Joules of each 'TIER' universal cable
+		supremeUniversalCable = "524288000"
+		#Internal buffer in Joules of each 'TIER' universal cable
+		cosmicUniversalCable = "4194304000"
+		#Internal buffer in Joules of each 'TIER' universal cable
+		infiniteUniversalCable = "33554432000"
+
+	#Mechanical Pipes
+	[mekanism_extras."mechanical pipes"]
+		#Capacity of 'TIER' mechanical pipes in mB.
+		absoluteMechanicalPipesCapacity = "512000"
+		#Pump rate of 'TIER' mechanical pipes in mB/t.
+		absoluteMechanicalPipesPullAmount = "128000"
+		#Capacity of 'TIER' mechanical pipes in mB.
+		supremeMechanicalPipesCapacity = "2048000"
+		#Pump rate of 'TIER' mechanical pipes in mB/t.
+		supremeMechanicalPipesPullAmount = "512000"
+		#Capacity of 'TIER' mechanical pipes in mB.
+		cosmicMechanicalPipesCapacity = "8192000"
+		#Pump rate of 'TIER' mechanical pipes in mB/t.
+		cosmicMechanicalPipesPullAmount = "2048000"
+		#Capacity of 'TIER' mechanical pipes in mB.
+		infiniteMechanicalPipesCapacity = "32768000"
+		#Pump rate of 'TIER' mechanical pipes in mB/t.
+		infiniteMechanicalPipesPullAmount = "8192000"
+
+	#Pressurized Tubes
+	[mekanism_extras."pressurized tubes"]
+		#Capacity of 'TIER' pressurized tubes in mB.
+		absolutePressurizedTubesCapacity = "4096000"
+		#Pump rate of 'TIER' pressurized tubes in mB/t.
+		absolutePressurizedTubesPullAmount = "1024000"
+		#Capacity of 'TIER' pressurized tubes in mB.
+		supremePressurizedTubesCapacity = "16384000"
+		#Pump rate of 'TIER' pressurized tubes in mB/t.
+		supremePressurizedTubesPullAmount = "4096000"
+		#Capacity of 'TIER' pressurized tubes in mB.
+		cosmicPressurizedTubesCapacity = "65536000"
+		#Pump rate of 'TIER' pressurized tubes in mB/t.
+		cosmicPressurizedTubesPullAmount = "16384000"
+		#Capacity of 'TIER' pressurized tubes in mB.
+		infinitePressurizedTubesCapacity = "262144000"
+		#Pump rate of 'TIER' pressurized tubes in mB/t.
+		infinitePressurizedTubesPullAmount = "65536000"
+
+	#Logistical Transporters
+	[mekanism_extras."logistical transporters"]
+		#Five times the travel speed in m/s of 'TIER' logistical transporter.
+		absoluteLogisticalTransporterSpeed = "100"
+		#Item throughput rate of 'TIER' logistical transporters in items/half second.
+		absoluteLogisticalTransporterPullAmount = "128"
+		#Five times the travel speed in m/s of 'TIER' logistical transporter.
+		supremeLogisticalTransporterSpeed = "200"
+		#Item throughput rate of 'TIER' logistical transporters in items/half second.
+		supremeLogisticalTransporterPullAmount = "256"
+		#Five times the travel speed in m/s of 'TIER' logistical transporter.
+		cosmicLogisticalTransporterSpeed = "400"
+		#Item throughput rate of 'TIER' logistical transporters in items/half second.
+		cosmicLogisticalTransporterPullAmount = "512"
+		#Five times the travel speed in m/s of 'TIER' logistical transporter.
+		infiniteLogisticalTransporterSpeed = "800"
+		#Item throughput rate of 'TIER' logistical transporters in items/half second.
+		infiniteLogisticalTransporterPullAmount = "1024"
+
+	#Thermodynamic Conductors
+	[mekanism_extras."thermodynamic conductors"]
+		#Conduction value of 'TIER' thermodynamic conductors.
+		absoluteThermodynamicConductorConduction = "10"
+		#Heat capacity of 'TIER' thermodynamic conductors.
+		absoluteThermodynamicConductornCapacity = "1"
+		#Insulation value of 'TIER' thermodynamic conductor.
+		absoluteThermodynamicConductornInsulation = "400000"
+		#Conduction value of 'TIER' thermodynamic conductors.
+		supremeThermodynamicConductorConduction = "15"
+		#Heat capacity of 'TIER' thermodynamic conductors.
+		supremeThermodynamicConductornCapacity = "1"
+		#Insulation value of 'TIER' thermodynamic conductor.
+		supremeThermodynamicConductornInsulation = "800000"
+		#Conduction value of 'TIER' thermodynamic conductors.
+		cosmicThermodynamicConductorConduction = "20"
+		#Heat capacity of 'TIER' thermodynamic conductors.
+		cosmicThermodynamicConductornCapacity = "1"
+		#Insulation value of 'TIER' thermodynamic conductor.
+		cosmicThermodynamicConductornInsulation = "1000000"
+		#Conduction value of 'TIER' thermodynamic conductors.
+		infiniteThermodynamicConductorConduction = "25"
+		#Heat capacity of 'TIER' thermodynamic conductors.
+		infiniteThermodynamicConductornCapacity = "1"
+		#Insulation value of 'TIER' thermodynamic conductor.
+		infiniteThermodynamicConductornInsulation = "4000000"
+
+	#Expand Radioactive Waste Barrel
+	[mekanism_extras."expand radioactive waste barrel"]
+		#Amount of gas (mB) that can be stored in a Radioactive Waste Barrel.
+		#Range: 1 ~ 9223372036854775807
+		radioactiveWasteBarrelMaxGas = 2048000
+		#Number of ticks required for radioactive gas stored in a Radioactive Waste Barrel to decay radioactiveWasteBarrelDecayAmount mB.
+		#Range: > 1
+		radioactiveWasteBarrelProcessTicks = 5
+		#Number of mB of gas that decay every radioactiveWasteBarrelProcessTicks ticks when stored in a Radioactive Waste Barrel. Set to zero to disable decay all together. (Gases in the mekanism:waste_barrel_decay_blacklist tag will not decay).
+		#Range: 0 ~ 9223372036854775807
+		radioactiveWasteBarrelDecayAmount = 4
+
+	#Alloy Upgrade
+	[mekanism_extras."alloy upgrade"]
+		#Allow right clicking on Cables/Pipes/Tubes with alloys to upgrade the tier.
+		transmitterAlloyUpgrade = true
+
+	#Faster Electric Pump
+	[mekanism_extras."faster electric pump"]
+		#mB of Heavy Water that is extracted per block of Water by the Electric Pump with a Filter Upgrade.
+		#Range: 1 ~ 1000
+		pumpHeavyWaterAmount = 1000
+
+	#Fluid Tanks
+	[mekanism_extras."fluid tanks"]
+		#Storage size of Basic fluid tanks in mB.
+		#Range: > 1
+		basicStorage = 512000
+		#Output rate of Basic fluid tanks in mB.
+		#Range: > 1
+		basicOutput = 128000
+		#Storage size of Advanced fluid tanks in mB.
+		#Range: > 1
+		advancedStorage = 1024000
+		#Output rate of Advanced fluid tanks in mB.
+		#Range: > 1
+		advancedOutput = 512000
+		#Storage size of Elite fluid tanks in mB.
+		#Range: > 1
+		eliteStorage = 2048000
+		#Output rate of Elite fluid tanks in mB.
+		#Range: > 1
+		eliteOutput = 2048000
+		#Storage size of Ultimate fluid tanks in mB.
+		#Range: > 1
+		ultimateStorage = 4096000
+		#Output rate of Ultimate fluid tanks in mB.
+		#Range: > 1
+		ultimateOutput = 819200
+
+	#Chemical Tanks
+	[mekanism_extras."chemical tanks"]
+		#Storage size of Basic chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		basicStorage = 32768000
+		#Output rate of Basic chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		basicOutput = 2048000
+		#Storage size of Advanced chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		advancedStorage = 131072000
+		#Output rate of Advanced chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		advancedOutput = 8192000
+		#Storage size of Elite chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		eliteStorage = 524288000
+		#Output rate of Elite chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		eliteOutput = 32768000
+		#Storage size of Ultimate chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		ultimateStorage = 4194304000
+		#Output rate of Ultimate chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		ultimateOutput = 131072000
+
+	#Bins
+	[mekanism_extras.bins]
+		#The number of items Basic bins can store.
+		#Range: > 1
+		basicStorage = 2097152
+		#The number of items Advanced bins can store.
+		#Range: > 1
+		advancedStorage = 16777216
+		#The number of items Elite bins can store.
+		#Range: > 1
+		eliteStorage = 134217728
+		#The number of items Ultimate bins can store.
+		#Range: > 1
+		ultimateStorage = 1073741824
+
