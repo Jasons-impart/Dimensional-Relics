@@ -58,5 +58,3 @@ log4j2.xml
 /config/oculus.properties
 /config/xaerominimap_entities.json
 /config/jei/world/local/bookmarks.ini
-mods/.connector/*.input
-/mods/.connector/temp/
