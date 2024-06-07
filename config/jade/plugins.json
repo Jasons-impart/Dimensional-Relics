@@ -1,4 +1,7 @@
 {
+  "enderchests": {
+    "hud": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -50,6 +53,12 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "endertanks": {
+    "hud.basic": true,
+    "hud": true,
+    "hud.status": true,
+    "hud.contents": true
+  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,
@@ -85,6 +94,9 @@
     "crafting_monitor": true,
     "part_name": true
   },
+  "modularrouters": {
+    "router": true
+  },
   "extendedcrafting": {
     "elite_auto_table": true,
     "ender_crafter": true,
@@ -116,8 +128,16 @@
     "energy": true,
     "tooltip_renderer": true
   },
+  "shetiphiancore": {
+    "hud.rgb16": true,
+    "hud": true,
+    "hud.redstone": true
+  },
   "twilightforest": {
     "quest_ram_wool": true
+  },
+  "supplementaries": {
+    "hat_stand": true
   },
   "create": {
     "filter": true,
