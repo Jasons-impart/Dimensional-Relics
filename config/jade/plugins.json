@@ -1,6 +1,18 @@
 {
-  "enderchests": {
-    "hud": true
+  "extendedcrafting": {
+    "elite_auto_table": true,
+    "ender_crafter": true,
+    "basic_auto_table": true,
+    "flux_crafter": true,
+    "advanced_table": true,
+    "auto_ender_crafter": true,
+    "ultimate_table": true,
+    "ultimate_auto_table": true,
+    "elite_table": true,
+    "basic_table": true,
+    "crafting_core": true,
+    "advanced_auto_table": true,
+    "compressor": true
   },
   "minecraft": {
     "item_storage.show_name_amount": 5,
@@ -53,11 +65,18 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "endertanks": {
-    "hud.basic": true,
-    "hud": true,
-    "hud.status": true,
-    "hud.contents": true
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "mekanism": {
+    "infuse_type": true,
+    "gas": true,
+    "remove_builtin": true,
+    "pigment": true,
+    "fluid": true,
+    "slurry": true,
+    "energy": true,
+    "tooltip_renderer": true
   },
   "pneumaticcraft": {
     "pneumatic": true,
@@ -66,6 +85,20 @@
     "redstone": true,
     "camo": true,
     "semiblock": true
+  },
+  "immersiveengineering": {
+    "multiblock_icon": true
+  },
+  "create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -82,6 +115,9 @@
   "mcjtylib": {
     "jadeaddons": true
   },
+  "waystones": {
+    "waystone": true
+  },
   "ae2": {
     "part_icon": true,
     "charger": true,
@@ -93,69 +129,5 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
-  },
-  "modularrouters": {
-    "router": true
-  },
-  "extendedcrafting": {
-    "elite_auto_table": true,
-    "ender_crafter": true,
-    "basic_auto_table": true,
-    "flux_crafter": true,
-    "advanced_table": true,
-    "auto_ender_crafter": true,
-    "ultimate_table": true,
-    "ultimate_auto_table": true,
-    "elite_table": true,
-    "basic_table": true,
-    "crafting_core": true,
-    "advanced_auto_table": true,
-    "compressor": true
-  },
-  "ars_nouveau": {
-    "mob_jar": true
-  },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
-  "mekanism": {
-    "infuse_type": true,
-    "gas": true,
-    "remove_builtin": true,
-    "pigment": true,
-    "fluid": true,
-    "slurry": true,
-    "energy": true,
-    "tooltip_renderer": true
-  },
-  "shetiphiancore": {
-    "hud.rgb16": true,
-    "hud": true,
-    "hud.redstone": true
-  },
-  "twilightforest": {
-    "quest_ram_wool": true
-  },
-  "supplementaries": {
-    "hat_stand": true
-  },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
-  },
-  "waystones": {
-    "waystone": true
-  },
-  "mysticalagriculture": {
-    "infused_farmland": true,
-    "crop": true,
-    "inferium_crop": true
   }
 }
