@@ -176,7 +176,7 @@ StartupEvents.registry("item", e => {
                 .getMaxEnergyStored(item => 1600000)
                 .receiveEnergy((item, amount, sim) => {
                     const receiveEnergy = Math.min(4000, amount, item.damageValue)
-                    if (item.damageValue > 0 && !sim) {
+                    if (item.damageValue >= 0 && !sim) {
                         item.damageValue -= receiveEnergy
                     }
                     return receiveEnergy
