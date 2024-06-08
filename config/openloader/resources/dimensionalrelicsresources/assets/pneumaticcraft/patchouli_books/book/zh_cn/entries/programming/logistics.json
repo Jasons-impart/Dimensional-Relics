@@ -1,19 +1,19 @@
 {
-  "name": "Logistics Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/logistics_piece.png",
-  "category": "pneumaticcraft:widget_interact",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This widget makes the $(l:tools/drone)Drone/$ behave like a $(l:logistics/logistics_drone)Logistics Drone/$, but allows some extra flexibility over the base Logistic Drone functionality:$(li)It can be used with other widgets, e.g. a $(l:programming/standby)Standby/$ widget for more efficient air usage$(li)A custom $(l:programming/area)Area/$ can be defined (a standard Logistics Drone has a 33x33x33 area centered on the drone, which cannot be changed)"
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/logistics_piece.png"
-      ],
-      "text": "$(italic)Logistics Widget/$"
-    }
-  ]
+    "name": "物流小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/logistics_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "此小部件使$l:tools/drone无人机/$表现得像一个$l:logistics/logistics_drone物流无人机/$,但允许对基础物流无人机功能进行一些额外灵活性调整:$li它可以与其他小部件一起使用,例如$l:programming/standby待机/$小部件以更有效地使用空气$li可以定义一个自定义$l:programming/area区域/$标准物流无人机的区域为33x33x33,以无人机为中心,不可更改"
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/logistics_piece.png"
+            ],
+            "text": "$italic物流小部件/$"
+        }
+    ]
 }

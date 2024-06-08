@@ -1,17 +1,17 @@
 {
-  "name": "Liquid Compressor",
-  "icon": "pneumaticcraft:liquid_compressor",
-  "category": "pneumaticcraft:compressors",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Liquid Compressor/$ is a simple generator which can produce $(l:base_concepts/pressure)compressed air/$. It burns liquid fuels to do so; to see which fuels you can use and their effectiveness, open up the $(bold)Available Fuels/$ tab in the Liquid Compressor's GUI. Note that this also includes high-temperature fluids such as lava."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a $(item)Liquid Compressor/$",
-      "recipe": "pneumaticcraft:liquid_compressor"
-    }
-  ]
+    "name": "液体压缩机",
+    "icon": "pneumaticcraft:liquid_compressor",
+    "category": "pneumaticcraft:compressors",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item液体压缩机/$ 是一种简单的发电机,能产生 $l:base_concepts/pressure压缩空气/$.它通过燃烧液体燃料来实现这一点；要查看可使用的燃料及其效果,请打开液体压缩机GUI中的 $bold可用燃料/$ 标签.注意,这还包括如岩浆等高温流体."
+        },
+        {
+            "type": "crafting",
+            "text": "制作 $item液体压缩机/$",
+            "recipe": "pneumaticcraft:liquid_compressor"
+        }
+    ]
 }

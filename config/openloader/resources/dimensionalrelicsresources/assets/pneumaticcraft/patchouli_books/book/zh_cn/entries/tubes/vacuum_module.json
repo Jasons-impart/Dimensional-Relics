@@ -1,27 +1,27 @@
 {
-  "name": "Vacuum Module",
-  "icon": "pneumaticcraft:vacuum_module",
-  "category": "pneumaticcraft:tubes",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(thing)Vacuum Module/$ does the same job as the $(l:machines/vacuum_pump)Vacuum Pump/$ - provide negative pressure - but in a slightly more compact way. It can be placed on a vertical tube, unlike the full-size pump, which can be only be oriented horizontally.$(p)The advantage is compactness; the disadvantage is more limited upgradeability in terms of speed and volume."
-    },
-    {
-      "type": "text",
-      "title": "Placement",
-      "text": "The Vacuum Module is an $(thing)inline/$ module. Place it on the end of the tube which should be the vacuum side. Providing a minimum of 2 bar pressure to the wide/green end of the tube will cause the module to spin, removing air from any tubes past the narrow/red end.$(p)Applying a $(#f00)redstone signal/$ prevents the module running."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:module_expansion_card",
-      "text": "A $(l:tubes/module_expansion_card)Module Expansion Card/$ boosts the module's speed, roughly equivalent to adding 4 $(l:base_concepts/upgrades#speed)Speed Upgrades/$ to a Vacuum Pump. Similar to adding Speed Upgrades, this comes with a reduction in efficiency in terms of air usage at the positive side."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Vacuum Module",
-      "recipe": "pneumaticcraft:vacuum_module"
-    }
-  ]
+    "name": "真空模块",
+    "icon": "pneumaticcraft:vacuum_module",
+    "category": "pneumaticcraft:tubes",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing真空模块/$与$l:machines/vacuum_pump真空泵/$的功能相同——提供负压——但方式更为紧凑.它可以放置在垂直管道上,而全尺寸泵只能水平定向.$p优点是紧凑；缺点是在速度和容量方面的升级能力更有限."
+        },
+        {
+            "type": "text",
+            "title": "安装位置",
+            "text": "真空模块是一个$thinginline/$模块.将其放置在管道应该为真空的一端.向管道的宽/绿色端提供至少2巴的压力将使模块旋转,从窄/红色端之后的任何管道中抽出空气.$p施加一个$#f00红石信号/$会阻止模块运行."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:module_expansion_card",
+            "text": "一个$l:tubes/module_expansion_card模块扩展卡/$能提升模块的速度,大约相当于给真空泵增加了4个$l:base_concepts/upgrades#speed加速升级/$.类似于增加加速升级,这会导致正面的空气使用效率降低."
+        },
+        {
+            "type": "crafting",
+            "text": "制作真空模块",
+            "recipe": "pneumaticcraft:vacuum_module"
+        }
+    ]
 }

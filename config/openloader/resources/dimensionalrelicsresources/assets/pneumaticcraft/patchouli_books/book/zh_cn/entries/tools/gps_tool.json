@@ -1,33 +1,33 @@
 {
-  "name": "GPS Tool",
-  "icon": "pneumaticcraft:gps_tool",
-  "category": "pneumaticcraft:tools",
-  "advancement": "pneumaticcraft:plastic",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)GPS Tool/$ is an item that when $(thing)right-clicked/$ against a block saves the block's coordinate. This data is used in several places in $(pncr); see overleaf.$(p)$(thing)Right-clicking/$ the $(item)GPS Tool/$ in the air opens a GUI allowing coordinates to be adjusted directly.$(p)A held $(item)GPS Tool/$ highlights its selected block."
-    },
-    {
-      "type": "text",
-      "anchor": "variables",
-      "title": "Linking Global Variables",
-      "text": "$(l:programming/variables#global)Global Variables/$ are an advanced $(l:base_concepts/drone)Drone/$ feature, accessed via the $(l:programming/coordinate_operator)Coordinate Operator/$.$(p)$(thing)Right-clicking/$ a $(item)GPS Tool/$ in the air allows a variable name to be entered.$(p)Now, that $(thing)Global Variable/$ will track the value of the $(item)GPS Tool's/$ selected coordinate. This can be used to make $(thing)Drone programs/$ that use dynamic areas."
-    },
-    {
-      "type": "relations",
-      "entries": [
-        "pneumaticcraft:machines/air_cannon",
-        "pneumaticcraft:machines/universal_sensor",
-        "pneumaticcraft:programming/programmer",
-        "pneumaticcraft:tools/amadron_tablet"
-      ],
-      "text": "Machines and tools that make use of the $(item)GPS Tool/$."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a GPS Tool",
-      "recipe": "pneumaticcraft:gps_tool"
-    }
-  ]
+    "name": "GPS工具",
+    "icon": "pneumaticcraft:gps_tool",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:plastic",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$itemGPS工具/$是一种物品,当$thing右键点击/$一个方块时,会保存该方块的坐标.这些数据在$pncr的多个地方使用；请参阅下一页.$p$thing右键点击/$空气中的$itemGPS工具/$会打开一个GUI,允许直接调整坐标.$p手持的$itemGPS工具/$会高亮显示其选中的方块."
+        },
+        {
+            "type": "text",
+            "anchor": "variables",
+            "title": "链接全局变量",
+            "text": "$l:programming/variables#global全局变量/$是一种高级的$l:base_concepts/drone无人机/$功能,通过$l:programming/coordinate_operator坐标操作符/$访问.$p$thing右键点击/$空气中的$itemGPS工具/$允许输入变量名.$p现在,那个$thing全局变量/$将跟踪$itemGPS工具/$选定坐标的值.这可以用来制作使用动态区域的$thing无人机程序/$."
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "pneumaticcraft:machines/air_cannon",
+                "pneumaticcraft:machines/universal_sensor",
+                "pneumaticcraft:programming/programmer",
+                "pneumaticcraft:tools/amadron_tablet"
+            ],
+            "text": "使用$itemGPS工具/$的机器和工具."
+        },
+        {
+            "type": "crafting",
+            "text": "制作GPS工具",
+            "recipe": "pneumaticcraft:gps_tool"
+        }
+    ]
 }

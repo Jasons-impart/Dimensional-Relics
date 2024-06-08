@@ -1,21 +1,21 @@
 {
-  "name": "Camouflage Applicator",
-  "icon": "pneumaticcraft:camo_applicator",
-  "category": "pneumaticcraft:tools",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Camouflage Applicator/$ can be used to camouflage certain $(pncr) blocks:$(li)$(l:tubes/pressure_tubes)Pressure Tubes/$$(li)$(l:machines/pneumatic_door)Pneumatic Door Base/$$(li)$(l:machines/elevators)Elevator Base & Caller/$$(li)$(l:machines/charging_station)Charging Station/$$(li)$(l:machines/heat_pipe)Heat Pipe/$$(p)$(thing)Right-click/$ any solid block to copy its appearance to the Applicator tool, or $(thing)sneak+right-click/$ to clear the copied block. "
-    },
-    {
-      "type": "text",
-      "text": "Then, $(thing)right-click/$ any camouflageable block (see above) to apply or remove camouflage.$(p)You'll need an actual block in your inventory to apply it as camouflage, which gets used (but you get it back when you remove the camouflage).$(p)You can also uncamouflage a camouflaged block by breaking it with a pick or other suitable tool; the camouflage will be broken off instead."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Camouflage Applicator",
-      "recipe": "pneumaticcraft:camo_applicator"
-    }
-  ]
+    "name": "伪装应用器",
+    "icon": "pneumaticcraft:camo_applicator",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item伪装应用器/$可用于伪装某些$pncr方块:$li$l:tubes/pressure_tubes压力管道/$$li$l:machines/pneumatic_door气动门基座/$$li$l:machines/elevators电梯基座与呼叫器/$$li$l:machines/charging_station充电站/$$li$l:machines/heat_pipe热管/$$p$thing右键点击/$任何固体方块以复制其外观至应用器工具,或$thing潜行+右键点击/$以清除复制的方块."
+        },
+        {
+            "type": "text",
+            "text": "然后,$thing右键点击/$任何可伪装的方块见上文以应用或移除伪装.$p您需要一个实际的方块在您的物品栏中以应用它作为伪装,该方块将被使用但移除伪装时您会取回它.$p您也可以通过使用镐或其他合适的工具破坏伪装方块来移除伪装；伪装将被破坏掉."
+        },
+        {
+            "type": "crafting",
+            "text": "制作伪装应用器",
+            "recipe": "pneumaticcraft:camo_applicator"
+        }
+    ]
 }

@@ -1,40 +1,40 @@
 {
-  "name": "Programmable Controller",
-  "icon": "pneumaticcraft:programmable_controller",
-  "category": "pneumaticcraft:programming",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "A Programmable Controller can do very similar things to what $(l:tools/drone)Drones/$ can do. A program can be written in a $(l:programming/programmer)Programmer/$, and saved to either a $(item)Drone/$ or $(l:components/network_components#network_api)Network API/$. Either of these items can then be placed in the $(item)Programmable Controller/$. Provided that there is enough $(l:base_concepts/pressure)pressure/$, the $(item)Programmable Controller/$ will execute the program just as it would when programmed onto a $(item)Drone/$. "
-    },
-    {
-      "type": "text",
-      "text": "There are a few differences, though:$(li)A $(item)Programmable Controller/$ uses a miniature version of a $(item)Drone/$ - a $(thing)minidrone/$. It's not a real entity, so no pathfinding is involved, and the $(thing)minidrone/$ can move through walls. This has the benefit of being more friendly to the server and more reliable in general.$(li)When executing a program, the $(item)Programmable Controller/$ will use air at a rate of 10mL/tick (whereas Drones only use 1mL/tick)."
-    },
-    {
-      "type": "text",
-      "text": "$(li)The $(item)Programmable Controller/$ cannot execute the following widgets: Computer Piece, Entity Attack, Drone Condition: Entity, Entity Export, Entity Import, Teleport, Standby, Suicide.$(p)The $(item)Programmable Controller/$ is generally best suited to larger applications, such as excavating big areas or building large structures."
-    },
-    {
-      "type": "text",
-      "title": "Interfacing Items/Fluids",
-      "text": "Any items or fluids that the $(thing)minidrone/$ collects can be interfaced via the sides of the $(item)Programmable Controller/$ block.$(p)By default, the 'drone' has a single inventory slot, and a 16000mB tank. The inventory size can be increased by adding $(l:base_concepts/upgrades#inventory)Inventory Upgrades/$ (max 35), which also increases the tank size by 1000mB per upgrade."
-    },
-    {
-      "type": "text",
-      "title": "Interfacing (cont.)",
-      "text": "By default, the top & side faces of the $(item)Programmable Controller/$ can be used to interface with items, and the bottom face can be used to insert or remove programmable items, but this can be adjusted if desired via the $(bold)Side Configuration/$ GUI tab.$(p)All faces of the $(item)Programmable Controller/$ can always be used to interface fluids."
-    },
-    {
-      "type": "text",
-      "title": "Charging Items",
-      "text": "The Programmable Controller is capable of $(thing)charging/$ the minidrone's held item, i.e. the item in slot 0 of the drone's inventory. This includes both pressurizable items such as the $(l:tools/jackhammer)Jackhammer/$, and items using $(thing)Forge Energy/$. Air and/or FE from the Programmable Controller's own buffers is used to do this. Charging is disabled by default; enable it via the controller's GUI ($(thing)Held Item Charging/$ side tab)."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Programmable Controller",
-      "recipe": "pneumaticcraft:programmable_controller"
-    }
-  ]
+    "name": "可编程控制器",
+    "icon": "pneumaticcraft:programmable_controller",
+    "category": "pneumaticcraft:programming",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "可编程控制器能做的事情与$l:tools/drone无人机/$非常相似.程序可以在$l:programming/programmer编程器/$中编写,并保存到$item无人机/$或$l:components/network_components#network_api网络API/$中.这两个物品中的任何一个都可以放入$item可编程控制器/$中.只要$l:base_concepts/pressure压力/$足够,$item可编程控制器/$就会执行程序,就像编程在$item无人机/$上一样."
+        },
+        {
+            "type": "text",
+            "text": "不过,有几点不同:$li$item可编程控制器/$使用的是$item无人机/$的微型版本——$thing微型无人机/$.它不是一个真实的实体,因此不涉及寻路,$thing微型无人机/$可以穿过墙壁.这使得它对服务器更友好,且在总体上更可靠.$li执行程序时,$item可编程控制器/$将以每刻10毫升的速率消耗空气而无人机仅消耗1毫升/刻."
+        },
+        {
+            "type": "text",
+            "text": "$li$item可编程控制器/$不能执行以下小部件:计算机部件、实体攻击、无人机条件:实体、实体导出、实体导入、传送、待机、自杀.$p$item可编程控制器/$通常最适合大型应用,如挖掘大面积区域或建造大型结构."
+        },
+        {
+            "type": "text",
+            "title": "物品/流体接口",
+            "text": "$thing微型无人机/$收集的任何物品或流体都可以通过$item可编程控制器/$块的侧面进行接口.$p默认情况下,'无人机'有一个库存槽和一个16000mB的储罐.通过添加$l:base_concepts/upgrades#inventory库存升级/$最多35个,可以增加库存大小,每个升级还会增加1000mB的储罐大小."
+        },
+        {
+            "type": "text",
+            "title": "接口续",
+            "text": "默认情况下,$item可编程控制器/$的顶部和侧面可以用于物品接口,底部可以用于插入或移除可编程物品,但可以通过$bold侧面配置/$GUI选项卡进行调整.$p$item可编程控制器/$的所有面始终可以用于流体接口."
+        },
+        {
+            "type": "text",
+            "title": "充电物品",
+            "text": "可编程控制器能够为迷你无人机的手持物品即无人机物品栏中第0格的物品进行$thing充电/$.这包括可加压物品,如$l:tools/jackhammer风钻/$,以及使用$thing锻造能量/$的物品.充电过程使用可编程控制器自身的缓冲区中的空气和/或FE.默认情况下,充电功能是禁用的；可通过控制器的GUI$thing手持物品充电/$侧边栏启用它."
+        },
+        {
+            "type": "crafting",
+            "text": "制作可编程控制器",
+            "recipe": "pneumaticcraft:programmable_controller"
+        }
+    ]
 }

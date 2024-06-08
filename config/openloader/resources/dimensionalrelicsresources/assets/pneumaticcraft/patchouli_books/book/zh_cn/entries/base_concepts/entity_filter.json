@@ -1,50 +1,50 @@
 {
-  "name": "Entity Filters",
-  "icon": "minecraft:player_head",
-  "category": "pneumaticcraft:base_concepts",
-  "pages": [
-    {
-      "type": "text",
-      "text": "$(thing)Entity Filters/$ are used in several places in $(pncr), where there is a need to specify which $(thing)Entities/$ a machine or tool should affect in some way.$(p)In most places where a filter can be entered, pop-up help can be shown by pressing & holding the $(thing)F1/$ key."
-    },
-    {
-      "type": "text",
-      "text": "To match entities by their entity type, just specify the type name (e.g. $(#800)creeper/$ matches $(thing)minecraft:creeper/$. To match an entity with a custom name (including players), quote the entity name, e.g. $(#800)'Minemaarten'/$ or $(#800)'desht'/$.$(p)When you want to specify a certain entity $(italic)type/$ (e.g., animals, aggressive mobs, players in general), put a '@' in front. A full list of examples, including accepted $(thing)@ Specifiers/$, follows."
-    },
-    {
-      "type": "text",
-      "title": "Examples",
-      "text": "$(li)$(#800)@player/$ matches all players$(li)$(#800)@mob/$ matches all aggressive creatures$(li)$(#800)@animal/$ matches all passive creatures (animals)$(li)$(#800)@animal(age = adult)/$ matches all adult animals$(li)$(#800)@animal(age = baby)/$ matches all baby animals$(li)$(#800)@animal(breedable = yes)/$ matches all animals that can breed right now$(li)$(#800)sheep(shearable = yes)/$ matches all sheep which can be sheared"
-    },
-    {
-      "type": "text",
-      "title": "Examples (cont.)",
-      "text": "$(li)$(#800)sheep(shearable = yes,color = black)/$ matches all black sheep which can be sheared$(li)$(#800)wolf(color = blue)/$ matches all wolves/dogs with a blue collar. $(li)$(#800)cat(color = white)/$ matches all cats with a white collar.$(li)$(#800)@minecart/$ matches Minecarts$(li)$(#800)@boat/$ matches Boats$(li)$(#800)@living/$ matches all living entities$(li)$(#800)@item/$ matches item entities$(li)$(#800)@orb/$ matches experience orbs"
-    },
-    {
-      "type": "text",
-      "title": "Examples (cont.)",
-      "text": "$(li)$(#800)@drone/$ matches $(l:tools/drone)Drones/$$(li)$(#800)@mob(mod=minecraft)/$ matches mobs, but only from the $(thing)minecraft/$ namespace$(li)$(#800)Creeper/$ matches creepers$(li)$(#800)'MineMaarten'/$ (or $(#800)\"Minemaarten\"/$) matches an entity named 'MineMaarten'$(li)$(#800)c*/$ matches any entity starting with the letter 'c' (like Creepers, or Cows). $(li)$(#800)*pig*/$ matches any entity that includes 'pig' in the name (like a Pig or Zombie Pigman)."
-    },
-    {
-      "type": "text",
-      "text": "$(li)(#800)@player(team=team1)/$ matches players on scoreboard team \"team1\"$(p)All matches are case-insensitive, e.g. both $(#800)zombie/$ and $(#800)Zombie/$ will match zombies.$(p)You can specify a $(thing)sequence/$ of filters with the ';' (semicolon) separator - this is a $(italic)match any/$ function:$(li)$(#800)creeper;zombie/$ matches both Creepers $(italic)and/$ Zombies."
-    },
-    {
-      "type": "text",
-      "text": "You can prefix a filter with '!' to negate the filter:$(li)$(#800)!@player/$ matches anything that is $(italic)not/$ a player$(li)$(#800)!Creeper;Zombie/$ matches anything that is neither a Creeper $(italic)nor/$ a Zombie$(li)$(#800)Creeper;!Zombie/$ is $(#f00)invalid/$: '!' can only go right at the start of a filter/$$(p)$(bold)Note:/$ for $(l:tools/drone)Drone/$ entity filters using the $(l:programming/text)Text/$ programming widget, '!' is not supported; connect the Text widget on the left, as normal."
-    },
-    {
-      "type": "relations",
-      "entries": [
-        "pneumaticcraft:tools/micromissiles",
-        "pneumaticcraft:tubes/air_grate_module",
-        "pneumaticcraft:armor/pneumatic_helmet",
-        "pneumaticcraft:machines/sentry_turret",
-        "pneumaticcraft:machines/universal_sensor",
-        "pneumaticcraft:programming/text"
-      ],
-      "text": "$(italic)Machines & tools which use entity filtering/$"
-    }
-  ]
+    "name": "实体过滤器",
+    "icon": "minecraft:player_head",
+    "category": "pneumaticcraft:base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing实体过滤器/$ 在 $pncr 中的多个地方被使用,用于指定机器或工具应该以某种方式影响哪些 $thing实体/$.$p在大多数可以输入过滤器的地方,通过按住 $thingF1/$ 键可以显示弹出帮助."
+        },
+        {
+            "type": "text",
+            "text": "要通过实体类型匹配实体,只需指定类型名称例如 $#800爬行者/$ 匹配 $thingminecraft:爬行者/$.要匹配具有自定义名称的实体包括玩家,请引用实体名称,例如 $#800'Minemaarten'/$ 或 $#800'desht'/$.$p当你想要指定特定实体 $italic类型/$例如,动物、敌对生物、一般玩家时,在前面加上 '@'.以下是包括接受的 $thing@ 限定符/$ 的完整示例列表."
+        },
+        {
+            "type": "text",
+            "title": "示例",
+            "text": "$li$#800@玩家/$ 匹配所有玩家$li$#800@生物/$ 匹配所有敌对生物$li$#800@动物/$ 匹配所有被动生物动物$li$#800@动物年龄 = 成年/$ 匹配所有成年动物$li$#800@动物年龄 = 幼年/$ 匹配所有幼年动物$li$#800@动物可繁殖 = 是/$ 匹配所有当前可繁殖的动物$li$#800羊可剪毛 = 是/$ 匹配所有可剪毛的羊"
+        },
+        {
+            "type": "text",
+            "title": "示例续",
+            "text": "$li$#800羊可剪毛 = 是, 颜色 = 黑色/$ 匹配所有可剪毛的黑色羊$li$#800狼颜色 = 蓝色/$ 匹配所有带有蓝色项圈的狼/狗. $li$#800猫颜色 = 白色/$ 匹配所有带有白色项圈的猫.$li$#800@矿车/$ 匹配矿车$li$#800@船/$ 匹配船$li$#800@生物/$ 匹配所有生物实体$li$#800@物品/$ 匹配物品实体$li$#800@经验球/$ 匹配经验球"
+        },
+        {
+            "type": "text",
+            "title": "示例续",
+            "text": "$li$#800@无人机/$ 匹配 $l:工具/无人机无人机/$$li$#800@生物模组=minecraft/$ 匹配生物,但仅来自 $thingminecraft/$ 命名空间$li$#800爬行者/$ 匹配爬行者$li$#800'MineMaarten'/$或 $#800\"Minemaarten\"/$匹配名为 'MineMaarten' 的实体$li$#800c*/$ 匹配任何以字母 'c' 开头的实体如爬行者或牛. $li$#800*猪*/$ 匹配任何名称中包含 '猪' 的实体如猪或僵尸猪人."
+        },
+        {
+            "type": "text",
+            "text": "$li#800@playerteam=team1/$ 匹配计分板队伍\"team1\"中的玩家$p所有匹配不区分大小写,例如 $#800zombie/$ 和 $#800Zombie/$ 都将匹配僵尸.$p您可以使用分号';'指定一系列过滤器 - 这是一个 $italic任意匹配/$ 功能:$li$#800creeper;zombie/$ 匹配爬行者和僵尸."
+        },
+        {
+            "type": "text",
+            "text": "您可以在过滤器前加'!'来否定过滤器:$li$#800!@player/$ 匹配非玩家实体$li$#800!Creeper;Zombie/$ 匹配既不是爬行者也不是僵尸的实体$li$#800Creeper;!Zombie/$ 是 $#f00无效的/$:'!' 只能放在过滤器的最前面.$p$bold注意:/$ 对于使用 $l:programming/textText/$ 编程小部件的 $l:tools/droneDrone/$ 实体过滤器,'!' 不支持；像往常一样将文本小部件连接在左侧."
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "pneumaticcraft:tools/micromissiles",
+                "pneumaticcraft:tubes/air_grate_module",
+                "pneumaticcraft:armor/pneumatic_helmet",
+                "pneumaticcraft:machines/sentry_turret",
+                "pneumaticcraft:machines/universal_sensor",
+                "pneumaticcraft:programming/text"
+            ],
+            "text": "$italic使用实体过滤的机器与工具/$"
+        }
+    ]
 }

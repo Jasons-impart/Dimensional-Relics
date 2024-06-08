@@ -1,25 +1,25 @@
 {
-  "name": "Logistics Core",
-  "icon": "pneumaticcraft:logistics_core",
-  "category": "pneumaticcraft:logistics",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This is a base crafting component for all $(l:logistics/overview)Logistics/$-related items and devices."
-    },
-    {
-      "type": "relations",
-      "entries": [
-        "pneumaticcraft:logistics/frames",
-        "pneumaticcraft:logistics/logistics_drone",
-        "pneumaticcraft:tubes/logistics_module"
-      ]
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Logistics Core",
-      "recipe": "pneumaticcraft:logistics_core"
-    }
-  ]
+    "name": "物流核心",
+    "icon": "pneumaticcraft:logistics_core",
+    "category": "pneumaticcraft:logistics",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这是所有$l:logistics/overview物流/$相关物品和设备的基础制作组件."
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "pneumaticcraft:logistics/frames",
+                "pneumaticcraft:logistics/logistics_drone",
+                "pneumaticcraft:tubes/logistics_module"
+            ]
+        },
+        {
+            "type": "crafting",
+            "text": "制作物流核心",
+            "recipe": "pneumaticcraft:logistics_core"
+        }
+    ]
 }

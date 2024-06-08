@@ -1,38 +1,38 @@
 {
-  "name": "Vacuum Pump",
-  "icon": "pneumaticcraft:vacuum_pump",
-  "category": "pneumaticcraft:machines",
-  "advancement": "pneumaticcraft:pressure_chamber",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(thing)Vacuum Pump/$ is a machine used to create... a vacuum. To do this the machine consumes $(l:base_concepts/pressure)pressurized air/$.$(p)Positive pressure should be applied on the $(#0c0)'+' side/$; when the minimal working pressure is reached, the $(item)Vacuum Pump/$ starts pumping and the pressure on the $(#c00)'-' side/$ drops, to a minimum of -1.0 bar, which is a vacuum."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/patchouli/vacuum_pump.png"
-      ]
-    },
-    {
-      "type": "text",
-      "title": "Applications",
-      "text": "The following uses exist for negative (vacuum) pressure:$(li)Disenchanting: place an $(item)enchanted item/$ or $(item)Enchanted Book/$ with more than one enchantment and a vanilla $(item)Book/$ in a $(l:manufacturing/pressure_chamber)Pressure Chamber/$ and give the chamber sufficient negative pressure. A random enchantment will transfer from the item to the book.$(li)The $(l:tubes/air_grate_module)Air Grate Module/$, when given negative pressure, will attract entities to itself."
-    },
-    {
-      "type": "text",
-      "title": "Applications (cont.)",
-      "text": "$(li)Both the $(l:spawning/vacuum_trap)Vacuum Trap/$ and $(l:spawning/spawner_extractor)Spawner Extractor/$, devices required for making and using $(l:spawning/pressurized_spawner)Pressurized Spawners/$, need negative pressure to operate."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Vacuum Pump",
-      "recipe": "pneumaticcraft:vacuum_pump"
-    },
-    {
-      "type": "pneumaticcraft:pressure_chamber",
-      "header": "Vacuum Disenchanting",
-      "recipe": "pneumaticcraft:pressure_chamber/pressure_chamber_disenchanting"
-    }
-  ]
+    "name": "真空泵",
+    "icon": "pneumaticcraft:vacuum_pump",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:pressure_chamber",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing真空泵/$是一种用于创造真空的机器.为此,机器消耗$l:base_concepts/pressure压缩空气/$.$p应在$#0c0'+'侧/$施加正压；当达到最小工作压力时,$item真空泵/$开始抽气,$#c00'-'侧/$的压力下降,最低可达-1.0巴,即真空状态."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/patchouli/vacuum_pump.png"
+            ]
+        },
+        {
+            "type": "text",
+            "title": "应用",
+            "text": "以下是负压真空的应用:$li附魔解除:将一个$item附魔物品/$或$item附魔书/$含有多个附魔和一个原版$item书/$放入$l:manufacturing/pressure_chamber压力室/$,并给予足够的负压.一个随机附魔将从物品转移到书上.$li当给予负压时,$l:tubes/air_grate_module空气格栅模块/$会吸引实体向其靠近."
+        },
+        {
+            "type": "text",
+            "title": "应用续",
+            "text": "$li制作和使用$l:spawning/pressurized_spawner高压刷怪器/$所需的$l:spawning/vacuum_trap真空陷阱/$和$l:spawning/spawner_extractor刷怪笼提取器/$都需要负压才能运作."
+        },
+        {
+            "type": "crafting",
+            "text": "制作真空泵",
+            "recipe": "pneumaticcraft:vacuum_pump"
+        },
+        {
+            "type": "pneumaticcraft:pressure_chamber",
+            "header": "Vacuum Disenchanting",
+            "recipe": "pneumaticcraft:pressure_chamber/pressure_chamber_disenchanting"
+        }
+    ]
 }

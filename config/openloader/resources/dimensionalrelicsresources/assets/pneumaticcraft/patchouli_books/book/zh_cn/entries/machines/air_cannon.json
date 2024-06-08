@@ -1,22 +1,22 @@
 {
-  "name": "Air Cannon",
-  "icon": "pneumaticcraft:air_cannon",
-  "category": "pneumaticcraft:machines",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Air Cannon/$ is a device you can use to transport items quite some distance, through the air. It uses $(l:base_concepts/pressure)compressed air/$ as propellant.$(p)You will also need a $(l:tools/gps_tool)GPS Tool/$ to aim the $(item)Air Cannon/$ (although the GPS Tool can be removed and re-used once the Cannon is aimed).$(p)A $(#f00)redstone pulse/$ will trigger the Cannon to fire."
-    },
-    {
-      "type": "text",
-      "title": "Upgrades",
-      "text": "With a $(l:base_concepts/upgrades#dispenser)Dispenser Upgrade/$ installed, the $(item)Air Cannon/$ behaves like a vanilla $(item)Dispenser/$ for certain items, e.g. TNT or Fire Charges.$(p)With an $(l:base_concepts/upgrades#entity_tracker)Entity Tracker Upgrade/$, the $(item)Air Cannon/$ will not launch items from its inventory, but instead launch the nearest entity (including you!) when triggered."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting an Air Cannon",
-      "recipe": "pneumaticcraft:air_cannon"
-    }
-  ]
+    "name": "空气炮",
+    "icon": "pneumaticcraft:air_cannon",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item空气炮/$是一种设备,你可以用它通过空气将物品传输相当远的距离.它使用$l:base_concepts/pressure压缩空气/$作为推进剂.$p你还需要一个$l:tools/gps_toolGPS工具/$来瞄准$item空气炮/$尽管一旦炮瞄准,GPS工具可以被移除并重复使用.$p一个$#f00红石脉冲/$将触发炮发射."
+        },
+        {
+            "type": "text",
+            "title": "升级",
+            "text": "安装了$l:base_concepts/upgrades#dispenser发射器升级/$后,$item空气炮/$在处理某些物品如TNT或火焰弹时,其行为类似于原版的$item发射器/$.$p而安装了$l:base_concepts/upgrades#entity_tracker实体追踪器升级/$的$item空气炮/$,在触发时不会发射其库存中的物品,而是发射最近的实体包括玩家自己!."
+        },
+        {
+            "type": "crafting",
+            "text": "制作空气炮",
+            "recipe": "pneumaticcraft:air_cannon"
+        }
+    ]
 }

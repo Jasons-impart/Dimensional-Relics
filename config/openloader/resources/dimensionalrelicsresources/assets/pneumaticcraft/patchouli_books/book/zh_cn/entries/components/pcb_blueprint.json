@@ -1,17 +1,17 @@
 {
-  "name": "PCB Blueprint",
-  "icon": "pneumaticcraft:pcb_blueprint",
-  "category": "pneumaticcraft:components",
-  "advancement": "pneumaticcraft:root",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)PCB Blueprint/$ is a special component, required in the crafting of the $(l:manufacturing/uv_light_box)UV Light Box/$.$(p)It cannot be crafted normally, but must be traded for, usually via the $(l:tools/amadron_tablet)Amadron Tablet/$, but possibly also via $(l:base_concepts/villagers)Mechanic Villagers/$."
-    },
-    {
-      "type": "pneumaticcraft:amadron_trade",
-      "recipe": "pneumaticcraft:amadron/pcb_blueprint",
-      "text": "Trading for the $(item)PCB Blueprint/$."
-    }
-  ]
+    "name": "PCB蓝图",
+    "icon": "pneumaticcraft:pcb_blueprint",
+    "category": "pneumaticcraft:components",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$itemPCB蓝图/$ 是一个特殊的组件,在制作 $l:manufacturing/uv_light_box紫外线灯箱/$ 时需要.$p它不能正常制作,但必须通过交易获得,通常是通过 $l:tools/amadron_tabletAmadron平板/$,但也可能通过 $l:base_concepts/villagers机械村民/$."
+        },
+        {
+            "type": "pneumaticcraft:amadron_trade",
+            "recipe": "pneumaticcraft:amadron/pcb_blueprint",
+            "text": "交易获取 $itemPCB蓝图/$."
+        }
+    ]
 }

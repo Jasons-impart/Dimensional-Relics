@@ -1,24 +1,24 @@
 {
-    "name": "Basic Materials",
+    "name": "基础材料",
     "icon": "pneumaticcraft:ingot_iron_compressed",
     "category": "pneumaticcraft:base_concepts",
     "pages": [
         {
             "type": "text",
-            "text": "$(pncr) does not generate any extra ores in the ground. To get started, you just need $(item)Iron Ingots/$, which you will convert into $(item)Compressed Iron Ingots$(), used in many recipes throughout the mod.$(p)To do this, throw your $(item)Iron Ingots/$ on the ground, and cause a nearby explosion. $(item)TNT/$ will do the trick, but any other explosion works too."
+            "text": "$pncr不会在地面上生成额外的矿石.开始时,你只需要$item铁锭/$,这些铁锭将被转换成$item压缩铁锭/$,用于模组中的许多配方.$p为此,将你的$item铁锭/$扔在地上,并引发附近的爆炸.$itemTNT/$可以完成这个任务,但其他任何爆炸也可以."
         },
         {
             "type": "image",
             "images": [
                 "pneumaticcraft:textures/patchouli/compressed_iron.png"
             ],
-            "text": "$(italic)      Step back/$"
+            "text": "$italic      后退/$"
         },
         {
             "type": "spotlight",
             "anchor": "compressed_iron_ingot",
             "item": "pneumaticcraft:ingot_iron_compressed",
-            "text": "Warning: as a side effect of the explosion you will lose around 20% of your ingots. To avoid this, you can also craft $(item)Compressed Iron Ingots/$ in a $(l:manufacturing/pressure_chamber)Pressure Chamber/$. However, to be able to craft the $(thing)Pressure Chamber/$ itself you'll need some $(item)Compressed Iron Ingots/$, so a little initial loss is unavoidable."
+            "text": "警告:作为爆炸的副作用,你将损失大约20%的锭.为了避免这种情况,你也可以在$l:manufacturing/pressure_chamber压力室/$中制作$item压缩铁锭/$.然而,要制作$thing压力室/$本身,你需要一些$item压缩铁锭/$,因此初始损失是不可避免的."
         },
         {
             "type": "pneumaticcraft:pressure_chamber",
@@ -28,7 +28,7 @@
             "type": "crafting",
             "anchor": "compressed_iron_block",
             "recipe": "pneumaticcraft:compressed_iron_block_from_ingot",
-            "text": "The $(item)Block of Compressed Iron/$ is an excellent $(l:base_concepts/heat)Heat Conductor/$ and can be used to provide more faces to attach $(l:machines/heat_sink)Heat Sinks/$ to heat-producing machines. However, see also $(l:machines/heat_pipe)Heat Pipes/$."
+            "text": "$item压缩铁块/$是一种优秀的$l:base_concepts/heat热导体/$,可以用来为产生热量的机器提供更多面以连接$l:machines/heat_sink散热器/$.不过,也请参阅$l:machines/heat_pipe热管/$."
         },
         {
             "type": "pneumaticcraft:pressure_chamber",

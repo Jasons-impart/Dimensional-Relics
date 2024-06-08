@@ -1,24 +1,24 @@
 {
-  "name": "For Each Coordinate Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/for_each_coordinate.png",
-  "category": "pneumaticcraft:widget_flow",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This advanced widget will loop through every single coordinate in the specified $(l:programming/area)Area/$. For each coordinate, it will set the $(ttcolor)$(t:Right-click the widget to configure the variable)specified variable/$ to that coordinate, and jump to the $(l:programming/label)Label/$ which matches the connected $(l:programming/text)Text/$ widget. When that routine is done executing (when it reaches the end of a program where it would usually jump back to $(l:programming/start)Start/$), it will return to this widget and repeat for the next coordinate."
-    },
-    {
-      "type": "text",
-      "title": "Breaking",
-      "text": "You can break out of the loop by setting the coordinate variable used by the $(thing)For Each Coordinate/$ to any blockpos outside the current world's build height. Next time, when the program jumps back to the $(thing)For Each Coordinate/$, it will notice this and cancel further traversal of coordinates.$(p)$(italic)This behaviour has changed in MC 1.18+ due to new world height functionality; (0,0,0) used to be considered invalid, which was always dubious (void worlds), but even more so now./$"
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/for_each_coordinate.png"
-      ],
-      "text": "$(italic)For Each Coordinate Widget/$"
-    }
-  ]
+    "name": "每坐标循环Widget",
+    "icon": "pneumaticcraft:textures/progwidgets/for_each_coordinate.png",
+    "category": "pneumaticcraft:widget_flow",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这个高级widget将遍历指定 $l:programming/area区域/$ 中的每一个坐标.对于每个坐标,它会将 $ttcolor$t:右键点击widget以配置变量指定的变量/$ 设置为该坐标,并跳转到与连接的 $l:programming/text文本/$ widget 匹配的 $l:programming/label标签/$.当该程序执行完毕当它到达通常会跳回到 $l:programming/start开始/$ 的程序末尾时,它将返回到这个widget并重复下一个坐标."
+        },
+        {
+            "type": "text",
+            "title": "中断",
+            "text": "你可以通过将 $thing每坐标循环/$ 使用的坐标变量设置为当前世界建造高度之外的任何blockpos来中断循环.下次程序跳回到 $thing每坐标循环/$ 时,它将注意到这一点并取消进一步的坐标遍历.$p$italic这种行为在MC 1.18+中由于新的世界高度功能而改变；0,0,0 过去被认为无效,这在空世界中总是可疑的,但现在更是如此."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/for_each_coordinate.png"
+            ],
+            "text": "$italic每坐标循环Widget/$"
+        }
+    ]
 }

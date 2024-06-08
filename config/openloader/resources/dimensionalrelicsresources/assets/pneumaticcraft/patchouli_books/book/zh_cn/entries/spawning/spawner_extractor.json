@@ -1,25 +1,25 @@
 {
-  "name": "Spawner Extractor",
-  "icon": "pneumaticcraft:spawner_extractor",
-  "category": "pneumaticcraft:spawning",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "A $(item)Spawner Extractor/$ is one of the two ways to obtain a $(l:spawning/spawner_core)Spawner Core/$, which you'll need if you want to use a $(l:spawning/pressurized_spawner)Pressurized Spawner/$.$(p)To use the Spawner Extractor, place it on top of a vanilla $(item)Spawner/$, which you'll need to find in the world somewhere."
-    },
-    {
-      "type": "text",
-      "text": "Then, provide the Spawner Extractor with $(thing)-0.5 bar/$ of vacuum or lower, and prepare for a fight. It turns out that Spawners $(italic)really/$ don't like being extracted, and spawn mobs at a greatly increased rate to defend themselves. Some useful tips:$(li)The base extraction time is about 60 seconds.$(li)However, any nearby defending mobs will slow the extraction down, and too many will stall extraction."
-    },
-    {
-      "type": "text",
-      "text": "$(li)There must be at least one player nearby or extraction will stall.$(li)If the $(thing)Spawner/$ isn't able to spawn defenders (e.g. bad light levels, ground missing...), the process will also slow down and eventually stall.$(p)Once extraction is complete, a $(thing)Spawner Core/$ is ejected, and the Spawner becomes an $(item)Empty Spawner/$. This block can (and should) be picked up, since it's used to craft a $(l:spawning/pressurized_spawner)Pressurized Spawner/$."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Spawner Extractor.",
-      "recipe": "pneumaticcraft:spawner_extractor"
-    }
-  ]
+    "name": "刷怪笼提取器",
+    "icon": "pneumaticcraft:spawner_extractor",
+    "category": "pneumaticcraft:spawning",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item刷怪笼提取器/$是获取$l:spawning/spawner_core刷怪笼核心/$的两种方式之一,如果你想要使用$l:spawning/pressurized_spawner高压刷怪笼/$,你会需要它.$p要使用刷怪笼提取器,将其放置在原版$item刷怪笼/$上方,你需要在世界某处找到刷怪笼."
+        },
+        {
+            "type": "text",
+            "text": "然后,为刷怪笼提取器提供$thing-0.5巴/$的真空或更低,并准备战斗.事实证明,刷怪笼$italic真的/$不喜欢被提取,并且以极高的速度生成怪物来保护自己.一些有用的提示:$li基础提取时间大约是60秒.$li然而,任何附近的防御怪物都会减慢提取速度,太多的话会停止提取."
+        },
+        {
+            "type": "text",
+            "text": "$li附近必须至少有一个玩家,否则提取会停止.$li如果$thing刷怪笼/$无法生成防御者例如,光照水平不佳,地面缺失...,过程也会减慢并最终停止.$p一旦提取完成,一个$thing刷怪笼核心/$被弹出,刷怪笼变成一个$item空刷怪笼/$.这个方块可以也应该被捡起,因为它用于制作$l:spawning/pressurized_spawner高压刷怪笼/$."
+        },
+        {
+            "type": "crafting",
+            "text": "制作刷怪笼提取器.",
+            "recipe": "pneumaticcraft:spawner_extractor"
+        }
+    ]
 }

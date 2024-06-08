@@ -1,23 +1,23 @@
 {
-  "name": "Item Assignment Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/item_assign_piece.png",
-  "category": "pneumaticcraft:widget_other",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(thing)Item Assignment/$ widget is an advanced widget that allows you to store an item in a $(l:programming/variables)variable/$. Variables may be either coordinates or items; here we are talking about the latter.$(p)See the $(l:programming/coordinate_operator)Coordinate Operator/$ widget for information about coordinate variables and a general explanation about variables."
-    },
-    {
-      "type": "text",
-      "text": "To store an item in a given $(thing)variable/$, place an $(l:programming/item_filter)Item Filter/$ widget on the $(italic)right-hand/$ side of the $(thing)Item Assignment/$ widget with the desired item. This item will be assigned to the variable, which you specify by $(thing)right-clicking/$ the $(thing)Item Assignment/$ widget. Only the actual item will be transferred from the filter; filter settings are not.$(p)If you omit the $(thing)Item Filter/$ widget, the drone's held item will be assigned to the variable instead."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/item_assign_piece.png"
-      ],
-      "text": "$(italic)Item Assignment Widget/$"
-    }
-  ]
+    "name": "物品分配小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/item_assign_piece.png",
+    "category": "pneumaticcraft:widget_other",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing物品分配/$ 小部件是一个高级小部件,允许您将物品存储在 $l:programming/variables变量/$ 中.变量可以是坐标或物品；这里我们讨论的是后者.$p有关坐标变量和变量的一般说明,请参阅 $l:programming/coordinate_operator坐标操作符/$ 小部件."
+        },
+        {
+            "type": "text",
+            "text": "要将物品存储在给定的 $thing变量/$ 中,请将 $l:programming/item_filter物品过滤器/$ 小部件放置在 $italic右侧/$ 的 $thing物品分配/$ 小部件上,并带有所需的物品.此物品将被分配给变量,您可以通过 $thing右键点击/$ $thing物品分配/$ 小部件来指定.只有实际物品将从过滤器转移；过滤器设置不会.$p如果您省略了 $thing物品过滤器/$ 小部件,无人机的手持物品将被分配给变量."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/item_assign_piece.png"
+            ],
+            "text": "$italic物品分配小部件/$"
+        }
+    ]
 }

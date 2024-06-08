@@ -1,29 +1,29 @@
 {
-  "name": "Harvest Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/harvest_piece.png",
-  "category": "pneumaticcraft:widget_interact",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The Drone will harvest any fully grown crop or tree within the specified $(l:programming/area)area/$. Items that are dropped from the crop blocks are $(italic)not/$ picked up; either add a separate $(l:programming/pickup_item)Pick Up Item/$ widget, or use some alternate means of collecting the items, such as a separate $(item)Drone/$.$(p)You can connect an optional $(l:programming/item_filter)Item Filter/$ to limit which crops will be harvested (use the crop's seed to filter)."
-    },
-    {
-      "type": "text",
-      "title": "Tools",
-      "text": "You can make the $(item)Drone/$  $(l:programming/inventory_import)import/$ a $(item)Hoe/$. When equipped with a Hoe, crops will automatically be replanted (this uses durability from the Hoe).$(p)You can force the $(item)Drone/$ to $(italic)only/$ harvest when carrying a Hoe by checking the $(item)Requires Hoe/$ checkbox in the widget setup GUI; then, if/when the Hoe breaks, the drone can get another one before continuing to harvest."
-    },
-    {
-      "type": "text",
-      "title": "Limiting Blocks Harvested",
-      "text": "The amount of harvest actions can be limited to a specified amount by $(thing)right-clicking/$ the $(thing)Harvest/$ widget.$(p)If set to 1 for example, the $(item)Drone/$ will only harvest one block each time the widget is executed, and move on to the next widget after harvesting that one block."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/harvest_piece.png"
-      ],
-      "text": "$(italic)Get off my land/$"
-    }
-  ]
+    "name": "收割小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/harvest_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "无人机将在指定的$l:programming/area区域/$内收割任何完全成熟的作物或树木.从作物方块掉落的物品$italic不会/$被捡起；请添加一个单独的$l:programming/pickup_item捡起物品/$小部件,或使用其他方式收集物品,例如另一台$item无人机/$.$p您可以连接一个可选的$l:programming/item_filter物品过滤器/$来限制将收割哪些作物使用作物的种子进行过滤."
+        },
+        {
+            "type": "text",
+            "title": "工具",
+            "text": "您可以使$item无人机/$ $l:programming/inventory_import导入/$一个$item锄头/$.当装备有锄头时,作物将自动重新种植这会消耗锄头的耐久度.$p您可以通过在部件设置GUI中勾选$item需要锄头/$复选框,强制无人机$italic仅在/$携带锄头时进行收割；然后,如果/当锄头损坏,无人机可以在继续收割前获取另一个锄头."
+        },
+        {
+            "type": "text",
+            "title": "限制收割的方块",
+            "text": "通过$thing右击/$或使用$thing收获/$小部件,可以将收获行动的数量限制为指定数量.例如,如果设置为1,则每次执行小部件时,$item无人机/$将只收获一个方块,并在收获该方块后移动到下一个小部件."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/harvest_piece.png"
+            ],
+            "text": "$italic离开我的土地/$"
+        }
+    ]
 }

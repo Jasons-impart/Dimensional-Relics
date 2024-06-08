@@ -1,17 +1,17 @@
 {
-  "name": "Tube Junction",
-  "icon": "pneumaticcraft:tube_junction",
-  "category": "pneumaticcraft:tubes",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "A $(thing)Tube Junction/$ is a very simple device which allows two $(l:tubes/pressure_tubes)Pressure Tubes/$ (of any $(l:base_concepts/pressure_tiers)pressure tier/$) to cross each other without connecting."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Tube Junction",
-      "recipe": "pneumaticcraft:tube_junction"
-    }
-  ]
+    "name": "管道接头",
+    "icon": "pneumaticcraft:tube_junction",
+    "category": "pneumaticcraft:tubes",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing管道接头/$是一种非常简单的设备,允许两个$l:tubes/pressure_tubes压力管道/$任何$l:base_concepts/pressure_tiers压力等级/$交叉而不连接."
+        },
+        {
+            "type": "crafting",
+            "text": "制作管道接头",
+            "recipe": "pneumaticcraft:tube_junction"
+        }
+    ]
 }

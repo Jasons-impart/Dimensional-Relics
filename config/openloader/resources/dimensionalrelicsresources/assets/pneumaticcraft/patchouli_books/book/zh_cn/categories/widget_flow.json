@@ -1,7 +1,7 @@
 {
-  "name": "Flow Control Widgets",
-  "description": "Widgets that affect the program flow.",
-  "icon": "pneumaticcraft:textures/progwidgets/start_piece.png",
-  "parent": "pneumaticcraft:programming",
-  "sortnum": 1
+    "name": "流程控制小部件",
+    "description": "影响程序流程的小部件.",
+    "icon": "pneumaticcraft:textures/progwidgets/start_piece.png",
+    "parent": "pneumaticcraft:programming",
+    "sortnum": 1
 }

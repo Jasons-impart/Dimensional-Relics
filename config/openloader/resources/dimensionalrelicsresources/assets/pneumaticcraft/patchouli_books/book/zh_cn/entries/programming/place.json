@@ -1,29 +1,29 @@
 {
-  "name": "Place Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/place_piece.png",
-  "category": "pneumaticcraft:widget_interact",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(l:tools/drone)Drone/$ will place blocks from its inventory in the world. It will place blocks in the $(l:programming/area)area/$ specified, starting with locations that are closest to it.$(p)You can control the order in which blocks are placed: $(thing)Right-click/$ the widget to specify if the $(item)Drone/$ should place blocks layer by layer, and if so from top to bottom or vice versa."
-    },
-    {
-      "type": "text",
-      "title": "Limiting the Place Count",
-      "text": "The number of place actions can be limited to a specified amount by $(thing)right-clicking/$ the widget. If set to 1 for example, the $(item)Drone/$ will only place one block, and the widget is considered done after placing that one block.$(p)If no limit is set, the widget is only considered done when unable to place any more blocks."
-    },
-    {
-      "type": "text",
-      "title": "Filtering",
-      "text": "Finally, you can specify which blocks from the $(item)Drone's/$ inventory may be placed by connecting an $(l:programming/item_filter)Item Filter/$ widget. Connect on the $(italic)right/$ to whitelist items, and on the $(italic)left/$ to blacklist items."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/place_piece.png"
-      ],
-      "text": "$(italic)Place Widget/$"
-    }
-  ]
+    "name": "放置部件",
+    "icon": "pneumaticcraft:textures/progwidgets/place_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "无人机将从其库存中在世界中放置方块.它将在指定的区域内放置方块,从离它最近的位置开始.$p您可以控制放置方块的顺序:$thing右键点击/$部件以指定无人机是否应逐层放置方块,以及是从上到下还是反之."
+        },
+        {
+            "type": "text",
+            "title": "限制放置数量",
+            "text": "通过$thing右键点击/$部件,可以将放置动作的数量限制为指定数量.例如,如果设置为1,无人机将只放置一个方块,放置完该方块后,部件被视为完成.$p如果没有设置限制,只有当无法再放置任何方块时,部件才被视为完成."
+        },
+        {
+            "type": "text",
+            "title": "过滤",
+            "text": "最后,您可以通过连接一个物品过滤器部件来指定无人机库存中的哪些方块可以被放置.在$italic右侧/$连接以白名单方式,在$italic左侧/$连接以黑名单方式."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/place_piece.png"
+            ],
+            "text": "$italic放置部件/$"
+        }
+    ]
 }

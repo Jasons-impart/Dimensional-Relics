@@ -1,26 +1,26 @@
 {
-  "name": "Tag Workbench",
-  "icon": "pneumaticcraft:tag_workbench",
-  "category": "pneumaticcraft:machines",
-  "advancement": "pneumaticcraft:logistics_frame",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Tag Workbench/$ is used to produce $(item)Tag Filters/$, which are used to filter items by their $(l:https://minecraft.gamepedia.com/Tag)item tags/$. E.g. treat all logs as the same item when filtering. Tag Filters can be placed in $(l:logistics/frames)Logistic Frame/$ filters, as well as $(l:programming/item_filter)Item Filter/$ programming widgets as used by Drones, and will match any item that has an item tag from the Tag Filter's list."
-    },
-    {
-      "type": "text",
-      "title": "Usage",
-      "text": "Right-click the workbench to open its GUI.$(li)Insert any item in the leftmost slot; if it has any item tags, they will be displayed in the left-hand list, just below the item.$(li)Select one or more tags by double-clicking them (or clicking the '>' button), and they will be added to the right-hand list.$(li)Add some paper to the middle slot."
-    },
-    {
-      "type": "text",
-      "text": "$(li)Click the Book & Quill button to write the selected tags. A piece of paper will be used, and a $(item)Tag Filter/$ will be produced in the right-hand slot.$(p)The paper slot will also accept a previously-written Tag Filter; this can be useful if you want to edit the tags on an existing Tag Filter."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Tag Workbench",
-      "recipe": "pneumaticcraft:tag_workbench"
-    }
-  ]
+    "name": "标签工作台",
+    "icon": "pneumaticcraft:tag_workbench",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:logistics_frame",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item标签工作台/$用于生产$item标签过滤器/$,这些过滤器根据$l:https://minecraft.gamepedia.com/Tag物品标签/$来过滤物品.例如,在过滤时将所有原木视为同一物品.标签过滤器可以放置在$l:logistics/frames物流框架/$的过滤器中,以及$l:programming/item_filter物品过滤器/$编程小部件中,无人机使用这些小部件,并将匹配任何具有标签过滤器列表中物品标签的物品."
+        },
+        {
+            "type": "text",
+            "title": "使用方法",
+            "text": "右键点击工作台以打开其GUI.$li将任何物品放入最左侧的槽中；如果它有任何物品标签,它们将显示在物品下方的左侧列表中.$li通过双击标签或点击'>'按钮选择一个或多个标签,它们将被添加到右侧列表中.$li在中间槽中添加一些纸张."
+        },
+        {
+            "type": "text",
+            "text": "$li点击书与笔按钮以记录所选标签.将使用一张纸,并在右侧槽中生成一个$item标签过滤器/$.$p纸张槽也接受先前写入的标签过滤器；如果你想编辑现有标签过滤器的标签,这可能很有用."
+        },
+        {
+            "type": "crafting",
+            "text": "制作标签工作台",
+            "recipe": "pneumaticcraft:tag_workbench"
+        }
+    ]
 }

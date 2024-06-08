@@ -1,21 +1,21 @@
 {
-  "name": "Pressurized Spawner",
-  "icon": "pneumaticcraft:pressurized_spawner",
-  "category": "pneumaticcraft:spawning",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "A $(item)Pressurized Spawner/$ is a powerful device which uses $(l:base_concepts/pressure)pressure/$ to spawn mobs. It doesn't care about light levels or player proximity, and can be enabled/disabled via redstone.$(p)To use a Pressurized Spawner, you will need a $(l:spawning/spawner_core)Spawner Core/$ containing some captured mob essence, and at least 10 bar of pressure."
-    },
-    {
-      "type": "text",
-      "text": "When a Core contains multiple mob essences, a random mob will be picked. E.g. if your Core is 50% zombie, 25% creeper, and 25% empty, then on each spawn attempt, you have a 50% chance of a zombie, 25% for a creeper, and 25% for nothing at all.$(p)Air is still used if nothing spawns, so partially empty Cores are not very efficient (but then again, a Core with a 50% chance of a rare mob is better than no Core at all...)"
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Pressurized Spawner.",
-      "recipe": "pneumaticcraft:pressurized_spawner"
-    }
-  ]
+    "name": "压力生成器",
+    "icon": "pneumaticcraft:pressurized_spawner",
+    "category": "pneumaticcraft:spawning",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item压力生成器/$ 是一种强大的设备,它利用 $l:base_concepts/pressure压力/$ 来生成生物.它不关心光照水平或玩家接近,并且可以通过红石启用/禁用.$p要使用压力生成器,你需要一个 $l:spawning/spawner_core生成器核心/$,其中包含一些捕获的生物精华,并且至少需要10巴的压力."
+        },
+        {
+            "type": "text",
+            "text": "当核心包含多种生物精华时,将随机选择一种生物.例如,如果你的核心有50%僵尸,25%爬行者,25%空,则在每次生成尝试时,你有50%的几率生成僵尸,25%的几率生成爬行者,25%的几率什么都不生成.$p即使没有生成生物,空气仍然被使用,因此部分空的核心效率不高但话说回来,有50%几率生成稀有生物的核心总比没有核心好..."
+        },
+        {
+            "type": "crafting",
+            "text": "制作压力生成器.",
+            "recipe": "pneumaticcraft:pressurized_spawner"
+        }
+    ]
 }

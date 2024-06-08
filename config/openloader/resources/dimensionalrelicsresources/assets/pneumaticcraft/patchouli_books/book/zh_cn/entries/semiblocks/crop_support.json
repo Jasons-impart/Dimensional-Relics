@@ -1,17 +1,17 @@
 {
-  "name": "Crop Support",
-  "icon": "pneumaticcraft:crop_support",
-  "category": "pneumaticcraft:semiblocks",
-  "advancement": "pneumaticcraft:root",
-  "pages": [
-    {
-      "type": "text",
-      "text": "When placed on farmland with a $(thing)crop/$, this will improve the growth speed of that crop. $(thing)Green particles/$ are emitted to show when the $(item)Crop Support/$ speeds up the growth.$(p)To remove a $(item)Crop Support/$, either break the block underneath it or $(thing)sneak-right-click/$ the block with a $(l:tools/logistics_configurator)Logistics Configurator/$ or another $(item)Crop Support/$."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Crop Support",
-      "recipe": "pneumaticcraft:crop_support"
-    }
-  ]
+    "name": "作物支持",
+    "icon": "pneumaticcraft:crop_support",
+    "category": "pneumaticcraft:semiblocks",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "当放置在有$thing作物/$的耕地上时,这将加快该作物的生长速度.$thing绿色粒子/$会显示何时$item作物支持/$加速了生长.$p要移除一个$item作物支持/$,可以破坏其下方的方块或$thing潜行右击/$该方块,使用$l:tools/logistics_configurator物流配置器/$或其他$item作物支持/$."
+        },
+        {
+            "type": "crafting",
+            "text": "制作作物支持",
+            "recipe": "pneumaticcraft:crop_support"
+        }
+    ]
 }

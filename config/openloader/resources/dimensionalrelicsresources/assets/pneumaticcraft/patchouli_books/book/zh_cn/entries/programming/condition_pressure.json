@@ -1,19 +1,19 @@
 {
-  "name": "Condition: Pressure Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/condition_pressure_piece.png",
-  "category": "pneumaticcraft:widget_cond",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This is a $(l:programming/conditions)Condition/$ widget.$(p)The $(thing)Condition: Pressure/$ widget allows you to (remotely) check if the $(l:base_concepts/pressure)pressure/$ of the pneumatic block(s) in the connected $(l:programming/area)Area/$ widget matches the configured pressure threshold."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/condition_pressure_piece.png"
-      ],
-      "text": "$(italic)Condition: Pressure Widget/$"
-    }
-  ]
+    "name": "条件:压力小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/condition_pressure_piece.png",
+    "category": "pneumaticcraft:widget_cond",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这是一个$l:programming/conditions条件/$小部件.$p该$thing条件:压力/$小部件允许你远程检查连接的$l:programming/area区域/$小部件中的气动块的压力是否与配置的压力阈值相匹配."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/condition_pressure_piece.png"
+            ],
+            "text": "$italic条件:压力小部件/$"
+        }
+    ]
 }

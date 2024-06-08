@@ -1,30 +1,30 @@
 {
-  "name": "Regulator Module",
-  "icon": "pneumaticcraft:regulator_tube_module",
-  "category": "pneumaticcraft:tubes",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The Regulator Tube Module is an $(l:tubes/tube_modules#inline)inline/$ module used to limit the $(l:base_concepts/pressure)pressure/$ allowed through the tube. By default, the module will regulate the pressure to 4.9 bar (for both basic and advanced tubes) with no redstone signal, reducing toward 0 as the signal rises toward 15. This means a lever right beside a regulator closes it, preventing any air flow through it."
-    },
-    {
-      "type": "text",
-      "text": "When the narrow side of the regulator reaches this pressure, no more air will be allowed through the tube. This principal can be used as a $(thing)transformer/$: on the input (wide) side is high-pressure air, but the Regulator Tube limits the pressure on the output to the threshold pressure.$(p)This allows a lower tier tube network to be safely supplied by a higher-tier network."
-    },
-    {
-      "type": "text",
-      "text": "Interestingly, the $(thing)Regulator Module/$ allows unrestricted flow of air in the opposite direction (from the narrow side to the wide side) regardless of the redstone signal; this means a regulator with a full redstone signal can be used as a one-way valve.$(p)Note that the $(thing)Regulator/$ does $(italic)not/$ actively reduce pressure on its narrow side; it only prevents air flow if the pressure would rise above the threshold."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:module_expansion_card",
-      "text": "Applying a $(l:tubes/module_expansion_card)Module Expansion Card/$ to the Regulator Module unlocks a GUI providing far more control over the threshold level. You can set a precise threshold in the GUI, or (with the $(bold)Advanced Config/$ checkbox) configure interpolated threshold levels based on the redstone signal. This works exactly like the $(l:tubes/safety_module)Safety Module/$."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Regulator Module",
-      "recipe": "pneumaticcraft:regulator_tube_module"
-    }
-  ]
+    "name": "调节器模块",
+    "icon": "pneumaticcraft:regulator_tube_module",
+    "category": "pneumaticcraft:tubes",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "调节器管道模块是一种$l:tubes/tube_modules#inline内联/$模块,用于限制管道中的$l:base_concepts/pressure压力/$.默认情况下,模块在没有红石信号时将压力调节至4.9巴适用于基本和高级管道,随着信号强度增加,压力逐渐降至0.这意味着紧邻调节器的拉杆会关闭它,阻止任何空气流动."
+        },
+        {
+            "type": "text",
+            "text": "当调节器的窄侧达到此压力时,管道将不再允许更多空气通过.这一原理可用作$thing变压器/$:输入宽侧为高压空气,但调节器管道将输出侧的压力限制在阈值压力.$p这使得低级管道网络能安全地由高级网络供应."
+        },
+        {
+            "type": "text",
+            "text": "有趣的是,$thing调节器模块/$允许空气无限制地从窄侧向宽侧流动,无论红石信号如何；这意味着一个接收到完整红石信号的调节器可以作为单向阀使用.$p注意,$thing调节器/$不会主动降低其窄侧的压力；只有在压力超过阈值时,它才会阻止空气流动."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:module_expansion_card",
+            "text": "将$l:tubes/module_expansion_card模块扩展卡/$应用于调节器模块可以解锁一个GUI,提供对阈值水平的更多控制.您可以在GUI中设置精确的阈值,或者通过勾选$bold高级配置/$复选框根据红石信号配置插值阈值.这与$l:tubes/safety_module安全模块/$的工作原理完全相同."
+        },
+        {
+            "type": "crafting",
+            "text": "制作调节器模块",
+            "recipe": "pneumaticcraft:regulator_tube_module"
+        }
+    ]
 }

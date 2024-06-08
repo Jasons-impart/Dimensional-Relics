@@ -1,47 +1,47 @@
 {
-  "name": "Printed Circuit Boards",
-  "icon": "pneumaticcraft:printed_circuit_board",
-  "category": "pneumaticcraft:components",
-  "advancement": "pneumaticcraft:plastic",
-  "pages": [
-    {
-      "type": "text",
-      "text": "$(item)Printed Circuit Boards/$ (PCB's) are important components used in many higher tier machines and tools. Making a $(item)PCB/$ requires a few steps.$(p)First of all, make an $(item)Empty PCB/$ in the $(l:manufacturing/pressure_chamber)Pressure Chamber/$ as shown opposite. There are then two methods to proceed (see overleaf)."
-    },
-    {
-      "type": "pneumaticcraft:pressure_chamber",
-      "recipe": "pneumaticcraft:pressure_chamber/empty_pcb"
-    },
-    {
-      "type": "text",
-      "title": "Method #1",
-      "text": "This method is the only one available initially, and is somewhat slow without extra automation and heating infrastructure: you can develop a $(item)PCB/$ chemically by putting it in a $(l:manufacturing/uv_light_box)UV Light Box/$ and then putting the exposed $(item)Empty PCB/$ in an $(l:manufacturing/etching_tank)Etching Tank/$ to turn it into an $(item)Unassembled PCB/$."
-    },
-    {
-      "type": "blasting",
-      "title": "Recycling Failed PCB's",
-      "recipe": "pneumaticcraft:empty_pcb_from_failed_pcb",
-      "text": "The etching process has a chance of failure if the $(item)Empty PCB/$ was not 100% exposed in the $(l:manufacturing/uv_light_box)UV Light Box/$; you can recycle $(item)Failed PCB's/$ in a $(item)Blast Furnace/$."
-    },
-    {
-      "type": "spotlight",
-      "title": "Method #2",
-      "item": "pneumaticcraft:assembly_controller",
-      "text": "Once you can make an $(l:manufacturing/assembly_system)Assembly System/$, you can use that to turn $(item)Empty PCB's/$ directly into $(item)Unassembled PCB's/$ with an $(item)Assembly Program: Laser/$. There's no need to expose it in a $(item)UV Light Box/$ or use an $(item)Etching Tank/$ in this case."
-    },
-    {
-      "type": "text",
-      "title": "Method #2 (cont)",
-      "text": "$(p)The Assembly System is a very convenient and reasonably quick option for producing $(item)Unassembled PCB's/$; however with sufficient automation and heating infrastructure, the $(thing)UV Light Box/Etching Tank/$ combo can be much quicker, especially if you need to mass-produce PCB's."
-    },
-    {
-      "type": "pneumaticcraft:assembly_system",
-      "recipe": "pneumaticcraft:assembly/unassembled_pcb"
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:printed_circuit_board",
-      "text": "Finally, you can add some $(l:components/capacitor)Capacitors/$ and $(l:components/transistor)Transistors/$ to assemble the finished $(item)Printed Circuit Board/$!"
-    }
-  ]
+    "name": "印刷电路板",
+    "icon": "pneumaticcraft:printed_circuit_board",
+    "category": "pneumaticcraft:components",
+    "advancement": "pneumaticcraft:plastic",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item印刷电路板/$ PCB's 是许多高级机器和工具中使用的重要组件.制作一个 $itemPCB/$ 需要几个步骤.$p首先,在 $l:manufacturing/pressure_chamber压力室/$ 中制作一个 $item空PCB/$,如图所示.接下来有两种方法可以继续见下一页."
+        },
+        {
+            "type": "pneumaticcraft:pressure_chamber",
+            "recipe": "pneumaticcraft:pressure_chamber/empty_pcb"
+        },
+        {
+            "type": "text",
+            "title": "方法 #1",
+            "text": "这是最初唯一可用的方法,如果没有额外的自动化和加热设施,这种方法相对较慢:你可以通过将 $item空PCB/$ 放入 $l:manufacturing/uv_light_box紫外线灯箱/$ 中,然后将暴露的 $item空PCB/$ 放入 $l:manufacturing/etching_tank蚀刻槽/$ 中,将其化学转化为 $item未组装PCB/$."
+        },
+        {
+            "type": "blasting",
+            "title": "回收失败的PCB",
+            "recipe": "pneumaticcraft:empty_pcb_from_failed_pcb",
+            "text": "如果 $item空PCB/$ 在 $l:manufacturing/uv_light_box紫外线灯箱/$ 中未完全暴露,蚀刻过程有可能失败；你可以在 $item高炉/$ 中回收 $item失败的PCB/$."
+        },
+        {
+            "type": "spotlight",
+            "title": "方法 #2",
+            "item": "pneumaticcraft:assembly_controller",
+            "text": "一旦你能制作 $l:manufacturing/assembly_system装配系统/$,你就可以使用该系统将 $item空PCB/$ 直接转换为 $item未组装PCB/$,使用 $item装配程序:激光/$.在这种情况下,无需在 $item紫外线灯箱/$ 中暴露或使用 $item蚀刻槽/$."
+        },
+        {
+            "type": "text",
+            "title": "方法 #2续",
+            "text": "$p装配系统是一个非常方便且相对快速的生产 $item未组装PCB/$ 的选项；然而,如果有足够的自动化和加热设施,$thing紫外线灯箱/蚀刻槽/$ 组合可以更快,特别是在需要大量生产PCB时."
+        },
+        {
+            "type": "pneumaticcraft:assembly_system",
+            "recipe": "pneumaticcraft:assembly/unassembled_pcb"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:printed_circuit_board",
+            "text": "最后,你可以添加一些 $l:components/capacitor电容器/$ 和 $l:components/transistor晶体管/$ 来组装完成的 $item印刷电路板/$!"
+        }
+    ]
 }

@@ -1,25 +1,25 @@
 {
-  "name": "Transfer Gadget",
-  "icon": "pneumaticcraft:transfer_gadget",
-  "category": "pneumaticcraft:semiblocks",
-  "advancement": "pneumaticcraft:root",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Transfer Gadget/$ is a rather basic item/fluid transfer item. It can be placed $(italic)between/$ two inventories or tanks to transfer between them. The best way to place it is to first place down one inventory, then right click the side of that block with a $(item)Transfer Gadget/$, then place the second inventory."
-    },
-    {
-      "type": "text",
-      "text": "The Transfer Gadget will have one of two colors:$(li)$(6)Orange/$ - output mode$(li)$(9)Blue/$ - input mode.$(p)An $(6)output mode/$ gadget extracts from the inventory/tank it's placed on, inserting to the neighbouring block, and an $(9)input mode/$ gadget does the opposite. Resources are transferred at a rate of 1 item or 100mB fluid every 2 seconds."
-    },
-    {
-      "type": "text",
-      "text": "$(thing)Right-click/$ the $(item)Transfer Gadget/$ with an empty hand or a $(l:tools/logistics_configurator)Logistics Configurator/$ to toggle input/output mode. $(thing)Sneak+right-click/$ (or left-click - hit) to remove the $(item)Transfer Gadget/$.$(p)Because of its low speed and cheap recipe, this is ideal for early-game item/fluid transfer where space might be limited."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Transfer Gadget",
-      "recipe": "pneumaticcraft:transfer_gadget"
-    }
-  ]
+    "name": "传输工具",
+    "icon": "pneumaticcraft:transfer_gadget",
+    "category": "pneumaticcraft:semiblocks",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item传输工具/$是一个相当基础的物品/流体传输工具.它可以放置$italic在/$两个容器或储罐之间进行传输.最佳放置方式是先放置一个容器,然后用$item传输工具/$右击该方块的一侧,再放置第二个容器."
+        },
+        {
+            "type": "text",
+            "text": "传输装置有两种颜色:$li$6橙色/$ - 输出模式$li$9蓝色/$ - 输入模式.$p一个$6输出模式/$装置会从其放置的物品栏/储罐中提取物品,插入到相邻的方块中,而一个$9输入模式/$装置则相反.资源以每2秒传输1个物品或100mB流体的速率进行转移."
+        },
+        {
+            "type": "text",
+            "text": "$thing右键点击/$ $item传输装置/$ 用空手或$l:tools/logistics_configurator物流配置器/$ 来切换输入/输出模式.$thing潜行+右键点击/$或左键点击 - 击打以移除$item传输装置/$.$p由于其速度较慢且配方成本低廉,这非常适合在空间可能有限的游戏早期进行物品/流体传输."
+        },
+        {
+            "type": "crafting",
+            "text": "制作转移装置",
+            "recipe": "pneumaticcraft:transfer_gadget"
+        }
+    ]
 }

@@ -1,19 +1,19 @@
 {
-  "name": "Entity Export Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/entity_export_piece.png",
-  "category": "pneumaticcraft:widget_interact",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(l:tools/drone)Drone/$ will go to the specified $(l:programming/area)Area/$, and drop the entity it is carrying, provided that it is allowed by an (optional) $(l:base_concepts/entity_filter)Entity Filter/$ specified in a connected $(l:programming/text)Text/$ widget.$(p)See also the $(l:programming/entity_import)Entity Import/$ widget."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/entity_export_piece.png"
-      ],
-      "text": "$(italic)Entity Export Widget/$"
-    }
-  ]
+    "name": "实体导出部件",
+    "icon": "pneumaticcraft:textures/progwidgets/entity_export_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$l:tools/drone无人机/$将前往指定的$l:programming/area区域/$,并丢下它所携带的实体,前提是该操作被连接的$l:programming/text文本/$部件中指定的可选$l:base_concepts/entity_filter实体过滤器/$允许.$p另请参见$l:programming/entity_import实体导入/$部件."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/entity_export_piece.png"
+            ],
+            "text": "$italic实体导出部件/$"
+        }
+    ]
 }

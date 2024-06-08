@@ -1,17 +1,17 @@
 {
-  "name": "Logistics Module",
-  "icon": "pneumaticcraft:logistics_module",
-  "category": "pneumaticcraft:logistics",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "See $(l:tubes/logistics_module)the Logistics Module entry/$ in the $(thing)Pressure Tubes/$ section of the manual for full details."
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:logistics_module",
-      "text": "Crafting a Logistics Module"
-    }
-  ]
+    "name": "物流模块",
+    "icon": "pneumaticcraft:logistics_module",
+    "category": "pneumaticcraft:logistics",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "请参阅$l:tubes/logistics_module物流模块条目/$在手册的$thing压力管道/$部分获取详细信息."
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:logistics_module",
+            "text": "制作物流模块"
+        }
+    ]
 }

@@ -1,17 +1,17 @@
 {
-  "name": "Nuke Virus",
-  "icon": "pneumaticcraft:nuke_virus",
-  "category": "pneumaticcraft:components",
-  "advancement": "pneumaticcraft:root",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This is a special component, only used when trying to hack $(l:machines/security_station)Security Stations/$. It is not craftable and can only be found in dungeon loot, or (rarely) as a villager trade."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:nuke_virus",
-      "text": "Applying a $(thing)Nuke Virus/$ to a node while hacking will nuke the node, hacking it instantly. Note that the Nuke Virus has a 3-second cooldown between repeated uses."
-    }
-  ]
+    "name": "核弹病毒",
+    "icon": "pneumaticcraft:nuke_virus",
+    "category": "pneumaticcraft:components",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这是一个特殊组件,仅在尝试黑入$l:machines/security_station安全站/$时使用.它不可制作,只能从地牢战利品中找到,或极少情况下作为村民交易获得."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:nuke_virus",
+            "text": "在黑客攻击时对节点应用$thing核弹病毒/$将立即黑掉该节点.请注意,核弹病毒在连续使用之间有3秒的冷却时间."
+        }
+    ]
 }

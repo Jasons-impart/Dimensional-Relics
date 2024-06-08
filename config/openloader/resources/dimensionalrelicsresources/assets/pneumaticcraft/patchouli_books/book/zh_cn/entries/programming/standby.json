@@ -1,19 +1,19 @@
 {
-  "name": "Standby Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/standby_piece.png",
-  "category": "pneumaticcraft:widget_flow",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "When this widget is executed, the $(l:tools/drone)Drone/$ will turn off its propellers, and fall from the sky. This widget can be used to save $(l:base_concepts/pressure)air/$, as the Drone doesn't use any air in standby mode.$(p)The $(thing)Drone/$ will continue executing other widgets, though; as soon as it executes any widget which makes it do some actual work, the $(thing)Drone/$ will turn on its propellers again."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/standby_piece.png"
-      ],
-      "text": "$(italic)Sleeping Beauty/$"
-    }
-  ]
+    "name": "待机小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/standby_piece.png",
+    "category": "pneumaticcraft:widget_flow",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "当执行此小部件时,$l:tools/drone无人机/$将关闭其螺旋桨并从空中坠落.此小部件可用于节省$l:base_concepts/pressure空气/$,因为无人机在待机模式下不消耗任何空气.$p然而,$thing无人机/$将继续执行其他小部件；一旦执行任何使其进行实际工作的小部件,$thing无人机/$将重新启动其螺旋桨."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/standby_piece.png"
+            ],
+            "text": "$italic睡美人/$"
+        }
+    ]
 }

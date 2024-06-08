@@ -1,30 +1,30 @@
 {
-  "name": "Chunk Loading",
-  "icon": "minecraft:ender_eye",
-  "category": "pneumaticcraft:base_concepts",
-  "pages": [
-    {
-      "type": "text",
-      "text": "It is a fundamental mechanic of Minecraft that only parts of the world are loaded into memory at a time. This is essential for performance; no affordable computer could keep an entire world (especially a modded one) loaded and ticking all at once. The world is thus divided into 16x16 (in the horizontal axes) $(thing)chunks/$, only of few of which are loaded at once."
-    },
-    {
-      "type": "text",
-      "text": "This has important ramifications for designing reliable modded builds; if you want processing to happen when you're not at your base, you need to $(thing)chunkload/$ the relevant machines. The information following is primary intended as hints to achieve reliable $(pncr) builds, but much of it applies to other mods too."
-    },
-    {
-      "type": "text",
-      "title": "Chunkloading Methods",
-      "text": "$(li)Vanilla has a $(thing)/forceload/$ command to force one or more chunks to remain always loaded, but this does require op privileges to use$(li)Many mods offer player-usable chunkloading solutions, e.g. $(thing)FTB Chunks/$, $(thing)Chicken Chunks/$, $(thing)Weirding Gadgets/$ and more.$(li)The $(l:programming/programmable_controller)Programmable Controller/$ from this mod offers some limited chunkloading functionality too."
-    },
-    {
-      "type": "text",
-      "title": "Chunkloading Safety",
-      "text": "The following hints will assist in building reliable chunkloaded systems:$(li)$(thing)Try to keep your builds within chunk boundaries/$. If part of your build is chunkloaded and part of it isn't, the results can be highly unpredictable. Have either all of it or none of it loaded.$(li)$(thing)Use Security Upgrades in machines./$ This prevents explosions; even with good redstone control, chunkloading or server performance issues can be problematic."
-    },
-    {
-      "type": "text",
-      "title": "Chunkloading Safety (cont)",
-      "text": "$(li)$(thing)Keep multiblocks within a single chunk if possible./$ Even when all relevant chunks are chunkloaded, it's not ideal to have multiblocks like the $(l:manufacturing/pressure_chamber)Pressure Chamber/$ span two or more chunks."
-    }
-  ]
+    "name": "区块加载",
+    "icon": "minecraft:ender_eye",
+    "category": "pneumaticcraft:base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Minecraft的基本机制是,世界只有一部分会同时加载到内存中.这对性能至关重要；没有一台价格合理的计算机能够同时加载并运行整个世界尤其是模组化的世界.因此,世界被划分为16x16在水平轴上$thing区块/$,只有少数几个会被同时加载."
+        },
+        {
+            "type": "text",
+            "text": "这对于设计可靠的模组化构建具有重要意义；如果你想在不在基地时进行处理,你需要$thing加载区块/$相关的机器.以下信息主要作为实现可靠$pncr构建的提示,但其中许多也适用于其他模组."
+        },
+        {
+            "type": "text",
+            "title": "区块加载方法",
+            "text": "$li原版游戏有一个$thing/forceload/$命令,用于强制一个或多个区块始终保持加载,但这确实需要管理员权限才能使用$li许多模组提供了玩家可用的区块加载解决方案,例如$thingFTB Chunks/$,$thingChicken Chunks/$,$thingWeirding Gadgets/$等等.$li本模组中的$l:programming/programmable_controller可编程控制器/$也提供了一些有限的区块加载功能."
+        },
+        {
+            "type": "text",
+            "title": "区块加载安全",
+            "text": "以下提示将有助于构建可靠的区块加载系统:$li$thing尽量将您的构建保持在区块边界内/$.如果您的构建部分被区块加载,而另一部分没有,结果可能会非常不可预测.要么全部加载,要么都不加载.$li$thing在机器中使用安全升级/$.这可以防止爆炸；即使有良好的红石控制,区块加载或服务器性能问题也可能成为问题."
+        },
+        {
+            "type": "text",
+            "title": "区块加载安全续",
+            "text": "$li$thing如果可能,将多方块结构保持在单个区块内/$.即使所有相关区块都被区块加载,也不理想让多方块结构如$l:manufacturing/pressure_chamber压力室/$跨越两个或更多区块."
+        }
+    ]
 }

@@ -1,57 +1,57 @@
 {
-  "name": "Basic Drone Tutorial #1",
-  "icon": "minecraft:knowledge_book",
-  "category": "pneumaticcraft:programming",
-  "priority": "true",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "In this tutorial, we'll set up a simple program to make a $(l:tools/drone)Drone/$ dig out an area. Before you start, you'll need:"
-    },
-    {
-      "type": "text",
-      "text": "$(li)A $(l:programming/programmer)Programmer/$ (of course)$(li)(If you're not in Creative Mode) A $(item)Chest/$ adjacent to the Programmer containing at least six $(l:programming/puzzle_pieces)Puzzle Pieces/$ $(li)A $(item)Chest/$ or any other inventory, containing a $(item)Shovel/$ of any type$(li)A basic $(l:tools/gps_tool)GPS Tool/$ $(li)$(l:tools/gps_area_tool)GPS Area Tool/$"
-    },
-    {
-      "type": "text",
-      "text": "Open the $(l:programming/programmer)Programmer/$ GUI. On the right, you'll see a $(thing)tray/$ of $(ttcolor)$(t:The virtual representations of Puzzle Pieces in the GUI are referred to as Programming Widgets)Programming Widgets/$. There are multiple pages of these; you can either cycle through with the arrow buttons below the tray, or expand the tray by pressing $(thing)Space/$ or $(thing)Tab/$.$(p)When expanded, a textfield appears above the tray where you can enter a $(thing)filter/$ to search for widgets. Type 'start' there now: you'll see only one widget not $(7)grayed/$ out."
-    },
-    {
-      "type": "text",
-      "text": "Now drag that $(l:programming/start)Start/$ widget onto the main programming area. It will appear with a $(4)red border/$, indicating a problem: mouse over to see what.$(p)Right, there's no widget connected underneath - we will remedy that now by creating our program.$(p)Find an $(l:programming/inventory_import)Import From Inventory/$ widget and drag it to right below the $(thing)Start/$ widget."
-    },
-    {
-      "type": "text",
-      "text": "If you place it close enough, it will 'snap' to the bottom of the $(thing)Start/$ widget. Notice how the connectors fit, like a jigsaw puzzle; hence the name $(thing)Puzzle Piece/$.$(p)Next, drag an $(l:programming/area)Area/$ widget and connect it to the right ($(ttcolor)$(t:Widgets on the right of other widgets act as a whitelist; widgets on the left act as a blacklist)not left/$) of the $(thing)Import/$ widget, and an $(l:programming/item_filter)Item Filter/$ widget, also to the right of the $(thing)Import/$ widget. Again, make sure they 'snap' together."
-    },
-    {
-      "type": "text",
-      "text": "You'll notice the $(thing)Area/$ widget also starts with a $(4)red border/$, because it doesn't have an area defined yet. Take your $(item)GPS Tool/$, and $(thing)sneak+right-click/$ on the $(item)chest/$ containing the $(item)shovel/$ you placed before. You'll see it highlights the location.$(p)Now, in the Programmer GUI, $(thing)left-click/$ the $(thing)Area/$ widget with the $(item)GPS Tool/$ on your cursor: you'll see the location copied onto the $(thing)Area/$ widget!"
-    },
-    {
-      "type": "text",
-      "text": "Now for the $(thing)Item Filter/$: $(thing)right-click/$ it to open an options GUI. Click the $(bold)Search Item.../$ button, and type 'shovel' into the result search window. Choose the shovel type that you put in the chest earlier, and press $(thing)Escape/$ to close the search box.$(p)Back in the $(thing)Item Filter/$ window, ensure 'Item Durability' is $(italic)unchecked/$, so it will also match partially used shovels. Press $(thing)Escape/$ again: back to the main GUI."
-    },
-    {
-      "type": "text",
-      "text": "At this point, we've told the Drone to pick up a shovel from the chest; now to make it dig!$(p)Drag a $(l:programming/dig)Dig/$ widget and snap it to the bottom of the $(thing)Import/$ widget.$(p)Drag another $(thing)Area/$ widget and snap it to the right of the $(thing)Dig/$ widget."
-    },
-    {
-      "type": "text",
-      "text": "Let's define the area to be dug: take your $(thing)GPS Area Tool/$ and $(thing)right-click/$ a block to form one corner of the area. $(thing)Left-click/$ a block at the opposite corner. Since the drone will be using a shovel, try to stick to dirt/sand.$(p)Ensure the highlighted area is a $(thing)solid box/$ - it should be by default, but you can $(thing)left/right-click/$ the tool in the air to open a configuration GUI where the shape can be defined."
-    },
-    {
-      "type": "text",
-      "text": "Back in the Programmer GUI, take the $(thing)GPS Area Tool/$ and $(thing)left-click/$ it on the $(thing)Area/$ widget attached to the $(thing)Dig/$ widget. As before, you'll see its settings copied onto the Area widget.$(p)At this point, there should be no red highlights indicating any errors: congratulations, you have a valid program!"
-    },
-    {
-      "type": "text",
-      "text": "Finally, take a $(l:tools/drone)Drone/$, and ensure it's been pressurized in a $(l:machines/charging_station)Charging Station/$. Put the Drone item in the slot in the top right of the Programmer GUI and click the $(thing)⟶ (export)/$ button (you can name the Drone if you want, in the textfield to the left).$(p)You'll get some audible feedback, and your Drone is programmed!"
-    },
-    {
-      "type": "text",
-      "text": "All that remains now is to deploy your Drone: $(thing)right-click/$ in the world somewhere near your chest, and watch it go to work!"
-    }
-  ]
+    "name": "基本无人机教程 #1",
+    "icon": "minecraft:knowledge_book",
+    "category": "pneumaticcraft:programming",
+    "priority": "true",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "在本教程中,我们将设置一个简单的程序,让$l:tools/drone无人机/$挖掘一个区域.在开始之前,您需要:"
+        },
+        {
+            "type": "text",
+            "text": "$li一个$l:programming/programmer程序员/$当然$li如果你不在创造模式中一个$item箱子/$紧邻程序员,至少包含六个$l:programming/puzzle_pieces拼图碎片/$ $li一个$item箱子/$或其他任何物品栏,包含任意类型的$item铲子/$ $li一个基本的$l:tools/gps_toolGPS工具/$ $li一个$l:tools/gps_area_toolGPS区域工具/$"
+        },
+        {
+            "type": "text",
+            "text": "打开$l:programming/programmer程序员/$的GUI.在右侧,你会看到一个$thing托盘/$,里面有$ttcolor$t:GUI中拼图碎片的虚拟表示被称为编程小部件编程小部件/$.这些小部件有多个页面；你可以通过托盘下方的箭头按钮循环浏览,或者通过按下$thing空格/$或$thing制表符/$来展开托盘.$p展开后,托盘上方会出现一个文本框,你可以在其中输入$thing过滤器/$来搜索小部件.现在在那里输入'start':你会看到只有一个小部件没有$7变灰/$."
+        },
+        {
+            "type": "text",
+            "text": "现在将那个$l:programming/start开始/$小部件拖到主编程区域.它将出现一个$4红色边框/$,表明存在问题:鼠标悬停以查看是什么问题.$p没错,下面没有连接小部件 - 我们现在将通过创建程序来解决这个问题.$p找到一个$l:programming/inventory_import从库存导入/$小部件,并将其拖到$thing开始/$小部件的正下方."
+        },
+        {
+            "type": "text",
+            "text": "如果放置得足够近,它会'吸附'到$thing开始/$小部件的底部.注意连接器是如何契合的,就像拼图一样；因此得名$thing拼图碎片/$.$p接下来,拖动一个$l:programming/area区域/$小部件并将其连接到$thing导入/$小部件的右侧$ttcolor$t:右侧的小部件作为白名单；左侧的小部件作为黑名单不是左侧/$,以及一个$l:programming/item_filter物品过滤器/$小部件,也是连接到$thing导入/$小部件的右侧.再次确保它们'吸附'在一起."
+        },
+        {
+            "type": "text",
+            "text": "您会注意到$thing区域/$小部件也以$4红色边框/$开始,因为它尚未定义区域.拿起您的$itemGPS工具/$,并$thing潜行+右键点击/$包含您之前放置的$item铲子/$的$item箱子/$.您会看到它高亮显示了该位置.$p现在,在编程器图形用户界面中,$thing左键点击/$带有$itemGPS工具/$光标的$thing区域/$小部件:您会看到位置被复制到$thing区域/$小部件上!"
+        },
+        {
+            "type": "text",
+            "text": "接下来是$thing物品过滤器/$:$thing右键点击/$它以打开选项图形用户界面.点击$bold搜索物品.../$按钮,并在结果搜索窗口中输入'铲子'.选择您之前放入箱子的铲子类型,然后按$thing逃逸/$关闭搜索框.$p返回到$thing物品过滤器/$窗口,确保'物品耐久度'未$italic勾选/$,这样它也会匹配部分使用的铲子.再次按$thing逃逸/$:返回主图形用户界面."
+        },
+        {
+            "type": "text",
+            "text": "此时,我们已经告诉无人机从箱子中取铲子；现在让它开始挖掘!$p拖动一个$l:programming/dig挖掘/$小部件并将其贴合到$thing导入/$小部件的底部.$p再拖动一个$thing区域/$小部件并将其贴合到$thing挖掘/$小部件的右侧."
+        },
+        {
+            "type": "text",
+            "text": "我们来定义要挖掘的区域:拿起你的$thingGPS区域工具/$并$thing右键点击/$一个方块以形成区域的一个角.$thing左键点击/$对角线上的另一个方块.由于无人机将使用铲子,尽量保持在泥土/沙子上.$p确保高亮显示的区域是一个$thing实心方块/$ - 默认情况下应该是,但你可以$thing左/右键点击/$工具在空中打开一个配置界面,其中可以定义形状."
+        },
+        {
+            "type": "text",
+            "text": "回到编程界面,拿起$thingGPS区域工具/$并$thing左键点击/$它到连接到$thing挖掘/$小部件的$thing区域/$小部件上.和之前一样,你会看到其设置被复制到区域小部件上.$p此时,应该没有红色高亮显示任何错误:恭喜,你有一个有效的程序!"
+        },
+        {
+            "type": "text",
+            "text": "最后,取出一个$l:tools/drone无人机/$,并确保它已在$l:machines/charging_station充电站/$中加压.将无人机物品放入编程界面右上角的槽中,并点击$thing⟶ 导出/$按钮如果你想,可以在左侧的文本框中命名无人机.$p你会得到一些听觉反馈,你的无人机已编程完成!"
+        },
+        {
+            "type": "text",
+            "text": "现在剩下的就是部署你的无人机:$thing右键点击/$世界中靠近你的箱子的某个地方,然后看着它开始工作!"
+        }
+    ]
 }

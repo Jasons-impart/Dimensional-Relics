@@ -1,23 +1,23 @@
 {
-  "name": "Label Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/label_piece.png",
-  "category": "pneumaticcraft:widget_flow",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This widget is purely focused on $(l:programming/flow_control)program flow/$. The label defines a point in the program that $(l:programming/jump)Jump/$ and $(l:programming/conditions)Condition/$ widgets can jump to. You must attach a $(l:programming/text)Text/$ widget to this widget to name it. Any jumps/conditions using a $(thing)Text/$ widget of that name will then jump to this label."
-    },
-    {
-      "type": "text",
-      "text": "A $(thing)Label/$ widget can be used to create a $(italic)branch/$ in the program flow (when using $(l:programming/conditions)Conditions/$), or just to organize sections of your program for clarity by putting them next to each other. A useful tip is to check $(bold)Show Flow/$ checkbox at the bottom left of the $(l:programming/programmer)Programmer/$ GUI;  it will show lines linking $(thing)Jump/Condition/Label/$ widgets of the same name."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/label_piece.png"
-      ],
-      "text": "$(italic)Label Widget/$"
-    }
-  ]
+    "name": "标签小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/label_piece.png",
+    "category": "pneumaticcraft:widget_flow",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "此小部件纯粹专注于$l:programming/flow_control程序流程/$.标签定义了程序中的一个点,$l:programming/jump跳转/$和$l:programming/conditions条件/$小部件可以跳转到该点.您必须将一个$l:programming/text文本/$小部件附加到此小部件以命名它.任何使用具有该名称的$thing文本/$小部件的跳转/条件将跳转到此标签."
+        },
+        {
+            "type": "text",
+            "text": "一个$thing标签/$小部件可用于在程序流程中创建一个$italic分支/$当使用$l:programming/conditions条件/$时,或者只是通过将它们并排放置来组织程序的各个部分以提高清晰度.一个有用的提示是检查$bold显示流程/$复选框,该复选框位于$l:programming/programmer程序员/$图形用户界面左下角；它将显示连接相同名称的$thing跳转/条件/标签/$小部件的线条."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/label_piece.png"
+            ],
+            "text": "$italic标签小部件/$"
+        }
+    ]
 }

@@ -1,44 +1,44 @@
 {
-  "name": "Pressure Tubes",
-  "icon": "pneumaticcraft:pressure_tube",
-  "category": "pneumaticcraft:tubes",
-  "advancement": "pneumaticcraft:root",
-  "priority": "true",
-  "pages": [
-    {
-      "type": "text",
-      "text": "Pressure Tubes are the primary device in $(pncr) for transporting compressed air between compressors and machines.$(p)Unconnected tubes will leak air! However, the sides of a tube can be toggled open or shut by right-clicking with a $(l:tools/pneumatic_wrench)Pneumatic Wrench/$. Wrenches from other mods may also work."
-    },
-    {
-      "type": "image",
-      "title": "Tubes!",
-      "text": "$(italic)Two Pressure Tubes with a $(l:tubes/pressure_gauge_module)Pressure Gauge/$ $(italic)connecting an $(l:compressors/air_compressor)Air Compressor/$ $(italic)and $(l:machines/air_cannon)Air Cannon/$",
-      "images": [
-        "pneumaticcraft:textures/patchouli/pressure_tubes.png"
-      ],
-      "border": "true"
-    },
-    {
-      "type": "text",
-      "text": "Pressure Tubes can be fitted with $(l:tubes/tube_modules)Tube Modules/$, attachable components which add various types of functionality to the tube. See the individual pages for each module for more information.$(p)Pressure Tubes can be concealed with a $(l:tools/camo_applicator)Camouflage Applicator/$."
-    },
-    {
-      "type": "text",
-      "text": "There are three $(l:base_concepts/pressure_tiers)tiers/$ of tube:$(br)$(li)Tier 1 tubes can contain up to 5 bar of pressure, and have a capacity of 1000mL of air.$(li)Tier 1.5 (Reinforced) tubes can handle up to 10 bar of pressure and also have a capacity of 1000mL.$(li)Tier 2 (Advanced) tubes can handle up to 20 bar of pressure and have a capacity of 4000mL of air."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Pressure Tube",
-      "recipe": "pneumaticcraft:pressure_tube"
-    },
-    {
-      "type": "pneumaticcraft:thermo_plant",
-      "recipe": "pneumaticcraft:thermo_plant/reinforced_pressure_tube"
-    },
-    {
-      "anchor": "advanced",
-      "type": "pneumaticcraft:assembly_system",
-      "recipe": "pneumaticcraft:assembly/advanced_pressure_tube"
-    }
-  ]
+    "name": "压力管道",
+    "icon": "pneumaticcraft:pressure_tube",
+    "category": "pneumaticcraft:tubes",
+    "advancement": "pneumaticcraft:root",
+    "priority": "true",
+    "pages": [
+        {
+            "type": "text",
+            "text": "压力管道是$pncr中用于在压缩机和机器之间传输压缩空气的主要设备.$p未连接的管道会泄漏空气!但是,可以通过使用$l:tools/pneumatic_wrench气动扳手/$ 右键点击管道的侧面来切换其开启或关闭.来自其他模组的扳手也可能有效."
+        },
+        {
+            "type": "image",
+            "title": "管道!",
+            "text": "$italic两根带有$l:tubes/pressure_gauge_module压力表/$ 的$italic连接$l:compressors/air_compressor空气压缩机/$ 和$l:machines/air_cannon空气炮/$ 的压力管道",
+            "images": [
+                "pneumaticcraft:textures/patchouli/pressure_tubes.png"
+            ],
+            "border": "true"
+        },
+        {
+            "type": "text",
+            "text": "压力管道可以安装$l:tubes/tube_modules管道模块/$,这些可附加的组件为管道增加了各种类型的功能.有关每个模块的更多信息,请参阅各个页面.$p压力管道可以使用$l:tools/camo_applicator迷彩涂布器/$ 进行隐蔽."
+        },
+        {
+            "type": "text",
+            "text": "管道分为三个$l:base_concepts/pressure_tiers等级/$:$br$li1级管道能承受最高5巴的压力,容量为1000毫升空气.$li1.5级加固型管道能承受最高10巴的压力,容量同样为1000毫升.$li2级高级管道能承受最高20巴的压力,容量为4000毫升空气."
+        },
+        {
+            "type": "crafting",
+            "text": "制作压力管道",
+            "recipe": "pneumaticcraft:pressure_tube"
+        },
+        {
+            "type": "pneumaticcraft:thermo_plant",
+            "recipe": "pneumaticcraft:thermo_plant/reinforced_pressure_tube"
+        },
+        {
+            "anchor": "advanced",
+            "type": "pneumaticcraft:assembly_system",
+            "recipe": "pneumaticcraft:assembly/advanced_pressure_tube"
+        }
+    ]
 }

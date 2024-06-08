@@ -1,32 +1,32 @@
 {
-  "name": "Logistics Drone",
-  "icon": "pneumaticcraft:logistics_drone",
-  "category": "pneumaticcraft:logistics",
-  "advancement": "pneumaticcraft:root",
-  "pages": [
-    {
-      "type": "text",
-      "text": "$(item)Logistics Drones/$ are a special type of $(l:tools/drone)drone/$. They are a lower tier $(thing)Drone/$, since they are not programmable but limited to carrying out $(italic)only/$ logistics tasks."
-    },
-    {
-      "type": "spotlight",
-      "title": "Automatic Charging",
-      "item": "pneumaticcraft:charging_station",
-      "text": "As with all types of Drone, these drones require $(l:base_concepts/pressure)pressure/$ to operate, and will automatically seek out $(l:tools/drone#charging)a Charging Station with a Dispenser Upgrade/$ if low on air."
-    },
-    {
-      "type": "entity",
-      "entity": "pneumaticcraft:logistics_drone",
-      "offset": -0.3
-    },
-    {
-      "type": "text",
-      "text": "Once deployed, a $(item)Logistics Drone/$ will operate on any inventory/tank with a $(l:logistics/frames)Logistics Frame/$ in a 33x33x33 cube centered on the block the drone was deployed at.$(p)Since these Drones frequently need to move items around, $(l:base_concepts/upgrades#speed)Speed/$ and $(l:base_concepts/upgrades#inventory)Inventory/$ upgrades are recommended for movement speed and carrying capacity."
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:logistics_drone",
-      "text": "Crafting a Logistics Drone"
-    }
-  ]
+    "name": "物流无人机",
+    "icon": "pneumaticcraft:logistics_drone",
+    "category": "pneumaticcraft:logistics",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item物流无人机/$ 是一种特殊的$l:tools/drone无人机/$.它们属于较低级别的$thing无人机/$,因为它们不可编程,仅限于执行$italic仅/$物流任务."
+        },
+        {
+            "type": "spotlight",
+            "title": "自动充电",
+            "item": "pneumaticcraft:charging_station",
+            "text": "与所有类型的无人机一样,这些无人机需要$l:base_concepts/pressure压力/$来操作,如果空气不足,它们会自动寻找$l:tools/drone#charging带有分配器升级的充电站/$."
+        },
+        {
+            "type": "entity",
+            "entity": "pneumaticcraft:logistics_drone",
+            "offset": -0.3
+        },
+        {
+            "type": "text",
+            "text": "一旦部署,$item物流无人机/$将在以部署点为中心的33x33x33立方体内的任何带有$l:logistics/frames物流框架/$的库存/罐上操作.$p由于这些无人机经常需要移动物品,因此建议使用$l:base_concepts/upgrades#speed速度/$和$l:base_concepts/upgrades#inventory库存/$升级以提高移动速度和承载能力."
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:logistics_drone",
+            "text": "制作物流无人机"
+        }
+    ]
 }

@@ -1,38 +1,38 @@
 {
-  "name": "Biodiesel Overview",
-  "icon": "minecraft:book",
-  "category": "pneumaticcraft:renewables",
-  "priority": "true",
-  "advancement": "pneumaticcraft:tp_plant",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This is a very quick guide to producing renewable $(thing)Biodiesel/$. Follow the steps here, and refer to other pages in this section for more detail on specific topics (other pages may be advancement-locked, but will unlock as you complete the prerequisite steps)."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:yeast_culture_bucket",
-      "text": "Step 1a: Make some $(thing)Yeast Culture/$: get some mushrooms and water, and combine them in a $(l:manufacturing/thermopneumatic_processing_plant)Thermopneumatic Processing Plant/$. You will need to ensure the TPP has temperature of between 30°C and 60°C, which may be easy or tricky depending on your biome and altitude."
-    },
-    {
-      "type": "spotlight",
-      "item": "minecraft:sugar",
-      "text": "Step 1b (optional): Once you have least one bucket of Yeast Culture, you can produce more in a faster way by pouring it into a pool in-world, dropping some sugar into the pool, and pouring a bucket of water into a blockspace adjacent to the culture; the culture will replicate itself into the water you poured out."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:ethanol_bucket",
-      "text": "Step 2: Make some $(thing)Ethanol/$ by adding your $(thing)Yeast Culture/$ and some $(thing)Sugar/$ to a $(l:manufacturing/thermopneumatic_processing_plant)Thermopneumatic Processing Plant/$. This is temperature-dependent in a very similar way to step 1a."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:vegetable_oil_bucket",
-      "text": "Step 3: Make some $(thing)Vegetable Oil/$ by squeezing $(thing)seeds/$ or $(thing)crops/$ in a $(l:manufacturing/thermopneumatic_processing_plant)Thermopneumatic Processing Plant/$ with a little pressure."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:biodiesel_bucket",
-      "text": "Step 4: Combine your $(thing)Ethanol/$ and $(thing)Vegetable Oil/$ in a $(l:manufacturing/fluid_mixer)Fluid Mixer/$. Congratulations, you have made some renewable fuel!"
-    }
-  ]
+    "name": "生物柴油概述",
+    "icon": "minecraft:book",
+    "category": "pneumaticcraft:renewables",
+    "priority": "true",
+    "advancement": "pneumaticcraft:tp_plant",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这是一份关于生产可再生 $thing生物柴油/$ 的快速指南.按照这里的步骤操作,并参考本节其他页面获取特定主题的更多细节其他页面可能需要完成前置步骤才能解锁."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:yeast_culture_bucket",
+            "text": "步骤1a:制作一些 $thing酵母培养物/$:获取一些蘑菇和水,并在 $l:manufacturing/thermopneumatic_processing_plant热气动处理厂/$ 中将它们混合.你需要确保TPP的温度在30°C至60°C之间,这可能因你的生物群系和海拔而变得容易或棘手."
+        },
+        {
+            "type": "spotlight",
+            "item": "minecraft:sugar",
+            "text": "步骤1b可选:一旦你至少拥有一桶酵母培养物,你可以通过将其倒入世界中的一个池子里,向池中投入一些糖,并向紧邻培养物的方块空间倒入一桶水来更快地生产更多；培养物会自我复制到你倒出的水中."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:ethanol_bucket",
+            "text": "步骤2:通过将你的 $thing酵母培养物/$ 和一些 $thing糖/$ 加入到 $l:manufacturing/thermopneumatic_processing_plant热气动处理厂/$ 中来制作一些 $thing乙醇/$.这一步骤的温度依赖性与步骤1a非常相似."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:vegetable_oil_bucket",
+            "text": "步骤3:通过在 $l:manufacturing/thermopneumatic_processing_plant热气动处理厂/$ 中对 $thing种子/$ 或 $thing农作物/$ 施加一点压力来制作一些 $thing植物油/$."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:biodiesel_bucket",
+            "text": "步骤4:在 $l:manufacturing/fluid_mixer流体混合器/$ 中将你的 $thing乙醇/$ 和 $thing植物油/$ 混合.恭喜,你已经制作出了一些可再生燃料!"
+        }
+    ]
 }

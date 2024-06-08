@@ -1,21 +1,21 @@
 {
-  "name": "Flow Detector Module",
-  "icon": "pneumaticcraft:flow_detector_module",
-  "category": "pneumaticcraft:tubes",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The Flow Detector Tube Module is an $(l:tubes/tube_modules#inline)inline/$ module which measures the $(thing)airflow/$ through a tube. It emits a $(#f00)redstone signal/$ as result of this, using the following formula:$(p)  $(formula)0.2 * flow (mL/tick)/$$(p)E.g. with 20mL/tick of air flowing, the signal level will be 20*0.2=4."
-    },
-    {
-      "type": "text",
-      "text": "Note that $(thing)flow/$ is a different physical quantity to $(l:base_concepts/pressure)pressure/$. Flow is the amount of air traveling through a tube per tick. So if you have (say) an $(l:machines/elevator)Elevator/$ which isn't running, the flow will be 0, but when it runs it will be consuming air, so the flow will be non-zero. So this module can be used to detect if a machine is using air.$(p)The Flow Detector Module does not accept an $(l:tubes/module_expansion_card)Module Expansion Card/$."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Flow Detector Module",
-      "recipe": "pneumaticcraft:flow_detector_module"
-    }
-  ]
+    "name": "流量检测模块",
+    "icon": "pneumaticcraft:flow_detector_module",
+    "category": "pneumaticcraft:tubes",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "流动检测管模块是一个$l:tubes/tube_modules#inline内联/$模块,用于测量通过管道的$thing气流/$.它会根据以下公式发出一个$#f00红石信号/$作为结果:$p  $formula0.2 * 流量毫升/刻/$$p例如,当有20毫升/刻的气流时,信号强度将是20*0.2=4."
+        },
+        {
+            "type": "text",
+            "text": "需要注意的是,$thing流量/$与$l:base_concepts/pressure压力/$是不同的物理量.流量是指每刻通过管道的空气量.因此,如果你有一个$l:machines/elevator电梯/$未运行,流量将为0,但当它运行时会消耗空气,因此流量将不为零.所以这个模块可以用来检测机器是否正在使用空气.$p流动检测模块不接受$l:tubes/module_expansion_card模块扩展卡/$."
+        },
+        {
+            "type": "crafting",
+            "text": "制作流量检测模块",
+            "recipe": "pneumaticcraft:flow_detector_module"
+        }
+    ]
 }

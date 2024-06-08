@@ -1,32 +1,32 @@
 {
-  "name": "Smart Chest",
-  "icon": "pneumaticcraft:smart_chest",
-  "category": "pneumaticcraft:machines",
-  "advancement": "pneumaticcraft:printed_circuit_board",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Smart Chest/$ is a 72-slot chest which (like its little brother the $(l:machines/reinforced_chest)Reinforced Chest/$) has obsidian-level blast resistance, and keeps its inventory when broken. However, it has some other very powerful features..."
-    },
-    {
-      "type": "text",
-      "title": "Slot Filtering",
-      "text": "$(li)If you $(thing)Alt+Left-click/$ a slot with an item in it, the Smart Chest will start filtering that slot to only accept that item.$(li)You can $(thing)Alt+Left-click/$ a filtered slot to remove the filtering again.$(li)If you $(thing)Alt+Left-click/$ an empty slot, that slot and all subsequent slots will be closed, effectively reducing the inventory size.$(li)If you $(thing)Alt+Left-click/$ the first closed slot, all closed slots will be reopened."
-    },
-    {
-      "type": "text",
-      "title": "Pushing Items",
-      "text": "Each face of the Smart Chest can be separately configured to push items, pull items or do nothing (the default). To configure faces, open the $(thing)Side Configuration/$ GUI tab.$(p)Faces configured to push items will try to send items from the Smart Chest to an adjacent inventory on that face.  With a $(item)Dispenser Upgrade/$ installed, the chest will eject items into the world if there is no adjacent inventory."
-    },
-    {
-      "type": "text",
-      "title": "Pulling Items",
-      "text": "Faces configured to pull items will try to pull items from an adjacent inventory on that face.$(p)If you install a $(l:base_concepts/upgrades#magnet)Magnet Upgrade/$, the chest can absorb nearby items on the ground. This only works for faces that have been configured to pull items; the default pickup area is a 3x3x3 cube adjacent to the pulling face, which can be increased with $(l:base_concepts/upgrades#range)Range Upgrades/$."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Smart Chest",
-      "recipe": "pneumaticcraft:smart_chest"
-    }
-  ]
+    "name": "智能箱子",
+    "icon": "pneumaticcraft:smart_chest",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:printed_circuit_board",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item智能箱子/是一个72格的箱子,它像其小兄弟$l:machines/reinforced_chest强化箱子/一样具有黑曜石级别的爆炸抗性,并且在被破坏时保持其库存.然而,它还有一些其他非常强大的功能..."
+        },
+        {
+            "type": "text",
+            "title": "槽位过滤",
+            "text": "$li如果您$thingAlt+左键点击/$一个已放置物品的槽位,智能箱子将开始过滤该槽位,使其只接受该物品.$li您可以$thingAlt+左键点击/$一个已过滤的槽位来移除过滤.$li如果您$thingAlt+左键点击/$一个空槽位,该槽位及之后的所有槽位都将被关闭,从而有效减小库存容量.$li如果您$thingAlt+左键点击/$第一个关闭的槽位,所有关闭的槽位将被重新打开."
+        },
+        {
+            "type": "text",
+            "title": "推送物品",
+            "text": "智能箱子的每个面都可以单独配置来推送物品、拉取物品或不做任何操作默认.要配置面,请打开$thing侧面配置/$ GUI选项卡.$p配置为推送物品的面将尝试将物品从智能箱子发送到该面相邻的库存中. 安装了$item发射器升级/$后,如果该面没有相邻的库存,箱子会将物品弹射到世界中."
+        },
+        {
+            "type": "text",
+            "title": "拉取物品",
+            "text": "配置为拉取物品的面将尝试从该面相邻的库存中拉取物品.$p如果你安装了$l:base_concepts/upgrades#magnet磁铁升级/$,箱子可以吸收附近的地面上的物品.这只对已配置为拉取物品的面有效；默认的拾取区域是与拉取面相邻的3x3x3立方体,可以通过$l:base_concepts/upgrades#range范围升级/$增加."
+        },
+        {
+            "type": "crafting",
+            "text": "制作智能箱子",
+            "recipe": "pneumaticcraft:smart_chest"
+        }
+    ]
 }

@@ -1,19 +1,19 @@
 {
-  "name": "Drone Condition: Item Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/condition_drone_inventory_piece.png",
-  "category": "pneumaticcraft:widget_cond",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(thing)Drone Condition: Item/$ widget allows you to check the inventory of this $(l:tools/drone)Drone/$ for a certain amount of items. It will count up all matching items (specified by a connected $(l:programming/item_filter)Item Filter/$, or no filter to count every item)."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/condition_drone_inventory_piece.png"
-      ],
-      "text": "$(italic)Drone Condition: Item Widget/$"
-    }
-  ]
+    "name": "无人机状态:物品小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/condition_drone_inventory_piece.png",
+    "category": "pneumaticcraft:widget_cond",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "该$thing无人机状态:物品/$小部件允许你检查此$l:tools/drone无人机/$的库存中是否存在特定数量的物品.它将计算所有匹配的物品通过连接的$l:programming/item_filter物品过滤器/$指定,或无过滤器以计算每件物品."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/condition_drone_inventory_piece.png"
+            ],
+            "text": "$italic无人机状态:物品小部件/$"
+        }
+    ]
 }

@@ -1,27 +1,27 @@
 {
-  "name": "Memory Stick",
-  "icon": "pneumaticcraft:memory_stick",
-  "category": "pneumaticcraft:tools",
-  "advancement": "pneumaticcraft:plastic",
-  "pages": [
-    {
-      "type": "text",
-      "text": "A $(item)Memory Stick/$ is a useful handheld device for extracting, storing, and restoring player experience levels:$(li)$(thing)Right-click/$: move one level of experience from yourself into the stick$(li)$(thing)Sneak + Right-click/$: move one level of experience from the stick to yourself$(li)$(thing)Left-click/$: toggle XP auto-absorption, where any XP orbs you collect are automatically absorbed by the stick"
-    },
-    {
-      "type": "text",
-      "text": "Experience stored in the Memory Stick can also be extracted as $(l:base_concepts/memory_essence)Memory Essence/$ fluid. To do this, simply $(thing)right-click/$ any $(l:machines/tanks)Fluid Tank/$ to transfer XP to or from the tank (other mods' fluid tanks should also work fine here). Right-clicking an empty tank will attempt to transfer Memory Essence from the stick to the tank; right-clicking a tank with any Memory Essence will attempt to transfer from the tank to the stick."
-    },
-    {
-      "type": "text",
-      "title": "Curios",
-      "flag": "mod:curios",
-      "text": "With the $(thing)Curios/$ mod installed, you can store the Memory Stick in any Curios slot, to save on inventory space. This is particularly useful with XP auto-absorption switched on."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Memory Stick",
-      "recipe": "pneumaticcraft:memory_stick"
-    }
-  ]
+    "name": "记忆棒",
+    "icon": "pneumaticcraft:memory_stick",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:plastic",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item记忆棒/$是一种用于提取、存储和恢复玩家经验等级的便携设备:$li$thing右击/$:将您的一个经验等级转移到棒上$li$thing潜行+右击/$:将棒上的一个经验等级转移到您身上$li$thing左击/$:切换XP自动吸收,您收集的任何XP球都会自动被棒吸收"
+        },
+        {
+            "type": "text",
+            "text": "记忆棒中存储的经验也可以提取为$l:base_concepts/memory_essence记忆精华/$流体.要执行此操作,只需$thing右击/$任何$l:machines/tanks流体罐/$以转移经验到或从罐子其他模组的流体罐也应该可以正常工作.右击空罐子会尝试将记忆精华从棒转移到罐子；右击含有任何记忆精华的罐子会尝试从罐子转移到棒."
+        },
+        {
+            "type": "text",
+            "title": "饰品",
+            "flag": "mod:curios",
+            "text": "安装了$thing饰品/$模组后,您可以将记忆棒存储在任何饰品槽中,以节省背包空间.当开启XP自动吸收时,这尤其有用."
+        },
+        {
+            "type": "crafting",
+            "text": "制作记忆棒",
+            "recipe": "pneumaticcraft:memory_stick"
+        }
+    ]
 }

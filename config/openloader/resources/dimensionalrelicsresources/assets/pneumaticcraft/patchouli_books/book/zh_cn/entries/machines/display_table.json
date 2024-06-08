@@ -1,21 +1,21 @@
 {
-  "name": "Display Table",
-  "icon": "pneumaticcraft:display_table",
-  "category": "pneumaticcraft:machines",
-  "advancement": "pneumaticcraft:root",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Display Table/$ is a simple inventory which can store (and display) a single item. It's partly intended for decorative purposes, but may also be useful for automation, since the table's inventory can be interacted with via hoppers, drones & other piping systems."
-    },
-    {
-      "type": "text",
-      "text": "Display Tables, when placed next to each other, will visually connect and not render adjacent legs, forming a single larger table. This does require that both blocks have exactly the same rotation; if the rotation is different, then the table will not connect in this way.$(p)Visually-connected tables still have a separate 1-item inventory for each table."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Display Table",
-      "recipe": "pneumaticcraft:display_table"
-    }
-  ]
+    "name": "展示台",
+    "icon": "pneumaticcraft:display_table",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item展示台/$是一个简单的库存,可以存储并展示单个物品.它部分用于装饰目的,但由于展示台的库存可以通过漏斗、无人机和其他管道系统进行交互,因此也可能对自动化有用."
+        },
+        {
+            "type": "text",
+            "text": "当展示台彼此相邻放置时,它们会视觉上连接,并且不会渲染相邻的桌腿,形成一个更大的桌子.这要求两个方块的旋转完全相同；如果旋转不同,则桌子不会以这种方式连接.$p视觉上连接的桌子仍然各自拥有一个单独的1-物品库存."
+        },
+        {
+            "type": "crafting",
+            "text": "制作展示台",
+            "recipe": "pneumaticcraft:display_table"
+        }
+    ]
 }

@@ -1,28 +1,28 @@
 {
-  "name": "Glycerol",
-  "icon": "pneumaticcraft:glycerol",
-  "category": "pneumaticcraft:renewables",
-  "advancement": "pneumaticcraft:ethanol",
-  "pages": [
-    {
-      "type": "text",
-      "text": "$(thing)Glycerol/$ is a by-product of producing $(l:renewables/biodiesel)Biodiesel/$, but it turns out to be a rather useful substance in its own right. Its uses are detailed in the following pages."
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:bandage",
-      "text": "$(thing)Bandages/$ can be used to quickly heal 3 hearts of health. Quickly is not instantaneous, though; you will need to right-click and hold for 2 seconds to apply a bandage, and there is an 8-second cooldown between uses."
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:speed_upgrade_from_glycerol",
-      "text": "Double the output of using $(thing)Sugar/$, what's not to like? This will save on your precious $(l:components/lubricant)Lubricant/$."
-    },
-    {
-      "type": "spotlight",
-      "item": "minecraft:furnace",
-      "title": "As a Fuel",
-      "text": "$(thing)Glycerol/$ also makes a decent fuel item, equivalent to 4 $(thing)Planks/$ or half a lump of $(thing)Coal/$."
-    }
-  ]
+    "name": "甘油",
+    "icon": "pneumaticcraft:glycerol",
+    "category": "pneumaticcraft:renewables",
+    "advancement": "pneumaticcraft:ethanol",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing甘油/$是生产$l:renewables/biodiesel生物柴油/$的副产品,但事实证明它本身就是一种相当有用的物质.其用途详见后续页面."
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:bandage",
+            "text": "$thing绷带/$ 可以用来快速恢复3颗心的生命值.虽然快速但并非即刻生效；你需要右键点击并保持2秒来使用绷带,并且使用后有8秒的冷却时间."
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:speed_upgrade_from_glycerol",
+            "text": "使用 $thing糖/$ 能将输出翻倍,何乐而不为呢？这将节省你宝贵的 $l:components/lubricant润滑剂/$."
+        },
+        {
+            "type": "spotlight",
+            "item": "minecraft:furnace",
+            "title": "作为燃料",
+            "text": "$thing甘油/$ 也是一个不错的燃料物品,相当于4个 $thing木板/$ 或半块 $thing煤炭/$."
+        }
+    ]
 }

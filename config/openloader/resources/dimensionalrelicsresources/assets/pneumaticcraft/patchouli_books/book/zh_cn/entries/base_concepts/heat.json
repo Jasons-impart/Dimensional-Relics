@@ -1,30 +1,30 @@
 {
-  "name": "Heat",
-  "icon": "minecraft:blaze_powder",
-  "category": "pneumaticcraft:base_concepts",
-  "pages": [
-    {
-      "type": "text",
-      "text": "$(pncr) adds a $(thing)heat/$ system. It spreads from block to block similarly to how heat spreads in real-life. It has some similarities with how $(l:base_concepts/pressure)pressure disperses/$ too:$(li)Heat disperses from hotter objects to colder objects.$(li)Blocks will only spread heat to adjacent blocks that support the concept of heat (see $(l:base_concepts/heat_sources)Heat Sources/$)."
-    },
-    {
-      "type": "text",
-      "text": "$(li)The bigger the temperature difference, the faster the heat dispersal.$(li)Different objects have a different $(thing)thermal resistance/$. $(item)Torches/$ and $(item)Air/$ have a high resistance, while $(l:base_concepts/basic_materials#compressed_iron_block)Compressed Iron Blocks/$ have a very low resistance. $(thing)Thermal resistance/$ determines how fast heat can spread from one object to another."
-    },
-    {
-      "type": "text",
-      "text": "$(li)Different objects have a different $(thing)thermal capacity/$. The higher the capacity, the slower the temperature will rise for the given heat gain. Similarly, the slower the temperature will drop for the given heat loss. In other words, it takes more $(thing)heat/$ to raise the $(thing)temperature/$ of a higher-capacity block, but its temperature will also drop more slowly when it loses heat."
-    },
-    {
-      "type": "text",
-      "title": "Insulation",
-      "anchor": "insulation",
-      "text": "Machines will lose heat to the air if left exposed; this is particularly noticeable with the $(l:manufacturing/refinery)Refinery/$, which has many exposed faces, but is also true of any heat-conducting block, including $(l:base_concepts/basic_materials#compressed_iron_block)Compressed Iron Blocks/$.$(p)To avoid this heat loss, ensure that no faces are exposed to air blocks; any non-conducting block will do. It doesn't have to be a full block, either - $(item)Trapdoors/$ and $(item)slabs/$ will work fine."
-    },
-    {
-      "type": "text",
-      "title": "Heat Sources",
-      "text": "Some machines in $(pncr) produce Heat that needs to be dissipated, and some require Heat to run.$(p)Therefore, you will need to $(l:base_concepts/heat_sources)find ways/$ to manipulate the temperature of these machines..."
-    }
-  ]
+    "name": "热量",
+    "icon": "minecraft:blaze_powder",
+    "category": "pneumaticcraft:base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$pncr 添加了一个 $thing热量/$ 系统.它从一个方块传播到另一个方块,类似于现实生活中的热量传播方式.它与 $l:base_concepts/pressure压力的扩散/$ 也有一些相似之处:$li热量从较热的物体向较冷的物体传播.$li方块只会向支持热量概念的相邻方块传播热量参见 $l:base_concepts/heat_sources热量源/$."
+        },
+        {
+            "type": "text",
+            "text": "$li温度差越大,热量散布越快.$li不同的物体具有不同的 $thing热阻/$.$item火把/$ 和 $item空气/$ 具有高热阻,而 $l:base_concepts/basic_materials#compressed_iron_block压缩铁块/$ 的热阻非常低.$thing热阻/$ 决定了热量从一个物体传播到另一个物体的速度."
+        },
+        {
+            "type": "text",
+            "text": "$li不同的物体具有不同的 $thing热容/$.热容越高,给定热量增加时温度上升越慢,同样,给定热量损失时温度下降也越慢.换句话说,提高高热容方块的 $thing温度/$ 需要更多的 $thing热量/$,但当它失去热量时,温度也会下降得更慢."
+        },
+        {
+            "type": "text",
+            "title": "绝缘",
+            "anchor": "insulation",
+            "text": "如果机器暴露在外,它们会将热量散失到空气中；这在 $l:manufacturing/refinery精炼厂/$ 中尤为明显,它有许多暴露的面,但对于任何导热方块,包括 $l:base_concepts/basic_materials#compressed_iron_block压缩铁块/$ 也是如此.$p为了避免这种热量损失,确保没有面暴露在空气方块中；任何非导热方块都可以.它不必是完整的方块,$item活板门/$ 和 $item台阶/$ 也可以很好地工作."
+        },
+        {
+            "type": "text",
+            "title": "热量源",
+            "text": "在 $pncr 中的一些机器会产生需要散去的热量,而有些机器则需要热量才能运行.$p因此,您需要 $l:base_concepts/heat_sources找到方法/$ 来调节这些机器的温度..."
+        }
+    ]
 }

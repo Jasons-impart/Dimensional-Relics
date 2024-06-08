@@ -1,33 +1,33 @@
 {
-  "name": "Aphorism Tile",
-  "icon": "pneumaticcraft:aphorism_tile",
-  "category": "pneumaticcraft:machines",
-  "advancement": "pneumaticcraft:assembly_controller",
-  "pages": [
-    {
-      "type": "text",
-      "text": "$(thing)Aphorism Tiles/$ are like $(item)Signs/$, but they can display arbitrary amounts of text. Any text is automatically scaled so that the full text fits on the tile.$(p)When you place down an Aphorism Tile it $(ttcolor)$(t:This can be disabled in client config - see 'B:dramaSplash')defaults/$ to a random splash text from the $(l:http://mc-drama.herokuapp.com/)Drama Generator/$."
-    },
-    {
-      "type": "text",
-      "text": "$(li)$(item)Aphorism Tiles/$ can be edited in-place by $(thing)right-clicking/$ with an empty hand.$(li)Markup can be added by using $(thing)Alt + 0-9/a-f/l/m/n/o/r/$ ($(l:https://minecraft.gamepedia.com/Formatting_codes)standard Minecraft codes/$).$(li)Holding $(thing)F1/$ will show some popup help for the editor keybindings.$(li)$(item)Aphorism Tiles/$ can be recolored by $(thing)right-clicking/$ with any dye item. The tile border and background can be colored independently by clicking a corresponding area of the tile."
-    },
-    {
-      "type": "text",
-      "anchor": "items",
-      "text": "$(li)$(item)Aphorism Tiles/$ can also display $(thing)items/$, instead of or along with text. You can specify an item to display by putting (on its own line) text in the format $(thing){item:<modid>:<itemid>}/$, e.g. $(thing){item:minecraft:diamond}/$.$(li)Alternatively, click the $(thing)Insert Item.../$ button on the left-hand GUI panel, and choose an item from the search popup. This will replace all the text on the current line. You can display multiple items on one tile."
-    },
-    {
-      "type": "text",
-      "text": "$(li)Tip: displayed items are scaled in size to match the height of text lines. If you're mixing text and items, keep text lines short to avoid tiny items.$(li)You can also use the slider on the left-hand GUI panel to set a $(thing)margin/$ for the tile's text, if you would like it to take up less space on the tile.$(li)Finally, you can use the checkbox on the left-hand GUI panel to make the whole tile $(thing)invisible/$, so that $(italic)only/$ the text (and/or items) is shown."
-    },
-    {
-      "type": "text",
-      "text": "$(li)Invisible Aphorism Tiles have no block shape at all unless you sneak, so they have potential uses as labels for chests, especially when displaying item(s). Since they have no shape, any interactions get passed to the block behind - right-clicking a chest, for example.$(li)Invisible tiles can be edited by sneak & right-clicking them (with any empty hand, as normal)."
-    },
-    {
-      "type": "pneumaticcraft:assembly_system",
-      "recipe": "pneumaticcraft:assembly/aphorism_tile"
-    }
-  ]
+    "name": "格言方块",
+    "icon": "pneumaticcraft:aphorism_tile",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:assembly_controller",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing格言方块/$类似于$item告示牌/$,但可以显示任意数量的文本.任何文本都会自动缩放以确保完整文本适合方块.$p放置格言方块时,$ttcolor$t:This can be disabled in client config - see 'B:dramaSplash'默认/$显示来自$l:http://mc-drama.herokuapp.com/戏剧生成器/$的随机溅射文本."
+        },
+        {
+            "type": "text",
+            "text": "$li$item格言方块/$可以通过$thing空手右击/$进行原地编辑.$li通过使用$thingAlt + 0-9/a-f/l/m/n/o/r/$$l:https://minecraft.gamepedia.com/Formatting_codes标准Minecraft格式代码/$可以添加标记.$li按住$thingF1/$键将显示编辑器快捷键的一些弹出帮助.$li$item格言方块/$可以通过$thing右击/$任何染料物品来重新着色.方块的边框和背景可以通过点击方块的相应区域独立着色."
+        },
+        {
+            "type": "text",
+            "anchor": "items",
+            "text": "$li$item格言方块/$也可以显示$thing物品/$,单独或与文本一起.您可以通过在单独一行中输入格式为$thingitem:<modid>:<itemid>/$的文本来指定要显示的物品,例如$thingitem:minecraft:diamond/$.$li或者,点击左侧GUI面板上的$thing插入物品.../$按钮,并从搜索弹出窗口中选择一个物品.这将替换当前行的所有文本.您可以在一个方块上显示多个物品."
+        },
+        {
+            "type": "text",
+            "text": "$li提示:显示的物品会根据文本行的高度按比例缩放.如果您混合使用文本和物品,请保持文本行简短以避免显示过小的物品.$li您还可以使用左侧GUI面板上的滑块设置方块文本的$thing边距/$,如果您希望它在方块上占用较少的空间.$li最后,您可以使用左侧GUI面板上的复选框使整个方块$thing不可见/$,这样$italic只有/$文本和/或物品会显示."
+        },
+        {
+            "type": "text",
+            "text": "$li隐形箴言方块在未潜行时完全没有方块形状,因此它们有潜力作为箱子的标签,尤其是在展示物品时.由于它们没有形状,所有交互都会传递到背后的方块上——例如,右击箱子.$li隐形方块可以通过潜行并右击它们使用空手,如常来编辑."
+        },
+        {
+            "type": "pneumaticcraft:assembly_system",
+            "recipe": "pneumaticcraft:assembly/aphorism_tile"
+        }
+    ]
 }

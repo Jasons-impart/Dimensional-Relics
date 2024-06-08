@@ -1,23 +1,23 @@
 {
-  "name": "Inventory Export Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/inventory_export_piece.png",
-  "category": "pneumaticcraft:widget_interact",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The opposite of the $(l:programming/inventory_import)Inventory Import/$ widget: the $(l:tools/drone)Drone/$ will move to the nearest inventory within the specified $(l:programming/area)area/$ to drop off items from the $(item)Drone's/$ inventory.$(p)$(thing)Right-click/$ the widget for a setup GUI where you can specify the sides of the inventory the Drone should export items to. You can also specify a maximum number of items to export."
-    },
-    {
-      "type": "text",
-      "text": "You can also connect any number (including zero) of $(l:programming/item_filter)Item Filter/$ widgets to limit the items that may be exported. Remember, filters on the $(italic)right/$ acts as a whitelist, and filters on the $(italic)left/$ act as a blacklist.$(p)This widget is done executing when the $(item)Drone's/$ inventory is empty, or when there's no inventory (or inventories) in the area which can accepts the items to be exported."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/inventory_export_piece.png"
-      ],
-      "text": "$(italic)You're welcome/$"
-    }
-  ]
+    "name": "库存导出小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/inventory_export_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "与$l:programming/inventory_import库存导入/$小部件相反:$l:tools/drone无人机/$将移动到指定$l:programming/area区域/$内最近的库存,以卸载来自$item无人机库存/$的物品.$p$thing右击/$小部件以打开设置界面,您可以在其中指定无人机应向库存的哪些侧面导出物品.您还可以指定要导出的最大物品数量."
+        },
+        {
+            "type": "text",
+            "text": "您还可以连接任意数量的$l:programming/item_filter物品过滤器/$小部件,以限制可以导出的物品.请记住,右侧的过滤器作为白名单,左侧的过滤器作为黑名单.$p当$item无人机库存/$为空,或者区域内没有可以接受要导出物品的库存时,此小部件执行完毕."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/inventory_export_piece.png"
+            ],
+            "text": "$italic不客气/$"
+        }
+    ]
 }

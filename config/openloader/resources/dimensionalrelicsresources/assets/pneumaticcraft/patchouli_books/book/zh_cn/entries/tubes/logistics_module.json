@@ -1,37 +1,37 @@
 {
-  "name": "Logistics Module",
-  "icon": "pneumaticcraft:logistics_module",
-  "category": "pneumaticcraft:tubes",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This powerful module is used to connect inventories to a $(l:logistics/overview)Logistics System/$, effectively allowing controlled item and fluid transfer via pressure tubes.$(p)The inventory or fluid tank that the module points at must be fitted with a $(l:logistics/frames)Logistics Frame/$.$(p)The Logistics Module does not accept an $(l:tubes/module_expansion_card)Module Expansion Card/$."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/patchouli/logistics_module.png"
-      ],
-      "border": "true",
-      "text": "Two Logistics Modules connecting chests with $(l:logistics/frames#passive_provider)Passive Provider/$ and $(l:logistics/frames#requester)Requester/$ Frames."
-    },
-    {
-      "type": "text",
-      "text": "A network of Logistics Modules is defined by all the modules connected to each other by $(l:tubes/pressure_tubes)Pressure Tubes/$; note that any air-using machines do $(italic)not/$ form part of the network.$(p)You can select a channel via the module GUI, or by right-clicking with any $(item)dye/$; only Logistics Modules of the same color will communicate with each other, effectively giving you 16 $(thing)channels/$ on each network."
-    },
-    {
-      "type": "text",
-      "text": "Logistics Modules need $(l:base_concepts/pressure)pressure/$; 3 bar is required to let the modules operate. The air used is a multiplication of distance, amount transported and a constant. This means that it requires more air to transport a full stack of items, and also more to transport it a long way. The air is used at the $(italic)receiving/$ Logistics Module, since the air is flowing towards that module."
-    },
-    {
-      "type": "text",
-      "text": "Indicator lights are fitted to signify the status:$(p)$(li)$(#f00)Red/$: Not enough pressure, apply at least 3 bar.$(li)$(#f80)Orange/$: More than 3 bar, but not enough pressure to transport the items/fluids this distance.$(li)$(#0f0)Green/$: Enough pressure, on standby.$(li)$(#00f)Blue (pulse)/$: Items/fluids are being transported."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Logistics Module",
-      "recipe": "pneumaticcraft:logistics_module"
-    }
-  ]
+    "name": "物流模块",
+    "icon": "pneumaticcraft:logistics_module",
+    "category": "pneumaticcraft:tubes",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这个强大的模块用于将库存连接到$l:logistics/overview物流系统/$,有效地通过压力管道实现受控的物品和流体传输.$p模块所指向的库存或流体罐必须配备$l:logistics/frames物流框架/$.$p物流模块不接受$l:tubes/module_expansion_card模块扩展卡/$."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/patchouli/logistics_module.png"
+            ],
+            "border": "true",
+            "text": "两个物流模块连接带有$l:logistics/frames#passive_provider被动提供者/$和$l:logistics/frames#requester请求者/$框架的箱子."
+        },
+        {
+            "type": "text",
+            "text": "物流模块网络由所有通过$l:tubes/pressure_tubes压力管道/$相互连接的模块定义；请注意,任何使用空气的机器$italic不/$构成网络的一部分.$p您可以通过模块GUI选择通道,或通过右键点击任何$item染料/$；只有相同颜色的物流模块才会相互通信,有效地为您提供每个网络上16个$thing通道/$."
+        },
+        {
+            "type": "text",
+            "text": "物流模块需要$l:base_concepts/pressure压力/$；需要3巴的压力才能使模块运行.使用的空气是距离、运输量和常数的乘积.这意味着运输满堆叠的物品需要更多的空气,运输距离远也需要更多的空气.空气在$italic接收/$物流模块处使用,因为空气是流向该模块的."
+        },
+        {
+            "type": "text",
+            "text": "指示灯安装以表示状态:$p$li$#f00红色/$:压力不足,至少应用3巴.$li$#f80橙色/$:超过3巴,但不足以运输此距离的物品/流体.$li$#0f0绿色/$:压力足够,待命.$li$#00f蓝色脉冲/$:物品/流体正在运输."
+        },
+        {
+            "type": "crafting",
+            "text": "制作物流模块",
+            "recipe": "pneumaticcraft:logistics_module"
+        }
+    ]
 }

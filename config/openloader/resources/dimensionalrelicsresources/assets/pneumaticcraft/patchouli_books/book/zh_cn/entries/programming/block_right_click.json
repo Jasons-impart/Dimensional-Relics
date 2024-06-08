@@ -1,27 +1,27 @@
 {
-  "name": "Right Click Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/block_right_click_piece.png",
-  "category": "pneumaticcraft:widget_interact",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The Drone will $(thing)right-click/$ with the item in its first inventory slot, for every block position in its connected $(l:programming/area)Area/$ widget. This could be used to hoe the ground, place seeds, apply bonemeal, throw a potion, deploy a drone, rotate blocks with a wrench... the possibilities are endless."
-    },
-    {
-      "type": "text",
-      "text": "This widget operates in one of two modes, selectable via the widget GUI in the Programmer:$(li)Item Mode - use the $(thing)held item's/$ right-click logic, e.g. use a $(item)Flint & Steel/$ on some block$(li)Block Mode - activate the $(thing)block's/$ right-click logic, e.g. flip a $(item)Lever/$$(p)In $(thing)Item Mode/$, any attached filters apply to the $(italic)item/$ being used; in $(thing)Block Mode/$, filters apply to the $(italic)block/$ being activated."
-    },
-    {
-      "type": "text",
-      "text": "You could use this widget to place down regular blocks. However, this is $(italic)not/$ recommended, because when a Drone right-clicks a position where a block exists already, it will right-click the block, resulting in placing down a block $(italic)next/$ to this block instead of the block itself.$(p)For these reasons the use of the $(l:programming/place)Place/$ widget is preferred. There are some situations, though (e.g. trying to plant $(item)Seeds/$) where the $(thing)Right Click Block/$ widget is required."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/block_right_click_piece.png"
-      ],
-      "text": "$(italic)Right Click Widget/$"
-    }
-  ]
+    "name": "右击小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/block_right_click_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "无人机将$thing右键点击/$使用其第一个物品槽中的物品,针对其连接的$l:programming/area区域/$小部件中的每个方块位置.这可以用于锄地、播种、施用骨粉、投掷药水、部署无人机、使用扳手旋转方块...可能性无穷无尽."
+        },
+        {
+            "type": "text",
+            "text": "此小部件通过编程器中的小部件GUI在两种模式之间进行选择:$li物品模式 - 使用$thing手持物品/$的右键逻辑,例如使用$item打火石/$点燃某些方块$li方块模式 - 激活$thing方块/$的右键逻辑,例如翻转$item拉杆/$$p在$thing物品模式/$中,任何附加的过滤器都适用于正在使用的$italic物品/$；在$thing方块模式/$中,过滤器适用于正在激活的$italic方块/$."
+        },
+        {
+            "type": "text",
+            "text": "你可以使用此小工具放置常规方块.然而,这$italic不/$推荐,因为当无人机右键点击一个已有方块的位置时,它将右键点击该方块,导致放置一个方块$italic旁边/$而不是方块本身.$p出于这些原因,使用$l:programming/place放置/$小工具更为可取.尽管如此,在某些情况下例如尝试种植$item种子/$,$thing右键点击方块/$小工具是必需的."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/block_right_click_piece.png"
+            ],
+            "text": "$italic右键点击小工具/$"
+        }
+    ]
 }

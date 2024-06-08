@@ -1,6 +1,6 @@
 {
-  "name": "Drone Programming",
-  "description": "All about $(l:tools/drone)Drone/$ programming, with some tutorials and a reference guide to the many programming widgets.",
-  "icon": "pneumaticcraft:programmer",
-  "sortnum": 10
+    "name": "无人机编程",
+    "description": "关于$l:tools/drone无人机/编程的所有内容,包括一些教程和编程小部件的参考指南.",
+    "icon": "pneumaticcraft:programmer",
+    "sortnum": 10
 }

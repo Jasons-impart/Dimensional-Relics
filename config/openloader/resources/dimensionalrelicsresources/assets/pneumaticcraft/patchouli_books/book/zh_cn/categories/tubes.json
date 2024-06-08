@@ -1,6 +1,6 @@
 {
-  "name": "Tubes & Modules",
-  "description": "Pressure Tubes are how you move compressed air around in $(pncr).",
-  "icon": "pneumaticcraft:pressure_tube",
-  "sortnum": 2
+    "name": "管道与模块",
+    "description": "压力管道是你在$pncr中移动压缩空气的方式.",
+    "icon": "pneumaticcraft:pressure_tube",
+    "sortnum": 2
 }

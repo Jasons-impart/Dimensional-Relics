@@ -1,17 +1,17 @@
 {
-  "name": "Lubricant",
-  "icon": "pneumaticcraft:lubricant_bucket",
-  "category": "pneumaticcraft:components",
-  "advancement": "pneumaticcraft:tp_plant",
-  "pages": [
-    {
-      "type": "text",
-      "text": "$(item)Lubricant/$ is required for crafting $(l:base_concepts/upgrades#speed)Speed Upgrades/$.$(p)It is created in a $(l:manufacturing/thermopneumatic_processing_plant)Thermopneumatic Processing Plant/$ with $(l:manufacturing/refinery)Diesel/$ (or $(l:renewables/biodiesel)Biodiesel/$) and $(item)Redstone/$."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:lubricant_bucket",
-      "text": "$(italic)Slippery stuff/$"
-    }
-  ]
+    "name": "润滑油",
+    "icon": "pneumaticcraft:lubricant_bucket",
+    "category": "pneumaticcraft:components",
+    "advancement": "pneumaticcraft:tp_plant",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item润滑油/$是制作$l:base_concepts/upgrades#speed加速升级/$所必需的.$p它是在$l:manufacturing/thermopneumatic_processing_plant热气动处理厂/$中使用$l:manufacturing/refinery柴油/$或$l:renewables/biodiesel生物柴油/$和$item红石/$制成的."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:lubricant_bucket",
+            "text": "$italic滑滑的东西/$"
+        }
+    ]
 }

@@ -1,23 +1,23 @@
 {
-  "name": "External Program Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/external_program_piece.png",
-  "category": "pneumaticcraft:widget_flow",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This widget will search for any inventory in the specified $(l:programming/area)Area/$. For every inventory, it will go through each slot. When a $(l:tools/drone)Drone/$ or $(l:components/network_components#network_api)Network API/$ is found, it will run the program stored on that item.$(p)When the program finishes, the $(item)Drone/$ will move onto the next slot and/or inventory."
-    },
-    {
-      "type": "text",
-      "text": "This widget can be used to debug $(item)Drone/$ programs, as $(l:programming/programmer)Programmers/$ also count as an inventory. Just program a $(item)Drone/$ with the $(thing)External Program/$ widget with an area of (only) the $(item)Programmer/$, and place it down.$(p)Now put a $(item)Drone/$ or $(item)Network API/$ in the programmer, and create your program. When you hit the $(thing)⟶ (export)/$ button in the $(item)Programmer/$, the deployed $(item)Drone/$ will immediately execute your program."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/external_program_piece.png"
-      ],
-      "text": "$(italic)Programception/$"
-    }
-  ]
+    "name": "外部程序部件",
+    "icon": "pneumaticcraft:textures/progwidgets/external_program_piece.png",
+    "category": "pneumaticcraft:widget_flow",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "此部件将在指定的$l:programming/area区域/$中搜索任何物品栏.对于每个物品栏,它将遍历每个槽位.当找到$l:tools/drone无人机/$或$l:components/network_components#network_api网络API/$时,它将运行存储在该物品上的程序.$p程序完成后,$item无人机/$将移动到下一个槽位和/或物品栏."
+        },
+        {
+            "type": "text",
+            "text": "此部件可用于调试$item无人机/$程序,因为$l:programming/programmer程序员/$也被视为物品栏.只需用$thing外部程序/$部件对$item无人机/$进行编程,区域设置为仅包含$item程序员/$,然后放置它.$p现在将$item无人机/$或$item网络API/$放入程序员中,并创建您的程序.当您在$item程序员/$中点击$thing⟶ 导出/$按钮时,部署的$item无人机/$将立即执行您的程序."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/external_program_piece.png"
+            ],
+            "text": "$italic程序嵌套/$"
+        }
+    ]
 }

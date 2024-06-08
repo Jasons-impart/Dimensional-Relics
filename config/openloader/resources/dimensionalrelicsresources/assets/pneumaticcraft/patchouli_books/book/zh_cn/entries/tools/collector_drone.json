@@ -1,37 +1,37 @@
 {
-  "name": "Collector Drone",
-  "icon": "pneumaticcraft:collector_drone",
-  "category": "pneumaticcraft:tools",
-  "advancement": "pneumaticcraft:pressure_chamber",
-  "pages": [
-    {
-      "type": "text",
-      "text": "A $(item)Collector Drone/$ is a specialized non-programmable type of $(l:tools/drone)Drone/$ which should be deployed against, or next to, any inventory block (chest etc.). It will collect nearby items and put them in that inventory."
-    },
-    {
-      "type": "spotlight",
-      "title": "Automatic Charging",
-      "item": "pneumaticcraft:charging_station",
-      "text": "As with all types of Drone, these drones require $(l:base_concepts/pressure)pressure/$ to operate, and will automatically seek out $(l:tools/drone#charging)a Charging Station with a Dispenser Upgrade/$ if low on air."
-    },
-    {
-      "type": "text",
-      "title": "Item Filtering",
-      "text": "The $(thing)Collector Drone/$ has some basic item filtering functionality. If deployed $(italic)against/$ an inventory block, it will filter on any items already in that inventory. If deployed on the ground $(italic)next to/$ an inventory (or on an empty inventory block), it $(italic)won't/$ filter items.$(p)If you want to change the drone's filter, you will need to wrench it and redeploy it."
-    },
-    {
-      "type": "text",
-      "text": "The $(thing)Collector Drone/$ has a default range of a 17x17x17 cube, centered on the block it was placed at. This range can be increased by adding up to 16 $(l:base_concepts/upgrades#range)Range Upgrades/$."
-    },
-    {
-      "type": "entity",
-      "entity": "pneumaticcraft:collector_drone",
-      "offset": -0.3
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Collector Drone",
-      "recipe": "pneumaticcraft:collector_drone"
-    }
-  ]
+    "name": "收集者无人机",
+    "icon": "pneumaticcraft:collector_drone",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:pressure_chamber",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item收集者无人机/$是一种特殊的非编程型$l:tools/drone无人机/$,应部署在任何物品存储方块如箱子等对面或旁边.它将收集附近的物品并放入该存储空间."
+        },
+        {
+            "type": "spotlight",
+            "title": "自动充电",
+            "item": "pneumaticcraft:charging_station",
+            "text": "与其他类型的无人机一样,这些无人机需要$l:base_concepts/pressure压力/$来操作,并且当空气不足时会自动寻找$l:tools/drone#charging带有分配器升级的充电站/$."
+        },
+        {
+            "type": "text",
+            "title": "物品过滤",
+            "text": "$thing收集者无人机/$具有基本的物品过滤功能.如果部署$italic在/$物品存储方块上,它将根据该存储空间中已有的物品进行过滤.如果部署在地面$italic旁边/$的物品存储或空物品存储方块,它$italic不会/$过滤物品.$p如果您想更改无人机的过滤设置,您需要使用扳手拆卸并重新部署它."
+        },
+        {
+            "type": "text",
+            "text": "$thing收集者无人机/$的默认范围是一个以放置位置为中心的17x17x17立方体.通过添加最多16个$l:base_concepts/upgrades#range范围升级/$,可以增加此范围."
+        },
+        {
+            "type": "entity",
+            "entity": "pneumaticcraft:collector_drone",
+            "offset": -0.3
+        },
+        {
+            "type": "crafting",
+            "text": "制作收集者无人机",
+            "recipe": "pneumaticcraft:collector_drone"
+        }
+    ]
 }

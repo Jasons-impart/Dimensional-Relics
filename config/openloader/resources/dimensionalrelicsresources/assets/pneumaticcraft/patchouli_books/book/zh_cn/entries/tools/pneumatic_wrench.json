@@ -1,21 +1,21 @@
 {
-  "name": "Pneumatic Wrench",
-  "icon": "pneumaticcraft:pneumatic_wrench",
-  "category": "pneumaticcraft:tools",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The Pneumatic Wrench is the $(thing)wrench/$ item for $(pncr). You can use it for a variety of tasks, including:$(p)$(li)$(thing)Right-click/$ vanilla and modded blocks to rotate them$(li)$(thing)Sneak+right-click/$ $(pncr) machines to drop them as items, preserving any stored upgrades and air in the machine."
-    },
-    {
-      "type": "text",
-      "text": "$(li)$(thing)Right-click/$ $(l:base_concepts/drones)Drones/$ to dismantle them, dropping them as an item.$(li)$(thing)Right-click/$ $(l:tubes/pressure_tubes)Pressure Tubes/$ to close/re-open sections to isolate them from each other.$(p)The $(item)Pneumatic Wrench/$ must be pressurized in a $(l:machines/charging_station)Charging Station/$ before use."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Pneumatic Wrench",
-      "recipe": "pneumaticcraft:pneumatic_wrench"
-    }
-  ]
+    "name": "气动扳手",
+    "icon": "pneumaticcraft:pneumatic_wrench",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "气动扳手是 $thing扳手/$ 物品,适用于 $pncr.你可以用它执行多种任务,包括:$p$li$thing右键点击/$ 原版和模组方块以旋转它们$li$thing潜行+右键点击/$ $pncr 机器以将其作为物品掉落,保留任何存储的升级和机器内的空气."
+        },
+        {
+            "type": "text",
+            "text": "$li$thing右键点击/$ $l:base_concepts/drones无人机/$ 以拆解它们,使其作为物品掉落.$li$thing右键点击/$ $l:tubes/pressure_tubes压力管道/$ 以关闭/重新打开部分以隔离它们彼此.$p$item气动扳手/$ 必须在 $l:machines/charging_station充电站/$ 中加压后才能使用."
+        },
+        {
+            "type": "crafting",
+            "text": "制作气动扳手",
+            "recipe": "pneumaticcraft:pneumatic_wrench"
+        }
+    ]
 }

@@ -1,19 +1,19 @@
 {
-  "name": "Drone Condition: Fluid Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/condition_drone_liquid_piece.png",
-  "category": "pneumaticcraft:widget_cond",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This is a $(l:programming/conditions)Condition/$ widget.$(p)The $(thing)Drone Condition: Fluid/$ widget allows you to check the tank of this $(l:tools/drone)Drone/$ for a certain amount of fluid. It will only count the fluid that's allowed by a connected $(l:programming/liquid_filter)Fluid Filter/$ (or no filter to count any fluid)."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/condition_drone_liquid_piece.png"
-      ],
-      "text": "$(italic)Drone Condition: Fluid Widget/$"
-    }
-  ]
+    "name": "无人机状态:流体小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/condition_drone_liquid_piece.png",
+    "category": "pneumaticcraft:widget_cond",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这是一个$l:programming/conditions条件/$小部件.$p该$thing无人机状态:流体/$小部件允许你检查此$l:tools/drone无人机/$的储罐中是否存在特定数量的流体.它将仅计算由连接的$l:programming/liquid_filter流体过滤器/$允许的流体或无过滤器以计算任何流体."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/condition_drone_liquid_piece.png"
+            ],
+            "text": "$italic无人机状态:流体小部件/$"
+        }
+    ]
 }

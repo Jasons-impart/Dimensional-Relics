@@ -1,22 +1,22 @@
 {
-  "name": "Logistics Configurator",
-  "icon": "pneumaticcraft:logistics_configurator",
-  "category": "pneumaticcraft:logistics",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Logistics Configurator's/$ primary purpose is to help out with configuring a $(l:logistics/overview)Logistics System/$.$(p)By $(thing)right-clicking/$ it on any $(l:logistics/frames)Logistic Frame/$ it can configure various filters.$(p)$(thing)Sneak right-clicking/$ removes the frame from the inventory it's attached to."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:logistics_configurator",
-      "text": "The $(item)Logistics Configurator/$ can also be used to remove (by $(thing)Sneak right-clicking/$) other attachable gadgets, such as the $(l:semiblocks/transfer_gadget)Transfer Gadget/$ and the $(l:semiblocks/crop_support)Crop Support/$."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Logistics Configurator",
-      "recipe": "pneumaticcraft:logistics_configurator"
-    }
-  ]
+    "name": "物流配置器",
+    "icon": "pneumaticcraft:logistics_configurator",
+    "category": "pneumaticcraft:logistics",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item物流配置器/$的主要目的是帮助配置$l:logistics/overview物流系统/$.$p通过$thing右键点击/$任何$l:logistics/frames物流框架/$,它可以配置各种过滤器.$p$thing潜行右键点击/$可以将框架从其连接的库存中移除."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:logistics_configurator",
+            "text": "$item物流配置器/$还可以通过$thing潜行右键点击/$来移除其他可附接的设备,如$l:semiblocks/transfer_gadget传输设备/$和$l:semiblocks/crop_support作物支持/$."
+        },
+        {
+            "type": "crafting",
+            "text": "制作物流配置器",
+            "recipe": "pneumaticcraft:logistics_configurator"
+        }
+    ]
 }

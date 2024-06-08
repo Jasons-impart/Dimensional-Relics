@@ -1,17 +1,17 @@
 {
-  "name": "Air Compressor",
-  "icon": "pneumaticcraft:air_compressor",
-  "category": "pneumaticcraft:compressors",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Air Compressor/$ is a simple generator which can produce $(l:base_concepts/pressure)compressed air/$. It will burn any solid fuel that a vanilla $(item)Furnace/$ will accept, to produce a $(ttcolor)$(t:This can be increased by installing Speed Upgrades)base/$ 10mL air/tick.$(p)It will $(italic)not/$ accept $(item)Lava Buckets/$ or indeed any bucket containing liquid fuels; use a $(l:compressors/liquid_compressor)Liquid Compressor/$ for that."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting an $(item)Air Compressor/$",
-      "recipe": "pneumaticcraft:air_compressor"
-    }
-  ]
+    "name": "空气压缩机",
+    "icon": "pneumaticcraft:air_compressor",
+    "category": "pneumaticcraft:compressors",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item空气压缩机/$是一种简单的发电机,可以产生$l:base_concepts/pressure压缩空气/$. 它将燃烧任何原版$item熔炉/$接受的固体燃料,以产生$ttcolor$t:通过安装加速升级可以增加基础/$每刻10毫升的空气.$p它$italic不会/$接受$item岩浆桶/$或任何装有液体燃料的桶；请使用$l:compressors/liquid_compressor液体压缩机/$来进行处理."
+        },
+        {
+            "type": "crafting",
+            "text": "制作$item空气压缩机/$",
+            "recipe": "pneumaticcraft:air_compressor"
+        }
+    ]
 }

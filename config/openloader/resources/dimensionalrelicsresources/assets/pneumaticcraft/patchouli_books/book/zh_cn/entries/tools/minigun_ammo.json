@@ -1,72 +1,72 @@
 {
-  "name": "Minigun Ammo",
-  "icon": "pneumaticcraft:gun_ammo",
-  "category": "pneumaticcraft:tools",
-  "advancement": "pneumaticcraft:minigun",
-  "pages": [
-    {
-      "type": "text",
-      "text": "Gun Ammo is used by the $(l:tools/minigun)Minigun/$.$(p)One ammo cartridge holds up to 1000 minigun rounds, depending on the ammo type. Ammo is steadily consumed while the $(item)Minigun/$ is firing, and ammo levels can be seen in the ammo item's tooltip, its durability bar, and (when the minigun is equipped) on the HUD, next to the minigun sight in the centre of the screen."
-    },
-    {
-      "type": "text",
-      "anchor": "magazine",
-      "text": "Ammo must be inserted into the $(item)Minigun's/$ magazine to be used; it will not be consumed from the player's inventory. $(thing)Sneak+right-click/$ the $(item)Minigun/$ to load ammo into it.$(p)Ammo is consumed from the numbered slots 1-4 in order, but you can $(thing)middle-click/$ a slot to lock it, forcing the $(item)Minigun/$ to consume ammo from that slot only; useful if you have multiple ammo types loaded. $(thing)Middle-click/$ a locked slot to unlock it again."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:gun_ammo",
-      "text": "Plain $(item)Gun Ammo/$ has no special capabilities on its own, but has a large cartridge of 1000 rounds.$(p)In addition, it is the only ammo type which can be crafted with $(l:tools/minigun_ammo#potions)Potions/$ to gain their effect."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:gun_ammo_incendiary",
-      "text": "$(item)Incendiary Minigun Ammo/$ has a cartridge size of 500, and will set fire to entities it hits.$(p)It also has a chance to set fire to blocks, so caution is advised!"
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:gun_ammo_weighted",
-      "text": "$(item)Weighted Minigun Ammo/$ has a cartridge size of 250, and does very high damage, but due to its weight has only 20% of the range of normal ammo."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:gun_ammo_ap",
-      "text": "$(item)Armor-piercing Minigun Ammo/$ has a cartridge size of 250, and is somewhat expensive to craft, but does slightly more damage than regular ammo, and can bypass the armor of targets."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:gun_ammo_explosive",
-      "text": "$(item)Explosive Minigun Ammo/$ has a cartridge size of 125. It has a chance to create a small but highly effective explosion when it hits; beware, this explosion can also injure you. Explosions will not damage terrain $(ttcolor)$(t:See 'B:explosiveAmmoTerrainDamage' in config)by default/$."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:gun_ammo_freezing",
-      "text": "$(item)Freezing Minigun Ammo/$ has a cartridge size of 250. It slows targets that it hits, and has a chance to encase them in a damaging freezing cloud; beware, this cloud can also injure you.$(p)It does extra damage against fire-resistant targets, so is an excellent choice for fighting in the $(#800)Nether/$."
-    },
-    {
-      "type": "text",
-      "title": "Potion-Tipped Ammo",
-      "anchor": "potions",
-      "text": "You can craft standard minigun ammo with any $(item)Potion/$, and that ammo no longer does physical damage, but has a chance to apply that potion effect to your target.$(p)$(thing)Splash/$ and $(thing)Lingering/$ potions can also be used; they have the expected area effect, but ammo is consumed 3 times as quickly when tipped with splash potions, and 6 times as quickly with lingering potions!"
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:gun_ammo",
-      "recipe2": "pneumaticcraft:gun_ammo_incendiary"
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:gun_ammo_weighted",
-      "recipe2": "pneumaticcraft:gun_ammo_ap"
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:gun_ammo_explosive",
-      "recipe2": "pneumaticcraft:gun_ammo_freezing"
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:gun_ammo_potion_crafting"
-    }
-  ]
+    "name": "Minigun弹药",
+    "icon": "pneumaticcraft:gun_ammo",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:minigun",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$l:tools/minigunMinigun/$使用枪械弹药.$p每个弹药夹最多可容纳1000发子弹,具体数量取决于弹药类型.在$itemMinigun/$射击时,弹药会逐渐消耗,弹药量可以在弹药物品的提示信息、耐久度条以及当Minigun装备时HUD上看到,位于屏幕中央的瞄准镜旁边."
+        },
+        {
+            "type": "text",
+            "anchor": "magazine",
+            "text": "必须将弹药装入$itemMinigun的/$弹匣中才能使用；它不会从玩家的库存中消耗.$thing潜行+右键点击/$$itemMinigun/$以装载弹药.$p弹药按编号顺序从1-4的槽位中消耗,但您可以$thing中键点击/$一个槽位来锁定它,迫使$itemMinigun/$仅从该槽位消耗弹药；如果您装载了多种弹药类型,这将非常有用.$thing中键点击/$已锁定的槽位以解锁它."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:gun_ammo",
+            "text": "普通的$item枪械弹药/$本身没有特殊能力,但拥有一个容量为1000发的大弹夹.$p此外,它是唯一可以通过$l:tools/minigun_ammo#potions药水/$制作来获得其效果的弹药类型."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:gun_ammo_incendiary",
+            "text": "$item燃烧弹药/$的弹夹大小为500,能点燃被击中的实体.$p它还有一定几率点燃方块,因此请谨慎使用!"
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:gun_ammo_weighted",
+            "text": "$item重弹药/$的弹夹大小为250,造成极高的伤害,但由于其重量,射程仅为普通弹药的20%."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:gun_ammo_ap",
+            "text": "$item穿甲弹药/$的弹夹大小为250,制作成本较高,但比常规弹药造成略多伤害,并能穿透目标的护甲."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:gun_ammo_explosive",
+            "text": "$item爆炸弹药/$的弹夹大小为125.它有几率在击中时产生一个虽小但效果显著的爆炸；小心,这种爆炸也可能伤害到你.默认情况下,爆炸不会破坏地形$ttcolor$t:查看配置中的'B:explosiveAmmoTerrainDamage'/$."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:gun_ammo_freezing",
+            "text": "$item冰冻迷你枪弹药/$ 的弹匣容量为250发.它能够减缓被击中的目标,并有几率将它们包裹在具有伤害的冰冻云雾中；请注意,这种云雾也可能对你造成伤害.$p它对防火目标造成额外伤害,因此是在$#800下界/$ 战斗的绝佳选择."
+        },
+        {
+            "type": "text",
+            "title": "药水涂层弹药",
+            "anchor": "potions",
+            "text": "你可以使用任何 $item药水/$ 来制作标准迷你枪弹药,这种弹药不再造成物理伤害,而是有机会将药水效果应用到目标上.$p$thing喷溅/$ 和 $thing滞留/$ 药水也可以使用；它们具有预期的区域效果,但使用喷溅药水涂层的弹药消耗速度是普通的三倍,而使用滞留药水涂层的弹药消耗速度则是六倍!"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:gun_ammo",
+            "recipe2": "pneumaticcraft:gun_ammo_incendiary"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:gun_ammo_weighted",
+            "recipe2": "pneumaticcraft:gun_ammo_ap"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:gun_ammo_explosive",
+            "recipe2": "pneumaticcraft:gun_ammo_freezing"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:gun_ammo_potion_crafting"
+        }
+    ]
 }

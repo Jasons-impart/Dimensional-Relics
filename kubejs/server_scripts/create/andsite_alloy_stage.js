@@ -20,18 +20,18 @@ ServerEvents.recipes(e => {
        "2x minecraft:kelp"
     ]
   )
-  e.recipes.minecraft.crafting_shaped(
-    "create:gearbox",
-    [
-        " A ",
-        "ABA",
-        " A ",
-    ],{
-        A:"create:cogwheel",
-        B:"create:large_cogwheel"
-    }
-  )
-  .id("create:crafting/kinetics/gearbox")
+  // e.recipes.minecraft.crafting_shaped(
+  //   "create:gearbox",
+  //   [
+  //       " A ",
+  //       "ABA",
+  //       " A ",
+  //   ],{
+  //       A:"create:cogwheel",
+  //       B:"create:large_cogwheel"
+  //   }
+  // )
+  // .id("create:crafting/kinetics/gearbox")
   e.recipes.minecraft.crafting_shaped(
     "4x create:shaft",
     [

@@ -1,20 +1,20 @@
 {
-  "name": "Pressure Tiers",
-  "icon": "pneumaticcraft:advanced_pressure_tube",
-  "category": "pneumaticcraft:base_concepts",
-  "pages": [
-    {
-      "type": "text",
-      "text": "$(pncr) currently has three $(thing)tiers/$ for pneumatic machines:$(li)$(thing)Tier one/$ machines are capable of nominally resisting 5 bar of pressure.$(li)$(thing)Tier one-point-five/$ machines can resist up to 10 bar.$(li)$(thing)Tier two/$ machines can resist up to 20 bar."
-    },
-    {
-      "type": "text",
-      "text": "Tier 1.5 is a new \"tier\" added in the MC 1.18 release of $(pncr). It's an optional tier, mainly intended to access some functionality which was previously tier 2 only:$(li)Charging tools to 10 bar$(li)Obtaining a $(item)Diamond Drill Bit/$ (which allows 3x3 block breaking; this used to require a $(item)Netherite Drill Bit/$)"
-    },
-    {
-      "type": "text",
-      "title": "Gauge Pressure",
-      "text": "Note that $(thing)bar/$ as used by $(pncr) represents the pressure $(bold)above/$ normal atmospheric pressure, so 0 bar is unpressurized air, and -1 bar is a vacuum. This is also known as $(thing)Gauge Pressure/$."
-    }
-  ]
+    "name": "压力等级",
+    "icon": "pneumaticcraft:advanced_pressure_tube",
+    "category": "pneumaticcraft:base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$pncr目前为气动机器设置了三个$thing等级/:$li$thing一级/机器名义上能抵抗5巴的压力.$li$thing一级半/机器能抵抗至多10巴.$li$thing二级/机器能抵抗至多20巴."
+        },
+        {
+            "type": "text",
+            "text": "一级半是在MC 1.18版本中$pncr新增的‘等级’,它是一个可选等级,主要用于访问之前仅限于二级的一些功能:$li为工具充能至10巴$li获得$item钻石钻头/允许3x3方块破坏；之前需要$item下界合金钻头/"
+        },
+        {
+            "type": "text",
+            "title": "表压",
+            "text": "请注意,$pncr中使用的$thing巴/表示的是$bold高于/正常大气压的压力,因此0巴是无压力空气,而-1巴是真空.这也被称为$thing表压/."
+        }
+    ]
 }

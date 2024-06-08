@@ -1,28 +1,28 @@
 {
-  "name": "Liquid Hopper",
-  "icon": "pneumaticcraft:liquid_hopper",
-  "category": "pneumaticcraft:machines",
-  "advancement": "pneumaticcraft:root",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Liquid Hopper/$ is a device which you can use to transfer fluids. Like the $(l:machines/omnidirectional_hopper)Omnidirectional Hopper/$, its input and output can point in any direction, and it uses the same placement and rotation rules. You can add $(l:base_concepts/upgrades#speed)Speed Upgrades/$ to increase the transfer rate."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:liquid_hopper",
-      "text": "The $(item)Liquid Hopper/$ will also attempt to drain fluids from any items on the ground in front of its $(9)input/$ side and to insert fluids into any items in front of its $(6)output/$ side, e.g. water buckets, lava buckets or modded fluid containers."
-    },
-    {
-      "type": "text",
-      "title": "Dispenser Upgrade",
-      "flag": "pneumaticcraft:liquidHopperDispenser",
-      "text": "If a $(l:base_concepts/upgrades#dispenser)Dispenser Upgrade/$ is inserted into the $(item)Liquid Hopper/$, it will suck any liquid block (1000mB) at the $(9)input/$ side, and it will dispense 1000mB of any stored liquid at the $(6)output/$ side. This can be used for example as a water pump."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Liquid Hopper",
-      "recipe": "pneumaticcraft:liquid_hopper"
-    }
-  ]
+    "name": "液体漏斗",
+    "icon": "pneumaticcraft:liquid_hopper",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item液体漏斗/$是一种可以用来传输流体的设备.与$l:machines/omnidirectional_hopper全向漏斗/$类似,其输入和输出可以指向任何方向,并且遵循相同的放置和旋转规则.您可以添加$l:base_concepts/upgrades#speed速度升级/$来提高传输速率."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:liquid_hopper",
+            "text": "$item液体漏斗/$还会尝试从其$9输入/$侧前方地上的任何物品中抽取流体,并向其$6输出/$侧前方的任何物品中注入流体,例如水桶、岩浆桶或模组流体容器."
+        },
+        {
+            "type": "text",
+            "title": "发射器升级",
+            "flag": "pneumaticcraft:liquidHopperDispenser",
+            "text": "如果在$item液体漏斗/$中插入一个$l:base_concepts/upgrades#dispenser发射器升级/$,它将从$9输入/$侧吸取任何液体方块1000mB,并在$6输出/$侧分配1000mB的任何存储液体.这可以用作水泵."
+        },
+        {
+            "type": "crafting",
+            "text": "制作液体漏斗",
+            "recipe": "pneumaticcraft:liquid_hopper"
+        }
+    ]
 }

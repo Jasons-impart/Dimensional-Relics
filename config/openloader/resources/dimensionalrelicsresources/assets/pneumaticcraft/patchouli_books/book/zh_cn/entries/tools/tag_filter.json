@@ -1,12 +1,12 @@
 {
-  "name": "Tag Filter",
-  "icon": "pneumaticcraft:tag_filter",
-  "category": "pneumaticcraft:tools",
-  "advancement": "pneumaticcraft:root",
-  "pages": [
-    {
-      "type": "text",
-      "text": "See the $(l:machines/tag_workbench)Tag Workbench/$."
-    }
-  ]
+    "name": "标签过滤器",
+    "icon": "pneumaticcraft:tag_filter",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "参见 $l:machines/tag_workbench标签工作台/$."
+        }
+    ]
 }

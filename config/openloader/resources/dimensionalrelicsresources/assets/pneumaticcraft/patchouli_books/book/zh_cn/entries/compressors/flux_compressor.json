@@ -1,17 +1,17 @@
 {
-  "name": "Flux Compressor",
-  "icon": "pneumaticcraft:flux_compressor",
-  "category": "pneumaticcraft:compressors",
-  "advancement": "pneumaticcraft:advanced_pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Flux Compressor/$ converts $(thing)Forge Energy/$ (compatible with $(thing)Redstone Flux/$ and the energy systems of various other mods) into $(l:base_concepts/pressure)compressed air/$. It consumes a base 40 FE/tick, but can be upgraded with $(l:base_concepts/upgrades#speed)Speed Upgrades/$.$(p)The Flux Compressor has a capacity of 100,000 FE and accepts FE at double the rate it uses it."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a $(item)Flux Compressor/$$(p)This generator must be $(l:base_concepts/heat)cooled/$, as its efficiency will drop as the temperature rises, up to the point where no air is generated at all.",
-      "recipe": "pneumaticcraft:flux_compressor"
-    }
-  ]
+    "name": "通量压缩机",
+    "icon": "pneumaticcraft:flux_compressor",
+    "category": "pneumaticcraft:compressors",
+    "advancement": "pneumaticcraft:advanced_pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$itemFlux Compressor/$ 将 $thingForge Energy/$兼容 $thingRedstone Flux/$ 及其他多种模组的能源系统转换为 $l:base_concepts/pressure压缩空气/$.它基础消耗为40 FE/tick,但可通过 $l:base_concepts/upgrades#speed速度升级/$ 进行升级.$pFlux Compressor 的容量为100,000 FE,并且接受FE的速度是其使用速度的两倍."
+        },
+        {
+            "type": "crafting",
+            "text": "制作 $itemFlux Compressor/$:$p此发电机必须 $l:base_concepts/heat冷却/$,因为随着温度升高,其效率会下降,直至完全无法产生空气.",
+            "recipe": "pneumaticcraft:flux_compressor"
+        }
+    ]
 }

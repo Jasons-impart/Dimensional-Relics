@@ -1,42 +1,42 @@
 {
-  "name": "Drone",
-  "icon": "pneumaticcraft:drone",
-  "category": "pneumaticcraft:tools",
-  "advancement": "pneumaticcraft:printed_circuit_board",
-  "pages": [
-    {
-      "type": "text",
-      "text": "Drones are powerful programmable flying robots, which can be used for all sorts of automation. They need programming before they'll do anything; for this you'll also need a $(l:programming/programmer)Programmer/$ and some $(l:programming/puzzle_pieces)Puzzle Pieces/$.$(p)When you place down a programmed and $(l:base_concepts/pressure)pressurized/$ Drone, it'll perform its programmed tasks."
-    },
-    {
-      "type": "entity",
-      "entity": "pneumaticcraft:drone",
-      "offset": -0.3
-    },
-    {
-      "type": "text",
-      "anchor": "charging",
-      "title": "Automatic Charging",
-      "text": "Drones are smart: when they're low on air, they'll stop their main program and search for a $(l:machines/charging_station)Charging Station/$ that has a $(l:base_concepts/upgrades#dispenser)Dispenser Upgrade/$ and at least 1 bar of pressure, closer than $(ttcolor)$(t:See 'max_drone_charging_station_search_range' in mod config)80 blocks/$ away.$(p)When found, the $(item)Drone/$ will go to this $(item)Charging Station/$ and will sit charging until the station can't supply any more air. After that, the $(item)Drone/$ will resume its main program."
-    },
-    {
-      "type": "text",
-      "title": "Automatic Charging (cont.)",
-      "text": "On a multiplayer server you might want to only allow your Drones to charge on your Charging Station(s). You can make your $(item)Charging Station/$ private by covering it by a $(l:machines/security_station)Security Station/$.$(p)Now only the $(item)Drones/$ placed by players who are whitelisted in your $(item)Security Station/$ will be allowed to charge."
-    },
-    {
-      "type": "text",
-      "text": "When the $(item)Drone/$'s air runs out, its propellers will stop and it will fall straight to the ground. Beware: drones can take fall damage! A destroyed $(item)Drone/$ will drop itself in item form.$(p)You can dye a $(item)Drone/$ by crafting it with a piece of $(item)dye/$. You can also dye a $(item)Drone/$ in-world, by $(thing)right-clicking/$ it with a piece of $(item)dye/$. This coloring is just cosmetic but can help to distinguish drones at a glance."
-    },
-    {
-      "type": "text",
-      "title": "Debugging",
-      "text": "Hmm, why does that $(item)Drone/$ act like it does? Why doesn't it do anything at all? You can debug your program by using a $(l:armor/pneumatic_helmet)Pneumatic Helmet/$, with $(l:base_concepts/upgrades#dispenser)Dispenser/$ and $(l:base_concepts/upgrades#entity_tracker)Entity Tracker/$ Upgrades installed. With the $(item)Drone/$ targeted and the $(thing)Entity Tracker/$ active, press the $(thing)$(k:pneumaticcraft.helmet.debugging.drone)/$ key."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Drone",
-      "recipe": "pneumaticcraft:drone"
-    }
-  ]
+    "name": "无人机",
+    "icon": "pneumaticcraft:drone",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:printed_circuit_board",
+    "pages": [
+        {
+            "type": "text",
+            "text": "无人机是强大的可编程飞行机器人,可用于各种自动化任务.在使用前需要对其进行编程；为此,你还需要一个$l:programming/programmer编程器/$和一些$l:programming/puzzle_pieces拼图块/$.$p当你放置一个已编程且$l:base_concepts/pressure加压/$的无人机时,它将执行其编程的任务."
+        },
+        {
+            "type": "entity",
+            "entity": "pneumaticcraft:drone",
+            "offset": -0.3
+        },
+        {
+            "type": "text",
+            "anchor": "charging",
+            "title": "自动充电",
+            "text": "无人机很智能:当它们的气压低时,会停止主程序并寻找一个$l:machines/charging_station充电站/$,该站需配备$l:base_concepts/upgrades#dispenser分配器升级/$且至少有1格气压,距离不超过$ttcolor$t:查看模组配置中的'max_drone_charging_station_search_range'80格/$.$p一旦找到,$item无人机/$将前往该$item充电站/$并开始充电,直到站无法再提供空气.之后,$item无人机/$将恢复其主程序."
+        },
+        {
+            "type": "text",
+            "title": "自动充电续",
+            "text": "在多人服务器中,你可能希望只允许你的无人机在你的充电站上充电.你可以通过覆盖一个$l:machines/security_station安全站/$来使你的$item充电站/$私有化.$p现在,只有那些由在$item安全站/$中被列入白名单的玩家放置的$item无人机/$才被允许充电."
+        },
+        {
+            "type": "text",
+            "text": "当$item无人机/$的气压耗尽时,其螺旋桨将停止,它会直接坠落到地面.注意:无人机会受到坠落伤害!一个被摧毁的$item无人机/$将以物品形式掉落.$p你可以通过与$item染料/$合成来给$item无人机/$染色.你也可以在世界中,通过$thing右击/$它使用$item染料/$来给$item无人机/$染色.这种染色仅是装饰性的,但有助于快速区分无人机."
+        },
+        {
+            "type": "text",
+            "title": "调试",
+            "text": "嗯,为什么那个$item无人机/$会那样行动？为什么它根本不做任何事情？你可以使用安装了$l:base_concepts/upgrades#dispenser分配器/$和$l:base_concepts/upgrades#entity_tracker实体追踪器/$升级的$l:armor/pneumatic_helmet气动头盔/$来调试你的程序.通过将$item无人机/$设为目标并激活$thing实体追踪器/$,按下$thing$k:pneumaticcraft.helmet.debugging.drone/$键."
+        },
+        {
+            "type": "crafting",
+            "text": "制作无人机",
+            "recipe": "pneumaticcraft:drone"
+        }
+    ]
 }

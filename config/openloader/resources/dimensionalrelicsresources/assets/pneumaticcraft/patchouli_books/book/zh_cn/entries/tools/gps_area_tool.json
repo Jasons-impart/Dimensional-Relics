@@ -1,21 +1,21 @@
 {
-  "name": "GPS Area Tool",
-  "icon": "pneumaticcraft:gps_area_tool",
-  "category": "pneumaticcraft:tools",
-  "advancement": "pneumaticcraft:plastic",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)GPS Area Tool/$ is an advanced version of the $(l:tools/gps_tool)GPS Tool/$, which can store $(italic)two/$ coordinates in the world. $(thing)Left-click/$ a block (or air) to change the first coordinate, and $(thing)right-click/$ for the second coordinate. By $(thing)right/$ or $(thing)left-clicking/$ in the air, you can configure the positions in a GUI. Additionally, you can change the $(thing)Area type/$, allowing you to preview the area in different configurations. "
-    },
-    {
-      "type": "text",
-      "text": "The $(item)GPS Area Tool/$ supports $(l:programming/variables#global)Global Variables/$ like the basic $(l:tools/gps_tool#variables)GPS Tool/$ does.$(p)In a $(l:programming/programmer)Programmer/$, $(thing)left-click/$ the programming area background with the $(item)GPS Area Tool/$ to create a new $(l:programming/area)Area/$ puzzle piece, or $(thing)left-click/$ on an existing $(l:programming/area)Area/$ puzzle piece to overwrite it."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a GPS Area Tool",
-      "recipe": "pneumaticcraft:gps_area_tool"
-    }
-  ]
+    "name": "GPS区域工具",
+    "icon": "pneumaticcraft:gps_area_tool",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:plastic",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$itemGPS区域工具/$是$l:tools/gps_toolGPS工具/$的高级版本,可以在世界中存储$italic两个/$坐标.$thing左键点击/$一个方块或空气来改变第一个坐标,$thing右键点击/$来改变第二个坐标.通过$thing右键/$或$thing左键点击/$空气,你可以在GUI中配置位置.此外,你还可以更改$thing区域类型/$,允许你预览不同配置的区域."
+        },
+        {
+            "type": "text",
+            "text": "$itemGPS区域工具/$支持$l:programming/variables#global全局变量/$,就像基本的$l:tools/gps_tool#variablesGPS工具/$一样.$p在$l:programming/programmer程序员/$中,使用$itemGPS区域工具/$$thing左键点击/$编程区域背景以创建一个新的$l:programming/area区域/$拼图块,或者$thing左键点击/$现有的$l:programming/area区域/$拼图块以覆盖它."
+        },
+        {
+            "type": "crafting",
+            "text": "制作GPS区域工具",
+            "recipe": "pneumaticcraft:gps_area_tool"
+        }
+    ]
 }

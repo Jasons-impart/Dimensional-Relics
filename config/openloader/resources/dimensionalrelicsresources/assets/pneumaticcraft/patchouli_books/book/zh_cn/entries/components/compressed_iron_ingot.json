@@ -1,11 +1,11 @@
 {
-  "name": "Compressed Iron Ingot",
-  "icon": "pneumaticcraft:ingot_iron_compressed",
-  "category": "pneumaticcraft:components",
-  "pages": [
-    {
-      "type": "text",
-      "text": "See $(l:base_concepts/basic_materials#compressed_iron_ingot)Basic Materials/$."
-    }
-  ]
+    "name": "压缩铁锭",
+    "icon": "pneumaticcraft:ingot_iron_compressed",
+    "category": "pneumaticcraft:components",
+    "pages": [
+        {
+            "type": "text",
+            "text": "参见$l:base_concepts/basic_materials#compressed_iron_ingot基础材料/$."
+        }
+    ]
 }

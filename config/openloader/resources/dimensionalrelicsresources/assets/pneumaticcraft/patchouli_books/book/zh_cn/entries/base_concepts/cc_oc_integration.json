@@ -1,107 +1,103 @@
 {
-  "name": "Computer Integration",
-  "icon": "pneumaticcraft:textures/patchouli/computer.png",
-  "category": "pneumaticcraft:base_concepts",
-  "flag": "|mod:computercraft,mod:opencomputers",
-  "pages": [
-    {
-      "type": "text",
-      "text": "When $(thing)ComputerCraft/$ or $(thing)Open Computers/$ is installed, you'll be able to interact with almost every $(pncr) machine, and $(l:machines/drone_interface)Drones/$.$(p)Any of the machines listed here can be interacted with as CC/OC peripherals."
-    },
-    {
-      "type": "text",
-      "title": "ComputerCraft",
-      "text": "In Lua, you can run $(thing)m = peripheral.wrap(<side>)/$, where $(thing)<side>/$ is the side of the computer the peripheral is connected to (top, bottom, left, right, back, front). Then you can use any of the following functions with $(thing)m.<functionName>/$.$(p)Anywhere in the following functions where a '<side>' appears as one of the arguments, 'up', 'down', 'north', 'south', 'east', 'west' are valid.",
-      "flag": "mod:computercraft"
-    },
-    {
-      "type": "text",
-      "title": "Open Computers",
-      "text": "You will need to use an $(item)Adapter/$ to connect your computer to $(pnc) machines; they will then appear as OC components, which show up if you run $(thing)=components.list()/$ in an OC Lua environment. Then any of the following functions can be used, e.g. $(thing)p = components.air_compressor.getPressure()/$ will retrieve the current pressure of an attached $(item)Air Compressor/$.",
-      "flag": "mod:opencomputers"
-    },
-    {
-      "type": "text",
-      "title": "Common Methods",
-      "text": "The following methods are common to $(italic)all/$ $(pncr) machines:$(li)$(#800)getPressure(), getPressure(<side>)/$: gets the machine's pressure. <side> is optional, only useful for the $(l:machines/vacuum_pump)Vacuum Pump/$, which has side-specific pressures.$(li)$(#800)getDangerPressure()/$: get the pressure at which the machine is at risk of explosion$(li)$(#800)getCriticalPressure()/$: get the hard maximum pressure at which the machine will certainly explode"
-    },
-    {
-      "type": "text",
-      "title": "Heat-Related Methods",
-      "text": "The following methods are common to $(italic)all/$ $(pncr) machines which support the concept of $(l:base_concepts/heat)Heat/$:$(li)$(#800)getTemperature(), getTemperature(<side>)/$: gets the machine's temperature. <side> is optional, only useful for the $(l:machines/vortex_tube)Vortex Tube/$, which has different temperatures depending on the side."
-    },
-    {
-      "type": "spotlight",
-      "anchor": "air_cannon",
-      "item": "pneumaticcraft:air_cannon",
-      "text": "$(li)$(#800)setExternalControl(<true/false>)/$: When true, this will prevent the cannon being rotated with normal methods (GPS Tool insertion, change in Range Upgrades..)$(li)$(#800)setTargetLocation(<x>,<y>,<z>)/$: Point the cannon at the given target location instead of that stored in a GPS Tool."
-    },
-    {
-      "type": "text",
-      "title": "Air Cannon (cont.)",
-      "text": "$(li)$(#800)setRotationAngle(<angle>)/$: Rotate the cannon yaw to the angle specified.$(li)$(#800)setHeightAngle(<angle>)/$: Rotate the cannon pitch to the angle specified.$(li)$(#800)isDoneRotating()/$: Returns true when the cannon is done turning.$(li)$(#800)getMinWorkingPressure()/$: Returns the minimal pressure needed to fire the cannon (the yellow to green threshold in the GUI)."
-    },
-    {
-      "type": "text",
-      "title": "Air Cannon (cont.)",
-      "text": "$(li)$(#800)fire()/$: Fires the cannon, provided that there's enough pressure, and when there are items inserted. Returns true if successful."
-    },
-    {
-      "type": "spotlight",
-      "anchor": "elevator",
-      "item": "pneumaticcraft:elevator_base",
-      "title": "Elevator",
-      "text": "$(li)$(#800)setExternalControl(<true/false>)/$: When true, set the Elevator's $(#f00)redstone mode/$ to 'Elevator Caller' mode, which is also applicable for computer control. You don't have to set it prior to calling $(#800)setTargetHeight()/$; that method will change the Elevator to external control automatically."
-    },
-    {
-      "type": "text",
-      "title": "Elevator (cont.)",
-      "text": "$(li)$(#800)getMinWorkingPressure()/$: Get the minimal pressure needed to extend the Elevator. Making the Elevator descend is free.$(li)$(#800)setTargetHeight(<height>)/$: Sets the Elevator's target height to the height parsed (in meters/blocks, floating point).$(li)$(#800)getTargetHeight()/$: Get the Elevator's target height (in meters/blocks, floating point).$(li)$(#800)getCurrentHeight()/$: Get the Elevator's current height (in meters/blocks, floating point)."
-    },
-    {
-      "type": "text",
-      "title": "Elevator (cont.)",
-      "text": "$(li)$(#800)getVelocity()/$: Gets the elevator's current velocity, in blocks per tick (where there are 20 ticks in a second). Negative values indicate that the elevator is descending."
-    },
-    {
-      "type": "spotlight",
-      "anchor": "universal_sensor",
-      "item": "pneumaticcraft:universal_sensor",
-      "text": "$(li)$(#800)getSensorNames()/$: Returns a table of all known sensor names.$(li)$(#800)getSensor()/$: Returns the name of the currently-selected sensor."
-    },
-    {
-      "type": "text",
-      "title": "Universal Sensor (cont.)",
-      "text": "$(li)$(#800)setSensor(<sensorName>), setSensor(<index>), setSensor()/$: Sets the current selected sensor. <sensorName> is one of the names returned by $(#800)getSensorNames()/$. <index> is an index on the returned table from $(#800)getSensorNames()/$. When using the no-arg $(#800)setSensor()/$, no sensor will be selected (the machine goes idle and uses no air). Returns true if the sensor is possible with the currently inserted upgrades. "
-    },
-    {
-      "type": "text",
-      "title": "Universal Sensor (cont.)",
-      "text": "$(li)$(#800)setTextField(<text>)/$: Some sensors use a text field to specify additional options (e.g. the 'Entities in range' sensor accepts an $(l:base_concepts/entity_filter)entity filter string/$). You can specify the desired text in here.$(li)$(#800)getTextField()/$: Returns the text currently stored in the $(thing)Universal Sensor/$."
-    },
-    {
-      "type": "text",
-      "title": "Universal Sensor (cont.)",
-      "text": "$(li)$(#800)isSensorEventBased()/$: There are two categories of sensors: event-based, and polling sensors. Event based sensors wait for something to happen (player attacks, item pickups). Polling sensors check the state of the sensor periodically (entities in range, world time, rain sensor). This function returns true if the current selected sensor is event-based."
-    },
-    {
-      "type": "text",
-      "title": "Universal Sensor (cont.)",
-      "text": "$(li)$(#800)getSensorValue()/$: If the current sensor is a polling sensor, return the (non-inverted) redstone signal it would output. Note that setting the sensor and immediately getting the output is unreliable, as many polling sensors poll infrequently for performance reasons. Thus, this method causes a pull-event to be triggered; get the output in response to that. If no polling sensor is selected, an exception will be thrown."
-    },
-    {
-      "type": "text",
-      "title": "Universal Sensor (cont.)",
-      "text": "$(li)$(#800)getMinWorkingPressure()/$: Returns the minimal pressure needed to make the Universal Sensor work (the yellow to green threshold in the GUI).$(li)$(#800)setGPSToolCoordinate(<slotIndex>,<x>,<y>,<z>)/$: Sets the location stored in the GPS Tool located in the given slot (starting with 1) to the provided location. This is useful for sensors that use a location."
-    },
-    {
-      "type": "text",
-      "title": "Universal Sensor (cont.)",
-      "text": "For event based sensors (e.g. the player right click sensor), getting the sensor value is event-based. You get the event by doing a $(#800)<arguments> = os.pullEvent(\"universalSensor\")/$. Usually the arguments consist of <eventName, redstoneStrength>. The player right click sensor is an exception, as <eventName, redstoneStrength, interactedX, interactedY, interactedZ> is returned. This allows for some interesting uses..."
-    }
-  ]
+    "name": "计算机集成",
+    "icon": "pneumaticcraft:textures/patchouli/computer.png",
+    "category": "pneumaticcraft:base_concepts",
+    "flag": "|mod:computercraft,mod:opencomputers",
+    "pages": [
+        {
+            "type": "text",
+            "text": "当安装了 $thing计算机工艺/$ 或 $thing开放式计算机/$ 时,你将能够与几乎所有 $pncr 机器以及 $l:machines/drone_interface无人机/$ 进行交互.$p此处列出的任何机器都可以作为 CC/OC 外设进行交互."
+        },
+        {
+            "type": "text",
+            "title": "计算机工艺",
+            "text": "在 Lua 中,你可以运行 $thingm = peripheral.wrap<side>/$,其中 $thing<side>/$ 是外设连接到计算机的侧面顶部、底部、左侧、右侧、背面、前面.然后你可以使用以下任何函数,例如 $thingm.<functionName>/$.$p在以下函数中,任何出现 '<side>' 作为参数的地方,'up', 'down', 'north', 'south', 'east', 'west' 都是有效的.",
+            "flag": "mod:computercraft"
+        },
+        {
+            "type": "text",
+            "title": "开放式计算机",
+            "text": "你需要使用 $item适配器/$ 将计算机连接到 $pnc 机器；它们随后会作为 OC 组件出现,如果你在 OC Lua 环境中运行 $thing=components.list/$,它们就会显示出来.然后可以使用以下任何函数,例如 $thingp = components.air_compressor.getPressure/$ 将检索到连接的 $item空气压缩机/$ 的当前压力.",
+            "flag": "mod:opencomputers"
+        },
+        {
+            "type": "text",
+            "title": "常用方法",
+            "text": "以下方法是 $italic所有/$ $pncr 机器共有的:$li$#800getPressure, getPressure<side>/$:获取机器的压力.<side> 是可选的,仅对 $l:machines/vacuum_pump真空泵/$ 有用,它具有侧面特定的压力.$li$#800getDangerPressure/$:获取机器爆炸风险的压强$li$#800getCriticalPressure/$:获取机器必然爆炸的硬性最大压强"
+        },
+        {
+            "type": "text",
+            "title": "与热量相关的方法",
+            "text": "以下方法适用于$italic所有/$ $pncr支持$l:base_concepts/heat热量/$概念的机器:$li$#800getTemperature, getTemperature<side>/$:获取机器的温度.<side>为可选参数,仅对$l:machines/vortex_tube涡流管/$有用,该管的温度因侧面而异."
+        },
+        {
+            "type": "spotlight",
+            "anchor": "air_cannon",
+            "item": "pneumaticcraft:air_cannon",
+            "text": "$li$#800setExternalControl<true/false>/$:当设置为true时,将阻止使用常规方法如GPS工具插入、范围升级更改等旋转加农炮.$li$#800setTargetLocation<x>,<y>,<z>/$:将加农炮指向给定的目标位置,而不是存储在GPS工具中的位置."
+        },
+        {
+            "type": "text",
+            "title": "空气加农炮续",
+            "text": "$li$#800setRotationAngle<angle>/$:将加农炮的偏航旋转到指定角度.$li$#800setHeightAngle<angle>/$:将加农炮的俯仰旋转到指定角度.$li$#800isDoneRotating/$:当加农炮完成旋转时返回true.$li$#800getMinWorkingPressure/$:返回发射加农炮所需的最小压力GUI中的黄色到绿色阈值."
+        },
+        {
+            "type": "text",
+            "title": "空气加农炮续",
+            "text": "$li$#800fire/$:在压力足够且有物品插入的情况下发射加农炮.如果成功则返回true."
+        },
+        {
+            "type": "spotlight",
+            "anchor": "elevator",
+            "item": "pneumaticcraft:elevator_base",
+            "title": "电梯",
+            "text": "$li$#800setExternalControl<true/false>/$:当设置为true时,将电梯的$#f00红石模式/$设置为'电梯呼叫器'模式,也适用于计算机控制.在调用$#800setTargetHeight/$之前无需设置；该方法会自动将电梯切换到外部控制."
+        },
+        {
+            "type": "text",
+            "title": "电梯续",
+            "text": "$li$#800getMinWorkingPressure/$:获取扩展电梯所需的最小压力.使电梯下降是免费的.$li$#800setTargetHeight<height>/$:将电梯的目标高度设置为解析后的高度以米/方块为单位,浮点数.$li$#800getTargetHeight/$:获取电梯的目标高度以米/方块为单位,浮点数.$li$#800getCurrentHeight/$:获取电梯的当前高度以米/方块为单位,浮点数."
+        },
+        {
+            "type": "text",
+            "title": "电梯续",
+            "text": "$li$#800getVelocity/$:获取电梯当前的速度,以每刻每秒有20刻的方块数表示.负值表示电梯正在下降."
+        },
+        {
+            "type": "spotlight",
+            "anchor": "universal_sensor",
+            "item": "pneumaticcraft:universal_sensor",
+            "text": "$li$#800getSensorNames/$:返回所有已知传感器名称的列表.$li$#800getSensor/$:返回当前选定传感器的名称."
+        },
+        {
+            "type": "text",
+            "title": "通用传感器续",
+            "text": "$li$#800setSensor<sensorName>, setSensor<index>, setSensor/$:设置当前选定的传感器.<sensorName> 是 $#800getSensorNames/$ 返回的名称之一.<index> 是 $#800getSensorNames/$ 返回的表格中的索引.当使用无参数的 $#800setSensor/$ 时,不会选择传感器机器闲置且不消耗空气.如果当前插入的升级支持该传感器,则返回 true."
+        },
+        {
+            "type": "text",
+            "title": "通用传感器续",
+            "text": "$li$#800setTextField<text>/$:某些传感器使用文本字段来指定额外选项例如,'范围内的实体'传感器接受一个 $l:base_concepts/entity_filter实体过滤字符串/$.您可以在此指定所需的文本.$li$#800getTextField/$:返回 $thing通用传感器/$ 中当前存储的文本."
+        },
+        {
+            "type": "text",
+            "title": "通用传感器续",
+            "text": "$li$#800isSensorEventBased/$:传感器分为两类:基于事件的传感器和轮询传感器.基于事件的传感器等待某事发生玩家攻击,物品拾取.轮询传感器定期检查传感器的状态范围内的实体,世界时间,雨传感器.如果当前选定的传感器是基于事件的,则此函数返回 true."
+        },
+        {
+            "type": "text",
+            "title": "通用传感器续",
+            "text": "$li$#800getSensorValue/$:如果当前传感器是轮询传感器,则返回它将输出的非反转红石信号.请注意,设置传感器并立即获取输出是不可靠的,因为许多轮询传感器出于性能原因不频繁地轮询.因此,此方法会触发拉取事件；响应该事件获取输出.如果没有选择轮询传感器,则会抛出异常."
+        },
+        {
+            "type": "text",
+            "title": "通用传感器续",
+            "text": "$li$#800getMinWorkingPressure/$:返回使通用传感器工作的最小压力GUI中的黄色到绿色阈值.$li$#800setGPSToolCoordinate<slotIndex>,<x>,<y>,<z>/$:将位于指定槽位从1开始的GPS工具中存储的位置设置为提供的位置.这对于使用位置的传感器很有用."
+        },
+        {
+            "type": "text",
+            "title": "通用传感器续",
+            "text": "对于基于事件的传感器例如玩家右键点击传感器,获取传感器值是基于事件的.您可以通过执行$#800<arguments> = os.pullEvent\"universalSensor\"/$来获取事件.通常参数包括<eventName, redstoneStrength>.玩家右键点击传感器是一个例外,因为它返回<eventName, redstoneStrength, interactedX, interactedY, interactedZ>.这允许一些有趣的用途..."
+        }
+    ]
 }
-
-
-
-

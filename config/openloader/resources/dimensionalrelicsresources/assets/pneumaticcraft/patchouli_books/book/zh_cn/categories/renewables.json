@@ -1,6 +1,6 @@
 {
-  "name": "Renewables",
-  "description": "$(pncr) has a collection of processes to produce some renewable resources, in particular Biodiesel.",
-  "icon": "pneumaticcraft:biodiesel_bucket",
-  "sortnum": 11
+    "name": "可再生能源",
+    "description": "$pncr拥有一系列生产某些可再生资源的流程,特别是生物柴油.",
+    "icon": "pneumaticcraft:biodiesel_bucket",
+    "sortnum": 11
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Semiblocks/Gadgets",
-  "description": "$(thing)Semiblocks/$ are curious items which aren't quite blocks, but are placeable like blocks, and can exist in the same space as real blocks.$(p)See also $(l:logistics/frames)Logistics Frames/$ which are also technically semiblocks.",
-  "icon": "pneumaticcraft:transfer_gadget",
-  "sortnum": 7
+    "name": "半砖/小工具",
+    "description": "$thing半砖/是一些奇特的物品,它们不完全算是方块,但可以像方块一样放置,并且可以与真实方块共存于同一空间.$p另请参见$l:logistics/frames物流框架/,它们在技术上也算是半砖.",
+    "icon": "pneumaticcraft:transfer_gadget",
+    "sortnum": 7
 }

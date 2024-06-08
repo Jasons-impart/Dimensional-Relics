@@ -1,69 +1,69 @@
 {
-  "name": "Plastic",
-  "icon": "pneumaticcraft:plastic_bucket",
-  "category": "pneumaticcraft:components",
-  "advancement": "pneumaticcraft:tp_plant",
-  "pages": [
-    {
-      "type": "text",
-      "text": "$(item)Plastic/$ is an important crafting component in $(pncr).$(p)$(item)Molten Plastic/$ is made from $(l:manufacturing/refinery)LPG/$ and $(item)Coal/$, or $(l:renewables/biodiesel)Biodiesel/$ and $(item)Charcoal/$ in the $(l:manufacturing/thermopneumatic_processing_plant)Thermopneumatic Processing Plant/$."
-    },
-    {
-      "type": "pneumaticcraft:thermo_plant",
-      "recipe": "pneumaticcraft:thermo_plant/plastic_from_lpg"
-    },
-    {
-      "type": "pneumaticcraft:thermo_plant",
-      "recipe": "pneumaticcraft:thermo_plant/plastic_from_biodiesel"
-    },
-    {
-      "type": "spotlight",
-      "title": "Plastic Sheet",
-      "item": "pneumaticcraft:plastic",
-      "flag": "pneumaticcraft:inWorldPlasticSolidification",
-      "text": "$(item)Molten Plastic/$ can be solidified simply by pouring it into the world; it will turn into a $(item)Plastic Sheet/$ within half a second or so. This is very easily automated with a $(l:machines/liquid_hopper)Liquid Hopper/$ with a $(l:base_concepts/upgrades#dispenser)Dispenser Upgrade/$, and an $(l:machines/omnidirectional_hopper)Omnidirectional Hopper/$."
-    },
-    {
-      "type": "spotlight",
-      "title": "Plastic Sheet",
-      "item": "pneumaticcraft:plastic",
-      "flag": "!pneumaticcraft:inWorldPlasticSolidification",
-      "text": "$(item)Plastic Sheets/$ are produced by placing a bucket or $(l:machines/tanks)tank/$ of $(item)Molten Plastic/$ into an inventory with a $(l:semiblocks/heat_frame)Heat Frame/$ attached, and chilling the Heat Frame, ideally to below -80C (the colder the better). $(item)Molten Plastic/$ will be consumed from the bucket or tank, and you will have a chance for a second $(item)Plastic Sheet/$ for each 1000mB of Molten Plastic consumed."
-    },
-    {
-      "type": "text",
-      "title": "Improving Yields",
-      "flag": "pneumaticcraft:inWorldPlasticSolidification",
-      "text": "An alternative way to solidify $(item)Plastic Sheets/$ is to place a bucket or $(l:machines/tanks)tank/$ of $(item)Molten Plastic/$ into an inventory with a $(l:semiblocks/heat_frame)Heat Frame/$ attached, and chill the Heat Frame, ideally to below -80C (the colder the better). $(item)Molten Plastic/$ will be consumed from the bucket or tank, and you will have a chance for a second $(item)Plastic Sheet/$ for each 1000mB of Molten Plastic consumed."
-    },
-    {
-      "type": "text",
-      "title": "A Note on Tanks",
-      "text": "Although $(pncr) Fluid Tanks have inventory slots, and allow $(thing)Heat Frames/$ to be placed on them, simply attaching a Heat Frame to a tank full of Molten Plastic won't work; the fluid tank must be in item form in an inventory (chest, etc.) with a Heat Frame attached."
-    },
-    {
-      "type": "spotlight",
-      "title": "Plastic Construction Brick™",
-      "item": "pneumaticcraft:plastic_brick_red",
-      "text": "These bricks are formed with $(item)Plastic Sheets/$ and any dye, and are suitable for building with.$(p)Don't walk on these with bare feet, because it hurts an unreasonable amount!$(p)$(italic)Compatible with other leading brands of construction brick./$"
-    },
-    {
-      "type": "spotlight",
-      "title": "Smooth Plastic Construction Brick™",
-      "item": "pneumaticcraft:smooth_plastic_brick_red",
-      "text": "The smooth version of the $(item)Plastic Construction Brick/$ is also suitable for building with.$(p)These bricks also have the advantage of making excellent flooring, since they will increase your walk speed!"
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:plastic_brick_red",
-      "recipe2": "pneumaticcraft:smooth_plastic_brick_red",
-      "text": "You can guess the recipes for the other colours"
-    },
-    {
-      "type": "smelting",
-      "recipe": "pneumaticcraft:plastic_sheet_from_brick",
-      "recipe2": "pneumaticcraft:plastic_sheet_from_smooth_brick",
-      "text": "You can smelt bricks back into plastic sheets"
-    }
-  ]
+    "name": "塑料",
+    "icon": "pneumaticcraft:plastic_bucket",
+    "category": "pneumaticcraft:components",
+    "advancement": "pneumaticcraft:tp_plant",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item塑料/$ 是 $pncr 中一个重要的合成材料.$item熔融塑料/$ 可以通过 $l:manufacturing/refinery液化石油气/$ 和 $item煤炭/$, 或者 $l:renewables/biodiesel生物柴油/$ 和 $item木炭/$ 在 $l:manufacturing/thermopneumatic_processing_plant热气动处理厂/$ 中制造."
+        },
+        {
+            "type": "pneumaticcraft:thermo_plant",
+            "recipe": "pneumaticcraft:thermo_plant/plastic_from_lpg"
+        },
+        {
+            "type": "pneumaticcraft:thermo_plant",
+            "recipe": "pneumaticcraft:thermo_plant/plastic_from_biodiesel"
+        },
+        {
+            "type": "spotlight",
+            "title": "塑料板",
+            "item": "pneumaticcraft:plastic",
+            "flag": "pneumaticcraft:inWorldPlasticSolidification",
+            "text": "$item熔融塑料/$ 可以通过简单地将其倒入世界中固化；它将在大约半秒内变成 $item塑料板/$.这可以通过带有 $l:machines/liquid_hopper液体漏斗/$ 和 $l:base_concepts/upgrades#dispenser分配器升级/$ 的 $l:machines/omnidirectional_hopper全方位漏斗/$ 轻松自动化."
+        },
+        {
+            "type": "spotlight",
+            "title": "塑料板",
+            "item": "pneumaticcraft:plastic",
+            "flag": "!pneumaticcraft:inWorldPlasticSolidification",
+            "text": "$item塑料板/$ 是通过将一桶或 $l:machines/tanks储罐/$ 的 $item熔融塑料/$ 放入带有 $l:semiblocks/heat_frame热框架/$ 连接的库存中,并将热框架冷却至理想温度低于 -80C越冷越好来生产的.$item熔融塑料/$ 将从桶或储罐中消耗,并且每消耗 1000mB 熔融塑料,您就有机会获得第二块 $item塑料板/$."
+        },
+        {
+            "type": "text",
+            "title": "提高产量",
+            "flag": "pneumaticcraft:inWorldPlasticSolidification",
+            "text": "另一种固化 $item塑料板/$ 的方法是将一桶或 $l:machines/tanks储罐/$ 的 $item熔融塑料/$ 放入带有 $l:semiblocks/heat_frame热框架/$ 连接的库存中,并将热框架冷却至理想温度低于 -80C越冷越好.$item熔融塑料/$ 将从桶或储罐中消耗,并且每消耗 1000mB 熔融塑料,您就有机会获得第二块 $item塑料板/$."
+        },
+        {
+            "type": "text",
+            "title": "关于储罐的注意事项",
+            "text": "尽管 $pncr 流体储罐有库存槽,并允许 $thing热框架/$ 放置在其上,但简单地将热框架连接到装满熔融塑料的储罐上是不起作用的；流体储罐必须以物品形式存在于带有连接热框架的库存如箱子等中."
+        },
+        {
+            "type": "spotlight",
+            "title": "塑料建筑砖™",
+            "item": "pneumaticcraft:plastic_brick_red",
+            "text": "这些砖块由 $item塑料板/$ 和任何染料制成,适合用于建筑.$p不要赤脚在这些砖块上行走,因为这会造成不合理的大量疼痛!$p$italic与其他领先品牌的建筑砖兼容./$"
+        },
+        {
+            "type": "spotlight",
+            "title": "平滑塑料建筑砖™",
+            "item": "pneumaticcraft:smooth_plastic_brick_red",
+            "text": "平滑版的$item塑料建筑砖块/$也非常适合用于建造.$p这些砖块还有一个优点,就是它们能制作出极佳的地板,因为它们能提升你的行走速度!"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:plastic_brick_red",
+            "recipe2": "pneumaticcraft:smooth_plastic_brick_red",
+            "text": "你可以猜测其他颜色的配方"
+        },
+        {
+            "type": "smelting",
+            "recipe": "pneumaticcraft:plastic_sheet_from_brick",
+            "recipe2": "pneumaticcraft:plastic_sheet_from_smooth_brick",
+            "text": "你可以将砖块熔炼回塑料片"
+        }
+    ]
 }

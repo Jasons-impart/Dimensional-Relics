@@ -1,25 +1,25 @@
 {
-  "name": "Flow Control",
-  "icon": "pneumaticcraft:textures/progwidgets/jump_piece.png",
-  "category": "pneumaticcraft:programming",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "When a $(l:tools/drone)Drone/$ is deployed, it immediately starts to execute its stored program. Execution flow occurs as follows:$(li)The program $(italic)always/$ begins at the $(l:programming/start)Start/$ widget, of which there can be only one.$(li)Flow normally proceeds $(italic)downward/$; to the widget connected to the bottom of the current widget."
-    },
-    {
-      "type": "text",
-      "text": "$(li)A widget executes its given operation until it decides it's $(italic)done/$ - the definition of 'done' varies from widget to widget, and is described in the pages for each individual widget.$(li)When there's no widget connected to the bottom of the current widget, execution returns to the $(l:programming/start)Start/$ widget.$(p)That's the basics. There are few special cases, however, described next..."
-    },
-    {
-      "type": "text",
-      "title": "Flow Control Widgets",
-      "text": "$(li)The $(l:programming/label)Label/$ widget acts a point in the program to be jumped to.$(li)The $(l:programming/jump)Jump/$ widget triggers an immediate, unconditional, jump to a matching $(thing)Label/$ widget.$(li)$(l:programming/conditions)Condition/$ widgets can trigger a jump, based on the condition they're testing.$(li)The advanced $(l:programming/for_each_item)For Each Item/$ and $(l:programming/for_each_coordinate)For Each Coordinate/$ widgets repeatedly jump to a $(thing)Label/$, for their list of inputs."
-    },
-    {
-      "type": "text",
-      "text": "A couple more special widgets exist, which affect flow control:$(li)The $(l:programming/standby)Standby/$ widget, which puts the drone to 'sleep' until another widget actually has something to do.$(li)The $(l:programming/suicide)Suicide/$ widget, which drops the $(thing)Drone/$ as an item, immediately terminating execution."
-    }
-  ]
+    "name": "流程控制",
+    "icon": "pneumaticcraft:textures/progwidgets/jump_piece.png",
+    "category": "pneumaticcraft:programming",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "当$l:tools/drone无人机/$被部署时,它立即开始执行其存储的程序.执行流程如下:$li程序$italic始终/$从$l:programming/start开始/$部件开始,该部件只能有一个.$li流程通常$italic向下/$进行；到与当前部件底部连接的部件."
+        },
+        {
+            "type": "text",
+            "text": "$li部件执行其给定的操作,直到它决定$italic完成/$ - '完成'的定义因部件而异,并在每个单独部件的页面中描述.$li当当前部件底部没有连接部件时,执行返回到$l:programming/start开始/$部件.$p这就是基本原理.然而,有一些特殊情况,接下来将描述..."
+        },
+        {
+            "type": "text",
+            "title": "流程控制部件",
+            "text": "$liThe $l:programming/label标签/$ widget 作为程序中的一个跳转点.$liThe $l:programming/jump跳转/$ widget 触发一个立即的、无条件的跳转到匹配的 $thing标签/$ widget.$li$l:programming/conditions条件/$ widgets 可以根据它们测试的条件触发跳转.$li高级的 $l:programming/for_each_item每项循环/$ 和 $l:programming/for_each_coordinate每坐标循环/$ widgets 会重复跳转到一个 $thing标签/$, 针对它们的输入列表."
+        },
+        {
+            "type": "text",
+            "text": "还存在一些影响流程控制的特殊widget:$liThe $l:programming/standby待机/$ widget,它使无人机进入‘睡眠’状态,直到其他widget有事可做.$liThe $l:programming/suicide自毁/$ widget,它将 $thing无人机/$ 作为物品丢弃,立即终止执行."
+        }
+    ]
 }

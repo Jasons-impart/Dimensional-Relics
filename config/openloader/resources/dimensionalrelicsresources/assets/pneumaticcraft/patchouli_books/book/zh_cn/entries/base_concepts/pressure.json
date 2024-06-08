@@ -1,27 +1,27 @@
 {
-  "name": "Pressure",
-  "icon": "pneumaticcraft:pressure_tube",
-  "category": "pneumaticcraft:base_concepts",
-  "pages": [
-    {
-      "type": "text",
-      "text": "Compressed air is the $(pncr) $(thing)power system/$, based on real-world pressure mechanics.$(li)Compressed air is $(italic)produced/$ by a class of machines called $(thing)Compressors/$, of which there are several types.$(li)All pressurizable machines and tools have a $(thing)volume/$ (measured in mL), which is the amount of air they can store at standard atmospheric pressure, or $(ttcolor)$(t:This mod uses 0 bar to represent standard atmospheric pressure, also known as Gauge Pressure)0 bar/$."
-    },
-    {
-      "type": "text",
-      "text": "$(li)The $(thing)pressure P/$ of a machine or tool can be calculated as:$(p)  $(formula)P = (A / V) - 1/$$(p)where $(formula)V/$ is the $(thing)volume/$ and $(formula)A/$ is the $(thing)air/$ currently in the machine. E.g a machine with 5000mL $(thing)volume/$ storing 20000mL $(thing)air/$ has a pressure of $(thing)3 bar/$.$(li)The volume of most machines can be increased with $(l:base_concepts/upgrades#volume)Volume Upgrades/$, which mean smaller pressure drops when air is used."
-    },
-    {
-      "type": "text",
-      "text": "$(li)Air moves from higher pressure blocks to lower pressure blocks. Leaving $(l:tubes/pressure_tubes)tubes/$ or machines unconnected will cause a giant $(thing)air leak/$, which means pressure loss! Air leaks are audible as a hissing sound, and visible as a stream of particles leaving the block.$(li)Pressure tries to balance. Connecting a small machine to a big air capacity (like a $(l:manufacturing/pressure_chamber)Pressure Chamber/$) will result in a pressure build-up in the machine."
-    },
-    {
-      "type": "text",
-      "text": "$(li)Pressure applies force on the inner walls of a machine or $(l:tubes/pressure_tubes)pressure tube/$. Applying too much pressure results in an $(thing)Uncontrolled Rapid Air Release Event/$, also known as an $(thing)explosion/$. The pressure at which machines can explode is shown as the red area in the pressure gauge in any machine's GUI, but the exact point at which a machine will explode isn't predictable."
-    },
-    {
-      "type": "text",
-      "text": "$(li)It's important to understand that while many machines require a $(thing)minimum pressure/$ to operate, the operations that a machine carries out consume $(thing)air/$, not $(thing)pressure/$; pressure is just a function of stored air and volume."
-    }
-  ]
+    "name": "压力",
+    "icon": "pneumaticcraft:pressure_tube",
+    "category": "pneumaticcraft:base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "压缩空气是$pncr的$thing动力系统/$,基于现实世界的压力机制.$li压缩空气由一类被称为$thing压缩机/$的机器产生,其中有几种类型.$li所有可加压的机器和工具都有一个$thing体积/$以毫升为单位,这是它们在标准大气压下可以储存的空气量,或$ttcolor$t:本模组使用0巴表示标准大气压,也称为表压0巴/$."
+        },
+        {
+            "type": "text",
+            "text": "$li机器或工具的$thing压力 P/$可以计算为:$p  $formulaP = A / V - 1/$$p其中$formulaV/$是$thing体积/$,$formulaA/$是机器中当前的$thing空气/$.例如,一个具有5000mL $thing体积/$并储存20000mL $thing空气/$的机器具有$thing3巴/$的压力.$li大多数机器的体积可以通过$l:base_concepts/upgrades#volume体积升级/$增加,这意味着使用空气时压力下降更小."
+        },
+        {
+            "type": "text",
+            "text": "$li空气从高压区块流向低压区块.离开$l:tubes/pressure_tubes管道/$或机器未连接将导致巨大的$thing空气泄漏/$,这意味着压力损失!空气泄漏会发出嘶嘶声,并可见为从区块流出的粒子流.$li压力试图平衡.将一个小机器连接到一个大的空气容量如$l:manufacturing/pressure_chamber压力室/$将导致机器内压力的积累."
+        },
+        {
+            "type": "text",
+            "text": "$li压力作用于机器内部壁或$l:tubes/pressure_tubes压力管道/.施加过大的压力会导致$thing失控快速空气释放事件/,也称为$thing爆炸/.机器能够承受的压力极限在任何机器的图形用户界面中的压力表上以红色区域显示,但机器爆炸的确切压力点是不可预测的."
+        },
+        {
+            "type": "text",
+            "text": "$li理解这一点很重要:虽然许多机器需要$thing最低压力/才能运行,但机器执行的操作消耗的是$thing空气/,而不是$thing压力/；压力仅仅是储存空气和体积的一个函数."
+        }
+    ]
 }

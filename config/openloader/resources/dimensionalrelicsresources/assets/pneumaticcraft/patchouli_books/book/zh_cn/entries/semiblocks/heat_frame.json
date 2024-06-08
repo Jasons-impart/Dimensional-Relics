@@ -1,25 +1,25 @@
 {
-  "name": "Heat Frame",
-  "icon": "pneumaticcraft:heat_frame",
-  "category": "pneumaticcraft:semiblocks",
-  "advancement": "pneumaticcraft:root",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This item can be placed on any $(thing)inventory/$. When heated by an adjacent $(l:base_concepts/heat)Heat source/$ it will try to smelt any item in the inventory (or freeze it when cooled). It will only succeed if there is room in the inventory for the resulting item. The more heat applied, the faster the smelting process will be, up to a maximum of 1 item per second. Similarly, the more it's cooled, the faster it will freeze objects."
-    },
-    {
-      "type": "link",
-      "flag": "mod:crafttweaker",
-      "title": "CraftTweaker",
-      "text": "The $(thing)Heat Frame/$ has $(l:https://minecraft.curseforge.com/projects/crafttweaker)CraftTweaker/$ support for cooling (smelting just uses regular $(item)Furnace/$ recipes): recipes can be added and removed. Follow the link below for more information.",
-      "url": "https://crafttweaker.readthedocs.io/en/latest/#Mods/PneumaticCraft_Repressurized/Heat_Frame_Cooling/",
-      "link_text": "CraftTweaker Docs"
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Heat Frame",
-      "recipe": "pneumaticcraft:heat_frame"
-    }
-  ]
+    "name": "加热框架",
+    "icon": "pneumaticcraft:heat_frame",
+    "category": "pneumaticcraft:semiblocks",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "此物品可以放置在任何$thing容器/$上.当被相邻的$l:base_concepts/heat热源/$加热时,它会尝试熔炼容器中的任何物品冷却时则冻结.只有当容器中有空间存放结果物品时,熔炼才会成功.加热越多,熔炼过程越快,最高可达每秒1个物品.同样,冷却越多,冻结物品的速度越快."
+        },
+        {
+            "type": "link",
+            "flag": "mod:crafttweaker",
+            "title": "CraftTweaker",
+            "text": "$thing加热框架/$支持$l:https://minecraft.curseforge.com/projects/crafttweakerCraftTweaker/$冷却熔炼使用常规$item熔炉/$配方:可以添加和移除配方.更多信息请点击下面的链接.",
+            "url": "https://crafttweaker.readthedocs.io/en/latest/#Mods/PneumaticCraft_Repressurized/Heat_Frame_Cooling/",
+            "link_text": "CraftTweaker Docs"
+        },
+        {
+            "type": "crafting",
+            "text": "制作加热框架",
+            "recipe": "pneumaticcraft:heat_frame"
+        }
+    ]
 }

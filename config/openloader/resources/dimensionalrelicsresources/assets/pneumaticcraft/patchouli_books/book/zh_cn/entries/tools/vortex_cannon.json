@@ -1,22 +1,22 @@
 {
-  "name": "Vortex Cannon",
-  "icon": "pneumaticcraft:vortex_cannon",
-  "category": "pneumaticcraft:tools",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(item)Vortex Cannon/$ is a weapon which shoots $(thing)vortices/$: air spinning in a way that it doesn't have much friction and can be mostly stable.$(p)You can use this to shoot gusts at the target of choice: to repel enemies, push animals around, uproot plants and leaves, or shear entities."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:vortex_cannon",
-      "text": "The higher the $(item)Vortex Cannon/$ is pressurized, the more impact it has on its targets and the greater its range is.$(p)Note that it's possible to catch yourself in a fired vortex, which can be very useful for fast transport. But beware: it provides no fall damage protection!"
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting a Vortex Cannon",
-      "recipe": "pneumaticcraft:vortex_cannon"
-    }
-  ]
+    "name": "涡流炮",
+    "icon": "pneumaticcraft:vortex_cannon",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item涡流炮/$ 是一种武器,它发射 $thing涡流/$:一种空气旋转方式,几乎没有摩擦力且可以保持相对稳定.$p您可以使用它向选定的目标发射强风:击退敌人,推动动物移动,连根拔起植物和树叶,或剪切实体."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:vortex_cannon",
+            "text": "$item涡流炮/$ 的压力越高,对目标的影响越大,射程也越远.$p注意,您可能会被发射的涡流卷入,这对于快速运输非常有用.但请小心:它不提供坠落伤害保护!"
+        },
+        {
+            "type": "crafting",
+            "text": "制作涡流炮",
+            "recipe": "pneumaticcraft:vortex_cannon"
+        }
+    ]
 }

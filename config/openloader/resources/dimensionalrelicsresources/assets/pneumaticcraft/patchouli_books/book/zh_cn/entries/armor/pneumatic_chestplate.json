@@ -1,78 +1,77 @@
 {
-  "name": "Pneumatic Chestplate",
-  "icon": "pneumaticcraft:pneumatic_chestplate",
-  "category": "pneumaticcraft:armor",
-  "advancement": "pneumaticcraft:printed_circuit_board",
-  "pages": [
-
-    {
-      "type": "text",
-      "text": "The $(item)Pneumatic Chestplate/$ is one of the four $(thing)Pneumatic Armor/$ pieces.$(p)It has a larger $(l:base_concepts/pressure)air volume/$ than the other three pieces."
-    },
-    {
-      "type": "crafting",
-      "recipe": "pneumaticcraft:pneumatic_chestplate",
-      "text": "Crafting a Pneumatic Chestplate"
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:security_upgrade",
-      "text": "With a $(l:base_concepts/upgrades#security)Security Upgrade/$ installed, the chestplate grants you protection from fire and lava, at a significant air cost: air is rapidly dumped from the chestplate to extinguish nearby flames and keep you cool.  It will even slowly solidify nearby lava."
-    },
-    {
-      "type": "text",
-      "title": "Security Upgrade (cont)",
-      "text": "Note: this protection activates if you are about to take fire damage, so if you are already protected (e.g. via a potion), this upgrade won't do anything."
-    },
-    {
-      "type": "spotlight",
-      "flag": "mod:immersiveengineering",
-      "title": "Immersive Engineering",
-      "item": "immersiveengineering:wirecoil_copper",
-      "text": "The $(item)Security Upgrade/$ will also provide protection from uninsulated $(l:https://minecraft.curseforge.com/projects/immersive-engineering)Immersive Engineering/$ wiring; you will not be injured by electric shocks from such wires, but this does cost air from the chestplate, proportional to the damage negated. This doesn't prevent any knockbacks."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:magnet_upgrade",
-      "text": "With one or more $(l:base_concepts/upgrades#magnet)Magnet Upgrades/$ installed, nearby items and XP orbs will be attracted to you for a very small air cost.  The base range is 5 blocks, but this can be increased up to 10 blocks by adding extra upgrades."
-    },
-    {
-      "type": "text",
-      "title": "Magnet Upgrade (cont.)",
-      "text": "The Magnet Upgrade respects Botania's $(item)Solegnolia/$ flower, and will also not attempt to pull items from Immersive Engineering $(item)conveyor belts/$."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:charging_upgrade",
-      "text": "With one or more $(l:base_concepts/upgrades#charging)Charging Upgrades/$ installed, the chestplate gains the ability to pressurize any other pneumatic item in your inventory, both worn and carried.  The chestplate will only charge items up to its own pressure level.  Adding extra Charging Upgrades (up to 6) increases the charging rate."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:dispenser_upgrade",
-      "text": "A $(l:base_concepts/upgrades#dispenser)Dispenser Upgrade/$ allows items/blocks to be launched from your offhand slot by pressing & releasing $(thing)$(k:pneumaticcraft.chestplate.launcher)/$, similar to an $(l:machines/air_cannon)Air Cannon/$. It takes 15 ticks (0.75 seconds) to fully charge the launcher; releasing the key sooner will launch at reduced velocity."
-    },
-    {
-      "type": "text",
-      "title": "Dispenser Upgrade (cont.)",
-      "text": "$(li)Some blocks have special $(item)Dispenser/$-like behaviour, such as $(item)TNT/$, or $(item)Arrows/$...$(li)Other blocks (like $(item)Torches/$) will be fired as 'tumbling' blocks which reform as blocks when they hit something.$(li)Other items will simply be fired as item entities."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:range_upgrade",
-      "text": "A $(l:base_concepts/upgrades#range)Range Upgrade/$ installed in your chestplate increases your reach distance for block interactions (not melee attacks) by 3.5 blocks while it's active. This does come with a small ongoing air cost, however."
-    },
-    {
-      "type": "spotlight",
-      "item": "pneumaticcraft:air_conditioning_upgrade",
-      "flag": "mod:toughasnails",
-      "title": "A/C Upgrade",
-      "text": "With up to four $(l:base_concepts/upgrades#air_conditioning)Air Conditioning Upgrades/$ installed, you will gain some protection from environmental temperature extremes added by the $(l:https://minecraft.curseforge.com/projects/tough-as-nails)Tough As Nails/$ mod. Air Conditioning will automatically engage if it detects that your body temperature is higher or lower than normal, and disengage when equilibrium has been restored."
-    },
-    {
-      "type": "text",
-      "flag": "mod:toughasnails",
-      "title": "A/C Upgrade (cont.)",
-      "text": "This does come at a moderate pressure cost, however, which is dependent on the level of heating or cooling required and the number of upgrades installed. Depending on the environment you're working in, you may not need the full four upgrades to remain comfortable."
-    }
-  ]
+    "name": "气动胸甲",
+    "icon": "pneumaticcraft:pneumatic_chestplate",
+    "category": "pneumaticcraft:armor",
+    "advancement": "pneumaticcraft:printed_circuit_board",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item气动胸甲/$是四件$thing气动护甲/$之一.$p它的$l:base_concepts/pressure空气容量/$比其他三件要大."
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:pneumatic_chestplate",
+            "text": "制作气动胸甲"
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:security_upgrade",
+            "text": "安装了$l:base_concepts/upgrades#security安全升级/$后,胸甲将为你提供防火和防熔岩的保护,但会显著消耗空气:胸甲会迅速排放空气以熄灭附近的火焰并保持你凉爽.它甚至能缓慢固化附近的熔岩."
+        },
+        {
+            "type": "text",
+            "title": "安全升级续",
+            "text": "注意:这种保护在你即将受到火焰伤害时激活,因此如果你已经受到保护例如通过药水,此升级将不会起作用."
+        },
+        {
+            "type": "spotlight",
+            "flag": "mod:immersiveengineering",
+            "title": "沉浸工程",
+            "item": "immersiveengineering:wirecoil_copper",
+            "text": "$item安全升级/$还将提供对未绝缘的$l:https://minecraft.curseforge.com/projects/immersive-engineering沉浸工程/$电线的保护；你不会因这些电线受到电击伤害,但会根据抵消的伤害量消耗胸甲中的空气.这不会防止任何击退效果."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:magnet_upgrade",
+            "text": "安装一个或多个$l:base_concepts/upgrades#magnet磁铁升级/$后,附近的物品和经验球将被吸引到你身边,消耗非常少量的空气.基础吸引范围是5个方块,但通过增加额外的升级,这个范围可以增加到10个方块."
+        },
+        {
+            "type": "text",
+            "title": "磁铁升级续",
+            "text": "磁力升级尊重Botania的$itemSolegnolia/$花,并且也不会试图从沉浸工程的$item传送带/$中拉取物品."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:charging_upgrade",
+            "text": "安装一个或多个$l:base_concepts/upgrades#charging充电升级/$后,胸甲获得能力,可以给你的库存中无论是穿戴还是携带的其他气动工具加压.胸甲只会将物品充电至其自身的压力水平.增加额外的充电升级最多6个可以提高充电速率."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:dispenser_upgrade",
+            "text": "一个$l:base_concepts/upgrades#dispenser发射器升级/$允许通过按下并释放$thing$k:pneumaticcraft.chestplate.launcher/$从副手槽发射物品/方块,类似于$l:machines/air_cannon空气炮/$.发射器完全充电需要15刻0.75秒；提前释放按键会以降低的速度发射."
+        },
+        {
+            "type": "text",
+            "title": "发射器升级续",
+            "text": "$li某些方块具有特殊的$item发射器/$行为,例如$itemTNT/$或$item箭/$...$li其他方块如$item火把/$将以'滚动的'方块形式发射,当它们碰到某物时会重新形成方块.$li其他物品将简单地作为物品实体发射."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:range_upgrade",
+            "text": "安装在胸甲上的$l:base_concepts/upgrades#range范围升级/$在激活时将你的方块交互距离不包括近战攻击增加3.5个方块.但这确实伴随着一个小的持续气压成本."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:air_conditioning_upgrade",
+            "flag": "mod:toughasnails",
+            "title": "空调升级",
+            "text": "安装多达四个$l:base_concepts/upgrades#air_conditioning空调升级/$后,你将获得一些来自$l:https://minecraft.curseforge.com/projects/tough-as-nailsTough As Nails/$模组添加的环境极端温度保护.空调会在检测到你的体温高于或低于正常时自动启动,并在恢复平衡后关闭."
+        },
+        {
+            "type": "text",
+            "flag": "mod:toughasnails",
+            "title": "空调升级续",
+            "text": "然而,这确实伴随着一个中等压力成本,这取决于所需的加热或冷却程度以及安装的升级数量.根据你工作的环境,你可能不需要全部四个升级就能保持舒适."
+        }
+    ]
 }

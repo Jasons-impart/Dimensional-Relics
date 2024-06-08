@@ -1,20 +1,20 @@
 {
-  "name": "Computer Control Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/computer_control_piece.png",
-  "category": "pneumaticcraft:widget_other",
-  "flag": "|mod:computercraft,mod:opencomputers",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "The $(thing)Computer Control/$ widget allows $(l:tools/drone)Drones/$ to be controlled via $(thing)ComputerCraft/$ or $(thing)OpenComputers/$ computers. See the $(l:machines/drone_interface)Drone Interface/$ for more information on how to do this."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/computer_control_piece.png"
-      ],
-      "text": "$(italic)Where is my mind/$"
-    }
-  ]
+    "name": "计算机控制小工具",
+    "icon": "pneumaticcraft:textures/progwidgets/computer_control_piece.png",
+    "category": "pneumaticcraft:widget_other",
+    "flag": "|mod:computercraft,mod:opencomputers",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing计算机控制/$小工具允许通过$thing计算机工艺/$或$thing开放计算机/$计算机控制$l:tools/drone无人机/$.有关如何操作的更多信息,请参阅$l:machines/drone_interface无人机接口/$."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/computer_control_piece.png"
+            ],
+            "text": "$italic我的思绪何在/$"
+        }
+    ]
 }

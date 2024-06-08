@@ -1,17 +1,17 @@
 {
-  "name": "Drill Pipe",
-  "icon": "pneumaticcraft:drill_pipe",
-  "category": "pneumaticcraft:components",
-  "advancement": "pneumaticcraft:pressure_tube",
-  "pages": [
-    {
-      "type": "text",
-      "text": "$(item)Drill Pipes/$ are required by the $(l:machines/gas_lift)Gas Lift/$ to drill down to fluids.$(p)They are also suitable for use in general building, if you like."
-    },
-    {
-      "type": "crafting",
-      "text": "Crafting an Drill Pipe",
-      "recipe": "pneumaticcraft:drill_pipe"
-    }
-  ]
+    "name": "钻探管",
+    "icon": "pneumaticcraft:drill_pipe",
+    "category": "pneumaticcraft:components",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item钻探管/$是$l:machines/gas_lift气举/$钻探至液体所需的.$p它们也适用于一般建筑,如果你喜欢的话."
+        },
+        {
+            "type": "crafting",
+            "text": "制作钻探管",
+            "recipe": "pneumaticcraft:drill_pipe"
+        }
+    ]
 }

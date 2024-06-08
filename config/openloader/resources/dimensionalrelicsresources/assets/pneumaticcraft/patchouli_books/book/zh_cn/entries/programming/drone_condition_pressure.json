@@ -1,19 +1,19 @@
 {
-  "name": "Drone Condition: Pressure Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/condition_drone_pressure_piece.png",
-  "category": "pneumaticcraft:widget_cond",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This is a $(l:programming/conditions)Condition/$ widget.$(p)The $(thing)Drone Condition: Pressure/$ widget allows you to check the $(l:base_concepts/pressure)pressure/$ of this $(l:tools/drone)Drone/$."
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/condition_drone_pressure_piece.png"
-      ],
-      "text": "$(italic)Drone Condition: Pressure Widget/$"
-    }
-  ]
+    "name": "无人机状态:压力小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/condition_drone_pressure_piece.png",
+    "category": "pneumaticcraft:widget_cond",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这是一个$l:programming/conditions条件/$小部件.$p该$thing无人机状态:压力/$小部件允许你检查此$l:tools/drone无人机/$的压力."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/condition_drone_pressure_piece.png"
+            ],
+            "text": "$italic无人机状态:压力小部件/$"
+        }
+    ]
 }

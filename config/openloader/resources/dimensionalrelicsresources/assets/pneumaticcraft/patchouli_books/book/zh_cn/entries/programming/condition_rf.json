@@ -1,19 +1,19 @@
 {
-  "name": "Condition: RF Widget",
-  "icon": "pneumaticcraft:textures/progwidgets/condition_rf_piece.png",
-  "category": "pneumaticcraft:widget_cond",
-  "advancement": "pneumaticcraft:programmer",
-  "pages": [
-    {
-      "type": "text",
-      "text": "This is a $(l:programming/conditions)Condition/$ widget.$(p)The $(thing)Condition: RF/$ widget allows you to (remotely) check if the $(thing)Forge Energy (FE)/$ level of the block(s) in the connected $(l:programming/area)Area/$ widget matches the configured FE threshold.$(p)$(italic)Despite its name, this widget checks FE, not RF (Redstone Flux). The name is historical./$"
-    },
-    {
-      "type": "image",
-      "images": [
-        "pneumaticcraft:textures/progwidgets/condition_rf_piece.png"
-      ],
-      "text": "$(italic)Condition: RF Widget/$"
-    }
-  ]
+    "name": "条件:RF小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/condition_rf_piece.png",
+    "category": "pneumaticcraft:widget_cond",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这是一个$l:programming/conditions条件/$小部件.$p该$thing条件:RF/$小部件允许你远程检查连接的$l:programming/area区域/$小部件中的方块的$thingForge能量FE/$级别是否与配置的FE阈值相匹配.$p$italic尽管其名为RF,但实际上该小部件检查的是FE,而非红石通量RF.名称具有历史性./$"
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/condition_rf_piece.png"
+            ],
+            "text": "$italic条件:RF小部件/$"
+        }
+    ]
 }
