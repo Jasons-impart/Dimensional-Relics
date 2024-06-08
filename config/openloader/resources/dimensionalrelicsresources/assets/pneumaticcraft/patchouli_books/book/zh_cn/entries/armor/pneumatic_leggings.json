@@ -1,0 +1,37 @@
+{
+    "name": "气动护腿",
+    "icon": "pneumaticcraft:pneumatic_leggings",
+    "category": "pneumaticcraft:armor",
+    "advancement": "pneumaticcraft:printed_circuit_board",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item气动护腿/$是四个$thing气动装甲/$部件之一."
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:pneumatic_leggings",
+            "text": "制作气动护腿"
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:speed_upgrade",
+            "text": "除了缩短护甲的初始化时间外,护腿中的$l:base_concepts/upgrades#speed加速升级/$还有一个更重要的效果:它们能提高你的$thing奔跑速度/$,且仅消耗微量的$l:base_concepts/pressure空气/$.最多可以安装4个加速升级."
+        },
+        {
+            "type": "text",
+            "title": "加速升级续",
+            "text": "护甲的图形用户界面允许你在不需要找到$l:machines/charging_station充电站/$更换升级的情况下,实时调整速度增益."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:jumping_upgrade_1",
+            "text": "一个$l:base_concepts/upgrades#jumping_1跳跃升级/$能在消耗少量空气的同时提供增强的跳跃能力.跳跃升级共有4个等级.$p跳跃时按住$thing$k:key.sneak/$键,可以将跳跃高度降低至相当于一个升级的水平."
+        },
+        {
+            "type": "text",
+            "title": "跳跃升级续",
+            "text": "护甲的图形用户界面允许你在不需要找到$l:machines/charging_station充电站/$更换升级的情况下,实时调整跳跃增益."
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "热量源",
+    "icon": "pneumaticcraft:vortex_tube",
+    "category": "pneumaticcraft:base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing静态热源/$ 是指当与机器相邻时,能向机器添加或从中移除热的方块和流体.当添加或移除的热量过多时,它们可能会转化为其他方块或流体.需要注意的是,热量的提取/添加是在该方块外部进行追踪的,因此通过破坏/替换方块来重置已提取的热量并不是一个可行的策略."
+        },
+        {
+            "type": "text",
+            "title": "原版热源",
+            "text": "以下原版方块和流体作为静态热源:$li空气$li冰/打包冰/蓝冰$li雪$li火把$li火焰会熄灭$li岩浆冷却成地狱岩$li水可能冻结或蒸发$li熔岩冷却成黑曜石$li营火会熄灭"
+        },
+        {
+            "type": "text",
+            "title": "模组热源",
+            "text": "来自模组的几个方块也将作为具有不同特性的静态热源,包括:$liIC2蒸汽和过热蒸汽$liIC2冷却剂和热冷却剂$liIC2和沉浸工程铀块$li夸克火焰灯笼$li夸克硫磺和永久冻土$liNatura热沙$li所有模组流体都有热属性温度由模组定义"
+        },
+        {
+            "type": "text",
+            "title": "添加自定义热源",
+            "text": "对于模组包制作者 所有方块的热属性都在数据包中定义.您可以通过向 $thingdata/<mod-id>/pneumaticcraft/block_heat_properties/$ 添加JSON文件来添加自己的定义或覆盖/移除默认定义."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:vortex_tube",
+            "text": "一个 $l:machines/vortex_tube涡流管/$ 是一个 $thing动态热源/$,它直接将 $l:base_concepts/pressure压力/$ 转换为热和冷.强烈建议在涡流管的未使用侧放置一个 $l:machines/heat_sink散热器/$,以提高效率."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:heat_frame",
+            "text": "一个 $l:semiblocks/heat_frame热框架/$ 是一个可以用来加热或冷冻!任何库存中物品的小工具.需要注意的是,热框架不会直接从 $thing静态热源/$ 吸收热量,但您可以在其旁边放置一个 $l:machines/heat_pipe热管/$ 来传输热量."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:heat_sink",
+            "text": "一个$l:machines/heat_sink散热器/$是一个可以用来高效地将与其相连的方块的热量或冷量!散发到大气中的方块."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:heat_pipe",
+            "text": "一个$l:machines/heat_pipe热管/$是一个压缩铁的保温核心,可以在方块之间传递热量,而不与相邻的空气或流体方块有任何热连接.它是使用$item压缩铁块/$传递热量的更紧凑且更便宜的替代方案.你也可以直接将$item散热器/$连接到热管上."
+        },
+        {
+            "type": "spotlight",
+            "item": "minecraft:furnace",
+            "text": "当将原版熔炉连接到任何动态热源如涡流管,但也包括产生热量的高级空气压缩机等块时,热量将被熔炉消耗以\"燃料\"它,使其能够仅依靠热量运行,无需固体燃料.这既方便又更高效."
+        },
+        {
+            "type": "text",
+            "title": "熔炉续",
+            "text": "这种熔炉\"燃料\"将在100°C时开始工作,并且温度越高,工作速度越快.在熔炉周围放置多个热源将增加加热效果.$p这种加热效果也适用于原版的高炉和烟熏炉."
+        }
+    ]
+}

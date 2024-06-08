@@ -1,0 +1,21 @@
+{
+    "name": "压力生成器",
+    "icon": "pneumaticcraft:pressurized_spawner",
+    "category": "pneumaticcraft:spawning",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item压力生成器/$ 是一种强大的设备,它利用 $l:base_concepts/pressure压力/$ 来生成生物.它不关心光照水平或玩家接近,并且可以通过红石启用/禁用.$p要使用压力生成器,你需要一个 $l:spawning/spawner_core生成器核心/$,其中包含一些捕获的生物精华,并且至少需要10巴的压力."
+        },
+        {
+            "type": "text",
+            "text": "当核心包含多种生物精华时,将随机选择一种生物.例如,如果你的核心有50%僵尸,25%爬行者,25%空,则在每次生成尝试时,你有50%的几率生成僵尸,25%的几率生成爬行者,25%的几率什么都不生成.$p即使没有生成生物,空气仍然被使用,因此部分空的核心效率不高但话说回来,有50%几率生成稀有生物的核心总比没有核心好..."
+        },
+        {
+            "type": "crafting",
+            "text": "制作压力生成器.",
+            "recipe": "pneumaticcraft:pressurized_spawner"
+        }
+    ]
+}

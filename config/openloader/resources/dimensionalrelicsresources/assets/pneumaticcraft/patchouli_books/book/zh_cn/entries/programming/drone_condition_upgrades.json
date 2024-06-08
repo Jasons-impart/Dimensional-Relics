@@ -1,0 +1,19 @@
+{
+    "name": "无人机状态:升级小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/condition_drone_upgrades_piece.png",
+    "category": "pneumaticcraft:widget_cond",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "无人机条件:升级/$部件允许您检查此$l:tools/drone无人机/$中已安装的升级数量.通过使用一个或多个连接的$l:programming/item_filter物品过滤器/$部件,并设置为要检查的升级物品,指定要检查的升级；如果没有过滤器,则会计算所有类型的所有已安装升级."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/condition_drone_upgrades_piece.png"
+            ],
+            "text": "$斜体无人机条件:升级部件/$"
+        }
+    ]
+}

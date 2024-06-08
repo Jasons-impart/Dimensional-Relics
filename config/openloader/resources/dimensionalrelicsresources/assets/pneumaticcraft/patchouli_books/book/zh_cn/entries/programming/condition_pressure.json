@@ -1,0 +1,19 @@
+{
+    "name": "条件:压力小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/condition_pressure_piece.png",
+    "category": "pneumaticcraft:widget_cond",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这是一个$l:programming/conditions条件/$小部件.$p该$thing条件:压力/$小部件允许你远程检查连接的$l:programming/area区域/$小部件中的气动块的压力是否与配置的压力阈值相匹配."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/condition_pressure_piece.png"
+            ],
+            "text": "$italic条件:压力小部件/$"
+        }
+    ]
+}

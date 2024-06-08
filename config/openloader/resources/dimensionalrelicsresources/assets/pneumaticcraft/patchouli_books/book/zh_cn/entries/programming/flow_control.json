@@ -1,0 +1,25 @@
+{
+    "name": "流程控制",
+    "icon": "pneumaticcraft:textures/progwidgets/jump_piece.png",
+    "category": "pneumaticcraft:programming",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "当$l:tools/drone无人机/$被部署时,它立即开始执行其存储的程序.执行流程如下:$li程序$italic始终/$从$l:programming/start开始/$部件开始,该部件只能有一个.$li流程通常$italic向下/$进行；到与当前部件底部连接的部件."
+        },
+        {
+            "type": "text",
+            "text": "$li部件执行其给定的操作,直到它决定$italic完成/$ - '完成'的定义因部件而异,并在每个单独部件的页面中描述.$li当当前部件底部没有连接部件时,执行返回到$l:programming/start开始/$部件.$p这就是基本原理.然而,有一些特殊情况,接下来将描述..."
+        },
+        {
+            "type": "text",
+            "title": "流程控制部件",
+            "text": "$liThe $l:programming/label标签/$ widget 作为程序中的一个跳转点.$liThe $l:programming/jump跳转/$ widget 触发一个立即的、无条件的跳转到匹配的 $thing标签/$ widget.$li$l:programming/conditions条件/$ widgets 可以根据它们测试的条件触发跳转.$li高级的 $l:programming/for_each_item每项循环/$ 和 $l:programming/for_each_coordinate每坐标循环/$ widgets 会重复跳转到一个 $thing标签/$, 针对它们的输入列表."
+        },
+        {
+            "type": "text",
+            "text": "还存在一些影响流程控制的特殊widget:$liThe $l:programming/standby待机/$ widget,它使无人机进入‘睡眠’状态,直到其他widget有事可做.$liThe $l:programming/suicide自毁/$ widget,它将 $thing无人机/$ 作为物品丢弃,立即终止执行."
+        }
+    ]
+}

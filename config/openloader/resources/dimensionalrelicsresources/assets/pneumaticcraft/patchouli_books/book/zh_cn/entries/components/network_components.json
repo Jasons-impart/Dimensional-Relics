@@ -1,0 +1,48 @@
+{
+    "name": "网络组件",
+    "icon": "pneumaticcraft:network_api",
+    "category": "pneumaticcraft:components",
+    "advancement": "pneumaticcraft:plastic",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这些组件主要用于建立一个$l:programming/security_station安全站/$,但其中一些也用作制作组件,而$l:components/network_components#network_storage网络存储/$和$l:components/network_components#network_api网络API/$可用于存储$l:tools/drone无人机/$程序."
+        },
+        {
+            "type": "crafting",
+            "anchor": "diagnostic",
+            "text": "$item诊断子程序/$是$l:machines/security_station安全站/$中的一个必需组件.$br它负责追踪$l:machines/security_station#hacking黑客攻击/$回溯至黑客.如果所有$item诊断子程序/$都被黑,你的$item安全站/$已被攻破.",
+            "recipe": "pneumaticcraft:diagnostic_subroutine"
+        },
+        {
+            "type": "crafting",
+            "anchor": "io_port",
+            "text": "$item网络IO端口/$是$l:machines/security_station安全站/$中的一个必需组件.$br这是对你的$item安全站/$进行黑客攻击的入口点.",
+            "recipe": "pneumaticcraft:network_io_port"
+        },
+        {
+            "type": "crafting",
+            "anchor": "registry",
+            "text": "$item网络注册表/$是$l:machines/security_station安全站/$中的一个必需组件.$br这是黑客的目标；如果$italic所有/$注册表都被黑,你的$item安全站/$已被攻破.",
+            "recipe": "pneumaticcraft:network_registry"
+        },
+        {
+            "type": "crafting",
+            "anchor": "node",
+            "text": "$item网络节点/$是$l:machines/security_station安全站/$中的一个通用组件,用于在必需组件之间形成路径.",
+            "recipe": "pneumaticcraft:network_node"
+        },
+        {
+            "type": "crafting",
+            "anchor": "network_api",
+            "text": "$item网络API/$可用于存储$l:tools/drone无人机/$程序.它需要$l:programming/puzzle_pieces拼图块/$来编程,并可用于在$l:programming/programmable_controller可编程控制器/$中运行程序或通过$l:programming/external_program外部程序/$小部件运行.",
+            "recipe": "pneumaticcraft:network_api"
+        },
+        {
+            "type": "crafting",
+            "anchor": "network_storage",
+            "text": "$item网络数据存储/$可用于存储$l:tools/drone无人机/$程序.它$italic不/$需要$l:programming/puzzle_pieces拼图块/$来编程,因此不能用于运行程序；但如果你想存储程序库或与其他玩家交换程序,它很有用.",
+            "recipe": "pneumaticcraft:network_data_storage"
+        }
+    ]
+}

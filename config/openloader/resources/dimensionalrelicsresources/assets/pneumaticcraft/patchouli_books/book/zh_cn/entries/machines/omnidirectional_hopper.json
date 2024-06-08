@@ -1,0 +1,33 @@
+{
+    "name": "全向漏斗",
+    "icon": "pneumaticcraft:omnidirectional_hopper",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item全向漏斗/$的行为与原版的$item漏斗/$相似.然而,这个漏斗可以朝向$italic任何/$方向,不仅仅是向上.此外,它接受$l:base_concepts/upgrades升级/$,可以用来显著加快漏斗的速度.它不使用$l:base_concepts/pressure空气/$,因此在游戏早期非常有用."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:omnidirectional_hopper",
+            "text": "当你放置漏斗时,其$9输入/$将面向你,而其$6输出/$将面向它所放置的方块.$p$thing右击/$漏斗使用$l:tools/pneumatic_wrench气动扳手/$其他扳手也可能有效来重新定向其输入.$thing潜行+右击/$漏斗以重新定向其输出."
+        },
+        {
+            "type": "text",
+            "title": "发射器升级",
+            "flag": "pneumaticcraft:omniHopperDispenser",
+            "text": "如果安装了$l:base_concepts/upgrades#dispenser发射器升级/$,漏斗会自动将物品弹出到$6输出/$侧如果没有物品栏在那里.$p这可以用作大大改进的$item投掷器/$:更快,更准确,并且具有更好的$#f00红石控制/$."
+        },
+        {
+            "type": "text",
+            "title": "实体追踪器升级",
+            "text": "如果安装了$l:base_concepts/upgrades#entity_tracker实体追踪器升级/$,漏斗将能够从前方的$9输入/$侧从实体中提取物品.可以通过将实体添加到$thingpneumaticcraft:omnihopper_blacklisted/$实体类型标签来将其列入黑名单；村民默认被列入黑名单,因为他们可能成为无限物品来源."
+        },
+        {
+            "type": "crafting",
+            "text": "制作全方位漏斗",
+            "recipe": "pneumaticcraft:omnidirectional_hopper"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Pneumatic Generator",
+    "icon": "pneumaticcraft:pneumatic_generator",
+    "category": "pneumaticcraft:machines",
+    "flag": "pneumaticcraft:pneumaticGeneratorEnabled",
+    "advancement": "pneumaticcraft:advanced_pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Pneumatic Generator可以从$l:base_concepts/pressure压缩空气/$产生$thingIndustrialCraft 2 EU/$.这是一台二级机器,其最小工作压力为15巴.默认效率为40%,但可通过$ttcolor$t:See 'I:pneumaticGeneratorEfficiency'配置中更改/$.$p无$l:base_concepts/upgrades#speed速度升级/$时,输出速率为32 EU/tick；插入一个升级:128 EU/tick,两个升级:512 EU/tick."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:pneumatic_generator",
+            "text": "空气使用量mL/tick为:$p$formula 输出速率 / E * 400/$$p其中$formulaE/$为效率百分比.例如,默认效率40%,输出速率32EU/tick,空气使用量 = $formula32 / 40 * 400 = 320mL/tick/$."
+        },
+        {
+            "type": "text",
+            "text": "影响效率的一个重要因素是Generator的$l:base_concepts/heat温度/$.Generator需要$thing冷却/$,否则随着温度升高,其效率会下降,直至完全无法产生空气."
+        },
+        {
+            "type": "crafting",
+            "text": "制作Pneumatic Generator",
+            "recipe": "pneumaticcraft:pneumatic_generator"
+        }
+    ]
+}

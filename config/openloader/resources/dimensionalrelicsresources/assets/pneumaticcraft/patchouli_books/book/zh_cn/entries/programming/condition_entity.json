@@ -1,0 +1,23 @@
+{
+    "name": "条件:实体小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/condition_entity_piece.png",
+    "category": "pneumaticcraft:widget_cond",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这是一个$l:programming/conditions条件/$小部件.$p通过$thing条件:实体/$小部件,你可以统计连接的$l:programming/area区域/$中的实体.这些实体可以通过连接一个可选的$l:programming/text文本/$小部件作为$l:base_concepts/entity_filter实体过滤器/$来筛选."
+        },
+        {
+            "type": "text",
+            "text": "请记住,与该部件连接的任何$l:programming/area区域/$部件必须具有$thing箱子/$的区域类型；这是唯一支持的形状.不过,通过使用区域的白名单/黑名单,可以创建不同形状."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/condition_entity_piece.png"
+            ],
+            "text": "$italic条件:实体部件/$"
+        }
+    ]
+}

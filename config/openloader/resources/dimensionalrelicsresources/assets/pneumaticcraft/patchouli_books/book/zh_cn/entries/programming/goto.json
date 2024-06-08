@@ -1,0 +1,19 @@
+{
+    "name": "前往位置小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/goto_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing前往位置/$非常直接:$l:tools/drone无人机/$将前往指定$l:programming/area区域/$内最近的可达位置.$p当无人机到达该区域或该区域不可达时,此小部件即完成$ttcolor$t:您可以配置小部件立即'完成'；右键点击以打开设置GUI"
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/goto_piece.png"
+            ],
+            "text": "$italic前往位置小部件/$"
+        }
+    ]
+}

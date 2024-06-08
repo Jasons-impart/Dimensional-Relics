@@ -1,0 +1,32 @@
+{
+    "name": "通用传感器",
+    "icon": "pneumaticcraft:universal_sensor",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:plastic",
+    "pages": [
+        {
+            "type": "text",
+            "text": "正如其名,$thing通用传感器/$是一种适用于多种应用的传感器；它能够检测游戏世界中的环境条件,并根据这些条件输出一个$#f00红石信号/$.$p通用并非免费:该传感器需要$l:base_concepts/pressure空气/$来运行每刻1毫升,在$ttcolor$t:The Constant Redstone Emitter is free to use几乎所有/$情况下,并且传感器需要特定的$l:base_concepts/upgrades升级/$才能运行."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:universal_sensor",
+            "text": "目前,该传感器能够检测超过15种不同的条件,从检查特定坐标是否有方块到是否有Twitcher在直播.打开$thing通用传感器/$的GUI,查看可用的选项及其描述."
+        },
+        {
+            "type": "text",
+            "title": "升级",
+            "text": "您需要插入一个$l:base_concepts/upgrades#entity_tracker实体追踪器/$, $l:base_concepts/upgrades#dispenser发射器/$, 或$l:base_concepts/upgrades#block_tracker方块追踪器/$以及$l:tools/gps_toolGPS工具/$,以允许选择相应类别的传感器.例如,计算范围内实体数量需要安装一个$item实体追踪器升级/$."
+        },
+        {
+            "type": "text",
+            "title": "示例:实体计数",
+            "text": "假设您有一个充满动物的围栏,并且想要杀死一些,但前提是动物数量足够.$p添加一个$l:base_concepts/upgrades#entity_tracker实体追踪器升级/$和足够的$l:base_concepts/upgrades#range范围升级/$以覆盖围栏的大小.$p现在,在GUI中,选择$thing实体/$按钮,然后选择$thing范围内/$,最后输入一个$l:base_concepts/entity_filter实体过滤器/$匹配您的动物类型例如'牛'."
+        },
+        {
+            "type": "crafting",
+            "text": "制作通用传感器",
+            "recipe": "pneumaticcraft:universal_sensor"
+        }
+    ]
+}

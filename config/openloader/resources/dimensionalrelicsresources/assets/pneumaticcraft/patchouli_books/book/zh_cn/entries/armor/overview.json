@@ -1,0 +1,78 @@
+{
+    "name": "气动装甲概览",
+    "icon": "minecraft:written_book",
+    "category": "pneumaticcraft:armor",
+    "priority": "true",
+    "advancement": "pneumaticcraft:printed_circuit_board",
+    "pages": [
+        {
+            "type": "text",
+            "text": "如果你将 $pncr 与 $thing钢铁侠/$ 的HUD混合会怎样？你会得到 $thing气动装甲/$!$p尽管这套装甲灵感来自托尼·斯塔克的玩具,但这并不意味着它在任何方面都是无敌的:默认情况下,这套装甲的保护和耐久度仅略优于同等级的 $thing铁甲/$ 部件."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/patchouli/pneumatic_armor.png"
+            ],
+            "border": "true",
+            "text": "压缩钢铁侠"
+        },
+        {
+            "type": "text",
+            "text": "然而,这套装甲具有高度的升级潜力.要使用升级以及为装甲加压,请将装甲放入 $l:machines/charging_station充电站/$.$p所有部件通用的升级在以下页面中描述.特定部件的升级在每个装甲部件的页面中单独描述."
+        },
+        {
+            "type": "text",
+            "text": "当你装备一件装甲时,它将在几秒钟内 $thing启动/$.你可以按 $thing$k:pneumaticcraft.armor.options/$ 打开一个GUI,允许你配置已安装的升级并调整装甲HUD.随着更多升级的安装,GUI中会出现更多选项.$p注意,所有升级都可以通过GUI复选框进行开关切换,你甚至可以为每个复选框绑定一个键,以便在GUI外部快速切换功能."
+        },
+        {
+            "type": "spotlight",
+            "item": "minecraft:anvil",
+            "title": "修复",
+            "text": "有几种方法可以保持你宝贵的装甲处于良好状态:$li它可以在 $thing铁砧/$ 上使用压缩铁锭进行修复$li为每件装甲添加 $thing物品寿命升级/$ 以使其自行修复$li为每件装甲应用 $thing修复/$ 附魔"
+        },
+        {
+            "type": "text",
+            "title": "染色",
+            "text": "每件盔甲都可以从默认的灰色纹理动态重新着色；每件盔甲都有$thing主/$和$thing次/$颜色,可以独立调整,而头盔的$thing护目镜/$也可以有自己的颜色.$p要调整颜色,只需从主盔甲GUI屏幕使用$bold颜色.../$屏幕.这不需要任何特殊升级；它是内置功能!"
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:speed_upgrade",
+            "text": "$l:base_concepts/upgrades#speed速度升级/$减少每件盔甲的启动时间.此外,它们减少了$l:armor/pneumatic_helmet头盔/$对$l:base_concepts/upgrades#entity_tracker实体追踪器/$和$l:base_concepts/upgrades#block_tracker方块追踪器/$的锁定时间,并增加了$l:armor/pneumatic_leggings护腿/$的奔跑速度,但这是以$l:base_concepts/pressure气压消耗/$为代价的."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:volume_upgrade",
+            "text": "$l:base_concepts/upgrades#volume容量升级/$增加每件盔甲的$l:base_concepts/pressure气压储存容量/$,使它们充电时间更长,但在使用时失去压力的速度更慢.容量升级最多可达25个,随着添加更多升级,收益递减."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:armor_upgrade",
+            "text": "$l:base_concepts/upgrades#armor护甲升级/$提高每件盔甲的保护和韧性.安装2个升级后,每件盔甲的性能与对应的$thing钻石盔甲/$相当.拥有最多4个升级时,保护性能优于$thing钻石盔甲/$."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:item_life_upgrade",
+            "text": "$l:base_concepts/upgrades#item_life物品寿命升级/$以$l:base_concepts/pressure气压/$为代价缓慢修复盔甲.每件盔甲最多可安装5个升级,提供逐渐加快但气压效率较低的修复."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:gilded_upgrade",
+            "text": "一个$l:base_concepts/upgrades#gilded镀金升级/$可以安装在任何盔甲上,使$thing猪灵/$误以为你实际上穿着$thing金盔甲/$.愚蠢的猪灵."
+        },
+        {
+            "type": "spotlight",
+            "flag": "mod:mekanism",
+            "title": "Mekanism辐射",
+            "item": "pneumaticcraft:radiation_shielding_upgrade",
+            "text": "$l:base_concepts/upgrades#radiation_shielding辐射防护升级/$提供对Mekanism辐射有害影响的保护,与Mekanism自己的$l:https://wiki.aidancbrady.com/wiki/Radiation_Shielding_Unit辐射防护单元/$相同.请注意,你必须在每件盔甲中都有一个防护升级才能获得全面保护."
+        },
+        {
+            "type": "text",
+            "title": "Thaumcraft",
+            "flag": "mod:thaumcraft",
+            "text": "$l:base_concepts/upgrades#thaumcraft神秘时代升级/$为盔甲部件提供与相应$thing神秘使盔甲/$等效的魔力减免.此外,安装在$l:armor/helmet头盔/$上的神秘时代升级还具有$item揭示之护目镜/$的功能,显示$thing灵气节点/$并在容器中展示$thing要素/$数量."
+        }
+    ]
+}

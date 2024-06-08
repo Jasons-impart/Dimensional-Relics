@@ -1,0 +1,17 @@
+{
+    "name": "钻探管",
+    "icon": "pneumaticcraft:drill_pipe",
+    "category": "pneumaticcraft:components",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item钻探管/$是$l:machines/gas_lift气举/$钻探至液体所需的.$p它们也适用于一般建筑,如果你喜欢的话."
+        },
+        {
+            "type": "crafting",
+            "text": "制作钻探管",
+            "recipe": "pneumaticcraft:drill_pipe"
+        }
+    ]
+}

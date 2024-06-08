@@ -1,0 +1,18 @@
+{
+    "name": "装配程序",
+    "icon": "pneumaticcraft:assembly_program_laser",
+    "category": "pneumaticcraft:manufacturing",
+    "advancement": "pneumaticcraft:printed_circuit_board",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing装配程序/$必须插入$l:manufacturing/assembly_system装配控制器/$以指示需要执行的操作类型.它们不能被制作,而必须通过交易获得；可以从$thing机械村民/$或通过$l:tools/amadron_tabletAmadron平板/$进行交易."
+        },
+        {
+            "type": "spotlight",
+            "title": "钻机与激光",
+            "item": "pneumaticcraft:assembly_program_drill_laser",
+            "text": "《$item装配程序:钻机与激光/$》有些特别.它不处理钻机和激光两种配方；而是提供了一种单程序方法,用于涉及钻孔$italic和/$激光步骤的两步配方,例如$l:tubes/pressure_tubes#advanced高级压力管/$."
+        }
+    ]
+}

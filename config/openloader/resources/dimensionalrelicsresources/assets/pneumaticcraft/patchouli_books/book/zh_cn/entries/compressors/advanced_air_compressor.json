@@ -1,0 +1,17 @@
+{
+    "name": "高级空气压缩机",
+    "icon": "pneumaticcraft:advanced_air_compressor",
+    "category": "pneumaticcraft:compressors",
+    "advancement": "pneumaticcraft:advanced_pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item高级空气压缩机/$是$l:base_concepts/pressure_tiers第二级/$版本的$l:compressors/air_compressor空气压缩机/$,最大安全压力为20巴.它每刻产生$ttcolor$t:通过安装速度升级可以增加基础/$50毫升空气,并可以通过$l:base_concepts/upgrades#speed速度升级/$进行升级.$p然而,这台发电机必须$l:base_concepts/heat冷却/$,因为随着温度升高,其效率会下降,直至完全不产生空气."
+        },
+        {
+            "type": "crafting",
+            "text": "制作$item高级空气压缩机/$",
+            "recipe": "pneumaticcraft:advanced_air_compressor"
+        }
+    ]
+}

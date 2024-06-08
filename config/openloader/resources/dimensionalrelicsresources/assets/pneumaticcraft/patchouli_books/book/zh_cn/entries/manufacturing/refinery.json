@@ -1,0 +1,52 @@
+{
+    "name": "精炼厂",
+    "icon": "pneumaticcraft:refinery",
+    "category": "pneumaticcraft:manufacturing",
+    "advancement": "pneumaticcraft:oil_bucket",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item精炼厂/$是一个多块机器,使用$l:base_concepts/heat热量/$将$l:base_concepts/oil石油/$精炼成各种燃料.它在100°C时开始工作.应用的温度越高,精炼速度越快.可生产的燃料,从最轻到最重排序:$li$thing液化石油气LPG/$$li$thing汽油/$$li$thing煤油/$$li$thing柴油/$"
+        },
+        {
+            "type": "text",
+            "text": "$thing精炼厂/$是一个多块结构:放置一个$item精炼厂控制器/$,然后在控制器上方或旁边堆叠2-4个$item精炼厂输出/$.不同的多块大小提供不同的产量；以10mB石油作为输入:$p$bold2个输出/$$li$thing液化石油气/$2mB$li$thing柴油/$4mB$br$bold3个输出/$$li$thing液化石油气/$2mB$li$thing煤油/$3mB$li$thing柴油/$2mB"
+        },
+        {
+            "type": "text",
+            "text": "$bold4 输出/$$li$thing液化石油气/$ 2mB$li$thing汽油/$ 3mB$li$thing煤油/$ 3mB$li$thing柴油/$ 2mB$p最轻的燃料总是会出现在顶部$item精炼厂输出/$, 最重的则在底部.如果你向现有的堆栈中添加更多的$item精炼厂输出/$,多块结构将尽力自动重新排列任何现有的输出液体到正确的区块,以保持系统运行."
+        },
+        {
+            "type": "text",
+            "text": "所有生产的液体都可以在$l:compressors/liquid_compressor液体压缩机/$中用作燃料轻质燃料质量更佳.$p然而,还有两个非常重要的用途:$li$thing液化石油气/$用于制造液体$l:components/plastic塑料/$$li$thing柴油/$用于制造$l:components/lubricant润滑油/$,用于$l:base_concepts/upgrades#speed加速升级/$.$p一个$l:manufacturing/thermopneumatic_processing_plant热气动处理厂/$用于这两个过程."
+        },
+        {
+            "type": "text",
+            "title": "比较器支持",
+            "text": "$item精炼厂/$将与$item比较器/$配合工作:连接的比较器在$item精炼厂/$有工作时输出信号强度15,否则为0.当有$thing原油/$可精炼且输出罐有空间时,它有工作.$p这可以用来自动化切换$l:machines/vortex_tube涡流管/$的空气供应,例如,以节省空气."
+        },
+        {
+            "type": "text",
+            "title": "设置提示",
+            "text": "由于$item精炼厂/$是一个多块结构,许多面暴露在空气中,如果不妥善隔热,它会迅速失去$l:base_concepts/heat热量/$.因此,强烈建议覆盖多块结构的所有未使用面以最大化效率.注意,任何非导热块都可以使用,包括半固体块如$item台阶/$或$item活板门/$,但$l:machines/thermal_lagging热绝缘材料/$特别推荐."
+        },
+        {
+            "type": "text",
+            "text": "你可以使用$l:machines/vortex_tube涡流管/$来加热$item精炼厂/$,或者在$item精炼厂/$块旁边放置热流体岩浆...或块岩浆块....注意这些流体和块会被消耗其热量被抽取,因此你可能希望找到一种自动生产并放置这些资源的方法."
+        },
+        {
+            "type": "link",
+            "flag": "mod:crafttweaker",
+            "title": "CraftTweaker",
+            "text": "$item精炼厂/$支持$l:https://minecraft.curseforge.com/projects/crafttweakerCraftTweaker/$:可以添加和移除配方.请点击以下链接获取更多信息.",
+            "url": "https://docs.blamejared.com/1.16/en/mods/PneumaticCraft-Repressurized/Refinery",
+            "link_text": "CraftTweaker Docs"
+        },
+        {
+            "type": "crafting",
+            "text": "制作精炼厂",
+            "recipe": "pneumaticcraft:refinery",
+            "recipe2": "pneumaticcraft:refinery_output"
+        }
+    ]
+}

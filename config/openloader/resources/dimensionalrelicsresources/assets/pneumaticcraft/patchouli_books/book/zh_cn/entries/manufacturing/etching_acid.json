@@ -1,0 +1,16 @@
+{
+    "name": "蚀刻酸",
+    "icon": "pneumaticcraft:etching_acid_bucket",
+    "category": "pneumaticcraft:manufacturing",
+    "advancement": "pneumaticcraft:pressure_chamber",
+    "pages": [
+        {
+            "type": "text",
+            "text": "蚀刻酸用于化学处理$l:components/pcbPCB板/$.蚀刻酸在$l:manufacturing/pressure_chamber压力室/$中制造,并在$l:manufacturing/etching_tank蚀刻槽/$中使用.$p查看$l:components/pcbPCB板/$条目以获取更多关于PCB生产的信息."
+        },
+        {
+            "type": "pneumaticcraft:pressure_chamber",
+            "recipe": "pneumaticcraft:pressure_chamber/etching_acid"
+        }
+    ]
+}

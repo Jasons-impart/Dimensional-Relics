@@ -1,0 +1,19 @@
+{
+    "name": "注释小工具",
+    "icon": "pneumaticcraft:textures/progwidgets/comment_piece.png",
+    "category": "pneumaticcraft:widget_other",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "此小工具允许在程序中添加$thing注释/$,且不具有任何功能性影响.使用它不需要任何$l:programming/puzzle_pieces拼图块/$."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/comment_piece.png"
+            ],
+            "text": "$italic注释小工具/$"
+        }
+    ]
+}

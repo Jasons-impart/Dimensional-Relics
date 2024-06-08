@@ -1,0 +1,23 @@
+{
+    "name": "生成器激励器",
+    "icon": "pneumaticcraft:spawner_agitator",
+    "category": "pneumaticcraft:spawning",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "当放置在原版 $item生成器/$ 上时,此物品 $thing激励/$ 生成器:$li生成器将在没有玩家附近时持续生成生物$li它防止生成的实体在玩家离开区域时消失$p生物农场,有人需要吗？$p$thing潜行+右键点击/$ 使用 $l:logistics/logistics_configurator物流配置器/$ 或其他激励器来移除它."
+        },
+        {
+            "type": "text",
+            "flag": "mod:apotheosis",
+            "title": "升华",
+            "text": "$thing升华/$ 是一个模组,它添加了除其他功能外对原版生成器的强大定制功能.它对生成器内部进行了足够的更改,以至于生成器激励器无法完全与之交互.由于你安装了升华,生成器激励器的功能仅限于防止玩家远离时生物消失；要允许玩家不在附近时生物生成,请使用升华的功能."
+        },
+        {
+            "type": "crafting",
+            "text": "制作生成器激励器",
+            "recipe": "pneumaticcraft:spawner_agitator"
+        }
+    ]
+}

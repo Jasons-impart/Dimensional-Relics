@@ -1,0 +1,51 @@
+{
+    "name": "空中接口",
+    "icon": "pneumaticcraft:aerial_interface",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:advanced_pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item空中接口/$是一个非常强大的设备,可以直接连接到玩家的库存.当$l:base_concepts/pressure充分加压/$时,它可以像任何其他库存一样进行交互.物品不会落在接口中,而是直接发送到拥有该物品的玩家.例如,你可以在接口上使用$l:logistics/frames#requester物流请求者框架/$,以确保自己始终有64个火把供应."
+        },
+        {
+            "type": "text",
+            "text": "默认情况下,你的主库存通过接口的任何侧面访问,而你的盔甲槽通过顶部/底部面访问.然而,这可以通过$bold侧面配置/$GUI侧边栏进行重新配置.$p你可以将任何面连接到以下任何一个:$li主库存$li盔甲槽$li副手槽$li末影库存如原版$item末影箱/$所访问的."
+        },
+        {
+            "type": "text",
+            "title": "水下呼吸",
+            "text": "显然,因为我们有可以连接到玩家的设备,它由$l:base_concepts/pressure空气/$驱动,应该有东西允许我们在必要时转移这种空气——对吧？每刻消耗80毫升,你可以在水下无限期呼吸.$p这比带有$l:base_concepts/upgrades#scuba潜水升级/$的$l:armor/pneumatic_helmet气动头盔/$稍微高效,但不提供清晰的潜水视野."
+        },
+        {
+            "type": "text",
+            "title": "接口化Forge能量",
+            "text": "一个$item空中接口/$接受$thingForge能量/$与RF能量及许多其他模组的能量兼容.其内部缓冲区100,000中存储的能量用于为玩家库存及盔甲槽中的任何FE可充电物品充电."
+        },
+        {
+            "type": "text",
+            "title": "自动喂食",
+            "text": "通过插入一个$l:base_concepts/upgrades#dispenser发射器升级/$,你可以使$item空中接口/$像远程自动喂食器一样工作.只有食物物品会被接口接受,并且只有当你饿到足以充分利用提供的餐食时才会喂食.注意,当库存提供一组数量大于1的食物时,接口会等待直到你能消耗那么多.为了确保最少量的食物能被利用,请使用如$item漏斗/$等慢速插入器."
+        },
+        {
+            "type": "text",
+            "title": "经验处理",
+            "text": "$l:base_concepts/upgrades#dispenser发射器升级/$还允许你将$thingXP流体/$泵入或泵出接口.当存在多种类型的XP流体时,你可以通过GUI中的$bold经验/$标签选择使用哪一种.此标签还会显示哪些模组的经验流体已被检测到并可供使用.$l:base_concepts/memory_essence记忆精华/$始终可用."
+        },
+        {
+            "type": "text",
+            "title": "经验处理续",
+            "text": "请注意,接口没有内部液体缓冲区；它直接使用你的经验作为'储罐'.这意味着在泵入或泵出XP时,你需要一个能够以高于每XP点液体XP量的速率传输液体的设备.截至撰写本文时,所有已知XP流体的速率均为20mB/tick."
+        },
+        {
+            "type": "text",
+            "title": "自动充电",
+            "text": "通过将$l:tubes/charging_module充电模块/$指向$item空中接口/$,你可以为库存中的任何$l:base_concepts/pressure可加压/$物品充电.$p请注意,要为任何穿戴的$l:armor/overview气动装甲/$物品充电,充电模块必须指向与你的装甲槽相连的接口侧面."
+        },
+        {
+            "type": "crafting",
+            "text": "制作空中接口",
+            "recipe": "pneumaticcraft:aerial_interface"
+        }
+    ]
+}

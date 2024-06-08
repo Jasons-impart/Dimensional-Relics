@@ -1,0 +1,30 @@
+{
+    "name": "气体升降机",
+    "icon": "pneumaticcraft:gas_lift",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "一个$item气体升降机/$基本上是一个泵.它利用$l:base_concepts/pressure压力/$来降低流体的密度,迫使其上升.$p当加压时,它会向下推出$l:components/drill_pipe钻杆/$你必须提供,直到碰到任何流体块,此时它会开始泵送.这使其非常适合$l:base_concepts/oil石油/$提取,因为石油可能深埋地下."
+        },
+        {
+            "type": "text",
+            "text": "任何阻挡的固体方块都会被破坏,不产生掉落物.破坏方块会消耗空气；对于泥土或沙子这样的软方块来说,消耗量很小,但对于黑曜石这样的硬方块来说,消耗量则大得多.$p泵送流体所需的最小压力与泵送深度的线性关系,即当前推出的$item钻杆/$数量,最高可达4.9巴."
+        },
+        {
+            "type": "text",
+            "title": "模式选项卡",
+            "text": "气体升降机可以切换到以下三种模式之一:$li$#00f泵送并允许空罐/$推出钻杆,遇到流体时泵送.$li$#00f泵送并在过滤器中保留流体/$与上述相同,但始终会在罐中保留1000mB的流体.这在泵送特定流体时很有用,以确保不会泵送其他流体."
+        },
+        {
+            "type": "text",
+            "text": "$li$#00f收回钻杆/$会使$thing气体升降机/$停止泵送并将推出的任何钻杆收回其库存中."
+        },
+        {
+            "type": "crafting",
+            "text": "制作气体升降机",
+            "recipe": "pneumaticcraft:gas_lift"
+        }
+    ]
+}

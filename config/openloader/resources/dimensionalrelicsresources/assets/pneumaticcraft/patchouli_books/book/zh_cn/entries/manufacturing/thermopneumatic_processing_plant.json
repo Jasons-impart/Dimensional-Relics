@@ -1,0 +1,29 @@
+{
+    "name": "热气动工厂",
+    "icon": "pneumaticcraft:thermopneumatic_processing_plant",
+    "category": "pneumaticcraft:manufacturing",
+    "advancement": "pneumaticcraft:refinery",
+    "pages": [
+        {
+            "type": "text",
+            "text": "一个$thing热气动加工厂/$使用$l:base_concepts/pressure压力/$和/或$l:base_concepts/heat热/$来处理材料.它有多种用途:$li100mB $thing液化石油气/$和1块$item煤炭/$可以制造1000mB的$l:components/plastic塑料/$.这需要热,但不需要压力.$li1000mB的$thing柴油/$和1块$item红石粉/$可以制造1000mB的$l:components/lubricant润滑剂/$.同样,这需要热,但不需要压力."
+        },
+        {
+            "type": "text",
+            "text": "$li$item热气动加工厂/$可以用来将精炼厂生产的较重燃料裂解成较轻燃料,回报率为80%:$li柴油 -> 煤油$li煤油 -> 汽油$li汽油 -> 液化石油气$p这需要热和压力."
+        },
+        {
+            "type": "link",
+            "flag": "mod:crafttweaker",
+            "title": "CraftTweaker",
+            "text": "$thing热气动加工厂/$支持$l:https://minecraft.curseforge.com/projects/crafttweakerCraftTweaker/$:可以添加和删除配方.请点击下面的链接获取更多信息.",
+            "url": "https://docs.blamejared.com/1.16/en/mods/PneumaticCraft-Repressurized/ThermoPlant",
+            "link_text": "CraftTweaker Docs"
+        },
+        {
+            "type": "crafting",
+            "text": "制作热气动加工厂",
+            "recipe": "pneumaticcraft:thermopneumatic_processing_plant"
+        }
+    ]
+}

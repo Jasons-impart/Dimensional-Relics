@@ -1,0 +1,24 @@
+{
+    "name": "编辑标牌部件",
+    "icon": "pneumaticcraft:textures/progwidgets/edit_sign_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这将编辑连接的$l:programming/area区域/$中的所有$item标牌/$和/或$l:machines/aphorism_tile格言瓷砖/$,使其文本与连接的$l:programming/text文本/$部件指定的文本一致.$p每个连接的$thing文本/$部件代表一行；通过连接多个$thing文本/$部件,您可以设置多行消息."
+        },
+        {
+            "type": "text",
+            "title": "变量",
+            "text": "您还可以通过在文本中包含$thing$<var_name>/$来插入$l:programming/variables变量/$的值,例如:$p  $formula计数器:$counter/$$p如果$thing计数器/$变量设置为$thingx=1,y=2,z=3/$,则会扩展为$thing计数器:1, 2, 3/$.$l:programming/variables#special特殊/$和$l:programming/variables#global全局变量/$也可以在此处使用."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/edit_sign_piece.png"
+            ],
+            "text": "$斜体编辑标牌部件/$"
+        }
+    ]
+}

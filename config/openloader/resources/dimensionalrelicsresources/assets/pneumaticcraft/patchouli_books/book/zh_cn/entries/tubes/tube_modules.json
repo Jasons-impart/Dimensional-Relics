@@ -1,0 +1,34 @@
+{
+    "name": "管道模块",
+    "icon": "minecraft:book",
+    "category": "pneumaticcraft:tubes",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "priority": "true",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing管道模块/$是可以附加到$l:tubes/pressure_tubes压力管道/$的组件,可以安装在管道的侧面或$thing串联/$安装在管道上.$p通过使用$l:tools/pneumatic_wrench气动扳手/$并$thing潜行+右键点击/$,可以移除附加的模块."
+        },
+        {
+            "anchor": "inline",
+            "type": "text",
+            "title": "串联模块",
+            "text": "$thing串联模块/$有些特殊,具体如下:$li一个压力管道只能有一个串联模块.$li装有串联模块的压力管道不能有其他任何模块.$li装有串联模块的压力管道只能在两个侧面连接:串联模块的两端.$li串联模块$italic只能/$放置在压力管道的开口端."
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "pneumaticcraft:tubes/safety_module",
+                "pneumaticcraft:tubes/pressure_gauge_module",
+                "pneumaticcraft:tubes/flow_detector_module",
+                "pneumaticcraft:tubes/air_grate_module",
+                "pneumaticcraft:tubes/regulator_module",
+                "pneumaticcraft:tubes/charging_module",
+                "pneumaticcraft:tubes/logistics_module",
+                "pneumaticcraft:tubes/redstone_module",
+                "pneumaticcraft:tubes/thermostat_module",
+                "pneumaticcraft:tubes/vacuum_module"
+            ]
+        }
+    ]
+}

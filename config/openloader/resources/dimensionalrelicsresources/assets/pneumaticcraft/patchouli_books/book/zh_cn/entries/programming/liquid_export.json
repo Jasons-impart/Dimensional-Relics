@@ -1,0 +1,23 @@
+{
+    "name": "流体导出小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/liquid_export_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "与$l:programming/liquid_import流体导入/$相反:$l:tools/drone无人机/$将移动到指定$l:programming/area区域/$内最近的储罐,以从其自身储罐中卸载流体.$p此外,$item无人机/$可以将流体放置在世界中:为此,请在部件图形用户界面中选中$thing在世界中放置流体/$选项.请注意,$item无人机/$在执行此操作时很容易困住自己!"
+        },
+        {
+            "type": "text",
+            "text": "您可以在小部件GUI中指定无人机应将物品输出到储罐的哪一侧；还可以指定最大出口流体量以mB为单位.$p您可以$ttcolor$t:Connect on the right to whitelist, on the left to blacklist连接/$一个$l:programming/liquid_filter流体过滤器/$来限制无人机可以出口的流体.$p当$item无人机的/$储罐为空适用流体,或区域内没有接受该流体的储罐时,此小部件完成."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/liquid_export_piece.png"
+            ],
+            "text": "$italic流体出口小部件/$"
+        }
+    ]
+}

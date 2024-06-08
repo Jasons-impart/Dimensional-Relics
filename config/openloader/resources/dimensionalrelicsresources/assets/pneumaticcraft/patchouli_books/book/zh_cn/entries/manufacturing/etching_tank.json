@@ -1,0 +1,27 @@
+{
+    "name": "蚀刻槽",
+    "icon": "pneumaticcraft:etching_tank",
+    "category": "pneumaticcraft:manufacturing",
+    "advancement": "pneumaticcraft:etchacid_bucket",
+    "pages": [
+        {
+            "type": "text",
+            "text": "首先应在$thing蚀刻槽/$中填充$l:manufacturing/etching_acid蚀刻酸/$.然后插入最多25个已在$l:manufacturing/uv_light_box紫外线灯箱/$中部分或完全曝光的$thing空白PCB板/$.$p虽然可以直接将蚀刻酸倒入世界并扔入PCB板,但使用蚀刻槽是更安全且快速的方法."
+        },
+        {
+            "type": "text",
+            "title": "自动化",
+            "text": "您可以从任何一侧输入$thing空白PCB板/$.成功蚀刻的$thing未组装PCB板/$将移至右上角的输出槽,而$thing失败PCB板/$则进入右下角槽.为了自动化提取,从机器侧面提取未组装PCB板,从顶部或底部提取失败PCB板.您可以通过将失败PCB板送入$thing高炉/$以回收未曝光的空白PCB板,并重新开始流程来实现自动化."
+        },
+        {
+            "type": "text",
+            "title": "加热",
+            "text": "在没有$l:base_concepts/heat热量的$/$情况下,蚀刻槽需要150秒才能完全蚀刻一块PCB当然,它可以并行蚀刻最多25块.如果你给槽加热,可以进一步缩短处理时间,最少至30秒；槽越热,处理速度越快.但请注意,加热时蚀刻PCB会消耗少量蚀刻酸."
+        },
+        {
+            "type": "crafting",
+            "text": "制作蚀刻槽",
+            "recipe": "pneumaticcraft:etching_tank"
+        }
+    ]
+}

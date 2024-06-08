@@ -1,0 +1,42 @@
+{
+    "name": "Amadron平板",
+    "icon": "pneumaticcraft:amadron_tablet",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:plastic",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$itemAmadron平板/$ 是一种可以用来$thing订购/$ 物品和流体,由$l:tools/drone无人机/$ 配送的物品.$p为此,需要通过$thing右键点击/$ 平板来选择并绑定一个物品栏和/或流体储罐.这个物品栏/储罐将用于支付订购的物品,并接收你订购的物品."
+        },
+        {
+            "type": "text",
+            "text": "平板的用户界面足够智能,能通过查看绑定的物品栏和/或储罐来判断你可以购买什么.当你订购$ttcolor$t:资源可以是物品或流体资源/$ 时,一个$thing无人机/$ 将被召唤来收集你支付的资源.一旦收集完成,第二个$thing无人机/$ 将到达以交付购买的物品.$p这是一种获取你无法通过其他方式获得的物品的方法,比如$l:components/pcb_blueprintPCB蓝图/$ 和$l:manufacturing/assembly_programs装配程序/$.它还会添加一些随机的$thing村民交易/$；这些交易每天都会重新洗牌."
+        },
+        {
+            "type": "text",
+            "title": "玩家间交易",
+            "text": "通过点击$bold自定义玩家交易/$按钮位于$bold自定义交易/$侧边栏,你可以提供自己的资源以换取其他玩家的资源.在交易界面中,你可以在左侧选择要出售的资源,在右侧选择你想要购买的资源.你可以通过文本框设置交易数量."
+        },
+        {
+            "type": "text",
+            "text": "你还可以在GUI中指定你希望从哪里提供资源,以及你希望从其他玩家那里接收付款的位置.为此,你需要一个$l:tools/gps_toolGPS工具/$设置到正确的位置.$p如果你不在这里指定自定义位置,将使用平板电脑中存储的默认位置用于正常交易."
+        },
+        {
+            "type": "text",
+            "text": "当一切设置完毕后,$bold添加交易/$按钮将变为可点击状态.此交易将像任何正常报价一样,在其他玩家的$itemAmadron平板电脑/$中可见.$p一个重要的区别是,库存不是无限的:你必须将你的资源添加到出售的库存/储罐中.一个$thing无人机/$将到达来收集这些资源；当收集完成后,库存将增加.自定义报价的库存水平显示在$itemAmadron平板电脑/$的GUI中."
+        },
+        {
+            "type": "text",
+            "text": "其他玩家现在可以接受该报价,直到库存耗尽.当有玩家接受你的报价时前提是你在线,你将收到通知,一个$thing无人机/$将到达,交付你其他玩家支付给你的资源.交易完成!"
+        },
+        {
+            "type": "text",
+            "text": "通过$thingshift-点击/$Amadron界面中你自己的交易上的$#F00x/$按钮,该交易将被移除,Amadron将尝试将你的资源返回到提供它的库存/储罐.$p$bold警告:/$ Amadron对在问题发生时资源丢失不负任何责任!"
+        },
+        {
+            "type": "crafting",
+            "text": "制作Amadron平板电脑",
+            "recipe": "pneumaticcraft:amadron_tablet"
+        }
+    ]
+}

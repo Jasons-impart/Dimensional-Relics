@@ -1,0 +1,25 @@
+{
+    "name": "加热框架",
+    "icon": "pneumaticcraft:heat_frame",
+    "category": "pneumaticcraft:semiblocks",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "此物品可以放置在任何$thing容器/$上.当被相邻的$l:base_concepts/heat热源/$加热时,它会尝试熔炼容器中的任何物品冷却时则冻结.只有当容器中有空间存放结果物品时,熔炼才会成功.加热越多,熔炼过程越快,最高可达每秒1个物品.同样,冷却越多,冻结物品的速度越快."
+        },
+        {
+            "type": "link",
+            "flag": "mod:crafttweaker",
+            "title": "CraftTweaker",
+            "text": "$thing加热框架/$支持$l:https://minecraft.curseforge.com/projects/crafttweakerCraftTweaker/$冷却熔炼使用常规$item熔炉/$配方:可以添加和移除配方.更多信息请点击下面的链接.",
+            "url": "https://crafttweaker.readthedocs.io/en/latest/#Mods/PneumaticCraft_Repressurized/Heat_Frame_Cooling/",
+            "link_text": "CraftTweaker Docs"
+        },
+        {
+            "type": "crafting",
+            "text": "制作加热框架",
+            "recipe": "pneumaticcraft:heat_frame"
+        }
+    ]
+}

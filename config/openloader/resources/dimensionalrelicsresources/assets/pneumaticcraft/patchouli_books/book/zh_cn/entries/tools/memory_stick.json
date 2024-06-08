@@ -1,0 +1,27 @@
+{
+    "name": "记忆棒",
+    "icon": "pneumaticcraft:memory_stick",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:plastic",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item记忆棒/$是一种用于提取、存储和恢复玩家经验等级的便携设备:$li$thing右击/$:将您的一个经验等级转移到棒上$li$thing潜行+右击/$:将棒上的一个经验等级转移到您身上$li$thing左击/$:切换XP自动吸收,您收集的任何XP球都会自动被棒吸收"
+        },
+        {
+            "type": "text",
+            "text": "记忆棒中存储的经验也可以提取为$l:base_concepts/memory_essence记忆精华/$流体.要执行此操作,只需$thing右击/$任何$l:machines/tanks流体罐/$以转移经验到或从罐子其他模组的流体罐也应该可以正常工作.右击空罐子会尝试将记忆精华从棒转移到罐子；右击含有任何记忆精华的罐子会尝试从罐子转移到棒."
+        },
+        {
+            "type": "text",
+            "title": "饰品",
+            "flag": "mod:curios",
+            "text": "安装了$thing饰品/$模组后,您可以将记忆棒存储在任何饰品槽中,以节省背包空间.当开启XP自动吸收时,这尤其有用."
+        },
+        {
+            "type": "crafting",
+            "text": "制作记忆棒",
+            "recipe": "pneumaticcraft:memory_stick"
+        }
+    ]
+}

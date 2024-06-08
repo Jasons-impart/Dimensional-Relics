@@ -1,0 +1,17 @@
+{
+    "name": "通量压缩机",
+    "icon": "pneumaticcraft:flux_compressor",
+    "category": "pneumaticcraft:compressors",
+    "advancement": "pneumaticcraft:advanced_pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$itemFlux Compressor/$ 将 $thingForge Energy/$兼容 $thingRedstone Flux/$ 及其他多种模组的能源系统转换为 $l:base_concepts/pressure压缩空气/$.它基础消耗为40 FE/tick,但可通过 $l:base_concepts/upgrades#speed速度升级/$ 进行升级.$pFlux Compressor 的容量为100,000 FE,并且接受FE的速度是其使用速度的两倍."
+        },
+        {
+            "type": "crafting",
+            "text": "制作 $itemFlux Compressor/$:$p此发电机必须 $l:base_concepts/heat冷却/$,因为随着温度升高,其效率会下降,直至完全无法产生空气.",
+            "recipe": "pneumaticcraft:flux_compressor"
+        }
+    ]
+}

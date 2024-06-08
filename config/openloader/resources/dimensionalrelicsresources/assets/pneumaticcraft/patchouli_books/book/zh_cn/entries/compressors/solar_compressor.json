@@ -1,0 +1,29 @@
+{
+    "name": "太阳能压缩机",
+    "icon": "pneumaticcraft:solar_compressor",
+    "category": "pneumaticcraft:compressors",
+    "advancement": "pneumaticcraft:advanced_pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item太阳能压缩机/$ 通过 $thing阳光/$ 产生 $l:base_concepts/pressure压缩空气/$ 和 $l:base_concepts/heat热量/$.为了正常工作,它需要直接暴露在阳光下.这意味着它在室内、夜间或暴风雨期间无法工作."
+        },
+        {
+            "type": "crafting",
+            "text": "制作 $item太阳能压缩机/$.",
+            "recipe": "pneumaticcraft:solar_compressor"
+        },
+        {
+            "type": "text",
+            "text": "当$item太阳能压缩机/$产生压缩空气时,它也会产生与产生的压缩空气量成比例的热量.适当的热量管理对于充分发挥$item太阳能压缩机/$的潜力是必要的:热量太少,压缩机几乎不会产生任何压缩空气；热量太多,压缩机会过热并损坏,需要使用$l:components/solar_cell太阳能电池/$手动修复."
+        },
+        {
+            "type": "text",
+            "text": "$l:machines/heat_sink散热器/$, $l:machines/heat_pipe热管/$, 和$l:tubes/air_grate_module空气格栅模块/$是管理并移除由$item太阳能压缩机/$产生的热量的最佳工具.$l:machines/vortex_tube涡流管/$在热量管理方面也很有用,因为它们可以用来产生额外的热量以达到最大效率.通过正确的设置,即使是$l:base_concepts/upgrades#speed最大速度/$的$item太阳能压缩机/$也能在最大效率下达到热平衡."
+        },
+        {
+            "type": "text",
+            "text": "压缩机内置有热缓冲垫,当它无法产生压缩空气时,会激活以防止在非活动状态下获得或失去任何热量.$br2压缩机在$thing350°C/$时达到最大效率,并在$thing425°C/$时过热."
+        }
+    ]
+}

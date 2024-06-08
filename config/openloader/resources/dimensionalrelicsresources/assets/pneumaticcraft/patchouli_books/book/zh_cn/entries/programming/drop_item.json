@@ -1,0 +1,23 @@
+{
+    "name": "掉落物品部件",
+    "icon": "pneumaticcraft:textures/progwidgets/item_drop_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "这将使$l:tools/drone无人机/$从其库存中在连接的$l:programming/area区域/$掉落物品.通过$thing右击/$$thing掉落物品/$部件,您可以指定区域中每个位置可以掉落多少物品.您还可以在$thing随机/$和$thing直线/$模式之间切换,这意味着它将以小的随机偏移量掉落物品类似于原版$item投掷器/$,或者直接向下掉落物品."
+        },
+        {
+            "type": "text",
+            "text": "您还可以连接一个$l:programming/item_filter物品过滤器/$.使用过滤器时,只有通过过滤器允许的物品才会被掉落.$p当无人机库存中没有适用的物品或无人机已访问区域中的每个位置时,部件执行完毕."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/item_drop_piece.png"
+            ],
+            "text": "$斜体掉落物品部件/$"
+        }
+    ]
+}

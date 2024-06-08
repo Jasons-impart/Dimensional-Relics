@@ -1,0 +1,79 @@
+{
+    "name": "变量",
+    "icon": "minecraft:paper",
+    "category": "pneumaticcraft:programming",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing变量/$允许无人机程序存储和操作区块位置即坐标,以提供一些高级无人机功能.$p要在无人机程序内部创建或操作变量,请使用$l:programming/coordinate_operator坐标操作符/$和$l:programming/coordinate坐标/$小部件,并对变量进行测试时,使用$l:programming/condition_coordinate条件:坐标/$小部件."
+        },
+        {
+            "type": "text",
+            "text": "在$l:programming/area区域/$小部件中,您可以不使用GPS坐标,而是使用$thing变量/$名称.$p这些$thing变量/$在游戏世界重新加载后仍然存在,因此可以用于创建一个无限挖掘程序,例如,无人机的挖掘位置通过$thing变量/$进行跟踪.$p对于一个旧但仍然相关的教程,请参见$l:https://www.youtube.com/watch?v=FIjEdD_Yj9YMineMaarten的这段YouTube视频/$."
+        },
+        {
+            "type": "text",
+            "text": "虽然$thing变量/$仅存储坐标X/Y/Z三元组,但您会意识到您也可以使用$thing整数/$和$thing布尔值/$.只需为整数使用一个轴,对于布尔值,定义'0' = false,其他所有值 = true.玩得开心!"
+        },
+        {
+            "type": "text",
+            "title": "物品变量",
+            "text": "在前一页中,我们提到变量只能存储坐标.嗯,那是一个小小的谎言:还有一种叫做$thing物品变量/$的东西,它存储你猜对了一个物品值.这些是通过$l:programming/item_assign物品分配/$和$l:programming/for_each_item每件物品/$小部件创建的,并由$l:programming/item_filter物品过滤器/$小部件使用."
+        },
+        {
+            "type": "text",
+            "title": "变量类型",
+            "text": "有三种类型的变量:$li$thing局部变量/$:这些是每个无人机存储的,简单引用为'varname'.$li$thing全局变量/$:这些对所有无人机都是全局的,可以用于共享数据.它们被引用为'#varname'或'%varname'见后续页面.$li$thing特殊变量/$可以用来获取无人机的某些元数据,并被引用为'$varname'."
+        },
+        {
+            "type": "text",
+            "anchor": "global",
+            "title": "全局变量",
+            "text": "普通变量是每个$l:tools/drone无人机/$/l独有的,不能共享.然而,$thing全局变量/$/thing $italic可以/$/italic共享.这使得无人机之间能够相互通信.$p此外,$l:tools/gps_toolGPS工具/$/l可以连接并修改它们,$l:machines/universal_sensor通用传感器/$/l可以根据它们发出$#f00红石信号/$/f00,$l:tools/remote遥控器/$/l可以显示和修改它们."
+        },
+        {
+            "type": "text",
+            "title": "全局变量续",
+            "text": "$ttcolor$t:玩家全局变量在PNC:R 3.0.0, MC 1.18.1中添加有两种类型的全局变量:$thing玩家全局/$/thing和$thing服务器全局/$/thing.$li玩家全局变量以'#'为前缀.这些变量在玩家的无人机之间共享,但对每个玩家是私有的.$li服务器全局变量以'%'为前缀.这些变量在服务器上的$italic所有/$/italic玩家之间共享.$p注意:在模组的早期版本中,只有服务器全局变量存在,前缀为'#'."
+        },
+        {
+            "type": "text",
+            "title": "变量命令",
+            "text": "存在几个命令任何玩家均可使用来操作全局变量:$li/pncr global_var set <varname> <x> <y> <z>$li/pncr global_var set <varname> <item-registry-id>$li/pncr global_var get <varname>$li/pncr global_var list$li/pncr global_var delete <varname>"
+        },
+        {
+            "type": "text",
+            "anchor": "special",
+            "title": "特殊变量",
+            "text": "以下特殊变量被识别:$li$thing$owner_pos/$/thing:拥有$l:tools/drone无人机/$/l的玩家的头部区块位置,如果玩家不在线,则为0,0,0.$li$thing$drone_pos/$/thing:无人机本身的区块位置.$li$thing$player_pos=<name>/$/thing:玩家'<name>'的头部区块位置不区分大小写,如果玩家名无效或玩家不在线,则为0,0,0."
+        },
+        {
+            "type": "text",
+            "anchor": "special",
+            "title": "特殊变量续",
+            "text": "$li$thing$owner_look/$/thing:表示拥有玩家面向每个轴的方向的向量；每个值将是-1, 0或1.$li$thing$controller_pos/$/thing:控制$l:programming/programmable_controller可编程控制器/$/l块的区块位置,如果无人机是实际的无人机而不是可编程控制器,则为0,0,0."
+        },
+        {
+            "type": "text",
+            "anchor": "special",
+            "title": "特殊变量续",
+            "text": "还存在一些较旧的变量,出于兼容性原因仍然可以使用但建议使用前一页的变量:$li$thing$owner/$:是 $thing$owner_pos/$ 的别名.$li$thing$drone/$:获取无人机上方$italic的方块位置/$,出于历史原因.$li$thing$player=<name>/$:是 $thing$player_pos/$ 的别名."
+        },
+        {
+            "type": "text",
+            "title": "调试",
+            "text": "有时为了调试目的显示变量的值很有用.您可以通过以下几种方式显示变量的值:$li使用 $l:programming/rename重命名/$ 小部件将变量显示为无人机的名牌$li使用 $l:programming/edit_sign编辑标志/$ 小部件编写文本$li在 $l:tools/remote远程/$ 中使用 $l:tools/remote#label标签/$."
+        },
+        {
+            "type": "text",
+            "title": "调试续",
+            "text": "要将变量插入到上述方法显示的文本中,请使用语法 $thing$varname/$.$p请注意,特殊的全局变量前缀仍然适用,因此要插入无人机的位置,您将使用 $thing$$drone_pos/$,要插入全局变量,您将使用 $thing$#globalvarname/$ 或 $thing$%globalvarname/$."
+        },
+        {
+            "type": "text",
+            "title": "调试续",
+            "text": "您还可以通过在变量名后附加 $thing.x/$, $thing.y/$ 或 $thing.z/$ 来仅显示坐标的 X, Y 或 Z 分量.例如,要显示无人机所有者的 Y 坐标,请使用 $thing$$owner_pos.y/$.$p如果变量是 $thing物品变量/$,则 $thing.id/$ 后缀将获取物品的注册 ID 而不是其显示名称默认.这在显示 $l:machines/aphorism_tile#items格言瓷砖/$ 上的物品时特别有用."
+        }
+    ]
+}

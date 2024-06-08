@@ -1,0 +1,17 @@
+{
+    "name": "手动压缩机",
+    "icon": "pneumaticcraft:manual_compressor",
+    "category": "pneumaticcraft:compressors",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item手动压缩机/$ 是游戏早期的压缩机,通过手动劳动和消耗饥饿度来产生 $l:base_concepts/pressure压缩空气/$.右键点击压缩机以泵入空气并进行压缩.压缩机压力越高,每次泵送所需时间越长,直至无法再泵入更多空气."
+        },
+        {
+            "type": "crafting",
+            "text": "制作 $item手动压缩机/$",
+            "recipe": "pneumaticcraft:manual_compressor"
+        }
+    ]
+}

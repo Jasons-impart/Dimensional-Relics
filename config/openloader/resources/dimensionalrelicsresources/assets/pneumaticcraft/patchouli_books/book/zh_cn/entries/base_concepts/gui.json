@@ -1,0 +1,27 @@
+{
+    "name": "GUI概念",
+    "icon": "pneumaticcraft:textures/gui/icon/gui_mouse.png",
+    "category": "pneumaticcraft:base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "大多数 $pncr 中的机器都有一个带有几个 $thing侧边标签/$ 的GUI.有些标签是大多数或所有机器共有的,而有些则是特定机器独有的.以下是一些常见的标签:"
+        },
+        {
+            "type": "text",
+            "text": "$li$bold红石行为/$:在这里您可以选择机器如何响应红石信号或何时发出红石信号.$li$bold信息/$:信息标签显示有关机器用途的静态信息.$li$bold升级/$:在这里您可以了解该机器接受的升级以及它们在机器环境中的作用."
+        },
+        {
+            "type": "text",
+            "text": "$li$bold压力状态/$:在这里,您可以查看机器当前承受的压力以及机器的体积.$li$bold问题 /$:如果机器无法工作,此选项卡将指导您了解可能出现的问题."
+        },
+        {
+            "type": "image",
+            "text": "一个显示3个侧边选项卡的GUI:压力状态、问题此处无问题以及特定机器的组装控制器状态",
+            "images": [
+                "pneumaticcraft:textures/patchouli/gui_tabs.png"
+            ],
+            "border": "false"
+        }
+    ]
+}

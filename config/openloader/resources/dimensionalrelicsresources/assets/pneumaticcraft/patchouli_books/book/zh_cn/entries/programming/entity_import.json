@@ -1,0 +1,29 @@
+{
+    "name": "实体导入部件",
+    "icon": "pneumaticcraft:textures/progwidgets/entity_import_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$l:tools/drone无人机/$将前往指定$l:programming/area区域/$内最接近的匹配附带可选$l:base_concepts/entity_filter实体过滤器/$的实体,并在连接的$l:programming/text文本/$部件中找到它,然后将其拾起以便运输.$p这包括玩家,尽管玩家可以通过$thing潜行/$轻松从$item无人机/$上逃脱.话虽如此,被一个你可以控制的飞行实体带着四处走动也有其优势..."
+        },
+        {
+            "type": "text",
+            "title": "经验球",
+            "text": "无人机还能使用此部件导入$thing经验球/$；$item@球/$实体过滤器将匹配经验球.导入的球体会转换为$l:base_concepts/memory_essence记忆精华/$并存储在无人机的内部储罐中；然后你可以使用$l:programming/liquid_export液体导出/$部件将其转移到一个流体储罐."
+        },
+        {
+            "type": "text",
+            "title": "区域限制",
+            "text": "请记住,与此部件连接的任何$l:programming/area区域/$部件必须具有$thing箱子/$的区域类型；这是唯一支持的形状.尽管如此,通过使用区域的白名单/黑名单,可以创建不同的形状."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/entity_import_piece.png"
+            ],
+            "text": "$italic外星人绑架/$"
+        }
+    ]
+}

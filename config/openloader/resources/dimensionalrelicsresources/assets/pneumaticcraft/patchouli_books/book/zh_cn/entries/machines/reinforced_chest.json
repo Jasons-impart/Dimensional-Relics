@@ -1,0 +1,17 @@
+{
+    "name": "Reinforced Chest",
+    "icon": "pneumaticcraft:reinforced_chest",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$itemReinforced Chest/$是一个拥有36个槽位的箱子,具有黑曜石级别的抗爆能力,且在被破坏时能保持其库存."
+        },
+        {
+            "type": "crafting",
+            "text": "制作Reinforced Chest",
+            "recipe": "pneumaticcraft:reinforced_chest"
+        }
+    ]
+}

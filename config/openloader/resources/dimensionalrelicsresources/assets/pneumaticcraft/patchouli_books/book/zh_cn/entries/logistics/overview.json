@@ -1,0 +1,25 @@
+{
+    "name": "物流概览",
+    "icon": "pneumaticcraft:logistics_configurator",
+    "category": "pneumaticcraft:logistics",
+    "advancement": "pneumaticcraft:root",
+    "priority": "true",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$pncr的$thing物流系统/$提供了一种有趣的方式来运输物品和流体,以及保持库存和罐装满.$p库存和罐可以通过$l:logistics/frames物流框架/$标记,这些可附加的小工具控制物品和流体如何进出这些块."
+        },
+        {
+            "type": "text",
+            "text": "这些库存随后通过$l:logistics/logistics_drone物流无人机/$或$l:tubes/pressure_tubes压力管道/$与$l:tubes/logistics_module物流模块/$连接.$p$thing物流系统/$深受$l:https://wiki.factorio.com/Logistic_network异星工厂/$启发,如果你玩过那个游戏,这些概念将会很熟悉.主要区别在于,这个模组提供了$l:logistics/frames框架/$来附加到现有的库存/储罐,而不是独立的物流箱."
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "pneumaticcraft:logistics/frames",
+                "pneumaticcraft:logistics/logistics_drone",
+                "pneumaticcraft:tubes/logistics_module"
+            ]
+        }
+    ]
+}

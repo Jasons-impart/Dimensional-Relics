@@ -1,0 +1,27 @@
+{
+    "name": "真空模块",
+    "icon": "pneumaticcraft:vacuum_module",
+    "category": "pneumaticcraft:tubes",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing真空模块/$与$l:machines/vacuum_pump真空泵/$的功能相同——提供负压——但方式更为紧凑.它可以放置在垂直管道上,而全尺寸泵只能水平定向.$p优点是紧凑；缺点是在速度和容量方面的升级能力更有限."
+        },
+        {
+            "type": "text",
+            "title": "安装位置",
+            "text": "真空模块是一个$thinginline/$模块.将其放置在管道应该为真空的一端.向管道的宽/绿色端提供至少2巴的压力将使模块旋转,从窄/红色端之后的任何管道中抽出空气.$p施加一个$#f00红石信号/$会阻止模块运行."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:module_expansion_card",
+            "text": "一个$l:tubes/module_expansion_card模块扩展卡/$能提升模块的速度,大约相当于给真空泵增加了4个$l:base_concepts/upgrades#speed加速升级/$.类似于增加加速升级,这会导致正面的空气使用效率降低."
+        },
+        {
+            "type": "crafting",
+            "text": "制作真空模块",
+            "recipe": "pneumaticcraft:vacuum_module"
+        }
+    ]
+}

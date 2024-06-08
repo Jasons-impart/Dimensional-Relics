@@ -1,0 +1,23 @@
+{
+    "name": "跳转小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/jump_piece.png",
+    "category": "pneumaticcraft:widget_flow",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "此小部件纯粹专注于 $l:programming/flow_control程序流程/$.当程序遇到 $thing跳转/$ 小部件时,它将查看连接的 $l:programming/text文本/$ 小部件,并尝试跳转到具有匹配名称的 $l:programming/label标签/$ 小部件.如果由于任何原因失败,执行将返回到 $l:programming/start开始/$ 小部件.这种回退行为通常不应发生."
+        },
+        {
+            "type": "text",
+            "text": "一个$thing跳转/$小部件可用于合并程序流程中的多个$italic分支/$通过使用两个或更多跳转,这些跳转都跳转到同一个$l:programming/label标签/$,或者简单地通过将各个部分分离到各自的'子程序'中来组织您的程序.一个有用的提示是检查$bold显示流程/$复选框,该复选框位于$l:programming/programmer程序员/$图形用户界面左下角；它将显示连接相同名称的$thing跳转/条件/标签/$小部件的线条."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/jump_piece.png"
+            ],
+            "text": "$italic不妨/$"
+        }
+    ]
+}

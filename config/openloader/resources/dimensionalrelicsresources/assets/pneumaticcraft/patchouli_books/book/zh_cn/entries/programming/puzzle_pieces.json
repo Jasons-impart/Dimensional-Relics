@@ -1,0 +1,20 @@
+{
+    "name": "拼图碎片",
+    "icon": "pneumaticcraft:textures/progwidgets/start_piece.png",
+    "category": "pneumaticcraft:programming",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing编程谜题/$,或$thing谜题碎片/$,是用于通过$l:programming/programmer编程器/$对$l:tools/drone无人机/$进行编程的实体物品.编程无人机时会消耗这些碎片,但可以通过用更小的或空的程序覆盖$item无人机/$来回收它们.$p在$item编程器/$图形用户界面中,$thing谜题碎片/$的虚拟表示被称为$thing编程小部件/$."
+        },
+        {
+            "type": "text",
+            "text": "要向$l:tools/drone无人机/$编写程序,您必须要么在您的库存中拥有$thing谜题碎片/$,要么将它们放置在与$item编程器/$相邻的库存中任何一侧.$p如果您处于创造模式,那么编程是完全免费的；不需要碎片."
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:programming_puzzle"
+        }
+    ]
+}

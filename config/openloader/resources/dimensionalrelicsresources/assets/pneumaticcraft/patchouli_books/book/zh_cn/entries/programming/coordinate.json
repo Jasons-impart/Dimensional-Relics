@@ -1,0 +1,23 @@
+{
+    "name": "坐标小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/coordinate_piece.png",
+    "category": "pneumaticcraft:widget_other",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing坐标/$ 是一个仅用作 $l:编程/坐标运算符坐标运算符/$ 和 $l:编程/条件_坐标条件:坐标/$ 小部件参数的小部件.$p这个小部件可以与 $l:编程/区域区域/$ 小部件相比较:使用 $thing区域/$ 小部件时,你提供 $italic两个/$ 坐标来构成一个区域,而使用这个小部件时,你只提供 $italic一个/$.提供坐标有两种方式:"
+        },
+        {
+            "type": "text",
+            "text": "$bold常量/$$br常量坐标,顾名思义...是恒定的.你可以通过选择 $l:工具/gps_工具GPS工具/$ 来选择一个,或者直接在文本字段中输入X/Y/Z值.$p$bold变量/$$br通过选择变量,你可以返回存储在 $l:编程/变量变量/$ 中的值作为坐标.请记住,使用此方法你只能提供坐标,不能修改变量!"
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/coordinate_piece.png"
+            ],
+            "text": "$italic坐标小部件/$"
+        }
+    ]
+}

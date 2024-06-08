@@ -1,0 +1,19 @@
+{
+    "name": "导出RF小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/rf_export_piece.png",
+    "category": "pneumaticcraft:widget_interact",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$l:tools/drone无人机/$有一个内部缓冲区,容量为100,000 FEForge能量.使用此小部件,您可以将能量从无人机的存储导出到能量提供块例如$item热力膨胀能量电池/$或$item沉浸工程电容器/$.$p$italic尽管其名称如此,但此小部件导出的是FEForge能量,而非RF红石通量.名称具有历史性./$"
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/rf_export_piece.png"
+            ],
+            "text": "$italic导出RF小部件/$"
+        }
+    ]
+}

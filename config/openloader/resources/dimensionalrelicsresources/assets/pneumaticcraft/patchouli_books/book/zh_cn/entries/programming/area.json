@@ -1,0 +1,31 @@
+{
+    "name": "区域小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/area_piece.png",
+    "category": "pneumaticcraft:widget_other",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing区域/$小部件仅作为其他小部件的参数使用,告诉它们应该应用于哪个区域可能是一个单独的方块.要使用此小部件,您需要一个$l:tools/gps_toolGPS工具/$和/或$l:tools/gps_area_toolGPS区域工具/$.$p设置区域小部件有三种常见方法:"
+        },
+        {
+            "type": "text",
+            "text": "1. $thing右击/$区域小部件在$l:programming/programmer编程器/$GUI中打开配置GUI,并在那里进行设置.您可以使用两个$thingGPS/$按钮设置区域的边界点击打开另一个GUI并从您的库存中选择一个$l:tools/gps_toolGPS工具/$,并通过下方的单选按钮选择$thing区域类型/$及相关参数."
+        },
+        {
+            "type": "text",
+            "text": "2. 在世界中设置一个$l:tools/gps_toolGPS工具/$或$l:tools/gps_area_toolGPS区域工具/$.在$l:programming/programmer编程器/$GUI中,您可以:$li$thing左击/$现有的$itemGPS区域工具/$上的$thing区域/$小部件以复制工具的设置到小部件$li$thing左击/$空白的编程区域上的$itemGPS工具/$以创建一个新的$l:programming/coordinate坐标/$小部件$li$thingShift+左击/$空白的编程区域上的$itemGPS工具/$以创建一个新的$thing区域/$小部件$li$thing左击/$空白的编程区域上的$itemGPS区域工具/$以创建一个新的$thing区域/$小部件."
+        },
+        {
+            "type": "text",
+            "text": "3. 高级选项:您可以使用$thing变量/$,如由$l:programming/coordinate_operator坐标运算符/$小部件创建的.$l:programming/programmer编程器/$必须在$thing高级/$模式下才能使用变量；除了GPS按钮外,您现在还会看到下拉选择字段.您可以在那里选择一个已知的变量名,该区域的相应角将使用该变量的位置."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/area_piece.png"
+            ],
+            "text": "$italic区域小部件/$"
+        }
+    ]
+}

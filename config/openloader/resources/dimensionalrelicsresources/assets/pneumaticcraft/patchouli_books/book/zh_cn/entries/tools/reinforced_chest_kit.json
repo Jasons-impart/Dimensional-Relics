@@ -1,0 +1,17 @@
+{
+    "name": "强化箱子升级套件",
+    "icon": "pneumaticcraft:reinforced_chest_kit",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item强化箱子升级套件/$ 是一个便利工具,允许你将任何木质箱子原地升级为 $l:machines/reinforced_chest强化箱子/$,保留箱子内的物品.只需 $thing潜行右键点击/$ 升级套件对准任何木质箱子即可进行升级.$p注意:你将获得使用升级套件的 $item木质箱子/$ 作为物品掉落."
+        },
+        {
+            "type": "crafting",
+            "text": "制作强化箱子升级套件.$p请注意,强化箱子必须完全清空.",
+            "recipe": "pneumaticcraft:reinforced_chest_kit"
+        }
+    ]
+}

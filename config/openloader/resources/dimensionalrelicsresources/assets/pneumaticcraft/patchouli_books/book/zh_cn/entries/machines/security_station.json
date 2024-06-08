@@ -1,0 +1,84 @@
+{
+    "name": "Security Station",
+    "icon": "pneumaticcraft:security_station",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:plastic",
+    "pages": [
+        {
+            "type": "text",
+            "text": "如果你想保护一个区域不受敌对玩家侵扰,可以使用$thingSecurity Station/$.$p此设备通过阻止非信任玩家在其范围内的任何方块上进行交互,从而防止所有玩家互动.这意味着无法打开任何库存或GUI,也无法放置或破坏方块."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:security_station",
+            "text": "听起来很不错,但是要建立一个$thing安全站/$,你需要做一些事情来确保其安全性.因为问题是,$thing安全站/$可能会被$l:machines/security_station#hacking黑掉/$.安全站的黑客系统深受$l:https://www.youtube.com/watch?v=nQ0rPLlU8v4《杀出重围:革命》的黑客系统/$启发."
+        },
+        {
+            "type": "text",
+            "title": "设置",
+            "text": "要建立一个$thing安全站/$,你必须在网络网格中放置$l:components/network_components网络组件/$来形成一个$thing网络/$.每个网络中必须有一个$l:components/network_components#diagnostic诊断子程序/$,一个$l:components/network_components#io_port网络IO端口/$,和一个$l:components/network_components#registry网络注册表/$.$p这三个特殊节点必须全部相互连接,这通过$l:components/network_components#node网络节点/$来实现."
+        },
+        {
+            "type": "text",
+            "title": "黑客攻击已禁用",
+            "flag": "!pneumaticcraft:securityStationHacking",
+            "text": "此服务器上的配置已禁用安全站的黑客攻击.这意味着一旦设置好安全站,没有玩家可以黑掉它,但仍然需要按照前一页的描述,使用正确的组件来设置它.然而,大多数后续页面除了$thing允许朋友/$在这里不适用."
+        },
+        {
+            "type": "text",
+            "title": "规则",
+            "text": "$l:machines/security_station#hacking黑客/$从$thing网络IO端口/$开始,目标是捕获$thing诊断子程序/$或$thing网络注册表/$.$p$thing诊断子程序/$的目标是追溯到黑客在$thing网络IO端口/$的入口点."
+        },
+        {
+            "type": "text",
+            "text": "在更大的堆栈中放置$thing网络节点/$组件会增加$italic节点评级/$,这意味着$thing黑客/$和$thing诊断/$捕获它们所需的时间更长.但请注意,由于$thing诊断/$可以比$thing黑客/$更快地追踪,这对黑客来说更多的是劣势,而不是对诊断."
+        },
+        {
+            "type": "text",
+            "title": "黑客工具",
+            "text": "有几种有用的物品黑客应该尝试获取；这两者都无法制作,必须在世界中找到村民交易或地牢战利品:$li$l:components/nuke_virus核病毒/$,可用于立即捕获一个节点$li$l:components/stop_worm停止蠕虫/$,可以暂时冻结诊断的追踪进度."
+        },
+        {
+            "type": "text",
+            "title": "升级",
+            "text": "安全站需要进行几项升级:$li$l:base_concepts/upgrades#entity_tracker实体追踪器/$能提高检测到$l:machines/security_station#hacking黑客/$的几率；存在收益递减,每节点破解尝试的最大保护率为99%.$li$l:base_concepts/upgrades#range范围升级/$每升级一次,安全站的保护范围增加1格,最大可达16格,覆盖所有方向最大保护区域为33x33x33格."
+        },
+        {
+            "type": "text",
+            "title": "升级续",
+            "text": "$li$l:base_concepts/upgrades#security安全升级/$增加黑客在其$l:armor/pneumatic_helmet气动头盔/$中开始破解所需的$thing安全升级/$数量.注意,黑客不会被告知他们需要多少安全升级,而安全站会对尝试破解但因缺乏安全升级而无法成功的任何玩家造成少量不可抵抗的伤害."
+        },
+        {
+            "type": "text",
+            "title": "允许朋友",
+            "text": "您可以将友好玩家添加到您的$thing安全站/$,允许他们在保护区域内互动；使用$bold共享用户/$侧边栏输入玩家名称.$p您也可以在此处移除不再信任的玩家；只需点击玩家的名字即可移除."
+        },
+        {
+            "type": "text",
+            "title": "被破解",
+            "text": "当有人破解您的$thing安全站/$时,您可以在$bold问题/$和$bold状态/$标签中看到,同时显示$italic谁/$破解了您的系统.这些玩家仅这些玩家现在可以与该区域内的方块互动.要恢复安全,您需要通过GUI中的$bold重启/$按钮$italic重启/$$thing安全站/$.重启过程需要60秒,在此期间区域完全不受保护."
+        },
+        {
+            "type": "text",
+            "title": "破解",
+            "anchor": "hacking",
+            "text": "要破解不属于您的$thing安全站/$,您需要一个$l:armor/pneumatic_helmet气动头盔/$,至少安装了一个可能很多$l:base_concepts/upgrades#security安全升级/$.当您这样做时,会出现一个类似于对面的GUI.观看$l:https://www.youtube.com/watch?v=Lgmpslbrrwo此视频非常老旧但仍然相关/$了解如何破解.$p要捕获一个节点,$thing左键点击/$它.要加固已捕获的节点,$thing右键点击/$它；加固的节点诊断捕获需要稍长时间."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/patchouli/hacking.png"
+            ]
+        },
+        {
+            "type": "text",
+            "title": "提示",
+            "text": "$li保持你的$thing安全站/隐蔽且安全.$li你可以使用多个$thing安全站/来保护一个区域；所有这些都必须被破解.$li考虑使用主动防御措施,例如装备有战斗程序的$l:tools/drone无人机/,或$l:machines/sentry_turret哨兵炮塔/.$li被破解的$thing安全站/可以被设置为发出一个$#f00红石信号/,这可能触发额外的措施比如站下的TNT？"
+        },
+        {
+            "type": "crafting",
+            "text": "制作安全站",
+            "recipe": "pneumaticcraft:security_station"
+        }
+    ]
+}

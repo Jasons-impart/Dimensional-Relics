@@ -1,0 +1,16 @@
+{
+    "name": "记忆精华",
+    "icon": "pneumaticcraft:memory_essence_bucket",
+    "category": "pneumaticcraft:base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "记忆精华是一种代表玩家记忆和经验的液体.它可以被提取并储存以供以后使用,无论是用于原版附魔,还是用于某些制作过程.$p获取记忆精华有两种方式:$li1. 使用记忆棒$li2. 使用空中接口."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:memory_essence_bucket",
+            "text": "$italic你经验丰富吗/$"
+        }
+    ]
+}

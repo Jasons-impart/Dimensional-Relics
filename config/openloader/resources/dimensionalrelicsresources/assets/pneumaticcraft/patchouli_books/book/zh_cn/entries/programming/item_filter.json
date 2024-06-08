@@ -1,0 +1,23 @@
+{
+    "name": "物品过滤器小部件",
+    "icon": "pneumaticcraft:textures/progwidgets/item_filter_piece.png",
+    "category": "pneumaticcraft:widget_other",
+    "advancement": "pneumaticcraft:programmer",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing物品过滤器/$ 是一个仅用作其他小部件的 $thing参数/$ 的小部件.您可以使用它来指定哪些方块和物品可以被拾取/放置/挖掘等.$p首先,$thing右键点击/$ 小部件.然后,您可以通过点击 $thing搜索物品.../$ 在游戏中搜索物品,或者通过点击 $thing搜索库存.../$ 从您的库存中选择物品."
+        },
+        {
+            "type": "text",
+            "text": "然后,您可以应用一些额外的过滤选项来控制匹配的方式；这些选项的工作方式显示在GUI中复选框的工具提示中.$p通常,将此小部件放置在其父小部件的 $italic右侧/$ 作为白名单,放置在 $italic左侧/$ 作为黑名单."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/progwidgets/item_filter_piece.png"
+            ],
+            "text": "$italic物品过滤器小部件/$"
+        }
+    ]
+}

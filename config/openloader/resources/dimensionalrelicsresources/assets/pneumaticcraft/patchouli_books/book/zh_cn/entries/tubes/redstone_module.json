@@ -1,0 +1,29 @@
+{
+    "name": "红石模块",
+    "icon": "pneumaticcraft:redstone_module",
+    "category": "pneumaticcraft:tubes",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "此模块在连接的管道间交换$#f00红石信号/$,有效利用管道作为红石导线.$p通过模块GUI或使用任意$item染料/$右击模块,最多可选择16个独立通道.$p使用$item扳手/$右击模块,可在输入和输出模式之间切换."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/patchouli/redstone_module.png"
+            ],
+            "border": "true"
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:module_expansion_card",
+            "text": "当你将$l:tubes/module_expansion_card模块扩展卡/$应用于模块时,将提供额外的信号处理功能.当模块处于$thing输出模式/$时,右击模块可打开GUI,选择应用到输出信号的模式,例如反转信号,与另一通道进行AND/OR/XOR操作...$p每种模式的详细效果在模块GUI中有详细描述."
+        },
+        {
+            "type": "crafting",
+            "text": "制作红石模块",
+            "recipe": "pneumaticcraft:redstone_module"
+        }
+    ]
+}

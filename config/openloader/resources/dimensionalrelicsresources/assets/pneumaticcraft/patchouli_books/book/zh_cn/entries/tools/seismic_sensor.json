@@ -1,0 +1,21 @@
+{
+    "name": "地震传感器",
+    "icon": "pneumaticcraft:seismic_sensor",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:root",
+    "pages": [
+        {
+            "type": "text",
+            "text": "地震传感器是早期游戏用于追踪$l:base_concepts/oil石油/$的物品.与大多数工具不同,传感器不需要$l:base_concepts/pressure压力/$即可操作.当$thing右键点击/$时,它会显示传感器点击的方块正下方是否找到石油."
+        },
+        {
+            "type": "text",
+            "text": "地震传感器可以有两种结果:$p$#008 未发现石油./$ $p此方块正下方未发现石油.继续寻找.$p$#008 发现石油,位于下方<距离>米处.包含大约<数量>桶石油./$ $p发现石油!点击的方块将是放置$l:machines/gas_lift气举/$以抽出石油的合适位置."
+        },
+        {
+            "type": "crafting",
+            "text": "制作地震传感器",
+            "recipe": "pneumaticcraft:seismic_sensor"
+        }
+    ]
+}

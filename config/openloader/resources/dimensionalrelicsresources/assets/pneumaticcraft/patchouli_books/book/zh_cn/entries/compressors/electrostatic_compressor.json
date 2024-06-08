@@ -1,0 +1,47 @@
+{
+    "name": "静电压缩机",
+    "icon": "pneumaticcraft:electrostatic_compressor",
+    "category": "pneumaticcraft:compressors",
+    "advancement": "pneumaticcraft:advanced_pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item电荷压缩机/$是一种$l:base_concepts/pressure_tiers二级/$空气$l:base_concepts/pressure压缩机/$, 它使用$thing闪电/$作为能量来产生压缩空气.$p当它被闪电击中时,会立即产生200,000mL的空气.听起来很多,但你多久能见到一个带电的爬行者悄悄靠近？你必须让它被击中."
+        },
+        {
+            "type": "text",
+            "text": "为了增加这种情况发生的机会,你可以将$item铁栏杆/$连接到这台机器上,它们作为闪电的导体.$p建议是创建一个大的$thing网格/$的铁栏杆:它们可以水平距离机器最多5个方块圆形半径,上下最多5个方块,但它们都必须通过彼此连接到$item电荷压缩机/$."
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/patchouli/electrostatic_compressor.png"
+            ]
+        },
+        {
+            "type": "text",
+            "text": "请注意,在左侧的图像中,只有中央的压缩机周围有一个足够大的网格,以达到最大效率；其他压缩机触发打击的机会较低尽管这仍然比只在网格中央放置一个压缩机更有效."
+        },
+        {
+            "type": "text",
+            "text": "当一个$thing网格/$上有多个$item静电压缩机/$时,打击产生的空气会平均分配给它们.$p为了防止压缩机在打击后压力过高时爆炸,你可以在压缩机的底部连接$item铁栏杆/$.这样,能量可以分散到地面,而不是进入机器."
+        },
+        {
+            "type": "text",
+            "text": "这种分散只会在压缩机的危险压力达到时发生,不会更早.每个$item铁栏杆/$ $italic直接/$位于压缩机下方在同一Y轴上将分散10,000毫升的过量空气.$p因此,在共享的$thing网格/$上有10个压缩机,$ttcolor$t:200000 / 10 = 20000空气由每个压缩机产生；10000 x 2 = 20000空气分散每个压缩机下方只需要2个铁栏杆.你也可以在压缩机上添加$l:base_concepts/upgrades#security安全升级/$,但这更昂贵且效果较差"
+        },
+        {
+            "type": "text",
+            "text": "为了提高打击的机会,你还可以在压缩机上方直接放置最多10个$item铁栏杆/$,形成一个$thing避雷针/$.每个栏杆都会稍微提高打击的机会."
+        },
+        {
+            "type": "text",
+            "text": "$bold注意:/$ 与之前的版本不同,$pncr中的自然闪电不会$italic增加/$压缩机的空气这曾被其他模组用来制造闪电而高度滥用.相反,压缩机有一个很小的机会创造一个\"假\"的闪电.这个机会在晴朗天气下$italic非常/$小,但在下雨时会改善,在$thing雷暴/$时会大大提高."
+        },
+        {
+            "type": "crafting",
+            "text": "制作一个$item静电压缩机/$",
+            "recipe": "pneumaticcraft:electrostatic_compressor"
+        }
+    ]
+}

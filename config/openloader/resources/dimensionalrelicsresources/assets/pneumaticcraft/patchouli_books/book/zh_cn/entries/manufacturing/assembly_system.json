@@ -1,0 +1,75 @@
+{
+    "name": "装配系统",
+    "icon": "pneumaticcraft:assembly_controller",
+    "category": "pneumaticcraft:manufacturing",
+    "advancement": "pneumaticcraft:printed_circuit_board",
+    "pages": [
+        {
+            "type": "text",
+            "text": "要制作更高级别的材料,你需要一个$thing装配系统/$；这是一系列$thing装配机器/$.这些机器在水平相邻时会相互通信.每种类型只能存在一台机器$item装配IO单元/$除外,见下文.装配线运行在$l:base_concepts/pressure压缩空气/$上,但你只需向装配控制器供应空气即可为整个系统供电."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:assembly_controller",
+            "text": "$thing装配系统/$的大脑.它接受$l:manufacturing/assembly_programs程序/$,告诉$item控制器/$如何控制其他$thing装配机器/$.$p控制器的显示屏显示其状态的诊断信息.打开GUI查看正在发生的事情."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:assembly_io_unit_import",
+            "text": "$itemIO单元/$是库存与$item装配平台/$之间的连接.这个机械臂可以斜向移动.$pIO单元可以输出成品,或者输入用于制作的物品.任何库存都可以使用:原版$item箱子/$或模组库存块."
+        },
+        {
+            "type": "text",
+            "title": "装配IO单元续",
+            "text": "一个$thing装配系统/$必须包含$italic两个/$ $itemIO单元/$；一个进口单元和一个出口单元:$6橙色/$表示它是出口单元,$9蓝色/$表示它是进口单元.为了让$itemIO单元/$工作,它需要能够到达一个$item装配平台/$,以及一个用于提取或存储物品的库存取决于其模式."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:assembly_platform",
+            "text": "$item装配平台/$是其他$thing装配机器/$的工作台.在钻孔/激光时用于固定物品.$p$item装配平台/$最好位于中心位置,因为所有其他机器都需要访问它."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:assembly_drill",
+            "text": "$item装配钻机/$是执行实际工作的$thing装配机器/$之一.它的钻石钻头能够钻穿最坚硬的材料.$p$item装配钻机/$不能$italic斜向/$到达,因此必须直接位于$thing装配平台/$的相邻位置."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:assembly_laser",
+            "text": "$item装配激光/$能够切割材料,用于切割物品或削去边缘.$p与$item装配钻机/$类似,该机器$italic无法/$进行对角线操作."
+        },
+        {
+            "type": "text",
+            "title": "使用",
+            "text": "要使用$thing装配系统/$制作物品,请将$l:manufacturing/assembly_programs装配程序/$放入$item装配控制器/$中,并将所需物品放入输入库存中.$p任何与控制器和插入程序已知配方匹配的物品将自动处理."
+        },
+        {
+            "type": "link",
+            "flag": "mod:crafttweaker",
+            "title": "CraftTweaker",
+            "text": "$thing装配系统/$支持$l:https://minecraft.curseforge.com/projects/crafttweakerCraftTweaker/$:可以添加和移除配方.请点击下方链接获取更多信息.",
+            "url": "https://docs.blamejared.com/1.16/en/mods/PneumaticCraft-Repressurized/AssemblySystem",
+            "link_text": "CraftTweaker Docs"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:assembly_controller",
+            "recipe2": "pneumaticcraft:assembly_platform"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:assembly_io_unit_import",
+            "recipe2": "pneumaticcraft:assembly_io_unit_export"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:assembly_io_unit_import_from_export",
+            "recipe2": "pneumaticcraft:assembly_io_unit_export_from_import"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:assembly_drill",
+            "recipe2": "pneumaticcraft:assembly_laser"
+        }
+    ]
+}

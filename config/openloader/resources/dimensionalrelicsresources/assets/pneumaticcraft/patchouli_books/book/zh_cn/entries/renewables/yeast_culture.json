@@ -1,0 +1,43 @@
+{
+    "name": "酵母培养",
+    "icon": "pneumaticcraft:yeast_culture_bucket",
+    "category": "pneumaticcraft:renewables",
+    "advancement": "pneumaticcraft:tp_plant",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing酵母培养/$ 是生产 $l:renewables/ethanol乙醇/$ 以及 $l:renewables/sourdough酸面团/$ 所必需的,可以通过几种方式生产:"
+        },
+        {
+            "type": "spotlight",
+            "item": "minecraft:red_mushroom",
+            "title": "方法1",
+            "text": "这是你最初唯一可用的方法.向 $l:manufacturing/thermopneumatic_processing_plant热气动处理厂/$ 中加入 $thing水/$,并添加一些蘑菇.这种方法有点慢需要稳定的蘑菇供应,但可以轻松生产出初始的酵母培养."
+        },
+        {
+            "type": "text",
+            "title": "方法1续",
+            "text": "这个过程对温度敏感:你需要保持热气动处理厂的温度在30°C至60°C之间.这在温暖生物群系中非常容易,但在较冷的地区可能需要一些努力——需要注意的是,随着你挖掘得更深,环境温度往往会上升,因此在较低的Y层级处理可能适合温带生物群系."
+        },
+        {
+            "type": "pneumaticcraft:thermo_plant",
+            "recipe": "pneumaticcraft:thermo_plant/yeast_culture"
+        },
+        {
+            "type": "text",
+            "flag": "!pneumaticcraft:inWorldYeastCrafting",
+            "title": "重要提示",
+            "text": "$italic本实例配置中已禁用以下页面描述的世界内酵母制作./$"
+        },
+        {
+            "type": "text",
+            "title": "方法2",
+            "text": "$thing酵母培养/$,作为一种活生物体,能够自我复制.为此,将一桶培养液倒入世界中的一个池子里,并向池中投入一些 $thing糖/$.$p现在,将一桶 $thing水/$ 倒入与培养液相邻的方块空间；几秒钟后,你会看到水被转化为更多的培养液."
+        },
+        {
+            "type": "text",
+            "title": "方法2续",
+            "text": "需要注意的是,文化会在放置水时传播,而不是在添加糖时传播.$p这种方法可以通过一点思考和设计实现自动化,甚至在游戏早期提示:$l:machines/omnidirectional_hopper全向/$和$l:machines/liquid_hopper液体/$漏斗配合$l:base_concepts/upgrades#dispenser发射器升级/$可能非常有用."
+        }
+    ]
+}

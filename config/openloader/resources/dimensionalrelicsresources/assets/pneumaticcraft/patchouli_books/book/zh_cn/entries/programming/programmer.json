@@ -1,0 +1,84 @@
+{
+    "name": "编程器",
+    "icon": "pneumaticcraft:programmer",
+    "category": "pneumaticcraft:programming",
+    "advancement": "pneumaticcraft:printed_circuit_board",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item编程器/$是一种用于编程$l:tools/drone无人机/$的机器,使用可视化编程系统,其中$l:programming/puzzle_pieces拼图块/$在编程GUI中组装.$thing编程器/$无需$l:base_concepts/pressure压力/$即可操作.关于如何编写无人机程序的更多信息,请参阅$thing编程/$类别的其余部分."
+        },
+        {
+            "type": "crafting",
+            "text": "制作编程器",
+            "recipe": "pneumaticcraft:programmer"
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/patchouli/programmer_gui.png"
+            ],
+            "text": "$italic编程器GUI:请参阅后续页面了解各部分信息/$"
+        },
+        {
+            "type": "text",
+            "text": "$bold1. 主编程区域/$$p此区域是构建实际程序的地方.从$thing部件托盘区域2/$拖动部件至此,并连接它们以形成程序.$p您可以使用鼠标滚轮或右侧的滚动条来放大和缩小编程区域."
+        },
+        {
+            "type": "text",
+            "text": "$bold2. 部件托盘/$$p此区域存放用于构建程序的部件.它包含的部件比显示的要多；您可以使用托盘下方的箭头按钮翻页,或者使用$thing空格/$或$thingTab/$展开托盘以显示所有部件.$p展开后,托盘上方还会显示一个文本框,您可以在其中输入过滤字符串来搜索部件."
+        },
+        {
+            "type": "text",
+            "text": "$bold3. 无人机插槽/$$p将$l:tools/drone无人机/$或$l:components/network_components网络存储/API/$放置在此处以进行编程.准备好编程无人机时,按下$thing⟶/$按钮以编写程序.如果愿意,您可以使用左侧的文本框为无人机命名.如果成功,您将听到声音反馈.$p您还可以使用$thing⟵/$按钮从无人机或网络存储/API导入程序."
+        },
+        {
+            "type": "text",
+            "text": "$bold4. 难度选择/$$p这些单选按钮控制托盘中的哪些编程部件可用.它们还启用/禁用一些高级功能,如$l:programming/coordinate_operator变量/$.$p$bold5. 玩家背包/$$p您自己的背包；如果您有任何$l:tools/gps_toolGPS工具/$或$l:tools/gps_area_toolGPS区域工具/$, 您可以点击它们在$l:programming/area区域/$或$l:programming/coordinate坐标/$部件上以转移它们的设置到部件."
+        },
+        {
+            "type": "text",
+            "text": "$bold6. 导航与显示选项/$$p您可以使用这些按钮进行:$li导航到您的程序的$l:programming/start开始/$部件$li导航到最后放置的部件$li切换每个部件上的额外信息显示$li切换$l:programming/jump跳转/$和$l:programming/label标签/$部件之间的连接线显示"
+        },
+        {
+            "type": "text",
+            "text": "$bold7. 杂项按钮/$$pGUI左侧边缘的按钮允许按顺序:$li$thing撤销/$最近20个操作$li$thing重做/$上一个撤销$li$thing导入或导出/$您的程序作为JSON文件到$l:https://pastebin.compastebin.com/$可选Pastebin登录$li$thing删除/$您的整个程序可撤销$li$thing转换/$您的程序为$thing相对/$坐标更多信息见$l:programming/programmer#convert_relative此页/$"
+        },
+        {
+            "type": "text",
+            "anchor": "ids",
+            "title": "编程部件ID",
+            "text": "如果您通过$thingF3+H/$开启扩展工具提示信息,您会注意到每个编程部件的工具提示末尾还包括内部部件ID.这主要对使用$l:machines/drone_interface无人机接口/$进行无人机编程有益 - 无人机接口中的$thingsetAction/$Lua方法接受这些ID$thingpneumaticcraft:/$前缀可选作为参数."
+        },
+        {
+            "type": "text",
+            "title": "分享程序",
+            "text": "如果您想与其他玩家分享您的程序,您有几个选项:$li您可以使用$thingPastebin/$按钮将您的程序导出到$l:https://pastebin.compastebin.com/$$li$thingPastebin/$GUI还允许将程序写入剪贴板以便复制和粘贴$li您可以将您的程序保存到$l:tools/drone无人机/$或$l:components/network_components网络存储/网络API/$,并将物品交给服务器上的其他玩家."
+        },
+        {
+            "type": "text",
+            "anchor": "convert_relative",
+            "title": "转换为相对",
+            "text": "假设你设计了一个程序,用于运行一个自动化农场,并希望分享这个程序.不同世界的人们会有不同的农场坐标,因此他们必须更改每一个$l:programming/area区域/$小部件；真是麻烦.$p点击$thing转换为相对/$按钮可以简化这一过程；它还会提供工具提示,指示你需要做什么来转换你的程序."
+        },
+        {
+            "type": "text",
+            "anchor": "convert_relative",
+            "title": "转换为相对续",
+            "text": "你需要添加一个固定的$l:programming/coordinate_operator坐标操作符/$小部件,以及一个包含$thing基础位置/$的$l:programming/coordinate坐标/$小部件例如,输入箱的位置.然后,它会将程序中使用的任何绝对位置区域或坐标转换为相对于该基础位置的坐标.$p现在,使用你的程序的用户只需调整一个坐标即可使用你的程序!"
+        },
+        {
+            "type": "text",
+            "flag": "mod:jei",
+            "anchor": "jei",
+            "title": "JEI集成",
+            "text": "如果安装了JEI,当你在打开程序员GUI的同时打开JEI配方显示时,你会注意到一个'+'移动物品按钮.点击它将为配方中的每个输入物品添加$l:programming/item_filter物品过滤器/$小部件.如果你在编程区域有一个没有附着物品过滤器的$l:programming/crafting制作/$小部件,物品过滤器将被添加到制作小部件中,以便快速&轻松地设置配方.否则,它们将被添加到编程区域左上角的一行中."
+        },
+        {
+            "type": "text",
+            "flag": "mod:jei",
+            "title": "JEI集成续",
+            "text": "默认情况下,每个唯一物品类型只添加一个物品过滤器例如,对于一个$item石板/$配方,只会创建一个$item石头/$过滤器,而不是三个.记住,小部件可以通过中键点击并拖动来复制.如果你想为配方中的每个物品,包括重复物品,添加一个物品过滤器,请在点击JEI中的'+'按钮时按住Shift键."
+        }
+    ]
+}

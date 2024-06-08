@@ -1,0 +1,22 @@
+{
+    "name": "涡流管",
+    "icon": "pneumaticcraft:vortex_tube",
+    "category": "pneumaticcraft:machines",
+    "advancement": "pneumaticcraft:pressure_tube",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$thing涡流管/$是一种基于$l:https://en.wikipedia.org/wiki/vortex_tube现实物理原理/$的设备.它将流入的$l:base_concepts/pressure空气/$分离成$l:base_concepts/heat热和冷/$两部分,使管的一侧加热,另一侧冷却.注意,热侧和冷侧之间存在热连接,因此当你想要利用热量时,更有效的方法是排出冷侧,反之亦然.这可以通过$l:machines/heat_sink散热器/$来实现."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:vortex_tube",
+            "text": "当你放置或旋转$thing涡流管/$时,热端将面向你.注意,每个端部都有一条细小的红色或蓝色带子来标识热端和冷端.$p高压空气是使$thing涡流管/$工作的必要条件.压力越高,温度差越大,但空气消耗也越快."
+        },
+        {
+            "type": "crafting",
+            "text": "制作涡流管",
+            "recipe": "pneumaticcraft:vortex_tube"
+        }
+    ]
+}

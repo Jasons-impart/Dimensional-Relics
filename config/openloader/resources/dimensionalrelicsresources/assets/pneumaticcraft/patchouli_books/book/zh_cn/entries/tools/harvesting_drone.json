@@ -1,0 +1,33 @@
+{
+    "name": "采集无人机",
+    "icon": "pneumaticcraft:harvesting_drone",
+    "category": "pneumaticcraft:tools",
+    "advancement": "pneumaticcraft:pressure_chamber",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item采集无人机/$是一种特殊的非编程型$l:tools/drone无人机/$,它将在其部署位置为中心的17x17x17立方体内执行$l:programming/harvest作物/树木采集/$任务.该无人机$italic不会/$拾取采集的物品."
+        },
+        {
+            "type": "spotlight",
+            "title": "自动充电",
+            "item": "pneumaticcraft:charging_station",
+            "text": "与所有类型的无人机一样,这些无人机需要$l:base_concepts/pressure压力/$才能运行,如果空气不足,它们会自动寻找$l:tools/drone#charging带有分配器升级的充电站/$."
+        },
+        {
+            "type": "entity",
+            "entity": "pneumaticcraft:harvesting_drone",
+            "offset": -0.3
+        },
+        {
+            "type": "text",
+            "title": "工具使用",
+            "text": "如果你通过$thing潜行+右键点击/$将$item采集无人机/$部署在包含仅任何类型$item锄头/$的库存上,无人机将使用该锄头自动重新种植作物,并且不会在没有锄头装备的情况下尝试进行任何工作.如果你不在乎重新种植,只需将无人机部署在其他任何方块上."
+        },
+        {
+            "type": "crafting",
+            "text": "请注意,采集无人机已经学会如何用锄头而不是斧头砍伐树木；它们就是那么聪明.",
+            "recipe": "pneumaticcraft:harvesting_drone"
+        }
+    ]
+}

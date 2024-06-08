@@ -1,0 +1,52 @@
+{
+    "name": "气动靴",
+    "icon": "pneumaticcraft:pneumatic_boots",
+    "category": "pneumaticcraft:armor",
+    "advancement": "pneumaticcraft:printed_circuit_board",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$item气动靴/$是四件$thing气动盔甲/$之一.$p靴子提供内置的跌落保护,其消耗的气量适中与抵消的跌落伤害成正比.$p您还可以免费获得1格的台阶辅助无需消耗气.请注意,这是台阶辅助,不是自动跳跃,并且这是一个可切换的功能."
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:pneumatic_boots",
+            "text": "制作气动靴"
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:jet_boots_upgrade_1",
+            "text": "如果您曾梦想无拘无束地飞翔除了剩余的压力,那么$l:base_concepts/upgrades#jet_boots_1喷气靴升级/$就是为您准备的.喷气靴升级共有5个等级,飞行速度逐渐加快,气耗也相应增加."
+        },
+        {
+            "type": "text",
+            "title": "喷气靴续",
+            "text": "当升级激活时,只需按住$k:pneumaticcraft.boots.jet_boots键即可朝您所看的方向推进.$p$thing喷气靴/$是$bold重度/$气耗用户；强烈建议为您的靴子以及$l:armor/pneumatic_chestplate胸甲/$,配备$l:base_concepts/upgrades#charging充电升级/$添加多个$l:base_concepts/upgrades#volume容量升级/$.$p在可能的情况下,使用$l:machines/aerial_interface空中接口/$并建立良好的充电基础设施也是明智之举."
+        },
+        {
+            "type": "text",
+            "title": "喷气靴续",
+            "text": "拥有$l:base_concepts/upgrades#jet_boots_3喷气靴升级:第三级/$或更高级别,您还将获得$thing建造者模式/$,该模式允许进行更具创造性的但速度较慢飞行控制和提高空中挖掘速度.$p这可以通过盔甲GUI并绑定到切换键进行开启和关闭."
+        },
+        {
+            "type": "text",
+            "title": "喷气靴续",
+            "text": "拥有$l:base_concepts/upgrades#jet_boots_4喷气靴升级:第四级/$或更高级别,您还将获得$thing飞行稳定器/$,当您松开推进键时,它会立即停止您的飞行消耗的气量与您当时的速度成正比.$p与建造者模式一样,这也可以通过盔甲GUI并绑定到切换键进行开启和关闭."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:dispenser_upgrade",
+            "text": "通过在靴子上添加最多4个$l:base_concepts/upgrades#dispenser发射器升级/$,你将获得执行$bold气动踢击/$的能力.这将对实体不仅仅是生物实体!造成中等伤害,并施加强烈的击退效果,同时消耗适量的空气.$p按下$thing$k:pneumaticcraft.boots.kick/$进行踢击."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:flippers_upgrade",
+            "text": "安装了$l:base_concepts/upgrades#flippers鳍状升级/$后,你的游泳速度将得到适度提升.这不会额外消耗空气,因此在水中是喷气靴的经济替代品."
+        },
+        {
+            "type": "spotlight",
+            "item": "pneumaticcraft:stomp_upgrade",
+            "text": "安装并激活了$l:base_concepts/upgrades#stomp践踏升级/$后,你可以对敌人造成毁灭性打击.如果你以足够快的速度撞击地面即使这种伤害被你的靴子吸收,附近的生物将会受到伤害,伤害程度与你到达的速度成正比.每次有生物因此受伤时,都会消耗一些空气."
+        }
+    ]
+}
