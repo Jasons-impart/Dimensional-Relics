@@ -92,6 +92,7 @@
   "minecraft:total_enchantment_power": null,
   "minecraft:villager_profession": null,
   "minecraft:zombie_villager": null,
+  "mm:controller_progress": null,
   "modularrouters:router": null,
   "mysticalagriculture:crop": null,
   "mysticalagriculture:inferium_crop": null,
