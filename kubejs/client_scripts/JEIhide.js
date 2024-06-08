@@ -1,5 +1,6 @@
 JEIEvents.hideItems(e=>{
-    e.hide([
-        
-    ])
+  e.hide([
+  'rftoolsbase:manual',
+  'betterend:guidebook'
+  ])
 })
