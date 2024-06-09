@@ -1,5 +1,5 @@
 MMEvents.registerControllers(e => {
-    e.create("test_controller")
-        .name("Test Controller")
+    e.create("steel_controller")
+        .name("Steel Controller")
         .type("mm:machine");
 });

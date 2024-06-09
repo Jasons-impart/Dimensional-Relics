@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mm:steel_item_output"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "mm:blocks/steel_item_output"
+}
