@@ -3,7 +3,7 @@
   "forge:ingots/platinum": "null",
   "forge:silicon": "ae2:silicon",
   "forge:ingots/iridium": "null",
-  "forge:dusts/saltpeter": "immersiveengineering:dust_saltpeter",
+  "forge:dusts/saltpeter": "bloodmagic:saltpeter",
   "forge:ingots/tungsten": "null",
   "forge:rubber": "null",
   "forge:dusts/niter": "thermal:niter_dust",
@@ -11,6 +11,6 @@
   "forge:ingots/graphite": "bigreactors:graphite_ingot",
   "forge:ingots/mithril": "null",
   "forge:ingots/titanium": "null",
-  "forge:ingots/aluminum": "immersiveengineering:ingot_aluminum",
+  "forge:ingots/aluminum": "tfmg:aluminum_ingot",
   "forge:gems/peridot": "null"
 }
