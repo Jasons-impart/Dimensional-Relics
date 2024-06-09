@@ -1,4 +1,6 @@
-// 1.20.1	2024-06-09T12:30:07.495078	Loot Tables
+// 1.20.1	2024-06-09T13:13:01.8286759	Loot Tables
 c6e6303aa784509f1642d489744f161962a33879 data/mm/loot_tables/blocks/test_controller.json
-933e3cbda9fdab74701280bbdcc5ce59a2861a81 data/mm/loot_tables/blocks/test_input.json
-1c6774874a60e1bdf15b8b57633cabe79824f264 data/mm/loot_tables/blocks/test_output.json
+1abfb93768b529029acb14e4d02795ac1b33ace0 data/mm/loot_tables/blocks/test_item_port_input.json
+aa2a0e245325d1b06e64e408a3bde817b994ab7e data/mm/loot_tables/blocks/test_item_port_output.json
+96aabb7c26395395617251ed77c8171c8e4f0a87 data/mm/loot_tables/blocks/test_port_input.json
+c2db1b56c1898574af17c5a4f2d2abfbb719f71c data/mm/loot_tables/blocks/test_port_output.json

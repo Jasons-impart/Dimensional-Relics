@@ -1,7 +1,9 @@
 {
   "values": [
     "mm:test_controller",
-    "mm:test_input",
-    "mm:test_output"
+    "mm:test_port_input",
+    "mm:test_port_output",
+    "mm:test_item_port_input",
+    "mm:test_item_port_output"
   ]
 }
