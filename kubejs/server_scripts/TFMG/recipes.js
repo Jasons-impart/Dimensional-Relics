@@ -164,6 +164,7 @@ ServerEvents.recipes(e => {
             "dimensionalrelics:polyvinyl_chloride"
         ]
     ).superheated()
+    
     // 航空纤维
     e.recipes.create.mixing(
         ["dimensionalrelics:aviation_fibers"],
