@@ -1,5 +1,5 @@
-MMEvents.createStructures(event => {
-    event.create("mm:test_structure")
+MMEvents.createStructures(e => {
+    e.create("mm:test_structure")
         .controllerId("mm:test_controller")
         .name("Test Machine")
         .layout(a => {

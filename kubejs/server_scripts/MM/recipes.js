@@ -1,5 +1,5 @@
-MMEvents.createProcesses(event => {
-    event.create("mm:test_recipe")
+MMEvents.createProcesses(e => {
+    e.create("mm:test_recipe")
         .structureId("mm:test_structure")
         .ticks(1000)
         .input({
