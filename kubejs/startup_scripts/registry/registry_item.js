@@ -132,6 +132,7 @@ StartupEvents.registry("item", e => {
         .translationKey("item.dimensionalrelics.abs_fibers_sheet")
         .tag("forge:plates")
         .rarity("common")
+    //桨叶
     e.create("dimensionalrelics:watermill_blade")
         .maxStackSize(64)
         .translationKey("item.dimensionalrelics.watermill_blade")
