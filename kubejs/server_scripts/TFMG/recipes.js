@@ -40,8 +40,7 @@ ServerEvents.recipes(e => {
         .heated()
         .id("craeteindustry:pressing/coal_sheet")
     // 碳棍合成
-    e.custom(
-        {
+    e.custom({
             "type": "createaddition:rolling",
             "input": {
                 "tag": "forge:plates/carbon"
@@ -50,8 +49,7 @@ ServerEvents.recipes(e => {
                 "item": "dimensionalrelics:carbon_rod",
                 "count": 2
             }
-        }
-    )
+        })
     // 铝板合成
     e.recipes.create.pressing("tfmg:aluminum_sheet", "tfmg:aluminum_ingot")
         .id("tfmg:pressing/aluminum_sheet")
@@ -166,6 +164,7 @@ ServerEvents.recipes(e => {
             "dimensionalrelics:polyvinyl_chloride"
         ]
     ).superheated()
+    
     // 航空纤维
     e.recipes.create.mixing(
         ["dimensionalrelics:aviation_fibers"],
