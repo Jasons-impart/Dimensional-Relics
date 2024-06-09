@@ -1,0 +1,12 @@
+{
+    "block.mm.steel_controller": "钢制控制器",
+    "block.mm.steel_create_input": "钢制动力输入口",
+    "block.mm.steel_create_output": "钢制动力输出口",
+    "block.mm.steel_energy_input": "钢制能量输入口",
+    "block.mm.steel_energy_output": "钢制能量输出口",
+    "block.mm.steel_fluid_input": "钢制流体输入口",
+    "block.mm.steel_fluid_output": "钢制流体输出口",
+    "block.mm.steel_item_input": "钢制物品输入口",
+    "block.mm.steel_item_output": "钢制物品输出口",
+    "item.mm.blueprint": "Blueprint"
+  }
