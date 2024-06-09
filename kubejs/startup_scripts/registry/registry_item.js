@@ -175,20 +175,20 @@ StartupEvents.registry("item", e => {
                 .canExtract(() => true)
                 .getMaxEnergyStored(item => 1600000)
                 .receiveEnergy((item, amount, sim) => {
-                    const receiveEnergy = Math.min(4000, amount, item.damageValue)
+                    // const receiveEnergy = Math.min(4000, amount, item.damageValue)
                     if (item.damageValue >= 0 && !sim) {
-                        item.damageValue -= receiveEnergy
+                        item.damageValue -= Math.min(4000, amount, item.damageValue)
                     }
-                    return receiveEnergy
+                    return Math.min(4000, amount, item.damageValue)
                 })
                 .canReceive(() => true)
                 .getEnergyStored(be => 1600000 - be.damageValue)
                 .extractEnergy((item, amount, sim) => {
-                    const extractEnergy = Math.min(4000, amount, item.damageValue)
+                    // const extractEnergy = Math.min(4000, amount, item.damageValue)
                     if (item.damageValue <= 1600000 && !sim) {
-                        item.damageValue += extractEnergy
+                        item.damageValue += Math.min(4000, amount, item.damageValue)
                     }
-                    return extractEnergy
+                    return Math.min(4000, amount, item.damageValue)
                 })
         )
     // 注册碳粉
