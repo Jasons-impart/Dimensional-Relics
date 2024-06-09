@@ -3,7 +3,8 @@ JEIEvents.hideItems(e=>{
   'rftoolsbase:manual',
   'betterend:guidebook',
   "industrialforegoing:latex_bucket",
-  "industrialforegoing:fluid_extractor"
+  "industrialforegoing:fluid_extractor",
+  "tfmg:plastic_block"
   ])
 })
 JEIEvents.hideFluids(e => {

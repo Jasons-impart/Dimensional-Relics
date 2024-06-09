@@ -1,3 +1,8 @@
 {
+  "block.mm.test_controller": "Test Controller",
+  "block.mm.test_item_port_input": "Test Item Port Input",
+  "block.mm.test_item_port_output": "Test Item Port Output",
+  "block.mm.test_port_input": "Test Energy Port Input",
+  "block.mm.test_port_output": "Test Energy Port Output",
   "item.mm.blueprint": "Blueprint"
 }
