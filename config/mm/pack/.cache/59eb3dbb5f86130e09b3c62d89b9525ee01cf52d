@@ -1,6 +1,10 @@
-// 1.20.1	2024-06-09T13:13:01.8286759	Loot Tables
+// 1.20.1	2024-06-09T15:58:14.731915	Loot Tables
 c6e6303aa784509f1642d489744f161962a33879 data/mm/loot_tables/blocks/test_controller.json
+798a20950c54c5c3c4db858ba1f8010e8118918b data/mm/loot_tables/blocks/test_create_port_input.json
+22a1b6426c23e5d0297b29eb98b48e2d56839c01 data/mm/loot_tables/blocks/test_create_port_output.json
+f8b0674f77942772e58a817442cc189e818b87bf data/mm/loot_tables/blocks/test_energy_port_input.json
+caea1bce5f72406f04859789929e63175f31905a data/mm/loot_tables/blocks/test_energy_port_output.json
+1fb821e8470a93f24e9b15661b6c1f50dc7fc8d9 data/mm/loot_tables/blocks/test_fluid_port_input.json
+061cffba479bdbcda9649ec2dfefb804fe2570c1 data/mm/loot_tables/blocks/test_fluid_port_output.json
 1abfb93768b529029acb14e4d02795ac1b33ace0 data/mm/loot_tables/blocks/test_item_port_input.json
 aa2a0e245325d1b06e64e408a3bde817b994ab7e data/mm/loot_tables/blocks/test_item_port_output.json
-96aabb7c26395395617251ed77c8171c8e4f0a87 data/mm/loot_tables/blocks/test_port_input.json
-c2db1b56c1898574af17c5a4f2d2abfbb719f71c data/mm/loot_tables/blocks/test_port_output.json

@@ -60,3 +60,4 @@ log4j2.xml
 /config/jei/world/local/bookmarks.ini
 mods/.connector/*.input
 /mods/.connector/temp/
+/config/fabric

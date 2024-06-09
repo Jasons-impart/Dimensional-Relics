@@ -1,8 +1,12 @@
 {
   "block.mm.test_controller": "Test Controller",
+  "block.mm.test_create_port_input": "Test Create Port Input",
+  "block.mm.test_create_port_output": "Test Create Port Output",
+  "block.mm.test_energy_port_input": "Test Energy Port Input",
+  "block.mm.test_energy_port_output": "Test Energy Port Output",
+  "block.mm.test_fluid_port_input": "Test Fluid Port Input",
+  "block.mm.test_fluid_port_output": "Test Fluid Port Output",
   "block.mm.test_item_port_input": "Test Item Port Input",
   "block.mm.test_item_port_output": "Test Item Port Output",
-  "block.mm.test_port_input": "Test Energy Port Input",
-  "block.mm.test_port_output": "Test Energy Port Output",
   "item.mm.blueprint": "Blueprint"
 }

@@ -46,7 +46,7 @@
       ],
       "render_type": "minecraft:translucent",
       "textures": {
-        "overlay": "mm:block/base_ports/energy_input_cutout"
+        "overlay": "mm:block/compat_ports/create_rotation_output_cutout"
       }
     }
   },
@@ -92,7 +92,7 @@
   ],
   "loader": "forge:composite",
   "textures": {
-    "all": "mm:block/test_port_input",
-    "particle": "mm:block/base_ports/energy_input_cutout"
+    "all": "mm:block/test_create_port_output",
+    "particle": "mm:block/compat_ports/create_rotation_output_cutout"
   }
 }

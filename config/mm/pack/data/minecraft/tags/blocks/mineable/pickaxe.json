@@ -1,9 +1,13 @@
 {
   "values": [
     "mm:test_controller",
-    "mm:test_port_input",
-    "mm:test_port_output",
+    "mm:test_energy_port_input",
+    "mm:test_energy_port_output",
     "mm:test_item_port_input",
-    "mm:test_item_port_output"
+    "mm:test_item_port_output",
+    "mm:test_fluid_port_input",
+    "mm:test_fluid_port_output",
+    "mm:test_create_port_input",
+    "mm:test_create_port_output"
   ]
 }

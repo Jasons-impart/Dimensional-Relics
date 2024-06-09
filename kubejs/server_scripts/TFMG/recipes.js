@@ -376,6 +376,7 @@ ServerEvents.recipes(e => {
         "tfmg:distillation/heavy_oil",
         "tfmg:mixing/liquid_plastic_from_propylene",
         "tfmg:mixing/cast_iron_ingot",
+        "tfmg:compacting/plastic_molding"
     ])
 })
 
