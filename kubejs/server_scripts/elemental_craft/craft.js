@@ -4,11 +4,13 @@ ServerEvents.recipes(e => {
     e.shaped(Item.of('elementalcraft:extractor',1), [
         ' A ',
         ' B ',
-        'BBB'
+        'CDC'
     ],
     {
         A: 'minecraft:iron_ingot',
-        B: 'elementalcraft:contained_crystal'
+        B: 'elementalcraft:contained_crystal',
+        C: 'integrateddynamics:crystalized_menril_chunk',
+        D: "elementalcraft:elementpipe_impaired"
     })
     //元素容器
     e.remove({output:'elementalcraft:small_container'})    
@@ -24,20 +26,20 @@ ServerEvents.recipes(e => {
     //弱化元素导管
     e.remove({output:'elementalcraft:elementpipe_impaired'})    
     e.shaped(Item.of('elementalcraft:elementpipe_impaired',4), [
-        'BAB',
+        ' A ',
         'ABA',
-        'BAB'
+        ' A '
     ],
     {
-        A: 'elementalcraft:contained_crystal',
-        B: 'minecraft:iron_ingot'
+        A: 'integrateddynamics:cable',
+        B: 'elementalcraft:contained_crystal'
     })
     //元素导管
     e.remove({output:'elementalcraft:elementpipe'})    
     e.shaped(Item.of('elementalcraft:elementpipe',4), [
-        'BAB',
+        ' A ',
         'ABA',
-        'BAB'
+        ' A '
     ],
     {
         A: 'elementalcraft:elementpipe_impaired',
@@ -46,9 +48,9 @@ ServerEvents.recipes(e => {
     //进阶元素导管
     e.remove({output:'elementalcraft:elementpipe_improved'})    
     e.shaped(Item.of('elementalcraft:elementpipe_improved',4), [
-        'BAB',
+        ' A ',
         'ABA',
-        'BAB'
+        ' A '
     ],
     {
         A: 'elementalcraft:elementpipe',
