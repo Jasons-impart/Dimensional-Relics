@@ -1,13 +1,13 @@
 {
   "values": [
-    "mm:test_controller",
-    "mm:test_energy_port_input",
-    "mm:test_energy_port_output",
-    "mm:test_item_port_input",
-    "mm:test_item_port_output",
-    "mm:test_fluid_port_input",
-    "mm:test_fluid_port_output",
-    "mm:test_create_port_input",
-    "mm:test_create_port_output"
+    "mm:steel_controller",
+    "mm:steel_energy_input",
+    "mm:steel_energy_output",
+    "mm:steel_item_input",
+    "mm:steel_item_output",
+    "mm:steel_fluid_input",
+    "mm:steel_fluid_output",
+    "mm:steel_create_input",
+    "mm:steel_create_output"
   ]
 }
