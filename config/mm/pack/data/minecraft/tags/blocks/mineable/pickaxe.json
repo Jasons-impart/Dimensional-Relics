@@ -1,3 +1,7 @@
 {
-  "values": []
+  "values": [
+    "mm:test_controller",
+    "mm:test_input",
+    "mm:test_output"
+  ]
 }

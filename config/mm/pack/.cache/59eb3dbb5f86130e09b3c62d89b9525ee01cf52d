@@ -1,1 +1,4 @@
-// 1.20.1	2024-06-08T17:50:49.4910292	Loot Tables
+// 1.20.1	2024-06-09T12:30:07.495078	Loot Tables
+c6e6303aa784509f1642d489744f161962a33879 data/mm/loot_tables/blocks/test_controller.json
+933e3cbda9fdab74701280bbdcc5ce59a2861a81 data/mm/loot_tables/blocks/test_input.json
+1c6774874a60e1bdf15b8b57633cabe79824f264 data/mm/loot_tables/blocks/test_output.json

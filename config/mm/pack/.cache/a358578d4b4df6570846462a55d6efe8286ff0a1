@@ -1,1 +1,7 @@
-// 1.20.1	2024-06-08T17:50:49.4900259	Block States: mm
+// 1.20.1	2024-06-09T12:30:07.4940762	Block States: mm
+6715a38138eef6270f18235f474c03dcf71ea661 assets/mm/blockstates/test_controller.json
+48730d67ee2808edab0a193a53e2649cc44f2ed3 assets/mm/blockstates/test_input.json
+b277bbcca5be3c2bc5194169a946b4b273511bcc assets/mm/blockstates/test_output.json
+5216d481bc0becea8907e6141d3687b91772b953 assets/mm/models/block/test_controller.json
+276686159e4845915f4bec58c7b151ca50c0fa62 assets/mm/models/block/test_input.json
+90172348785c97c2a85a8d8fde8f9bec8b8cd589 assets/mm/models/block/test_output.json
