@@ -53,6 +53,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "entangled": {
+    "entangled_block_component": true
+  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,
@@ -60,9 +63,6 @@
     "redstone": true,
     "camo": true,
     "semiblock": true
-  },
-  "immersiveengineering": {
-    "multiblock_icon": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -90,6 +90,9 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "modularrouters": {
+    "router": true
   },
   "extendedcrafting": {
     "elite_auto_table": true,
