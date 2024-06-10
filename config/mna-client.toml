@@ -43,5 +43,5 @@
 
 #Mana and Artifice // Help Tips Settings
 [ma_helptips]
-	ma_ritual_tip = []
+	ma_ritual_tip = ["helptip.mna.pretty_models"]
 
