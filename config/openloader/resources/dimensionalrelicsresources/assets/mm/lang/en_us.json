@@ -1,0 +1,12 @@
+{
+    "block.mm.steel_controller": "Steel Controller",
+    "block.mm.steel_create_input": "Steel Create Input",
+    "block.mm.steel_create_output": "Steel Create Output",
+    "block.mm.steel_energy_input": "Steel Energy Input",
+    "block.mm.steel_energy_output": "Steel Energy Output",
+    "block.mm.steel_fluid_input": "Steel Fluid Input",
+    "block.mm.steel_fluid_output": "Steel Fluid Output",
+    "block.mm.steel_item_input": "Steel Item Input",
+    "block.mm.steel_item_output": "Steel Item Output",
+    "item.mm.blueprint": "Blueprint"
+  }

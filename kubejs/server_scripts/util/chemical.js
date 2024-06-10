@@ -1,3 +1,5 @@
+// priority: 100
+
 /**
  * @param { Internal.RecipesEventJS } event 
  * @param { string } inputitem 
@@ -14,7 +16,7 @@ function washing_recipe(event, inputitem, inputfluid, outputitem) {
             inputitem,
             Fluid.of(inputfluid)
         ]
-    )
+    );
     event.custom({
         type: "lychee:item_inside",
         post: [
@@ -30,5 +32,5 @@ function washing_recipe(event, inputitem, inputfluid, outputitem) {
         ],
         block_in: inputfluid,
         time: 5
-    })
+    });
 }
