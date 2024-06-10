@@ -10,7 +10,7 @@ class mm_process_builder {
         this.builder.ticks(tick);
         return this;
     }
-    // 输入物品[itemid, 数量, 概率（不写默认为1）]
+    // 输入物品[itemid, 数量（不写默认为1）, 概率（不写默认为1）]
     input_item(...items: (string | number)[][]): mm_process_builder {
         items.forEach(item => {
             let input = {
@@ -19,14 +19,14 @@ class mm_process_builder {
                 ingredient: {
                     type: "mm:item",
                     item: item[0],
-                    count: item[1]
+                    count: (item.length > 1 ? item[1] : 1)
                 }
             };
             this.builder.input(input);
         });
         return this;
     }
-    // 输出物品[itemid, 数量, 概率（不写默认为1）]
+    // 输出物品[itemid, 数量（不写默认为1）, 概率（不写默认为1）]
     output_item(...items: (string | number)[][]): mm_process_builder {
         items.forEach(item => {
             let output = {
@@ -35,7 +35,7 @@ class mm_process_builder {
                 ingredient: {
                     type: "mm:item",
                     item: item[0],
-                    count: item[1]
+                    count: (item.length > 1 ? item[1] : 1)
                 }
             };
             this.builder.output(output)
@@ -74,60 +74,52 @@ class mm_process_builder {
         });
         return this
     }
-    // 输入能量[xxRF]
-    input_energy(...energies: [ number ][]): mm_process_builder {
-        energies.forEach(energy => {
-            let input = {
-                type: "mm:input/consume",
-                ingredient: {
-                    type: "mm:energy",
-                    amount: energy[0]
-                }
-            };
-            this.builder.input(input)
-        });
+    // 输入能量(xxRF)
+    input_energy(energy: number ): mm_process_builder {
+        let input = {
+            type: "mm:input/consume",
+            ingredient: {
+                type: "mm:energy",
+                amount: energy
+            }
+        };
+        this.builder.input(input);
         return this
     }
-    // 输出能量[xxRF]
-    output_energy(...energies: [ number ][]): mm_process_builder {
-        energies.forEach(energy => {
-            let output = {
-                type: "mm:output/simple",
-                ingredient: {
-                    type: "mm:energy",
-                    amount: energy[0]
-                }
-            };
-            this.builder.output(output)
-        });
+    // 输出能量(xxRF)
+    output_energy(energy: number): mm_process_builder {
+        let output = {
+            type: "mm:output/simple",
+            ingredient: {
+                type: "mm:energy",
+                amount: energy
+            }
+        };
+        this.builder.output(output);
         return this
     }
-    // 输入应力[xxrpm]
-    input_kinetic(...kinetics: [ number ][]): mm_process_builder {
-        kinetics.forEach(kinetic => {
-            let input = {
-                type: "mm:input/consume",
-                ingredient: {
-                    type: "mm:create/kinetic",
-                    speed: kinetic[0]
-                }
-            };
-            this.builder.input(input)
-        });
+    // 输入应力(xxrpm)
+    input_kinetic(kinetic: number): mm_process_builder {
+        let input = {
+            type: "mm:input/consume",
+            ingredient: {
+                type: "mm:create/kinetic",
+                speed: kinetic
+            }
+        };
+        this.builder.input(input);
         return this
     }
-    // 输出应力[xxrpm]
-    output_kinetic(...kinetics: [ number ][]): mm_process_builder {
-        kinetics.forEach(kinetic => {
-            let output = {
-                type: "mm:output/simple",
-                ingredient: {
-                    type: "mm:create/kinetic",
-                    speed: kinetic[0]
-                }
-            };
-            this.builder.output(output)
-        });
+    // 输出应力(xxrpm)
+    output_kinetic(kinetic: number): mm_process_builder {
+        let output = {
+            type: "mm:output/simple",
+            ingredient: {
+                type: "mm:create/kinetic",
+                speed: kinetic[0]
+            }
+        };
+        this.builder.output(output);
         return this
     }
     // 输入矿物浆液[浆液id(slurry), xxmb, 概率（不写默认为1）]

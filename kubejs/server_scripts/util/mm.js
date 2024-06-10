@@ -8,7 +8,7 @@ var mm_process_builder = /** @class */ (function () {
         this.builder.ticks(tick);
         return this;
     };
-    // 输入物品[itemid, 数量, 概率（不写默认为1）]
+    // 输入物品[itemid, 数量（不写默认为1）, 概率（不写默认为1）]
     mm_process_builder.prototype.input_item = function () {
         var _this = this;
         var items = [];
@@ -22,14 +22,14 @@ var mm_process_builder = /** @class */ (function () {
                 ingredient: {
                     type: "mm:item",
                     item: item[0],
-                    count: item[1]
+                    count: (item.length > 1 ? item[1] : 1)
                 }
             };
             _this.builder.input(input);
         });
         return this;
     };
-    // 输出物品[itemid, 数量, 概率（不写默认为1）]
+    // 输出物品[itemid, 数量（不写默认为1）, 概率（不写默认为1）]
     mm_process_builder.prototype.output_item = function () {
         var _this = this;
         var items = [];
@@ -43,7 +43,7 @@ var mm_process_builder = /** @class */ (function () {
                 ingredient: {
                     type: "mm:item",
                     item: item[0],
-                    count: item[1]
+                    count: (item.length > 1 ? item[1] : 1)
                 }
             };
             _this.builder.output(output);
@@ -92,80 +92,52 @@ var mm_process_builder = /** @class */ (function () {
         });
         return this;
     };
-    // 输入能量[xxRF]
-    mm_process_builder.prototype.input_energy = function () {
-        var _this = this;
-        var energies = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            energies[_i] = arguments[_i];
-        }
-        energies.forEach(function (energy) {
-            var input = {
-                type: "mm:input/consume",
-                ingredient: {
-                    type: "mm:energy",
-                    amount: energy[0]
-                }
-            };
-            _this.builder.input(input);
-        });
+    // 输入能量(xxRF)
+    mm_process_builder.prototype.input_energy = function (energy) {
+        var input = {
+            type: "mm:input/consume",
+            ingredient: {
+                type: "mm:energy",
+                amount: energy
+            }
+        };
+        this.builder.input(input);
         return this;
     };
-    // 输出能量[xxRF]
-    mm_process_builder.prototype.output_energy = function () {
-        var _this = this;
-        var energies = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            energies[_i] = arguments[_i];
-        }
-        energies.forEach(function (energy) {
-            var output = {
-                type: "mm:output/simple",
-                ingredient: {
-                    type: "mm:energy",
-                    amount: energy[0]
-                }
-            };
-            _this.builder.output(output);
-        });
+    // 输出能量(xxRF)
+    mm_process_builder.prototype.output_energy = function (energy) {
+        var output = {
+            type: "mm:output/simple",
+            ingredient: {
+                type: "mm:energy",
+                amount: energy
+            }
+        };
+        this.builder.output(output);
         return this;
     };
-    // 输入应力[xxrpm]
-    mm_process_builder.prototype.input_kinetic = function () {
-        var _this = this;
-        var kinetics = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            kinetics[_i] = arguments[_i];
-        }
-        kinetics.forEach(function (kinetic) {
-            var input = {
-                type: "mm:input/consume",
-                ingredient: {
-                    type: "mm:create/kinetic",
-                    speed: kinetic[0]
-                }
-            };
-            _this.builder.input(input);
-        });
+    // 输入应力(xxrpm)
+    mm_process_builder.prototype.input_kinetic = function (kinetic) {
+        var input = {
+            type: "mm:input/consume",
+            ingredient: {
+                type: "mm:create/kinetic",
+                speed: kinetic
+            }
+        };
+        this.builder.input(input);
         return this;
     };
-    // 输出应力[xxrpm]
-    mm_process_builder.prototype.output_kinetic = function () {
-        var _this = this;
-        var kinetics = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            kinetics[_i] = arguments[_i];
-        }
-        kinetics.forEach(function (kinetic) {
-            var output = {
-                type: "mm:output/simple",
-                ingredient: {
-                    type: "mm:create/kinetic",
-                    speed: kinetic[0]
-                }
-            };
-            _this.builder.output(output);
-        });
+    // 输出应力(xxrpm)
+    mm_process_builder.prototype.output_kinetic = function (kinetic) {
+        var output = {
+            type: "mm:output/simple",
+            ingredient: {
+                type: "mm:create/kinetic",
+                speed: kinetic[0]
+            }
+        };
+        this.builder.output(output);
         return this;
     };
     // 输入矿物浆液[浆液id(slurry), xxmb, 概率（不写默认为1）]
