@@ -1,12 +1,7 @@
 // priority: 100
 
-/**
- * @param { Internal.RecipesEventJS } event 
- * @param { string } inputitem 
- * @param { string } inputfluid
- * @param { string } outputitem 
- */
-function washing_recipe(event, inputitem, inputfluid, outputitem) {
+function washing_recipe(event: Internal.RecipesEventJS,
+    inputitem: string, inputfluid: string, outputitem: string): void {
     event.recipes.create.mixing(
         [
             outputitem,
