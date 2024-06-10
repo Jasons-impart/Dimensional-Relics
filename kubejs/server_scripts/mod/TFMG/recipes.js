@@ -1,41 +1,29 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes(function (event) {
     // 搅拌合成：粗铸铁
-    event.recipes.create.mixing(
-        ["dimensionalrelics:raw_cast_iron_ingot"],
-        ["minecraft:iron_ingot", "#minecraft:coals", Fluid.lava(10)]
-    ).id("create.kjs:raw_steel");
-    event.recipes.create.mixing(
-        ["dimensionalrelics:raw_cast_iron_ingot"],
-        ["minecraft:iron_ingot", "#minecraft:coals"]
-    ).id("create.kjs:raw_steel/2")
+    event.recipes.create.mixing(["dimensionalrelics:raw_cast_iron_ingot"], ["minecraft:iron_ingot", "#minecraft:coals", Fluid.lava(10)]).id("create.kjs:raw_steel");
+    event.recipes.create.mixing(["dimensionalrelics:raw_cast_iron_ingot"], ["minecraft:iron_ingot", "#minecraft:coals"]).id("create.kjs:raw_steel/2")
         .heated();
     // 序列合成：铸铁
-    const inter = "dimensionalrelics:hammering_raw_cast_iron_ingot"
+    var inter = "dimensionalrelics:hammering_raw_cast_iron_ingot";
     event.recipes.create.sequenced_assembly("tfmg:cast_iron_ingot", "dimensionalrelics:raw_cast_iron_ingot", [
         event.recipes.create.filling(inter, [inter, Fluid.lava(10)]),
         event.recipes.create.pressing(inter, inter)
     ]).transitionalItem(inter)
         .loops(3);
-    event.remove({ id: "tfmg:compacting/iron_to_cast_iron_ingot" })
+    event.remove({ id: "tfmg:compacting/iron_to_cast_iron_ingot" });
     // 石灰砂合成
-    event.recipes.create.crushing(
-        [
-            "tfmg:limesand",
-            Item.of("tfmg:limesand")
-                .withChance(0.3)
-        ],
-        "minecraft:flint"
-    )
-        .id("create:crushing/flint")
-    event.recipes.create.milling(
+    event.recipes.create.crushing([
         "tfmg:limesand",
-        "minecraft:flint"
-    )
-        .id("create:milling/flint")
+        Item.of("tfmg:limesand")
+            .withChance(0.3)
+    ], "minecraft:flint")
+        .id("create:crushing/flint");
+    event.recipes.create.milling("tfmg:limesand", "minecraft:flint")
+        .id("create:milling/flint");
     // 碳板合成
     event.recipes.create.compacting("tfmg:coal_sheet", "dimensionalrelics:carbon_dust")
         .heated()
-        .id("craeteindustry:pressing/coal_sheet")
+        .id("craeteindustry:pressing/coal_sheet");
     // 碳棍合成
     event.custom({
         "type": "createaddition:rolling",
@@ -52,9 +40,10 @@ ServerEvents.recipes(event => {
         .id("tfmg:pressing/aluminum_sheet");
     // 钢双锭合成
     event.recipes.create.deploying("dimensionalrelics:double_steel", [
-        "tfmg:steel_ingot", "tfmg:steel_ingot"]);
+        "tfmg:steel_ingot", "tfmg:steel_ingot"
+    ]);
     // 厚钢板合成
-    const iner = "dimensionalrelics:double_steel"
+    var iner = "dimensionalrelics:double_steel";
     event.recipes.create.sequenced_assembly("tfmg:heavy_plate", "dimensionalrelics:double_steel", [
         event.recipes.create.pressing(iner, [iner, iner])
     ])
@@ -103,52 +92,40 @@ ServerEvents.recipes(event => {
         Fluid.of("ad_astra:oxygen", 1000),
         Fluid.of("tfmg:propylene", 1000)
     ]).heated();
-    event.recipes.create.compacting(
-        "dimensionalrelics:polypropylene", [
+    event.recipes.create.compacting("dimensionalrelics:polypropylene", [
         Fluid.of("dimensionalrelics:polypropylene", 200)
     ]);
     // 聚氯乙烯
-    event.recipes.create.mixing(
-        Fluid.of("dimensionalrelics:polyvinyl_chloride", 1000), [
+    event.recipes.create.mixing(Fluid.of("dimensionalrelics:polyvinyl_chloride", 1000), [
         Fluid.of("tfmg:ethylene", 1000),
         Fluid.of("mekanism:chlorine", 200)
     ]).heated();
-    event.recipes.create.compacting(
-        "dimensionalrelics:polyvinyl_chloride", [
+    event.recipes.create.compacting("dimensionalrelics:polyvinyl_chloride", [
         Fluid.of("dimensionalrelics:polyvinyl_chloride")
     ]);
     // 聚苯乙烯
-    event.recipes.create.mixing(
-        Fluid.of("dimensionalrelics:polystyrene", 1000), [
+    event.recipes.create.mixing(Fluid.of("dimensionalrelics:polystyrene", 1000), [
         Fluid.of("tfmg:ethylene", 1000),
         Fluid.of("dimensionalrelics:benzene", 200)
     ]).heated();
-    event.recipes.create.compacting(
-        "dimensionalrelics:polystyrene",
-        [
-            Fluid.of("dimensionalrelics:polystyrene")
-        ]);
+    event.recipes.create.compacting("dimensionalrelics:polystyrene", [
+        Fluid.of("dimensionalrelics:polystyrene")
+    ]);
     // 高分子化合物合成
-    event.recipes.create.mixing(
-        ["2x dimensionalrelics:super_polymer"],
-        [
-            "tfmg:plastic_sheet",
-            "dimensionalrelics:polypropylene",
-            "dimensionalrelics:polystyrene",
-            "dimensionalrelics:polyvinyl_chloride"
-        ]
-    ).superheated();
-
+    event.recipes.create.mixing(["2x dimensionalrelics:super_polymer"], [
+        "tfmg:plastic_sheet",
+        "dimensionalrelics:polypropylene",
+        "dimensionalrelics:polystyrene",
+        "dimensionalrelics:polyvinyl_chloride"
+    ]).superheated();
     // 航空纤维
-    event.recipes.create.mixing(
-        ["dimensionalrelics:aviation_fibers"],
-        [
-            "dimensionalrelics:super_polymer",
-            "vintageimprovements:steel_wire",
-            Fluid.of("tfmg:liquid_plastic", 200)
-        ]);
+    event.recipes.create.mixing(["dimensionalrelics:aviation_fibers"], [
+        "dimensionalrelics:super_polymer",
+        "vintageimprovements:steel_wire",
+        Fluid.of("tfmg:liquid_plastic", 200)
+    ]);
     // 航空纤维板
-    const iner_1 = "tfmg:coal_sheet";
+    var iner_1 = "tfmg:coal_sheet";
     event.recipes.create.sequenced_assembly("dimensionalrelics:aviation_fibers_sheet", "tfmg:coal_sheet", [
         event.recipes.create.deploying(iner_1, [iner_1, "dimensionalrelics:aviation_fibers"]),
         event.recipes.create.filling(iner_1, [iner_1, Fluid.of("tfmg:liquid_plastic", 100)]),
@@ -212,7 +189,6 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "tfmg:distillation",
         "ingredients": [
-
             {
                 "fluid": "tfmg:kerosene",
                 "nbt": {},
@@ -244,7 +220,6 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "tfmg:distillation",
         "ingredients": [
-
             {
                 "fluid": "tfmg:creosote",
                 "nbt": {},
@@ -297,7 +272,6 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "tfmg:distillation",
         "ingredients": [
-
             {
                 "fluid": "tfmg:naphtha",
                 "nbt": {},
@@ -319,14 +293,12 @@ ServerEvents.recipes(event => {
             },
             {
                 "item": "minecraft:air"
-
             },
             {
                 "item": "minecraft:air"
             }
         ]
     }).id("tfmg:distillation/naphtha");
-
     // 移除古早配方
     remove_recipes_id(event, [
         "tfmg:fractional_distillation/crude_oil_sus",
@@ -337,7 +309,5 @@ ServerEvents.recipes(event => {
         "tfmg:compacting/plastic_molding"
     ]);
 });
-
-ServerEvents.tags("fluid", event => {
-
+ServerEvents.tags("fluid", function (event) {
 });

@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes(function (event) {
     remove_recipes_mod(event, [
         "createaddition",
         "rftoolsbase",

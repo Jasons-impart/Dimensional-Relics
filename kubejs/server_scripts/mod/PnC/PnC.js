@@ -1,13 +1,11 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes(function (event) {
     remove_recipes_output(event, [
         "pneumaticcraft:pressure_tube",
         "pneumaticcraft:pressure_chamber_wall",
         "pneumaticcraft:pressure_chamber_interface",
     ]);
-
     // 压力管道
-    event.recipes.minecraft.crafting_shaped(
-        "4x pneumaticcraft:pressure_tube", [
+    event.recipes.minecraft.crafting_shaped("4x pneumaticcraft:pressure_tube", [
         "   ",
         "ABA",
         "   ",
@@ -16,8 +14,7 @@ ServerEvents.recipes(event => {
         B: "#forge:glass/silica"
     });
     // 压力室墙壁
-    event.recipes.minecraft.crafting_shaped(
-        "5x pneumaticcraft:pressure_chamber_wall", [
+    event.recipes.minecraft.crafting_shaped("5x pneumaticcraft:pressure_chamber_wall", [
         "ABA",
         "BAB",
         "ABA",
@@ -26,8 +23,7 @@ ServerEvents.recipes(event => {
         B: 'tfmg:heavy_plate'
     });
     // 压力室接口    
-    event.recipes.minecraft.crafting_shaped(
-        "pneumaticcraft:pressure_chamber_interface", [
+    event.recipes.minecraft.crafting_shaped("pneumaticcraft:pressure_chamber_interface", [
         "AAA",
         "B B",
         "AAA",

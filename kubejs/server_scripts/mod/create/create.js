@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes(function (event) {
     remove_recipes_output(event, [
         "create:belt_connector",
         "create:encased_chain_drive",
@@ -18,8 +18,7 @@ ServerEvents.recipes(event => {
         "create:large_water_wheel",
     ]);
     // 传送带
-    event.recipes.minecraft.crafting_shaped(
-        "create:belt_connector", [
+    event.recipes.minecraft.crafting_shaped("create:belt_connector", [
         "   ",
         "AAA",
         "AAA",
@@ -27,8 +26,7 @@ ServerEvents.recipes(event => {
         A: "thermal:cured_rubber"
     });
     // 链式传动箱
-    event.recipes.minecraft.crafting_shaped(
-        "create:encased_chain_drive", [
+    event.recipes.minecraft.crafting_shaped("create:encased_chain_drive", [
         " A ",
         "BCB",
         " A ",
@@ -38,8 +36,7 @@ ServerEvents.recipes(event => {
         C: "create:andesite_casing"
     });
     // 风帆        
-    event.recipes.minecraft.crafting_shaped(
-        "create:white_sail", [
+    event.recipes.minecraft.crafting_shaped("create:white_sail", [
         "AAA",
         "ABA",
         "AAA",
@@ -48,8 +45,7 @@ ServerEvents.recipes(event => {
         B: "#minecraft:wool_carpets"
     });
     // 溜槽
-    event.recipes.minecraft.crafting_shaped(
-        "2x create:chute", [
+    event.recipes.minecraft.crafting_shaped("2x create:chute", [
         "A A",
         "A A",
         "A A",
@@ -57,8 +53,7 @@ ServerEvents.recipes(event => {
         A: "create:iron_sheet"
     });
     // 移动式存储接口
-    event.recipes.minecraft.crafting_shaped(
-        "create:portable_storage_interface", [
+    event.recipes.minecraft.crafting_shaped("create:portable_storage_interface", [
         " A ",
         " B ",
         " C ",
@@ -68,8 +63,7 @@ ServerEvents.recipes(event => {
         C: "create:chute"
     });
     // 流体管道
-    event.recipes.minecraft.crafting_shaped(
-        "8x create:fluid_pipe", [
+    event.recipes.minecraft.crafting_shaped("8x create:fluid_pipe", [
         "A A",
         "A A",
         "A A",
@@ -77,8 +71,7 @@ ServerEvents.recipes(event => {
         A: "create:copper_sheet"
     });
     // 流体阀门
-    event.recipes.minecraft.crafting_shaped(
-        "create:fluid_valve", [
+    event.recipes.minecraft.crafting_shaped("create:fluid_valve", [
         "A A",
         "ABA",
         "A A",
@@ -87,8 +80,7 @@ ServerEvents.recipes(event => {
         B: "create:iron_sheet"
     });
     // 智能流体管道
-    event.recipes.minecraft.crafting_shaped(
-        "create:smart_fluid_pipe", [
+    event.recipes.minecraft.crafting_shaped("create:smart_fluid_pipe", [
         "A A",
         "ABC",
         "A A",
@@ -98,8 +90,7 @@ ServerEvents.recipes(event => {
         C: "create:electron_tube"
     });
     // 动力泵
-    event.recipes.minecraft.crafting_shaped(
-        "create:mechanical_pump", [
+    event.recipes.minecraft.crafting_shaped("create:mechanical_pump", [
         "A A",
         "BCB",
         "A A",
@@ -109,8 +100,7 @@ ServerEvents.recipes(event => {
         C: "create:iron_sheet"
     });
     // 分液池
-    event.recipes.minecraft.crafting_shaped(
-        "create:item_drain", [
+    event.recipes.minecraft.crafting_shaped("create:item_drain", [
         "AAA",
         "B B",
         "BBB",
@@ -119,8 +109,7 @@ ServerEvents.recipes(event => {
         B: "create:copper_sheet"
     });
     // 软管滑轮
-    event.recipes.minecraft.crafting_shaped(
-        "create:hose_pulley", [
+    event.recipes.minecraft.crafting_shaped("create:hose_pulley", [
         " A ",
         " B ",
         " C ",
@@ -130,8 +119,7 @@ ServerEvents.recipes(event => {
         C: "thermal:cured_rubber_block"
     });
     // 注液器
-    event.recipes.minecraft.crafting_shaped(
-        "create:spout", [
+    event.recipes.minecraft.crafting_shaped("create:spout", [
         " A ",
         " B ",
         " C ",
@@ -141,8 +129,7 @@ ServerEvents.recipes(event => {
         C: "thermal:cured_rubber"
     });
     // 移动式流体接口
-    event.recipes.minecraft.crafting_shaped(
-        "create:portable_fluid_interface", [
+    event.recipes.minecraft.crafting_shaped("create:portable_fluid_interface", [
         " A ",
         "B B",
         "C C",
@@ -152,8 +139,7 @@ ServerEvents.recipes(event => {
         C: "create:copper_sheet"
     });
     // 流体储罐
-    event.recipes.minecraft.crafting_shaped(
-        "create:fluid_tank", [
+    event.recipes.minecraft.crafting_shaped("create:fluid_tank", [
         "AAA",
         "B B",
         "AAA",
@@ -162,8 +148,7 @@ ServerEvents.recipes(event => {
         B: "#c:glass_blocks"
     });
     // 桨叶   
-    event.recipes.minecraft.crafting_shaped(
-        "4x dimensionalrelics:watermill_blade", [
+    event.recipes.minecraft.crafting_shaped("4x dimensionalrelics:watermill_blade", [
         "AAA",
         "AAA",
         "BBB",
@@ -172,8 +157,7 @@ ServerEvents.recipes(event => {
         B: "minecraft:stick"
     });
     // 水车
-    event.recipes.minecraft.crafting_shaped(
-        "create:water_wheel", [
+    event.recipes.minecraft.crafting_shaped("create:water_wheel", [
         " A ",
         "ABA",
         " A ",
@@ -182,8 +166,7 @@ ServerEvents.recipes(event => {
         B: "create:water_wheel"
     });
     // 大水车    
-    event.recipes.minecraft.crafting_shaped(
-        "create:large_water_wheel", [
+    event.recipes.minecraft.crafting_shaped("create:large_water_wheel", [
         "AAA",
         "ABA",
         "AAA",
