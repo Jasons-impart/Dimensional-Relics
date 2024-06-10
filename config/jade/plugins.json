@@ -79,6 +79,9 @@
   "mcjtylib": {
     "jadeaddons": true
   },
+  "lootr": {
+    "info": true
+  },
   "ae2": {
     "part_icon": true,
     "charger": true,
