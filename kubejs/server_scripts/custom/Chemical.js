@@ -4,7 +4,6 @@ ServerEvents.recipes(e => {
         "dimensionalrelics:kelp_dust",
         "minecraft:dried_kelp"
     );
-    Fluid.of()
     e.recipes.create.crushing(
         "dimensionalrelics:kelp_dust",
         "minecraft:dried_kelp"
