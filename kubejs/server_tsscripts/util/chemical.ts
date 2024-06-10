@@ -2,16 +2,13 @@
 
 function washing_recipe(event: Internal.RecipesEventJS,
     inputitem: string, inputfluid: string, outputitem: string): void {
-    event.recipes.create.mixing(
-        [
-            outputitem,
-            Fluid.of(inputfluid)
-        ],
-        [
-            inputitem,
-            Fluid.of(inputfluid)
-        ]
-    );
+    event.recipes.create.mixing([
+        outputitem,
+        Fluid.of(inputfluid)
+    ], [
+        inputitem,
+        Fluid.of(inputfluid)
+    ]);
     event.custom({
         type: "lychee:item_inside",
         post: [

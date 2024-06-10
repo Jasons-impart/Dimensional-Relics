@@ -1,5 +1,5 @@
-ServerEvents.recipes(e => {
-    e.recipes.create.filling(
+ServerEvents.recipes(event => {
+    event.recipes.create.filling(
         "createaddition:chocolate_cake",
         [
             Fluid.of("create:chocolate", 500),
