@@ -1,5 +1,13 @@
-MMEvents.createProcesses(event => {
-    event.create("mm:polyethylene")
+MMEvents.createProcesses(e => {
+    create_mm_process(e, "test", "mm:polymerization_reactor", 1000,
+        [["minecraft:dirt", 1, 0.5], ["minecraft:redstone"]],
+        [],
+        0,
+        0,
+        [],
+        []
+    );
+    e.create("mm:polyethylene")
         .structureId("mm:polymerization_reactor")
         .ticks(1000)
         .input({
