@@ -1,10 +1,8 @@
 // priority: 100
-/// <reference path="../../probe/generated/internals/internal_26.d.ts" />
-/// <reference path="../../probe/generated/internals/internal_12.d.ts" />
 
 class mm_process_builder {
     builder: Internal.RecipeBuilderJS;
-    constructor(event: Internal.RecipeEventJS, name: string, structure: string) {
+    constructor(event: Internal.RecipeEventJS, name: string, structure: ResourceLocation) {
         this.builder = event.create(name).structureId(structure);
     }
 
@@ -30,6 +28,6 @@ class mm_process_builder {
     }
 }
 
-function create_mm_process(event: Internal.RecipeEventJS, name: string, structure: string): mm_process_builder {
+function create_mm_process(event: Internal.RecipeEventJS, name: string, structure: ResourceLocation): mm_process_builder {
     return new mm_process_builder(event, name, structure);
 }
