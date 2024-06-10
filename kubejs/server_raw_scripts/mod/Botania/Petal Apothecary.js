@@ -1,4 +1,4 @@
-ServerEvents.recipes(function (event) {
+ServerEvents.recipes(event => {
     // 删除花药台配方
     remove_recipes_output(event, [
         "botania:apothecary_default",
@@ -22,6 +22,7 @@ ServerEvents.recipes(function (event) {
     ], {
         A: "elementalcraft:contained_crystal",
         B: "minecraft:chiseled_stone_bricks"
+
     });
     event.recipes.botania.petal_apothecary("botania:pure_daisy", [
         "create:tree_fertilizer",

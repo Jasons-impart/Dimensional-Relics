@@ -1,6 +1,7 @@
-ServerEvents.recipes(function (event) {
+ServerEvents.recipes(event => {
     // 重型机械外壳
-    event.recipes.create.item_application("tfmg:heavy_machinery_casing", [
+    event.recipes.create.item_application(
+        "tfmg:heavy_machinery_casing", [
         "tfmg:steel_casing", "tfmg:heavy_plate"
     ]).id("tfmg:item_application/heavy_machinery_casing");
     // 移除聚乙烯块
