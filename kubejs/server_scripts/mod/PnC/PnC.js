@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         "ABA",
         "   ",
     ], {
-        A: "immersiveengineering:plate_steel",
+        A: 'tfmg:heavy_plate',
         B: "#forge:glass/silica"
     });
     // 压力室墙壁
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         "ABA",
     ], {
         A: "pneumaticcraft:reinforced_stone",
-        B: "immersiveengineering:plate_steel"
+        B: 'tfmg:heavy_plate'
     });
     // 压力室接口    
     event.recipes.minecraft.crafting_shaped(
@@ -33,6 +33,6 @@ ServerEvents.recipes(event => {
         "AAA",
     ], {
         A: "pneumaticcraft:reinforced_stone",
-        B: "immersiveengineering:plate_steel"
+        B: 'tfmg:heavy_plate'
     });
 });
