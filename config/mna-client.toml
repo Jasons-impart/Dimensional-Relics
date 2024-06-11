@@ -7,7 +7,7 @@
 	#2: UI buttons / right mouse.  Right mouse backs the codex out until the index. Escape closes the codex entirely.
 	#3: UI buttons / escape / right mouse.  Escape or right mouse backs the codex out until the index, then closes it.
 	#Range: 0 ~ 3
-	codexBackStyle = 0
+	codexBackStyle = 2
 
 #Mana and Artifice // HUD Settings
 [ma_hud_settings]
@@ -27,7 +27,7 @@
 	#6: Bottom Left
 	#7: Middle Left
 	#Range: 0 ~ 7
-	hudPosition = 0
+	hudPosition = 1
 	#Change the size of pinned recipes.
 	#Range: 1 ~ 3
 	pinnedRecipeSize = 1

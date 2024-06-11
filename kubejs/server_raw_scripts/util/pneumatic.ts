@@ -42,6 +42,7 @@ class pneumatic_recipes {
 interface thermo_plant_recipe {
     type: string;
     exothermic: boolean;
+    air_use_multiplier?: number;
     fluid_input: any;
     fluid_output?: any;
     item_input?: any;
@@ -60,6 +61,10 @@ class thermo_plant_recipe_builder {
 
     exothermic(b: boolean) {
         this.recipe.exothermic = b;
+    }
+
+    air_use_multiplier(air_use: number) {
+        this.recipe.air_use_multiplier = air_use;
     }
 
     fluid_input(fluid: string, amount: number = 1000) {
@@ -129,4 +134,5 @@ class thermo_plant_recipe_builder {
     build() {
         this.event.custom(this.recipe);
     }
+    
 }

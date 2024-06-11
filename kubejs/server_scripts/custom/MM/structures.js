@@ -4,7 +4,7 @@ MMEvents.createStructures(function (event) {
         .name("Polymerization Reactor")
         .layout(function (a) {
         a.layer([
-            "AAA",
+            "AGA",
             "AAA",
             "BDE"
         ]).layer([
@@ -14,7 +14,7 @@ MMEvents.createStructures(function (event) {
         ]).layer([
             "AAA",
             "AFA",
-            "AGA"
+            "AAA"
         ]).key("A", {
             block: "tfmg:heavy_machinery_casing"
         }).key("B", {
