@@ -1,4 +1,4 @@
-ServerEvents.recipes(function (event) {
+ServerEvents.recipes(event => {
     remove_recipes_output(event, [
         "mna:runeforge",
         "mna:manaweaving_altar"
@@ -11,8 +11,8 @@ ServerEvents.recipes(function (event) {
         A: "mna:transmuted_silver",
         B: "mna:decoration/arcane_stone",
         C: "minecraft:blast_furnace"
-    });
-    event.shaped("mna:manaweaving_altar", [
+    }); 
+    event.shaped("mna:manaweaving_altar",[
         "A A",
         "ABA",
         "BBB",
@@ -23,7 +23,7 @@ ServerEvents.recipes(function (event) {
     event.custom({
         "type": "mna:transmutation",
         "targetBlock": "minecraft:amethyst_block",
-        "replaceBlock": "elementalcraft:inertcrystal_block"
+        "replaceBlock": "elementalcraft:inertcrystal_block"  
     });
     /*
     manaweaving_recipe(event,
@@ -58,4 +58,5 @@ ServerEvents.recipes(function (event) {
         ]
     );
     */
+
 });

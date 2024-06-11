@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
         "pneumaticcraft:pressure_chamber_wall",
         "pneumaticcraft:pressure_chamber_interface",
     ]);
-
+    
     // 压力管道
     event.recipes.minecraft.crafting_shaped(
         "4x pneumaticcraft:pressure_tube", [

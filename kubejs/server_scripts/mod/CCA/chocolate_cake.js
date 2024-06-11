@@ -4,9 +4,3 @@ ServerEvents.recipes(function (event) {
         "ratatouille:cake_base"
     ]).id("create:filling/chocolate_cake");
 });
-/**
- *
- * @param {Internal.RecipeEventJS} s
- */
-function f(s) {
-}
