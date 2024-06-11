@@ -25,4 +25,3 @@ function remove_recipes_mod(event: Internal.RecipesEventJS, mods: string[]): voi
         event.remove({ mod: mod });
     });
 }
-
