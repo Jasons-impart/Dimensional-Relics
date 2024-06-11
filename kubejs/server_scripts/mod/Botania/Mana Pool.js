@@ -13,4 +13,5 @@ ServerEvents.recipes(function (event) {
     event.recipes.botania.mana_infusion("botania:mana_powder", "enderio:grains_of_infinity", 200);
     event.recipes.botania.mana_infusion("botania:mana_diamond", "elementalcraft:contained_crystal", 500);
     event.recipes.botania.mana_infusion("botania:mana_pearl", "rftoolsbase:infused_enderpearl", 500);
-});
+    event.recipes.botania.mana_infusion("mna:decoration/arcane_sandstone","minecraft:sandstone",500);
+})

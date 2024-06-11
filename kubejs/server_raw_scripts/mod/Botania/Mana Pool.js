@@ -5,7 +5,8 @@ ServerEvents.recipes(event => {
         "botania:mana_pearl",
         "botania:mana_diamond",
         "botania:manasteel_ingot",
-        "botania:quartz_mana"
+        "botania:quartz_mana",
+        'botania:mana_cookie'
     ]);
     event.recipes.botania.mana_infusion(
         "botania:manasteel_ingot",
@@ -37,4 +38,9 @@ ServerEvents.recipes(event => {
         "rftoolsbase:infused_enderpearl",
         500
     );
+    event.recipes.botania.mana_infusion(
+        "mna:decoration/arcane_sandstone",
+        "minecraft:sandstone",
+        500
+    )
 })  
