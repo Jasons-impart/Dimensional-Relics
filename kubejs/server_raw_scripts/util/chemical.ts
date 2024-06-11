@@ -1,7 +1,7 @@
 // priority: 100
 
 function washing_recipe(event: Internal.RecipesEventJS,
-    inputitem: string, inputfluid: string, outputitem: string): void {
+    inputitem: string, inputfluid: string, outputitem: string) {
     event.recipes.create.mixing([
         outputitem,
         Fluid.of(inputfluid)
