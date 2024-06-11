@@ -48,6 +48,9 @@ var thermo_plant_recipe_builder = /** @class */ (function () {
     thermo_plant_recipe_builder.prototype.exothermic = function (b) {
         this.recipe.exothermic = b;
     };
+    thermo_plant_recipe_builder.prototype.air_use_multiplier = function (air_use) {
+        this.recipe.air_use_multiplier = air_use;
+    };
     thermo_plant_recipe_builder.prototype.fluid_input = function (fluid, amount) {
         if (amount === void 0) { amount = 1000; }
         if (fluid[0] == '#') {

@@ -92,34 +92,18 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing([
         Fluid.of("tfmg:liquid_plastic", 500)
     ], [
-        Fluid.of("tfmg:ethylene", 1000),
-        Fluid.of("ad_astra:oxygen", 1000)
+        Fluid.of("tfmg:ethylene", 1000)
     ]).id("tfmg:mixing/liquid_plastic_from_ethylene")
         .heated();
     // 聚丙烯合成配方
     event.recipes.create.mixing([
-        Fluid.of("dimensionalrelics:polypropylene", 500)
+        Fluid.of("dimensionalrelics:propylene", 500)
     ], [
-        Fluid.of("ad_astra:oxygen", 1000),
         Fluid.of("tfmg:propylene", 1000)
     ]).heated();
-    event.recipes.create.compacting(
-        "dimensionalrelics:polypropylene", [
-        Fluid.of("dimensionalrelics:polypropylene", 200)
-    ]);
-    // 聚氯乙烯
-    event.recipes.create.mixing(
-        Fluid.of("dimensionalrelics:polyvinyl_chloride", 1000), [
-        Fluid.of("tfmg:ethylene", 1000),
-        Fluid.of("mekanism:chlorine", 200)
-    ]).heated();
-    event.recipes.create.compacting(
-        "dimensionalrelics:polyvinyl_chloride", [
-        Fluid.of("dimensionalrelics:polyvinyl_chloride")
-    ]);
     // 聚苯乙烯
     event.recipes.create.mixing(
-        Fluid.of("dimensionalrelics:polystyrene", 1000), [
+        Fluid.of("dimensionalrelics:styrene", 1000), [
         Fluid.of("tfmg:ethylene", 1000),
         Fluid.of("dimensionalrelics:benzene", 200)
     ]).heated();

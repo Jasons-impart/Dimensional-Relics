@@ -3,6 +3,7 @@ ServerEvents.recipes(function (event) {
         "pneumaticcraft:pressure_tube",
         "pneumaticcraft:pressure_chamber_wall",
         "pneumaticcraft:pressure_chamber_interface",
+        "elementalcraft:contained_crystal",
     ]);
     // 压力管道
     event.recipes.minecraft.crafting_shaped("4x pneumaticcraft:pressure_tube", [
@@ -31,4 +32,10 @@ ServerEvents.recipes(function (event) {
         A: "pneumaticcraft:reinforced_stone",
         B: 'tfmg:heavy_plate'
     });
+    pneumatic_recipes.pressure_chamber(event, [
+        ['elementalcraft:contained_crystal']
+    ], [
+        ['elementalcraft:inert_crystal'],
+        ['minecraft:gold_ingot']
+    ], 3.5);
 });
