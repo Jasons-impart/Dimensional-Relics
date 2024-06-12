@@ -8,6 +8,28 @@ ServerEvents.recipes(function (event) {
     // 铝锭烧练
     event.recipes.minecraft.smelting('tfmg:aluminum_ingot', "tfmg:bauxite");
     // 螺丝生产
+    event.recipes.minecraft.stonecutting('2x tfmg:screw', 'mekanism:ingot_steel').id("tfmg:stonecutting/screw");
+    // 铝脚手架合成
+    event.recipes.minecraft.stonecutting("4x tfmg:aluminum_scaffolding", 'tfmg:aluminum_ingot').id("tfmg:aluminum_scaffolding_from_ingots_steel_stonecutting");
+    // 铝脚手架合成
+    event.recipes.minecraft.stonecutting("4x tfmg:steel_scaffolding", 'mekanism:ingot_steel').id("tfmg:steel_scaffolding_from_ingots_steel_stonecutting");
+    // 木柄螺丝刀合成
+    event.recipes.minecraft.crafting_shaped("tfmg:wooden_screwdriver", [
+        " A",
+        "B "
+    ], {
+        A: "tfmg:rebar",
+        B: "tfmg:hardened_planks"
+    });
+    // 螺丝刀合成
+    event.recipes.minecraft.crafting_shaped("tfmg:screwdriver", [
+        " A",
+        "BC"
+    ], {
+        A: "tfmg:rebar",
+        B: "#forge:ingots/plastic",
+        C: "#forge:dyes/red"
+    }).id("tfmg:crafting/screwdriver");
     // 序列合成：钢铁构件
     var unfinished = 'tfmg:unfinished_steel_mechanism';
     event.recipes.create.sequenced_assembly([
@@ -17,7 +39,7 @@ ServerEvents.recipes(function (event) {
         event.recipes.create.deploying(unfinished, [unfinished, 'ad_astra:steel_plate']),
         event.recipes.create.deploying(unfinished, [unfinished, 'tfmg:aluminum_sheet']),
         event.recipes.create.deploying(unfinished, [unfinished, "tfmg:screw"]),
-        event.recipes.create.deploying(unfinished, [unfinished, "tfmg:screwdriver"])
+        event.recipes.create.deploying(unfinished, [unfinished, "#tfmg:screwdriver"])
     ]).transitionalItem(unfinished)
         .loops(2)
         .id("tfmg:sequenced_assembly/steel_mechanism");

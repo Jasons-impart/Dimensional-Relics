@@ -5,6 +5,12 @@ StartupEvents.registry("item", e => {
         .translationKey("item.dimensionalrelics.double_steel")
         .tag("forge:ingots")
         .rarity("rare")
+    // 木柄螺丝刀
+    e.create("tfmg:wooden_screwdriver")
+        .maxStackSize(1)
+        .maxDamage(32)
+        .translationKey("item.tfmg.wooden_screwdriver")
+        .tag("tfmg:screwdriver")
     // 粗铸铁
     e.create("dimensionalrelics:raw_cast_iron_ingot")
         .maxStackSize(64)
