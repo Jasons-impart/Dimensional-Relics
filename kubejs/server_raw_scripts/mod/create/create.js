@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
     });
     // 流体管道
     event.recipes.minecraft.crafting_shaped(
-        "8x create:fluid_pipe", [
+        "4x create:fluid_pipe", [
         "A A",
         "A A",
         "A A",
@@ -108,6 +108,16 @@ ServerEvents.recipes(event => {
         B: "create:cogwheel",
         C: "create:iron_sheet"
     });
+    // 铁丝网
+    event.recipes.minecraft.crafting_shaped(
+        "3x quark:grate",
+        [
+            "AA",
+            "AA",
+        ], {
+            A:"minecraft:chain"
+        }
+    ).id("quark:building/crafting/grate")
     // 分液池
     event.recipes.minecraft.crafting_shaped(
         "create:item_drain", [
@@ -159,7 +169,7 @@ ServerEvents.recipes(event => {
         "AAA",
     ], {
         A: "create:copper_sheet",
-        B: "#c:glass_blocks"
+        B: "#forge:glass"
     });
     // 桨叶   
     event.recipes.minecraft.crafting_shaped(
@@ -179,7 +189,7 @@ ServerEvents.recipes(event => {
         " A ",
     ], {
         A: "dimensionalrelics:watermill_blade",
-        B: "create:water_wheel"
+        B: "create:cogwheel"
     });
     // 大水车    
     event.recipes.minecraft.crafting_shaped(

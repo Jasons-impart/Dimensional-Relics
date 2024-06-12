@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+    // 工业铁块合成
+    event.recipes.create.compacting("create:industrial_iron_block","4x #forge:ingots/iron")
     // 搅拌合成：粗铸铁
     event.recipes.create.mixing(
         ["dimensionalrelics:raw_cast_iron_ingot"],
@@ -138,6 +140,31 @@ ServerEvents.recipes(event => {
         event.recipes.create.filling(iner_1, [iner_1, Fluid.of("tfmg:liquid_plastic", 100)]),
     ]).transitionalItem(iner_1)
         .loops(3);
+    // 焦煤合成修改
+    event.custom(
+        {
+            "type": "tfmg:coking",
+            "ingredients": [
+              {
+                "count": 1,
+                "item": "minecraft:coal"
+              }
+            ],
+            "processingTime": 200,
+            "results": [
+              {
+                "count": 2,
+                "item": "tfmg:coal_coke"
+              }
+            ,
+              {
+                "fluid": "tfmg:creosote",
+                "amount": 1
+              }
+          
+            ]
+          }
+    ).id("tfmg:coking/coal_coke")
     // 石油分馏
     event.custom({
         "type": "tfmg:advanced_distillation",
@@ -318,7 +345,8 @@ ServerEvents.recipes(event => {
         "tfmg:distillation/heavy_oil",
         "tfmg:mixing/liquid_plastic_from_propylene",
         "tfmg:mixing/cast_iron_ingot",
-        "tfmg:compacting/plastic_molding"
+        "tfmg:compacting/plastic_molding",
+        "create:industrial_iron_block_from_ingots_iron_stonecutting"
     ]);
 });
 
