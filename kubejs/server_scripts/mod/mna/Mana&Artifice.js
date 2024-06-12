@@ -20,6 +20,6 @@ ServerEvents.recipes(function (event) {
         A: "mna:decoration/arcane_sandstone",
         B: "mna:decoration/arcane_stone"
     });
-    // manatransmutation("minecraft:amethyst_block","elementalcraft:inertcrystal_block")
-    // manatransmutation("thermal:silver_block","mna:decoration/transmuted_silver_block")
+    manatransmutation(event, "minecraft:amethyst_block", "elementalcraft:inertcrystal_block");
+    manatransmutation(event, "thermal:silver_block", "mna:decoration/transmuted_silver_block");
 });

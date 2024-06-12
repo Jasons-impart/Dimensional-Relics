@@ -43,6 +43,6 @@ ServerEvents.recipes(event => {
         [
             ['elementalcraft:inert_crystal'],
             ['minecraft:gold_ingot']
-        ],3.5
-    )
+        ], 3.5
+    );
 });
