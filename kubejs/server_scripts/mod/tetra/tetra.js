@@ -1,2 +1,2 @@
-ServerEvents.recipes(function (e) {
+ServerEvents.recipes(function (event) {
 });
