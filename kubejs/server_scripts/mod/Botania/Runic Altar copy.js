@@ -10,4 +10,7 @@ ServerEvents.recipes(e => {
         A:"mna:decoration/arcane_sandstone",
         B:"mna:mana_crystal"
     })
+
+
+
 })

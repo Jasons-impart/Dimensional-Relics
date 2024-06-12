@@ -39,8 +39,8 @@ function manacrushing(event: Internal.RecipesEventJS,
     event.custom({
         type: "mna:crushing",
         tier: tier,
-        input: input,
-        output: output,
-        output_quantity: output_quantity
-    });
+        input: input,//输入物品
+        output: output,//输出物品
+        output_quantity: output_quantity//输出个数
+    })
 }
