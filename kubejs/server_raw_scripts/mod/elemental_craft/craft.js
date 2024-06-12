@@ -1,6 +1,10 @@
 ServerEvents.recipes(e => {
     remove_recipes_input(e, [
-        'elementalcraft:scroll_paper'
+        'elementalcraft:scroll_paper',
+        'elementalcraft:minor_rune_slate',
+        'elementalcraft:major_rune_slate',
+        'elementalcraft:rune_slate',
+        'elementalcraft:shrinebase'
   
     ])
 

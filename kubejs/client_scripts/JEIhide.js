@@ -5,7 +5,14 @@ JEIEvents.hideItems(e=>{
   "industrialforegoing:latex_bucket",
   "industrialforegoing:fluid_extractor",
   "tfmg:plastic_block",
-  'elementalcraft:scroll'
+  'elementalcraft:scroll',
+  'elementalcraft:rune',
+  'elementalcraft:jewel',
+  'elementalcraft:minor_rune_slate',
+  'elementalcraft:major_rune_slate',
+  'elementalcraft:rune_slate',
+  '#elementalcraft:shrine_upgrades',
+  '#elementalcraft:shrines'
   ])
 })
 JEIEvents.hideFluids(e => {
