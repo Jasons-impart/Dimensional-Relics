@@ -1,4 +1,21 @@
 ServerEvents.recipes(e => {
+    remove_recipes_input(e, [
+        'elementalcraft:scroll_paper'
+  
+    ])
+
+
+    remove_recipes_output(e, [
+        'elementalcraft:shrine_upgrade_fortune',
+        'elementalcraft:purifier',
+        'elementalcraft:spell_desk',
+        'elementalcraft:scroll_paper'
+  
+    ])
+
+
+
+
     //元素提取器
     e.remove({output:'elementalcraft:extractor'})    
     e.shaped(Item.of('elementalcraft:extractor',1), [

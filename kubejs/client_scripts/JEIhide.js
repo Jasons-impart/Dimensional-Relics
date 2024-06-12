@@ -4,7 +4,8 @@ JEIEvents.hideItems(e=>{
   'betterend:guidebook',
   "industrialforegoing:latex_bucket",
   "industrialforegoing:fluid_extractor",
-  "tfmg:plastic_block"
+  "tfmg:plastic_block",
+  'elementalcraft:scroll'
   ])
 })
 JEIEvents.hideFluids(e => {
