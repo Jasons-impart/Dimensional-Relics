@@ -1,19 +1,39 @@
 [
   {
+    "soundEventId": "dsurround:item.blunt.equip",
+    "volumeScale": 200
+  },
+  {
+    "soundEventId": "dsurround:item.blunt.swing",
+    "volumeScale": 200
+  },
+  {
+    "soundEventId": "dsurround:item.bow.equip",
+    "volumeScale": 200
+  },
+  {
+    "soundEventId": "dsurround:item.bow.loose",
+    "volumeScale": 200
+  },
+  {
+    "soundEventId": "dsurround:item.bow.pull",
+    "volumeScale": 200
+  },
+  {
     "soundEventId": "dsurround:item.sword.equip",
-    "volumeScale": 199
+    "volumeScale": 200
   },
   {
     "soundEventId": "dsurround:item.sword.swing",
-    "volumeScale": 151
+    "volumeScale": 200
   },
   {
     "soundEventId": "dsurround:item.tool.equip",
-    "volumeScale": 201
+    "volumeScale": 200
   },
   {
     "soundEventId": "dsurround:item.tool.swing",
-    "volumeScale": 149
+    "volumeScale": 200
   },
   {
     "startup": true,

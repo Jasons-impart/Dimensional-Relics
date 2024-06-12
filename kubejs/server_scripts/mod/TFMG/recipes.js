@@ -5,6 +5,22 @@ ServerEvents.recipes(function (event) {
     event.recipes.create.mixing(["dimensionalrelics:raw_cast_iron_ingot"], ["minecraft:iron_ingot", "#minecraft:coals", Fluid.lava(10)]).id("create.kjs:raw_steel");
     event.recipes.create.mixing(["dimensionalrelics:raw_cast_iron_ingot"], ["minecraft:iron_ingot", "#minecraft:coals"]).id("create.kjs:raw_steel/2")
         .heated();
+    // 铝锭烧练
+    event.recipes.minecraft.smelting('tfmg:aluminum_ingot', "tfmg:bauxite");
+    // 螺丝生产
+    // 序列合成：钢铁构件
+    var unfinished = 'tfmg:unfinished_steel_mechanism';
+    event.recipes.create.sequenced_assembly([
+        Item.of('tfmg:steel_mechanism').withChance(0.8),
+        Item.of("create:precision_mechanism").withChance(0.2)
+    ], 'create:precision_mechanism', [
+        event.recipes.create.deploying(unfinished, [unfinished, 'ad_astra:steel_plate']),
+        event.recipes.create.deploying(unfinished, [unfinished, 'tfmg:aluminum_sheet']),
+        event.recipes.create.deploying(unfinished, [unfinished, "tfmg:screw"]),
+        event.recipes.create.deploying(unfinished, [unfinished, "tfmg:screwdriver"])
+    ]).transitionalItem(unfinished)
+        .loops(2)
+        .id("tfmg:sequenced_assembly/steel_mechanism");
     // 序列合成：铸铁
     var inter = "dimensionalrelics:hammering_raw_cast_iron_ingot";
     event.recipes.create.sequenced_assembly("tfmg:cast_iron_ingot", "dimensionalrelics:raw_cast_iron_ingot", [

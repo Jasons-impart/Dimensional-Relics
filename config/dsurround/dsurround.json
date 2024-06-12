@@ -42,8 +42,8 @@
     "entityEffectRange": 24,
     "enableBowPull": true,
     "enableBreathEffect": true,
-    "enablePlayerToolbarEffect": false,
-    "enableSwingEffect": false,
+    "enablePlayerToolbarEffect": true,
+    "enableSwingEffect": true,
     "enableBrushStepEffect": true
   },
   "footstepAccents": {
