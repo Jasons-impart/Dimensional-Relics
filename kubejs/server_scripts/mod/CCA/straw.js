@@ -1,3 +1,3 @@
-ServerEvents.recipes(function (e) {
-    e.recipes.minecraft.crafting_shapeless('createaddition:straw', "minecraft:bamboo");
+ServerEvents.recipes(function (event) {
+    event.recipes.minecraft.crafting_shapeless("createaddition:straw", "minecraft:bamboo");
 });
