@@ -42,5 +42,5 @@ ServerEvents.recipes(event => {
         "mna:decoration/arcane_sandstone",
         "minecraft:sandstone",
         500
-    )
-})  
+    );
+});
