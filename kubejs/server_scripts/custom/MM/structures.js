@@ -30,3 +30,29 @@ MMEvents.createStructures(function (event) {
         });
     });
 });
+MMEvents.createStructures(function (event) {
+    event.create("mm:pne_reactor")
+        .controllerId("mm:steel_controller")
+        .name("press1")
+        .layout(function (a) {
+        a.layer([
+            "ACB",
+        ]).key("A", {
+            block: "mm:Steel_pcnr_input"
+        }).key("B", {
+            block: "mm:steel_energy_output"
+        });
+    });
+    event.create("mm:pne_reactor2")
+        .controllerId("mm:steel_controller")
+        .name("press2")
+        .layout(function (a) {
+        a.layer([
+            "BCA",
+        ]).key("A", {
+            block: "mm:Steel_pcnr_output"
+        }).key("B", {
+            block: "mm:steel_energy_input"
+        });
+    });
+});

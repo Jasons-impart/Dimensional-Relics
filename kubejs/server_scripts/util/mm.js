@@ -308,6 +308,32 @@ var mm_process_builder = /** @class */ (function () {
         });
         return this;
     };
+    //  输入PCNR气体[bar, air]
+    mm_process_builder.prototype.input_air = function (bar, air) {
+        var input = {
+            type: "mm:input/consume",
+            ingredient: {
+                type: "mm:pneumaticcraft/air",
+                bar: bar,
+                air: air
+            }
+        };
+        this.builder.input(input);
+        return this;
+    };
+    //  输出PCNR气体[bar, air]
+    mm_process_builder.prototype.output_air = function (bar, air) {
+        var output = {
+            type: "mm:output/consume",
+            ingredient: {
+                type: "mm:pneumaticcraft/air",
+                bar: bar,
+                air: air
+            }
+        };
+        this.builder.output(output);
+        return this;
+    };
     return mm_process_builder;
 }());
 function create_mm_process(event, name, structure) {

@@ -250,6 +250,32 @@ class mm_process_builder {
         });
         return this
     }
+    //  输入PCNR气体[bar, air]
+    input_air(bar: number, air: number): mm_process_builder {
+        let input = {
+            type: "mm:input/consume",
+            ingredient: {
+                type: "mm:pneumaticcraft/air",
+                bar: bar,
+                air: air
+            }
+        };
+        this.builder.input(input)
+        return this
+    }
+    //  输出PCNR气体[bar, air]
+    output_air(bar: number, air: number): mm_process_builder {
+        let output = {
+            type: "mm:output/consume",
+            ingredient: {
+                type: "mm:pneumaticcraft/air",
+                bar: bar,
+                air: air
+            }
+        };
+        this.builder.output(output)
+        return this
+    }
 }
 
 function create_mm_process(event: Internal.RecipeEventJS, name: string, structure: ResourceLocation): mm_process_builder {
