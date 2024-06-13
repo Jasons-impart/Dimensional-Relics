@@ -1,5 +1,4 @@
 ServerEvents.recipes(function (event) {
-});
     event.shaped(Item.of("quark:ancient_chest"), [
         "AAA",
         "ABA",
