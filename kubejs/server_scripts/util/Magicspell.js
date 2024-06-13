@@ -39,3 +39,4 @@ function manacrushing(event, tier, input, output, output_quantity) {
         output_quantity: output_quantity // 输出物品个数
     });
 }
+

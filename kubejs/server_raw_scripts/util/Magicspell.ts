@@ -44,3 +44,18 @@ function manacrushing(event: Internal.RecipesEventJS,
         output_quantity: output_quantity // 输出物品个数
     })
 }
+
+ // 元素工艺元素灌注
+function infusion(event:Internal.RecipesEventJS,
+    amount:,type,input,output){
+    if input[0,4]=="forge":
+    
+    event.custom({
+        type: "elementalcraft:infusion",
+        element amount: amount,
+        element type: type,
+        input:{
+            
+        }
+    })
+}
