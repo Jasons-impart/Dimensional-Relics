@@ -23,14 +23,19 @@ StartupEvents.registry("fluid", e =>{
         .translationKey("fluid.dimensionalrelics.benzene")
         .translationKey("block.dimensionalrelics.benzene")
         .translationKey("item.dimensionalrelics.benzene_bucket")
-//安山合金混合液
+    // 安山合金混合液
     e.create("dimensionalrelics:andesite_alloy") 
         .thickTexture(0x717D7E)
         .bucketColor(0x717D7E)
         .translationKey("fluid.dimensionalrelics.andesite_alloy")
         .translationKey("block.dimensionalrelics.andesite_alloy")
         .translationKey("item.dimensionalrelics.andesite_alloy_bucket")
-
-
-        
+    // 熔融铁
+    e.create("dimensionalrelics:molten_iron")
+        .tag("minecraft:lava")
+        .thickTexture(0XFF7F50)
+        .bucketColor(0XFF7F50)
+        .translationKey("fluid.dimensionalrelics.molten_iron")
+        .translationKey("block.dimensionalrelics.molten_iron")
+        .translationKey("item.dimensionalrelics.molten_iron_bucket")
 })

@@ -38,5 +38,8 @@
     "item.dimensionalrelics.butadiene_bucket": "丁二烯桶",
     "fluid.dimensionalrelics.andesite_alloy":"安山合金混合液",
     "block.dimensionalrelics.andesite_alloy":"安山合金混合液",
-    "item.dimensionalrelics.andesite_alloy_bucket":"安山合金混合液桶"
+    "item.dimensionalrelics.andesite_alloy_bucket":"安山合金混合液桶",
+    "fluid.dimensionalrelics.molten_iron":"熔融铁",
+    "block.dimensionalrelics.molten_iron":"熔融铁",
+    "item.dimensionalrelics.molten_iron_bucket":"熔融铁桶"
 }

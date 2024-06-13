@@ -5,6 +5,48 @@ ServerEvents.recipes(function (event) {
     event.recipes.create.mixing(["dimensionalrelics:raw_cast_iron_ingot"], ["minecraft:iron_ingot", "#minecraft:coals", Fluid.lava(10)]).id("create.kjs:raw_steel");
     event.recipes.create.mixing(["dimensionalrelics:raw_cast_iron_ingot"], ["minecraft:iron_ingot", "#minecraft:coals"]).id("create.kjs:raw_steel/2")
         .heated();
+    // 熔融铁
+    event.custom({
+        "type": "tfmg:industrial_blasting",
+        "ingredients": [
+            {
+                "count": 1,
+                "item": "minecraft:iron_ingot"
+            }
+        ],
+        "processingTime": 100,
+        "results": [
+            {
+                "fluid": "dimensionalrelics:molten_iron",
+                "amount": 224
+            },
+            {
+                "fluid": "tfmg:molten_slag",
+                "amount": 50
+            }
+        ]
+    });
+    // 熔融铁→铸铁
+    event.custom({
+        "type": "tfmg:casting",
+        "ingredients": [
+            {
+                "fluid": "dimensionalrelics:molten_iron",
+                "amount": 1
+            }
+        ],
+        "processingTime": 300,
+        "results": [
+            {
+                "count": 1,
+                "item": "tfmg:cast_iron_ingot"
+            },
+            {
+                "count": 1,
+                "item": "tfmg:cast_iron_block"
+            }
+        ]
+    });
     // 铝锭烧练
     event.recipes.minecraft.smelting('tfmg:aluminum_ingot', "tfmg:bauxite");
     // 螺丝生产
