@@ -47,15 +47,29 @@ function manacrushing(event: Internal.RecipesEventJS,
 
  // 元素工艺元素灌注
 function infusion(event:Internal.RecipesEventJS,
-    amount:,type,input,output){
-    if input[0,4]=="forge":
-    
+    amount:number,type:string,input: string,output: string){
+        var item1:string='item'
+        var item2:string='item'
+        var i:string
+        var j:string[];
+        j=[input,output]
+        for (i in j){
+            if (input.slice(5)=="fogre"){
+                if (i==input){
+                    item1="tag"
+                    break
+                }
+                item2="tag"
+        }}
     event.custom({
         type: "elementalcraft:infusion",
-        element amount: amount,
-        element type: type,
+        elementamount: amount,
+        elementtype: type,
         input:{
-            
+            item1: input
+        },
+        output:{
+            item2: output
         }
     })
 }

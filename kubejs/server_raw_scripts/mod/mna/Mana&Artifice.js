@@ -26,43 +26,43 @@ ServerEvents.recipes(event => {
     manatransmutation(event,
         "thermal:silver_block", "mna:decoration/transmuted_silver_block");
     //魔源宝石合成
-        event.custom({type:"mna:ritual",tier:2,
-            pattern:[[12, 0, 9, 0,13],
-                     [ 0, 0, 8, 0, 0],
-                     [ 1, 2, 3, 4, 5],
-                     [ 0, 0, 6, 0, 0],
-                     [10, 0, 7, 0,11]],
-            reagents:[
+    event.custom({type:"mna:ritual",tier:2,
+        pattern:[[12, 0, 9, 0,13],
+                 [ 0, 0, 8, 0, 0],
+                 [ 1, 2, 3, 4, 5],
+                 [ 0, 0, 6, 0, 0],
+                 [10, 0, 7, 0,11]],
+        reagents:[
                 "  A  ",
                 "     ",
                 "B C D",
                 "     ",
                 "  E  "],
-            keys:{
-                A:{
-                    "item": 'mna:mote_arcane',
-			        "optional": false,
-			        "consume": true
-                },
-                B:{
-                   "item": 'mna:mote_fire',
-			        "optional": false,
-			        "consume": true 
-                },
-                C:{
-                   "item": 'mna:mote_air',
-			        "optional": false,
-			        "consume": true 
-                },
-                D:{
-                   "item": 'mna:mote_ender',
-			        "optional": false,
-			        "consume": true  
-                },
-                E:{
-                    "item": 'mna:mote_earth',
-			        "optional": false,
-			        "consume": true
+        keys:{
+            A:{
+                "item": 'mna:mote_arcane',
+			    "optional": false,
+			    "consume": true
+            },
+            B:{
+               "item": 'mna:mote_fire',
+			    "optional": false,
+			    "consume": true 
+            },
+            C:{
+              "item": 'mna:mote_air',
+			   "optional": false,
+			    "consume": true 
+            },
+            D:{
+              "item": 'mna:mote_ender',
+			   "optional": false,
+			   "consume": true  
+            },
+            E:{
+               "item": 'mna:mote_earth',
+			   "optional": false,
+			   "consume": true
                 },
             manaweave:[
                 "mna:manaweave_patterns/knot",
@@ -70,12 +70,12 @@ ServerEvents.recipes(event => {
                 "mna:manaweave_patterns/triangle"
             ],
             parameters:
-	  {
+	    {
 		"innerColor": "0x555555",
 		"outerColor": "0xFFFFFF",
 		"displayIndexes": false,
 		"connectBeam": false
-	}},
+	    }},
     createsItem:'ars_nouveau:source_gem'
-        })
+    })
 });
