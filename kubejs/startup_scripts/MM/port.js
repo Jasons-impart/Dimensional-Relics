@@ -29,10 +29,10 @@ MMEvents.registerPorts(e => {
             c.stress(4)
         })
         
-    e.create("Steel_pcnr")
-        .name("Steel PCNR")
-        .controllerId("mm:Steel_controller")
-        .config("mm:pneumaticcraft/air", c => {
-            c.volume(5000)
-        })
+    // e.create("Steel_pcnr")
+    //     .name("Steel PCNR")
+    //     .controllerId("mm:Steel_controller")
+    //     .config("mm:pneumaticcraft/air", c => {
+    //         c.volume(5000)
+    //     })
 })

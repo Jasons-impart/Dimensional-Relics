@@ -1,6 +1,4 @@
 {
-  "block.mm.Steel_pcnr_input": "Steel PCNR Input",
-  "block.mm.Steel_pcnr_output": "Steel PCNR Output",
   "block.mm.steel_controller": "Steel Controller",
   "block.mm.steel_create_input": "Steel Create Input",
   "block.mm.steel_create_output": "Steel Create Output",
