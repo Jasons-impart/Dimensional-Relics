@@ -27,7 +27,7 @@ ServerEvents.recipes(function (event) {
         "create:tree_fertilizer",
         "botania:white_petal",
         "botania:white_petal",
-        'elementalcraft:contained_crystal',
-        'mna:animus_dust'
+        "elementalcraft:contained_crystal",
+        "mna:animus_dust"
     ]);
 });

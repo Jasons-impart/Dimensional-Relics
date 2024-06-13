@@ -1,8 +1,8 @@
-ServerEvents.recipes(function (e) {
-    remove_recipes_output(e, [
+ServerEvents.recipes(function (event) {
+    remove_recipes_output(event, [
         "botania:runic_altar"
     ]);
-    e.shaped("botania:runic_altar", [
+    event.shaped("botania:runic_altar", [
         "   ",
         "AAA",
         "ABA"

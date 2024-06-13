@@ -20,7 +20,7 @@ ServerEvents.recipes(function (event) {
         A: "mna:decoration/arcane_sandstone",
         B: "mna:decoration/arcane_stone"
     });
-    //嬗变惰性水晶
+    // 嬗变惰性水晶
     manatransmutation(event, "minecraft:amethyst_block", "elementalcraft:inertcrystal_block");
     manatransmutation(event, "thermal:silver_block", "mna:decoration/transmuted_silver_block");
 });
