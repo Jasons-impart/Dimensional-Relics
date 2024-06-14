@@ -32,7 +32,7 @@ var pneumatic_recipes = /** @class */ (function () {
                 });
             }
         });
-        event.custom(recipe);
+        return event.custom(recipe);
     };
     pneumatic_recipes.thermo_plant = function (event) {
         return new thermo_plant_recipe_builder(event);
