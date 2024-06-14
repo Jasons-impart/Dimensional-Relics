@@ -1,15 +1,12 @@
 // priority: 100
 // 巧工织魔祭坛
-// class mna {
-//     static manaweaving(event: Internal.RecipeEventJS)
-// }
-function manaweaving_recipe(event, tier, output, count, input, patterns) {
+function manaweaving_recipe(event, tier, output, quantity, items, patterns) {
     event.custom({
         type: "mna:manaweaving-recipe",
         tier: tier, // 等阶
         output: output, // 输出物品
-        quantity: count, // 输出物品个数
-        items: input, // 输入物品
+        quantity: quantity, // 输出物品个数
+        items: items, // 输入物品
         patterns: patterns // 织魔图案
     });
 }

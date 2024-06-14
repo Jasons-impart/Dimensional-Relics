@@ -32,6 +32,7 @@ ServerEvents.recipes(function (event) {
         A: "pneumaticcraft:reinforced_stone",
         B: 'tfmg:heavy_plate'
     });
+    // 稳定水晶合成
     pneumatic_recipes.pressure_chamber(event, [
         ['elementalcraft:contained_crystal']
     ], [

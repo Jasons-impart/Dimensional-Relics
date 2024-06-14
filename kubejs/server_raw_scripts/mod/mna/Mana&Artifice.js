@@ -20,6 +20,17 @@ ServerEvents.recipes(event => {
         A: "mna:decoration/arcane_sandstone",
         B: "mna:decoration/arcane_stone"
     });
+    // 测试
+    mna.manaweaving_recipe(event,2,
+        ["minecraft:dirt"],
+        [
+            "minecraft:grass_block",
+            '#forge:ingots/iron'
+        ],
+        [
+            "mna:triangle"
+        ]
+    )
     // 嬗变惰性水晶
     manatransmutation(event,
         "minecraft:amethyst_block", "elementalcraft:inertcrystal_block");
