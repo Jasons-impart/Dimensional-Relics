@@ -45,65 +45,30 @@ function manacrushing(event: Internal.RecipesEventJS,
     })
 }
 
-    // 元素工艺元素灌注
-class infusion_builder {
-    builder: Internal.RecipeBuilderJS;
-    constructor(event: Internal.RecipesEventJS,
-        output: string, input: string, type: string, amount: number) {
-            let recipe = {
-                type: "elementalcraft:infusion",
-                element_amount: amount,
-                element_type: type,
-                input: {},
-                output: {
-                    item: output
-                }
-            };
-            if (input[0] == "#") {
-                recipe.input = {
-                    tag: input.slice(1)
-                }
-            }
-            else {
-                recipe.input = {
-                    item: input
-                }
-            };
-            this.builder = event.custom(recipe)
+// 元素工艺元素灌注
+function mana_infusion(event: Internal.RecipesEventJS,
+    output: string, input: string, type: string, amount: number) {
+    let recipe = {
+        type: "elementalcraft:infusion",
+        element_amount: amount,
+        element_type: type,
+        input: {},
+        output: {
+            item: output
         }
+    };
+    if (input[0] == "#") {
+        recipe.input = {
+            tag: input.slice(1)
+        }
+    }
+    else {
+        recipe.input = {
+            item: input
+        }
+    };
+    return event.custom(recipe);
 }
-
-// class elementalcraft_recipes {
-//     static infusion(event: Internal.RecipesEventJS) {
-//         return new infusion_builder(event);
-//     }
-// }
-// class infusion_builder{
-//     constructor(event: Internal.RecipesEventJS,
-//         output: string, input: string, type: string, amount: number) {
-//         let recipe = {
-//             type: "elementalcraft:infusion",
-//             element_amount: amount,
-//             element_type: type,
-//             input: {},
-//             output: {
-//                 item: output
-//             }
-//         }
-//         if (input[0] == "#") {
-//             recipe.input = {
-//                 tag: input.slice(1)
-//             }
-//         }
-//         else {
-//             recipe.input = {
-//                 item: input
-//             }
-//         };
-//         event.custom(recipe)
-//     }
-// }
-
 
 //  {
 //     "type": "elementalcraft:infusion",
