@@ -134,5 +134,4 @@ class thermo_plant_recipe_builder {
     build() {
         this.event.custom(this.recipe);
     }
-    
 }
