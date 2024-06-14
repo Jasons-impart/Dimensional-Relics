@@ -31,7 +31,7 @@ class pneumatic_recipes {
                 });
             }
         });
-        event.custom(recipe);
+        return event.custom(recipe);
     }
 
     static thermo_plant(event: Internal.RecipesEventJS) {
@@ -134,5 +134,5 @@ class thermo_plant_recipe_builder {
     build() {
         this.event.custom(this.recipe);
     }
-    
+
 }

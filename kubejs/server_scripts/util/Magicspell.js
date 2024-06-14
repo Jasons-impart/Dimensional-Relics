@@ -1,12 +1,15 @@
 // priority: 100
 // 巧工织魔祭坛
-function manaweaving_recipe(event, tier, output, quantity, items, patterns) {
+// class mna {
+//     static manaweaving(event: Internal.RecipeEventJS)
+// }
+function manaweaving_recipe(event, tier, output, count, input, patterns) {
     event.custom({
         type: "mna:manaweaving-recipe",
         tier: tier, // 等阶
         output: output, // 输出物品
-        quantity: quantity, // 输出物品个数
-        items: items, // 输入物品
+        quantity: count, // 输出物品个数
+        items: input, // 输入物品
         patterns: patterns // 织魔图案
     });
 }
@@ -39,4 +42,32 @@ function manacrushing(event, tier, input, output, output_quantity) {
         output_quantity: output_quantity // 输出物品个数
     });
 }
-
+// 元素工艺元素灌注
+var elementalcraft = /** @class */ (function () {
+    function elementalcraft() {
+    }
+    elementalcraft.infusion = function (event, output, input, type, amount) {
+        var recipe = {
+            type: "elementalcraft:infusion",
+            element_amount: amount,
+            element_type: type,
+            input: {},
+            output: {
+                item: output
+            }
+        };
+        if (input[0] == "#") {
+            recipe.input = {
+                tag: input.slice(1)
+            };
+        }
+        else {
+            recipe.input = {
+                item: input
+            };
+        }
+        ;
+        return event.custom(recipe);
+    };
+    return elementalcraft;
+}());
