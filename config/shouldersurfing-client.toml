@@ -86,6 +86,17 @@
 				#Range: 0.0 ~ 1.7976931348623157E308
 				multiplier_offset_z = 1.0
 
+			[camera.offset.multiplier.aiming]
+				#x-offset multiplier for when the player is aiming.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				multiplier_offset_x = 1.0
+				#y-offset multiplier for when the player is aiming.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				multiplier_offset_y = 1.0
+				#z-offset multiplier for when the player is aiming.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				multiplier_offset_z = 1.0
+
 [perspective]
 	#The default perspective when you load the game.
 	#Allowed Values: FIRST_PERSON, THIRD_PERSON_BACK, THIRD_PERSON_FRONT, SHOULDER_SURFING
@@ -96,25 +107,6 @@
 	replace_default_perspective = false
 	#Whether or not to skip the third person front perspective.
 	skip_third_person_front_perspective = false
-	#Whether or not to adjust the player model transparency when view is obstructed.
-	adjust_player_transparency = true
-	#The angle at which the player will no longer be rendered when looking up. Set to 0 to disable.
-	#Range: 0.0 ~ 90.0
-	hide_player_when_looking_up_angle = 0.0
-	#Whether or not to turn the player when using an item. This config option only applies when camera is decoupled.
-	turn_player_when_using_item = true
-	#Whether or not to turn the player when attacking. This config option only applies when camera is decoupled.
-	turn_player_when_attacking = true
-	#Whether or not to turn the player when interacting with blocks. This config option only applies when camera is decoupled.
-	turn_player_when_interacting = true
-	#Whether or not to turn the player when picking blocks or entities. This config option only applies when camera is decoupled.
-	turn_player_when_picking = true
-	#Whether or not turning the player when attacking requires a target.
-	turn_player_when_attacking_requires_target = false
-	#Whether or not turning the player when interacting with blocks requires a target.
-	turn_player_when_interacting_requires_target = true
-	#Whether or not turning the player when picking blocks or entities requires a target.
-	turn_player_when_picking_requires_target = true
 
 [crosshair]
 	#Crosshair type to use for shoulder surfing.
@@ -125,9 +117,9 @@
 	custom_raytrace_distance = 400.0
 	#Whether or not to use the custom raytrace distance used for the dynamic crosshair.
 	use_custom_raytrace_distance = true
-	#Items that when held, trigger the dynamic crosshair in adaptive mode. This config option supports regex expressions. Example: 'minecraft:.*stone' matches 'minecraft:stone' and 'minecraft:cobblestone'.
+	#Items that when held, trigger the dynamic crosshair in adaptive mode. This config option supports regular expressions. Example: 'minecraft:.*sword' matches 'minecraft:wooden_sword' and 'minecraft:netherite_sword'.
 	adaptive_crosshair_hold_items = ["minecraft:snowball", "minecraft:egg", "minecraft:experience_bottle", "minecraft:ender_pearl", "minecraft:splash_potion", "minecraft:fishing_rod", "minecraft:lingering_potion"]
-	#Items that when used, trigger the dynamic crosshair in adaptive mode. This config option supports regex expressions. Example: 'minecraft:.*stone' matches 'minecraft:stone' and 'minecraft:cobblestone'.
+	#Items that when used, trigger the dynamic crosshair in adaptive mode. This config option supports regular expressions. Example: 'minecraft:.*sword' matches 'minecraft:wooden_sword' and 'minecraft:netherite_sword'.
 	adaptive_crosshair_use_items = []
 	#Item properties of an item, that when held, trigger the dynamic crosshair in adaptive mode.
 	adaptive_crosshair_hold_item_properties = ["minecraft:charged"]
@@ -147,4 +139,34 @@
 		#Crosshair visibility for shoulder_surfing.
 		#Allowed Values: ALWAYS, NEVER, WHEN_AIMING, WHEN_IN_RANGE, WHEN_AIMING_OR_IN_RANGE
 		shoulder_surfing = "ALWAYS"
+
+[player]
+	#Whether or not to adjust the player model transparency when view is obstructed. Changing this value may require a game restart to take full effect.
+	adjust_player_transparency = true
+	#The angle at which the player will no longer be rendered when looking up. Set to 0 to disable.
+	#Range: 0.0 ~ 90.0
+	hide_player_when_looking_up_angle = 0.0
+	#Whether to synchronize the x-rot of the player with mouse or controller inputs. This config option only applies when camera is decoupled.
+	sync_player_x_rot_with_inputs = false
+
+	[player.turning]
+		#Whether to turn the player when using an item. This config option only applies when camera is decoupled.
+		#Allowed Values: ALWAYS, NEVER, REQUIRES_TARGET
+		when_using_item = "ALWAYS"
+		#Whether to turn the player when attacking. This config option only applies when camera is decoupled.
+		#Allowed Values: ALWAYS, NEVER, REQUIRES_TARGET
+		when_attacking = "REQUIRES_TARGET"
+		#Whether to turn the player when interacting with blocks. This config option only applies when camera is decoupled.
+		#Allowed Values: ALWAYS, NEVER, REQUIRES_TARGET
+		when_interacting = "ALWAYS"
+		#Whether to turn the player when picking blocks or entities. This config option only applies when camera is decoupled.
+		#Allowed Values: ALWAYS, NEVER, REQUIRES_TARGET
+		when_picking = "ALWAYS"
+		#The time in ticks the player will remain turned after the interaction has ended. Set to 0 to disable. This config option only applies when camera is decoupled.
+		#Range: > 0
+		turning_lock_time = 4
+
+[audio]
+	#Whether to center sounds made by the player.
+	center_player_sounds = false
 
