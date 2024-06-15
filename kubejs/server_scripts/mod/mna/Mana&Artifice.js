@@ -76,5 +76,5 @@ ServerEvents.recipes(function (event) {
             }
         },
         createsItem: 'ars_nouveau:source_gem'
-    });
+    }).id("mna:source_gem");
 });

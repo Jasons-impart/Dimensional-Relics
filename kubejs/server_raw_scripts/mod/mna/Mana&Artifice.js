@@ -77,5 +77,5 @@ ServerEvents.recipes(event => {
 		"connectBeam": false
 	    }},
     createsItem:'ars_nouveau:source_gem'
-    })
+    }).id("mna:source_gem")
 });
