@@ -143,4 +143,29 @@ StartupEvents.registry("item", e => {
         .maxStackSize(64)
         .translationKey("item.dimensionalrelics.watermill_blade")
         .rarity("common")
+    //未完成的风之符文
+    e.create("dimensionalrelics:incomplete_rune_air")
+        .maxStackSize(64)
+        .translationKey("item.dimensionalrelics.incomplete_rune_air")
+        .rarity("common")
+    //未完成的火之符文
+    e.create("dimensionalrelics:incomplete_rune_fire")
+        .maxStackSize(64)
+        .translationKey("item.dimensionalrelics.incomplete_rune_fire")
+        .rarity("common")
+    //未完成的地之符文
+    e.create("dimensionalrelics:incomplete_rune_earth")
+        .maxStackSize(64)
+        .translationKey("item.dimensionalrelics.incomplete_rune_earth")
+        .rarity("common")
+    //未完成的水之符文
+    e.create("dimensionalrelics:incomplete_rune_water")
+        .maxStackSize(64)
+        .translationKey("item.dimensionalrelics.incomplete_rune_water")
+        .rarity("common")
+    //未完成的魔力符文
+    e.create("dimensionalrelics:incomplete_rune_mana")
+        .maxStackSize(64)
+        .translationKey("item.dimensionalrelics.incomplete_rune_mana")
+        .rarity("common")
 })
