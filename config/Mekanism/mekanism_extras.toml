@@ -122,70 +122,89 @@
 
 	#Fluid Tanks
 	[mekanism_extras."fluid tanks"]
-		#Storage size of Basic fluid tanks in mB.
+		#Storage size of absolute fluid tanks in mB.
 		#Range: > 1
 		basicStorage = 512000
-		#Output rate of Basic fluid tanks in mB.
+		#Output rate of absolute fluid tanks in mB.
 		#Range: > 1
 		basicOutput = 128000
-		#Storage size of Advanced fluid tanks in mB.
+		#Storage size of supreme fluid tanks in mB.
 		#Range: > 1
 		advancedStorage = 1024000
-		#Output rate of Advanced fluid tanks in mB.
+		#Output rate of supreme fluid tanks in mB.
 		#Range: > 1
 		advancedOutput = 512000
-		#Storage size of Elite fluid tanks in mB.
+		#Storage size of cosmic fluid tanks in mB.
 		#Range: > 1
 		eliteStorage = 2048000
-		#Output rate of Elite fluid tanks in mB.
+		#Output rate of cosmic fluid tanks in mB.
 		#Range: > 1
 		eliteOutput = 2048000
-		#Storage size of Ultimate fluid tanks in mB.
+		#Storage size of infinite fluid tanks in mB.
 		#Range: > 1
 		ultimateStorage = 4096000
-		#Output rate of Ultimate fluid tanks in mB.
+		#Output rate of infinite fluid tanks in mB.
 		#Range: > 1
 		ultimateOutput = 819200
 
 	#Chemical Tanks
 	[mekanism_extras."chemical tanks"]
-		#Storage size of Basic chemical tanks in mB.
+		#Storage size of absolute chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		basicStorage = 32768000
-		#Output rate of Basic chemical tanks in mB.
+		#Output rate of absolute chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		basicOutput = 2048000
-		#Storage size of Advanced chemical tanks in mB.
+		#Storage size of supreme chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		advancedStorage = 131072000
-		#Output rate of Advanced chemical tanks in mB.
+		#Output rate of supreme chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		advancedOutput = 8192000
-		#Storage size of Elite chemical tanks in mB.
+		#Storage size of cosmic chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		eliteStorage = 524288000
-		#Output rate of Elite chemical tanks in mB.
+		#Output rate of cosmic chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		eliteOutput = 32768000
-		#Storage size of Ultimate chemical tanks in mB.
+		#Storage size of infinite chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		ultimateStorage = 4194304000
-		#Output rate of Ultimate chemical tanks in mB.
+		#Output rate of infinite chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		ultimateOutput = 131072000
 
 	#Bins
 	[mekanism_extras.bins]
-		#The number of items Basic bins can store.
+		#The number of items absolute bins can store.
 		#Range: > 1
 		basicStorage = 2097152
-		#The number of items Advanced bins can store.
+		#The number of items supreme bins can store.
 		#Range: > 1
 		advancedStorage = 16777216
-		#The number of items Elite bins can store.
+		#The number of items cosmic bins can store.
 		#Range: > 1
 		eliteStorage = 134217728
-		#The number of items Ultimate bins can store.
+		#The number of items infinite bins can store.
 		#Range: > 1
 		ultimateStorage = 1073741824
+
+	#Induction
+	[mekanism_extras.induction]
+		#Maximum number of Joules absolute induction cells can store.
+		basicStorage = "32768000000000"
+		#Maximum number of Joules supreme induction cells can store.
+		advancedStorage = "262144000000000"
+		#Maximum number of Joules cosmic induction cells can store.
+		eliteStorage = "2097152000000000"
+		#Maximum number of Joules infinite induction cells can store.
+		ultimateStorage = "9223372036854775807"
+		#Maximum number of Joules absolute induction providers can output or accept.
+		basicOutput = "1048576000"
+		#Maximum number of Joules supreme induction providers can output or accept.
+		advancedOutput = "8388608000"
+		#Maximum number of Joules cosmic induction providers can output or accept.
+		eliteOutput = "67108864000"
+		#Maximum number of Joules infinite induction providers can output or accept.
+		ultimateOutput = "536870912000"
 
