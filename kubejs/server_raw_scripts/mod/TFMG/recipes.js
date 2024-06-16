@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     // 工业铁块合成
-    event.recipes.create.compacting("create:industrial_iron_block","4x #forge:ingots/iron")
+    event.recipes.create.compacting("create:industrial_iron_block", "4x #forge:ingots/iron")
     // 搅拌合成：粗铸铁
     event.recipes.create.mixing(
         ["dimensionalrelics:raw_cast_iron_ingot"],
@@ -16,60 +16,60 @@ ServerEvents.recipes(event => {
         {
             "type": "tfmg:industrial_blasting",
             "ingredients": [
-              {
-                "count": 1,
-                "item": "minecraft:iron_ingot"
-              }
+                {
+                    "count": 1,
+                    "item": "minecraft:iron_ingot"
+                }
             ],
             "processingTime": 100,
             "results": [
-              {
-                "fluid": "dimensionalrelics:molten_iron",
-                "amount": 224
-              },
-              {
-                "fluid": "tfmg:molten_slag",
-                "amount": 50
-              }
+                {
+                    "fluid": "dimensionalrelics:molten_iron",
+                    "amount": 224
+                },
+                {
+                    "fluid": "tfmg:molten_slag",
+                    "amount": 50
+                }
             ]
-          }
+        }
     )
     // 熔融铁→铸铁
     event.custom(
         {
             "type": "tfmg:casting",
             "ingredients": [
-              {
-                "fluid": "dimensionalrelics:molten_iron",
-                "amount": 1
-              }
+                {
+                    "fluid": "dimensionalrelics:molten_iron",
+                    "amount": 1
+                }
             ],
             "processingTime": 300,
             "results": [
-              {
-                "count": 1,
-                "item": "tfmg:cast_iron_ingot"
-              }
-            ,
-              {
-                "count": 1,
-                "item": "tfmg:cast_iron_block"
-              }
-          
+                {
+                    "count": 1,
+                    "item": "tfmg:cast_iron_ingot"
+                }
+                ,
+                {
+                    "count": 1,
+                    "item": "tfmg:cast_iron_block"
+                }
+
             ]
-          }
+        }
     )
     // 铝锭烧练
     event.recipes.minecraft.smelting(
-        'tfmg:aluminum_ingot',
+        "tfmg:aluminum_ingot",
         "tfmg:bauxite"
     )
     // 螺丝生产
-    event.recipes.minecraft.stonecutting('2x tfmg:screw', 'mekanism:ingot_steel').id("tfmg:stonecutting/screw")
+    event.recipes.minecraft.stonecutting("2x tfmg:screw", "mekanism:ingot_steel").id("tfmg:stonecutting/screw")
     // 铝脚手架合成
-    event.recipes.minecraft.stonecutting("4x tfmg:aluminum_scaffolding", 'tfmg:aluminum_ingot').id("tfmg:aluminum_scaffolding_from_ingots_steel_stonecutting")
+    event.recipes.minecraft.stonecutting("4x tfmg:aluminum_scaffolding", "tfmg:aluminum_ingot").id("tfmg:aluminum_scaffolding_from_ingots_steel_stonecutting")
     // 铝脚手架合成
-    event.recipes.minecraft.stonecutting("4x tfmg:steel_scaffolding", 'mekanism:ingot_steel').id("tfmg:steel_scaffolding_from_ingots_steel_stonecutting")
+    event.recipes.minecraft.stonecutting("4x tfmg:steel_scaffolding", "mekanism:ingot_steel").id("tfmg:steel_scaffolding_from_ingots_steel_stonecutting")
     // 木柄螺丝刀合成
     event.recipes.minecraft.crafting_shaped(
         "tfmg:wooden_screwdriver",
@@ -77,9 +77,9 @@ ServerEvents.recipes(event => {
             " A",
             "B "
         ], {
-            A:"tfmg:rebar",
-            B:"tfmg:hardened_planks"
-        }
+        A: "tfmg:rebar",
+        B: "tfmg:hardened_planks"
+    }
     )
     // 螺丝刀合成
     event.recipes.minecraft.crafting_shaped(
@@ -88,21 +88,21 @@ ServerEvents.recipes(event => {
             " A",
             "BC"
         ], {
-            A:"tfmg:rebar",
-            B:"#forge:ingots/plastic",
-            C:"#forge:dyes/red"
-        }
+        A: "tfmg:rebar",
+        B: "#forge:ingots/plastic",
+        C: "#forge:dyes/red"
+    }
     ).id("tfmg:crafting/screwdriver")
     // 序列合成：钢铁构件
-    const unfinished = 'tfmg:unfinished_steel_mechanism'
+    const unfinished = "tfmg:unfinished_steel_mechanism"
     event.recipes.create.sequenced_assembly(
         [
-            Item.of('tfmg:steel_mechanism').withChance(0.8),
+            Item.of("tfmg:steel_mechanism").withChance(0.8),
             Item.of("create:precision_mechanism").withChance(0.2)
         ],
-        'create:precision_mechanism', [
-        event.recipes.create.deploying(unfinished, [unfinished, 'ad_astra:steel_plate']),
-        event.recipes.create.deploying(unfinished, [unfinished, 'tfmg:aluminum_sheet']),
+        "create:precision_mechanism", [
+        event.recipes.create.deploying(unfinished, [unfinished, "ad_astra:steel_plate"]),
+        event.recipes.create.deploying(unfinished, [unfinished, "tfmg:aluminum_sheet"]),
         event.recipes.create.deploying(unfinished, [unfinished, "tfmg:screw"]),
         event.recipes.create.deploying(unfinished, [unfinished, "#tfmg:screwdriver"])
     ]).transitionalItem(unfinished)
@@ -187,6 +187,22 @@ ServerEvents.recipes(event => {
     ], [
         "minecraft:raw_iron_block"
     ]).id("create:crushing/raw_iron_block");
+    // 抽油机部件合成
+    event.recipes.create.item_application("tfmg:pumpjack_hammer_part",
+        ["tfmg:heavy_machinery_casing", "tfmg:cast_iron_ingot"]
+    ).id("tfmg:stonecutting/pumpjack_hammer_part");
+    // 抽油机锤头合成
+    const iner_2 = "tfmg:pumpjack_hammer_part";
+    event.recipes.create.sequenced_assembly(
+        "tfmg:pumpjack_hammer_connector",
+        "tfmg:pumpjack_hammer_part",
+        [event.recipes.create.deploying(iner_2, [iner_2, "tfmg:aluminum_ingot"]),
+        event.recipes.create.deploying(iner_2, [iner_2, "tfmg:screw"]),
+        event.recipes.create.deploying(iner_2, [iner_2, "#tfmg:screwdriver"])]
+    )
+        .transitionalItem(iner_2)
+        .loops(3)
+        .id("tfmg:crafting/pumpjack_hammer_connector");
     // 乙烯合成配方修改
     event.recipes.create.mixing([
         Fluid.of("tfmg:liquid_plastic", 500)
@@ -242,26 +258,26 @@ ServerEvents.recipes(event => {
         {
             "type": "tfmg:coking",
             "ingredients": [
-              {
-                "count": 1,
-                "item": "minecraft:coal"
-              }
+                {
+                    "count": 1,
+                    "item": "minecraft:coal"
+                }
             ],
             "processingTime": 200,
             "results": [
-              {
-                "count": 2,
-                "item": "tfmg:coal_coke"
-              }
-            ,
-              {
-                "fluid": "tfmg:creosote",
-                "amount": 1
-              }
-          
+                {
+                    "count": 2,
+                    "item": "tfmg:coal_coke"
+                }
+                ,
+                {
+                    "fluid": "tfmg:creosote",
+                    "amount": 1
+                }
+
             ]
-          }
-    ).id("tfmg:coking/coal_coke")
+        }
+    ).id("tfmg:coking/coal_coke");
     // 石油分馏
     event.custom({
         "type": "tfmg:advanced_distillation",
