@@ -163,7 +163,9 @@ ServerEvents.recipes(function (event) {
     event.recipes.create.item_application("tfmg:pumpjack_hammer_part", ["tfmg:heavy_machinery_casing", 'tfmg:cast_iron_ingot']).id("tfmg:stonecutting/pumpjack_hammer_part");
     // 抽油机锤头合成
     var iner_2 = "tfmg:pumpjack_hammer_part";
-    event.recipes.create.sequenced_assembly("tfmg:pumpjack_hammer_connector", "tfmg:pumpjack_hammer_part", event.recipes.create.deploying(iner_2, [iner_2, 'tfmg:aluminum_ingot']), event.recipes.create.deploying(iner_2, [iner_2, 'tfmg:screw']), event.recipes.create.deploying(iner_2, [iner_2, "#tfmg:screwdriver"]))
+    event.recipes.create.sequenced_assembly("tfmg:pumpjack_hammer_connector", "tfmg:pumpjack_hammer_part", [event.recipes.create.deploying(iner_2, [iner_2, 'tfmg:aluminum_ingot']),
+        event.recipes.create.deploying(iner_2, [iner_2, 'tfmg:screw']),
+        event.recipes.create.deploying(iner_2, [iner_2, "#tfmg:screwdriver"])])
         .transitionalItem(iner_2)
         .loops(3)
         .id("tfmg:crafting/pumpjack_hammer_connector");
