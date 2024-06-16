@@ -70,5 +70,14 @@ class elementalcraft{
         };
         return event.custom(recipe);
     }
-    
 }
+    //植物魔法符文祭坛
+    function runic_altar(event: Internal.RecipesEventJS,
+     output:(string|number),ingredients:string[],mana:number
+    ) {event.custom({
+        type:"botania:runic_altar",
+        output:output,
+        ingredients:ingredients,
+        mana:mana})
+        
+    }
