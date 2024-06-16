@@ -8,4 +8,13 @@ MMEvents.createProcesses(event => {
             ["tfmg:plastic_sheet"],
             ["tfmg:plastic_sheet", 1, 0.5]
         );
+
+    create_mm_process(event, "mm:pnce_example", "mm:pncr_reactor")
+        .ticks(10)
+        .input_air(300, 1.0)
+        .output_energy(1000)
+    create_mm_process(event, "mm:pnce_example_2", "mm:pncr_reactor_2")
+        .ticks(10)
+        .input_energy(1000)
+        .output_air(30, 1.0)
 });

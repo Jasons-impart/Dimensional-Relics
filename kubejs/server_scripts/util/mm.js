@@ -308,6 +308,38 @@ var mm_process_builder = /** @class */ (function () {
         });
         return this;
     };
+    // 输入压力
+    mm_process_builder.prototype.input_air = function (air, pressure, chance) {
+        if (pressure === void 0) { pressure = 0; }
+        if (chance === void 0) { chance = 1; }
+        var input = {
+            type: "mm:input/consume",
+            chance: chance,
+            ingredient: {
+                type: "mm:pneumaticcraft/air",
+                air: air,
+                pressure: pressure
+            }
+        };
+        this.builder.input(input);
+        return this;
+    };
+    // 输出压力 目前pressure没多大用，不过还是写上 
+    mm_process_builder.prototype.output_air = function (air, pressure, chance) {
+        if (pressure === void 0) { pressure = 0; }
+        if (chance === void 0) { chance = 1; }
+        var output = {
+            type: "mm:output/simple",
+            chance: chance,
+            ingredient: {
+                type: "mm:pneumaticcraft/air",
+                air: air,
+                pressure: pressure
+            }
+        };
+        this.builder.output(output);
+        return this;
+    };
     return mm_process_builder;
 }());
 function create_mm_process(event, name, structure) {

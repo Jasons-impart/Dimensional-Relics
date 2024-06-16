@@ -250,6 +250,34 @@ class mm_process_builder {
         });
         return this
     }
+    // 输入压力
+    input_air(air: number, pressure: number = 0, chance: number = 1): mm_process_builder {
+        let input = {
+            type: "mm:input/consume",
+            chance:chance,
+            ingredient: {
+                type: "mm:pneumaticcraft/air",
+                air: air,
+                pressure: pressure
+            }
+        };
+        this.builder.input(input);
+        return this
+    }
+    // 输出压力 目前pressure没多大用，不过还是写上 
+    output_air(air: number, pressure: number = 0, chance: number = 1): mm_process_builder {
+        let output = {
+            type: "mm:output/simple",
+            chance:chance,
+            ingredient: {
+                type: "mm:pneumaticcraft/air",
+                air: air,
+                pressure: pressure
+            }
+        };
+        this.builder.output(output);
+        return this
+    }
 }
 
 function create_mm_process(event: Internal.RecipeEventJS, name: string, structure: ResourceLocation): mm_process_builder {
