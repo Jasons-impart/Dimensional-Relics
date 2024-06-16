@@ -48,13 +48,13 @@ ServerEvents.recipes(function (event) {
         ]
     });
     // 铝锭烧练
-    event.recipes.minecraft.smelting('tfmg:aluminum_ingot', "tfmg:bauxite");
+    event.recipes.minecraft.smelting("tfmg:aluminum_ingot", "tfmg:bauxite");
     // 螺丝生产
-    event.recipes.minecraft.stonecutting('2x tfmg:screw', 'mekanism:ingot_steel').id("tfmg:stonecutting/screw");
+    event.recipes.minecraft.stonecutting("2x tfmg:screw", "mekanism:ingot_steel").id("tfmg:stonecutting/screw");
     // 铝脚手架合成
-    event.recipes.minecraft.stonecutting("4x tfmg:aluminum_scaffolding", 'tfmg:aluminum_ingot').id("tfmg:aluminum_scaffolding_from_ingots_steel_stonecutting");
+    event.recipes.minecraft.stonecutting("4x tfmg:aluminum_scaffolding", "tfmg:aluminum_ingot").id("tfmg:aluminum_scaffolding_from_ingots_steel_stonecutting");
     // 铝脚手架合成
-    event.recipes.minecraft.stonecutting("4x tfmg:steel_scaffolding", 'mekanism:ingot_steel').id("tfmg:steel_scaffolding_from_ingots_steel_stonecutting");
+    event.recipes.minecraft.stonecutting("4x tfmg:steel_scaffolding", "mekanism:ingot_steel").id("tfmg:steel_scaffolding_from_ingots_steel_stonecutting");
     // 木柄螺丝刀合成
     event.recipes.minecraft.crafting_shaped("tfmg:wooden_screwdriver", [
         " A",
@@ -73,13 +73,13 @@ ServerEvents.recipes(function (event) {
         C: "#forge:dyes/red"
     }).id("tfmg:crafting/screwdriver");
     // 序列合成：钢铁构件
-    var unfinished = 'tfmg:unfinished_steel_mechanism';
+    var unfinished = "tfmg:unfinished_steel_mechanism";
     event.recipes.create.sequenced_assembly([
-        Item.of('tfmg:steel_mechanism').withChance(0.8),
+        Item.of("tfmg:steel_mechanism").withChance(0.8),
         Item.of("create:precision_mechanism").withChance(0.2)
-    ], 'create:precision_mechanism', [
-        event.recipes.create.deploying(unfinished, [unfinished, 'ad_astra:steel_plate']),
-        event.recipes.create.deploying(unfinished, [unfinished, 'tfmg:aluminum_sheet']),
+    ], "create:precision_mechanism", [
+        event.recipes.create.deploying(unfinished, [unfinished, "ad_astra:steel_plate"]),
+        event.recipes.create.deploying(unfinished, [unfinished, "tfmg:aluminum_sheet"]),
         event.recipes.create.deploying(unfinished, [unfinished, "tfmg:screw"]),
         event.recipes.create.deploying(unfinished, [unfinished, "#tfmg:screwdriver"])
     ]).transitionalItem(unfinished)
@@ -160,15 +160,37 @@ ServerEvents.recipes(function (event) {
         "minecraft:raw_iron_block"
     ]).id("create:crushing/raw_iron_block");
     // 抽油机部件合成
-    event.recipes.create.item_application("tfmg:pumpjack_hammer_part", ["tfmg:heavy_machinery_casing", 'tfmg:cast_iron_ingot']).id("tfmg:stonecutting/pumpjack_hammer_part");
-    // 抽油机锤头合成
+    event.recipes.create.item_application("tfmg:pumpjack_hammer_part", ["tfmg:heavy_machinery_casing", "tfmg:cast_iron_ingot"]).id("tfmg:stonecutting/pumpjack_hammer_part");
+    // 抽油机链接组件合成
     var iner_2 = "tfmg:pumpjack_hammer_part";
-    event.recipes.create.sequenced_assembly("tfmg:pumpjack_hammer_connector", "tfmg:pumpjack_hammer_part", [event.recipes.create.deploying(iner_2, [iner_2, 'tfmg:aluminum_ingot']),
-        event.recipes.create.deploying(iner_2, [iner_2, 'tfmg:screw']),
+    event.recipes.create.sequenced_assembly("tfmg:pumpjack_hammer_connector", "tfmg:pumpjack_hammer_part", [event.recipes.create.deploying(iner_2, [iner_2, "tfmg:aluminum_ingot"]),
+        event.recipes.create.deploying(iner_2, [iner_2, "tfmg:screw"]),
         event.recipes.create.deploying(iner_2, [iner_2, "#tfmg:screwdriver"])])
         .transitionalItem(iner_2)
-        .loops(3)
+        .loops(2)
         .id("tfmg:crafting/pumpjack_hammer_connector");
+    // 抽油机锤头合成
+    event.recipes.create.item_application("tfmg:pumpjack_hammer_head", ["mekanism:block_steel", "tfmg:cast_iron_ingot"]).id("tfmg:crafting/pumpjack_hammer_head");
+    // 大型抽油机合成
+    pneumatic_recipes.pressure_chamber(event, [
+        ["tfmg:large_pumpjack_hammer_part"]
+    ], [
+        ["tfmg:pumpjack_hammer_part", 2]
+    ], 3.5);
+    // tfmg:large_pumpjack_hammer_head
+    pneumatic_recipes.pressure_chamber(event, [
+        ["tfmg:large_pumpjack_hammer_head"]
+    ], [
+        ["tfmg:pumpjack_hammer_head", 2]
+    ], 3.5).id("tfmg:stonecutting/large_pumpjack_hammer_head");
+    // tfmg:large_pumpjack_hammer_connector
+    pneumatic_recipes.pressure_chamber(event, [
+        ["tfmg:large_pumpjack_hammer_connector"]
+    ], [
+        ["tfmg:pumpjack_hammer_connector", 2]
+    ], 3.5).id("tfmg:stonecutting/large_pumpjack_hammer_connector");
+    // 钢制流体储罐合成
+    event.recipes.create.item_application("tfmg:steel_fluid_tank", ["create:fluid_tank", "#forge:plates/steel"]).id("tfmg:crafting/steel_tank");
     // 乙烯合成配方修改
     event.recipes.create.mixing([
         Fluid.of("tfmg:liquid_plastic", 500)
@@ -407,7 +429,8 @@ ServerEvents.recipes(function (event) {
         "tfmg:mixing/liquid_plastic_from_propylene",
         "tfmg:mixing/cast_iron_ingot",
         "tfmg:compacting/plastic_molding",
-        "create:industrial_iron_block_from_ingots_iron_stonecutting"
+        "create:industrial_iron_block_from_ingots_iron_stonecutting",
+        "tfmg:stonecutting/large_pumpjack_hammer_part"
     ]);
 });
 ServerEvents.tags("fluid", function (event) {
