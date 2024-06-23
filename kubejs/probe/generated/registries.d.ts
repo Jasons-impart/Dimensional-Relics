@@ -301,9 +301,23 @@ declare namespace Registry {
     }
     class Slurry extends Internal.RegistryEventJS<any> {
     }
+<<<<<<< HEAD
     class RitualFactory extends Internal.RegistryEventJS<any> {
     }
     class SpiritJobFactory extends Internal.RegistryEventJS<any> {
+=======
+    class Components extends Internal.RegistryEventJS<any> {
+    }
+    class ConstructTask extends Internal.RegistryEventJS<any> {
+    }
+    class Factions extends Internal.RegistryEventJS<any> {
+    }
+    class Modifiers extends Internal.RegistryEventJS<any> {
+    }
+    class ritual_effects extends Internal.RegistryEventJS<any> {
+    }
+    class Shapes extends Internal.RegistryEventJS<any> {
+>>>>>>> 84d25a72fc769580e37020353ffc70a07bd7ba08
     }
     class HarvestHandlers extends Internal.RegistryEventJS<any> {
     }
@@ -311,6 +325,7 @@ declare namespace Registry {
     }
     class ProgWidgets extends Internal.RegistryEventJS<any> {
     }
+<<<<<<< HEAD
     class RobitSkin extends Internal.RegistryEventJS<any> {
     }
     class BiomeLayer extends Internal.RegistryEventJS<any> {
@@ -346,6 +361,53 @@ declare namespace Registry {
     class StructureModifier extends Internal.RegistryEventJS<any> {
     }
     class WorldgenBetterxSurfaceRules extends Internal.RegistryEventJS<any> {
+=======
+    class Worldstyles extends Internal.RegistryEventJS<any> {
+    }
+    class Predefinedcites extends Internal.RegistryEventJS<any> {
+    }
+    class Citystyles extends Internal.RegistryEventJS<any> {
+    }
+    class Predefinedspheres extends Internal.RegistryEventJS<any> {
+    }
+    class WorldgenBetterxSurfaceRules extends Internal.RegistryEventJS<any> {
+    }
+    class WorldgenBetterxBiome extends Internal.RegistryEventJS<any> {
+    }
+    class SurfaceRuleSet extends Internal.RegistryEventJS<any> {
+    }
+    class Styles extends Internal.RegistryEventJS<any> {
+    }
+    class Parts extends Internal.RegistryEventJS<any> {
+    }
+    class Multibuildings extends Internal.RegistryEventJS<any> {
+    }
+    class Scattered extends Internal.RegistryEventJS<any> {
+    }
+    class Buildings extends Internal.RegistryEventJS<any> {
+    }
+    class Conditions extends Internal.RegistryEventJS<any> {
+    }
+    class Palettes extends Internal.RegistryEventJS<any> {
+    }
+    class BargainTypes extends Internal.RegistryEventJS<any> {
+    }
+    class BiomeModifier extends Internal.RegistryEventJS<any> {
+    }
+    class BiomeLayer extends Internal.RegistryEventJS<any> {
+    }
+    class RobitSkin extends Internal.RegistryEventJS<any> {
+    }
+    class StructureModifier extends Internal.RegistryEventJS<any> {
+    }
+    class TemplatePoolExtension extends Internal.RegistryEventJS<any> {
+    }
+    class Variants extends Internal.RegistryEventJS<any> {
+    }
+    class BiomeSurface extends Internal.RegistryEventJS<any> {
+    }
+    class Stuff extends Internal.RegistryEventJS<any> {
+>>>>>>> 84d25a72fc769580e37020353ffc70a07bd7ba08
     }
     class Conditions extends Internal.RegistryEventJS<any> {
     }

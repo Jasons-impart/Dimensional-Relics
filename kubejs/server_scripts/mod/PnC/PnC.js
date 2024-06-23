@@ -5,6 +5,15 @@ ServerEvents.recipes(function (event) {
         "pneumaticcraft:pressure_chamber_interface",
         "elementalcraft:contained_crystal",
     ]);
+    // 压力室气阀
+    event.recipes.minecraft.crafting_shaped("8x pneumaticcraft:pressure_chamber_valve", [
+        "AAA",
+        "ABA",
+        "AAA"
+    ], {
+        A: 'mekanism:ingot_steel',
+        B: "pneumaticcraft:pressure_tube"
+    }).id("pneumaticcraft:pressure_chamber_valve");
     // 压力管道
     event.recipes.minecraft.crafting_shaped("4x pneumaticcraft:pressure_tube", [
         "   ",

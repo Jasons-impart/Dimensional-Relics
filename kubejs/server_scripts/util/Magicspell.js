@@ -29,3 +29,12 @@ var elementalcraft = /** @class */ (function () {
     };
     return elementalcraft;
 }());
+//植物魔法符文祭坛
+function runic_altar(event, output, ingredients, mana) {
+    event.custom({
+        type: "botania:runic_altar",
+        output: output,
+        ingredients: ingredients,
+        mana: mana
+    });
+}

@@ -8,6 +8,8 @@
     "mm:steel_fluid_input",
     "mm:steel_fluid_output",
     "mm:steel_create_input",
-    "mm:steel_create_output"
+    "mm:steel_create_output",
+    "mm:Steel_pcnr_input",
+    "mm:Steel_pcnr_output"
   ]
 }

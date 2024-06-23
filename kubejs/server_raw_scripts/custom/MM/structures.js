@@ -29,4 +29,28 @@ MMEvents.createStructures(event => {
                 block: "mm:steel_create_input"
             });
         });
+    event.create("mm:pncr_reactor")
+        .controllerId("mm:steel_controller")
+        .name("pncr Reactor")
+        .layout(a => {
+            a.layer([
+                "ACB",
+            ]).key("A", {
+                block: "mm:Steel_pcnr_input"
+            }).key("B", {
+                block: "mm:steel_energy_output"
+            });
+        });
+    event.create("mm:pncr_reactor_2")
+        .controllerId("mm:steel_controller")
+        .name("pncr Reactor")
+        .layout(a => {
+            a.layer([
+                "ACB",
+            ]).key("A", {
+                block: "mm:steel_energy_input"
+            }).key("B", {
+                block: "mm:Steel_pcnr_output"
+            });
+        });
 });
