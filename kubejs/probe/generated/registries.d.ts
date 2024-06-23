@@ -50,6 +50,7 @@ declare namespace Registry {
         create(id: string, type: "create:sequenced_assembly"): Internal.SequencedAssemblyItemBuilder;
         create(id: string, type: "create:sandpaper"): Internal.SandpaperItemBuilder;
         create(id: string, type: "botania:rune"): Internal.RuneItemBuilder;
+        create(id: string, type: "occultism:ritual_dummy"): Internal.RitualDummyItemType;
         create(id: string): Internal.BasicItemJS$Builder;
     }
     class Potion extends Internal.RegistryEventJS<any> {
@@ -240,9 +241,15 @@ declare namespace Registry {
     }
     class Upgrades extends Internal.RegistryEventJS<any> {
     }
+    class HudElements extends Internal.RegistryEventJS<any> {
+    }
+    class WorldEntity extends Internal.RegistryEventJS<any> {
+    }
     class Ingredientcomponents extends Internal.RegistryEventJS<any> {
     }
     class BlockPosPredicate extends Internal.RegistryEventJS<any> {
+    }
+    class Modules extends Internal.RegistryEventJS<any> {
     }
     class Jewel extends Internal.RegistryEventJS<any> {
     }
@@ -294,54 +301,60 @@ declare namespace Registry {
     }
     class Slurry extends Internal.RegistryEventJS<any> {
     }
+    class RitualFactory extends Internal.RegistryEventJS<any> {
+    }
+    class SpiritJobFactory extends Internal.RegistryEventJS<any> {
+    }
     class HarvestHandlers extends Internal.RegistryEventJS<any> {
     }
     class HoeHandlers extends Internal.RegistryEventJS<any> {
     }
     class ProgWidgets extends Internal.RegistryEventJS<any> {
     }
-    class SurfaceRuleSet extends Internal.RegistryEventJS<any> {
+    class RobitSkin extends Internal.RegistryEventJS<any> {
     }
     class BiomeLayer extends Internal.RegistryEventJS<any> {
     }
-    class Scattered extends Internal.RegistryEventJS<any> {
+    class Stuff extends Internal.RegistryEventJS<any> {
     }
-    class Citystyles extends Internal.RegistryEventJS<any> {
-    }
-    class Worldstyles extends Internal.RegistryEventJS<any> {
+    class BiomeSurface extends Internal.RegistryEventJS<any> {
     }
     class Palettes extends Internal.RegistryEventJS<any> {
+    }
+    class Predefinedspheres extends Internal.RegistryEventJS<any> {
+    }
+    class Variants extends Internal.RegistryEventJS<any> {
+    }
+    class Parts extends Internal.RegistryEventJS<any> {
+    }
+    class Predefinedcites extends Internal.RegistryEventJS<any> {
+    }
+    class Worldstyles extends Internal.RegistryEventJS<any> {
     }
     class Buildings extends Internal.RegistryEventJS<any> {
     }
     class TemplatePoolExtension extends Internal.RegistryEventJS<any> {
     }
-    class Variants extends Internal.RegistryEventJS<any> {
+    class Multibuildings extends Internal.RegistryEventJS<any> {
     }
-    class Conditions extends Internal.RegistryEventJS<any> {
+    class Citystyles extends Internal.RegistryEventJS<any> {
     }
     class BiomeModifier extends Internal.RegistryEventJS<any> {
     }
     class BargainTypes extends Internal.RegistryEventJS<any> {
     }
-    class Predefinedcites extends Internal.RegistryEventJS<any> {
-    }
-    class RobitSkin extends Internal.RegistryEventJS<any> {
-    }
-    class Styles extends Internal.RegistryEventJS<any> {
-    }
-    class BiomeSurface extends Internal.RegistryEventJS<any> {
-    }
     class StructureModifier extends Internal.RegistryEventJS<any> {
     }
-    class Predefinedspheres extends Internal.RegistryEventJS<any> {
+    class WorldgenBetterxSurfaceRules extends Internal.RegistryEventJS<any> {
     }
-    class Parts extends Internal.RegistryEventJS<any> {
+    class Conditions extends Internal.RegistryEventJS<any> {
     }
-    class Multibuildings extends Internal.RegistryEventJS<any> {
+    class SurfaceRuleSet extends Internal.RegistryEventJS<any> {
     }
     class WorldgenBetterxBiome extends Internal.RegistryEventJS<any> {
     }
-    class WorldgenBetterxSurfaceRules extends Internal.RegistryEventJS<any> {
+    class Styles extends Internal.RegistryEventJS<any> {
+    }
+    class Scattered extends Internal.RegistryEventJS<any> {
     }
 }
