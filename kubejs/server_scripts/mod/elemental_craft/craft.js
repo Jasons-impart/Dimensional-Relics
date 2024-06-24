@@ -64,14 +64,4 @@ ServerEvents.recipes(function (event) {
         A: "elementalcraft:elementpipe",
         B: "elementalcraft:swift_alloy_ingot"
     });
-    // 元素灌注
-    event.remove({ output: "elementalcraft:infuser"});
-    event.shaped(Item.of("elementalcraft:infuser"),[
-        " A ",
-        "ABA",
-        "CCC"],{
-            A:'botania:manasteel_ingot',
-            B:'elementalcraft:contained_crystal',
-            C:"occultism:otherstone"
-    });
 });

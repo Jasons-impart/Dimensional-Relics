@@ -28,6 +28,6 @@ ServerEvents.recipes(function (event) {
         "botania:white_petal",
         "botania:white_petal",
         "elementalcraft:contained_crystal",
-        "ars_nouveau:sourceberry_bush"
+        'ars_nouveau:sourceberry_bush'
     ]);
 });
