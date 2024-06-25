@@ -168,4 +168,9 @@ StartupEvents.registry("item", e => {
         .maxStackSize(64)
         .translationKey("item.dimensionalrelics.incomplete_rune_mana")
         .rarity("common")
+    //神秘学召唤魔源水晶仪式样式
+    e.create("dimensionalrelics:source_gem")
+        .maxStackSize(64)
+        .translationKey("item.dimensionalrelics.source_gem")
+        .rarity("common")
 })
